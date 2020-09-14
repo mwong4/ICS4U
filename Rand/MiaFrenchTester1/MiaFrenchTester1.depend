@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1600112653 source:c:\users\max pc\desktop\new folder\miafrenchtester1\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
