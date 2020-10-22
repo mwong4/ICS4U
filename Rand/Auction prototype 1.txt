@@ -1,0 +1,68 @@
+[NOTE] For auction system, there is a simultaneous timer. This timer is adapted from this forum page:
+https://stackoverflow.com/questions/28944972/how-to-use-a-timer-in-c-to-force-input-within-a-given-time/28947000
+Thanks to Akki for the system
+
+#include <thread>               //For auction timer system
+#include <chrono>               //For auction timer system
+#include <mutex>                //For auction timer system
+#include <condition_variable>   //For auction timer system
+
+//void read_value(); //This function is used to read values while running a simultaneous function (Timer)
+//void auctionMode(vector<Stock>*, int, float*, vector<Stock>*, int*); //This is for the auction mode
+
+//auctionMode(&stockSelection, selectionSize, &myData.balance, &myData.ownedStock, &myData.index);
+
+//This function is used to read values while running a simultaneous function (Timer)
+void read_value() {
+    cin >> value;
+    cv.notify_one();
+}
+
+//This is for the auction mode
+void auctionMode(vector<Stock>* _stocks, int _index, float* _balance, vector<Stock>* _myStocks, int* _myIndex)
+{
+    int target = 0; //Tjis is a randomly generated number for the target stock
+    int counter = 0; //This acts as a safety counter when finding a stock to sell
+    int waitTime = 5; //Countdown value to the timer component
+
+    bool sold = false; //This is to indicate if the auction has finished
+
+    //Randomly choose stock to auction -> Make sure the stock has not been sold yet
+    do
+    {
+        target = rand() % _index;
+        counter ++;
+    }
+    while((*_stocks)[target].status == "sold" && counter < _index*5); //After a threshold of checks, quit
+
+    cout << " >- Stock found" << endl;
+    //If over threshhold, output and return
+    if(counter >= _index*5)
+    {
+        cout << " >- Unable to find stock to auction" << endl;
+        return;
+    }
+
+    //This section was adapted from a forum answer. Please reference header for more information
+    cout << ">- Press [1] to raise bid by 10: "; //To Do -> Bid intervals
+    thread th(read_value); //Set up threat to search for input
+
+    mutex mtx; //Set up Mutex to allow communication between functions
+    unique_lock<mutex> lck(mtx);
+    while (cv.wait_for(lck, chrono::seconds(1)) == cv_status::timeout && waitTime > 0) //While awaiting input and with timer on
+    {
+        timed --;
+        cout << "\nTime-Out: " << timed << " second:";
+        cout << "\nPlease enter the input:";
+    }
+
+        cout << "Bidding has ended" << endl;
+        cout << "You entered: " << value << '\n';
+
+    th.join(); //End simultaneous thread/function?
+
+    //Auction stuff
+
+    //If you win, transfer ownership
+}
+
