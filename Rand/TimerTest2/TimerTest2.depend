@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1603411081 source:c:\users\max pc\documents\github\ics4u\rand\timertest2\main.cpp
+	<iostream>
+	<windows.h>
+	<time.h>
+	<tgmath.h>
+
