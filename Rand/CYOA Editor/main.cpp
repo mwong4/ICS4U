@@ -46,7 +46,16 @@ void displayAllPages(vector<Page>, int); //To display all pages
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    vector<Page> pages; //This contains the data for all the pages
+    int pageSize = 0; //This stores the # of pages
+
+    readFile(1, &pages, &pageSize); //Call function to read page data
+
+    cout << "Read File" << endl;
+
+    displayAllPages(pages, pageSize); //call function to display all pages
+
+
     return 0;
 }
 
@@ -150,6 +159,10 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
 
     if(pageFile_.is_open() && _file == 1) //If instricted to save the file
     {
+        //reset vector
+        *_size = 0;
+        (*_pages).clear();
+
         lineRow = 0;
         while(getline(pageFile_,line)) //This function uses the builtin function: getline
         {

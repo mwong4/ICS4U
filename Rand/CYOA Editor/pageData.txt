@@ -1,0 +1,10 @@
+1
+HI
+bleh bleh bleh
+2
+go forwards
+you went forwards
+rand
+gobackwards
+you fell
+rand
