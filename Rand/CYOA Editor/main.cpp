@@ -18,6 +18,7 @@ display page hierarchy
 #include <vector>        //For vectors
 #include <limits>        //For error trapping
 #include <fstream>       //For txt file
+#include <stdlib.h>      //For type conversion
 
 using namespace std;
 
@@ -40,6 +41,8 @@ void getAnswer(int, int, int*); //(min, max, input) //Function used to get the p
 void writeFile(int, vector<Page>*); //This is for writing to a file
 void wipeFile(int); //This is for wiping a file
 void readFile(int, vector<Page>*, int*); //This is for reading form a file
+void displayPage(Page); //For displaying an individual page
+void displayAllPages(vector<Page>, int); //To display all pages
 
 int main()
 {
@@ -143,16 +146,14 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
     int lineRow = -4; //This integer keeps count of the row number for the saving in array
     int optionsMax = 0; //This tracks how many options need to be read
     int optionsCount = 0; //This tracks the # of options currently read
-
-    //int pageMax = 0; //This tracks how many pages need to be read
-    //int pageCount = 0; //This tracks the # of pages currently read
+    bool atStart = true; //Checks if at start or not
 
     if(pageFile_.is_open() && _file == 1) //If instricted to save the file
     {
         lineRow = 0;
         while(getline(pageFile_,line)) //This function uses the builtin function: getline
         {
-            if(pageCount != 0) //for each page
+            if(!atStart) //for each page
             {
                 if(lineRow < 0)
                 {
@@ -166,7 +167,7 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
                     }
                     if(lineRow == -1)
                     {
-                        tempPage.optionsCount = atoi(line.c_str()); //get # of options
+                        tempPage.optionCount = atoi(line.c_str()); //get # of options
                         optionsMax = atoi(line.c_str()); //update cap for options
                     }
                 }
@@ -181,25 +182,23 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
                 else if(lineRow % 3 == 2)
                 {
                     tempOption.rand = line; //fill this with null for now
-                    tempPage.options.push_back(tempOptions); //push back option to options vector in page
+                    tempPage.options.push_back(tempOption); //push back option to options vector in page
                     optionsCount ++;
 
                     if(optionsCount == optionsMax) //if gone through all options
                     {
-                        (*_pages)[pageCount - 1].push_back(tempPage); //push back page to main vector tracking pages
-                        pageCount ++;
+                        (*_pages).push_back(tempPage); //push back page to main vector tracking pages
                     }
                     else //otherwise, repeat
                     {
-                        lineRow = 0
+                        lineRow = 0;
                     }
                 }
             }
             else //pre-read of page stuff
             {
-                *_size = atoi(line.c_str()); //update how many p
-                //pageMax = atoi(line.c_str()); //get # of pages
-                //pageCount = 1; //transition to page read stuff
+                *_size = atoi(line.c_str()); //update how many pages there are
+                atStart = false;
             }
 
             lineRow ++; //each cycle, move forwards with line #
@@ -210,6 +209,32 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
     {
         cout << "skipped" << endl;
         playerFile_.close(); //Close file
+    }
+
+    return;
+}
+
+//For displaying an individual page
+void displayPage(Page _page)
+{
+    cout << " //////////" << _page.title << "//////////" << endl << endl; //Display page data
+    cout << _page.text << endl << endl;
+
+    for(int i = 0; i < _page.optionCount; i++) //Go through vector and display all otions data
+    {
+        cout << "[" << i << "] " << _page.options[i].text << " -> " << _page.options[i].link << " || " << _page.options[i].rand << endl;
+    }
+    cout << endl;
+
+    return;
+}
+
+//To display all pages
+void displayAllPages(vector<Page> _pages, int _count)
+{
+    for(int i = 0; i < _count; i++) //go through vector and display each page
+    {
+        displayPage(_pages[i]);
     }
 
     return;
