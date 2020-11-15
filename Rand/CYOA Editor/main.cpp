@@ -39,7 +39,7 @@ struct Page //This stores the page information for each option
 void getAnswer(int, int, int*); //(min, max, input) //Function used to get the players response as an integer (with error trapping)
 void writeFile(int, vector<Page>*); //This is for writing to a file
 void wipeFile(int); //This is for wiping a file
-void readFile(int, vector<Page>*, int*); //This is for reading form a file
+void readFile(int, vector<Page>*); //This is for reading form a file
 
 int main()
 {
@@ -132,77 +132,64 @@ void wipeFile(int _file)
 }
 
 //This is for reading form a file
-void readFile(int _file, vector<Page>* _pages, int* _size)
+void readFile(int _file, vector<Page>* _pages)
 {
-    ifstream pageFile_("pageData.txt"); //This is used to store file raw data
-    ifstream playerFile_("playerData.txt"); //This is used to store file raw data
-
     string line; //String line used to seperate the text file into lines
+    if(_file == 1) ifstream pageFile_("pageData.txt"); //This is used to store file raw data
+    else ifstream playerFile_("playerData.txt"); //This is used to store file raw data
     Page tempPage; //temporary page to input into vector
-    Option tempOption; //temporary option to put inot vector
-    int lineRow = -4; //This integer keeps count of the row number for the saving in array
-    int optionsMax = 0; //This tracks how many options need to be read
-    int optionsCount = 0; //This tracks the # of options currently read
+    Option tempOption //temporary option to put inot vector
 
-    //int pageMax = 0; //This tracks how many pages need to be read
-    //int pageCount = 0; //This tracks the # of pages currently read
+    int lineRow = -3; //This integer keeps count of the row number for the saving in array
 
     if(pageFile_.is_open() && _file == 1) //If instricted to save the file
     {
         lineRow = 0;
         while(getline(pageFile_,line)) //This function uses the builtin function: getline
         {
-            if(pageCount != 0) //for each page
+            if(lineRow < 0)
             {
-                if(lineRow < 0)
+                if(lineRow == -3) //Run at very start
                 {
-                    if(lineRow == -3)
-                    {
-                        tempPage.title = line; //save title temporarily
-                    }
-                    if(lineRow == -2)
-                    {
-                        tempPage.text = line; //save text for page temp
-                    }
-                    if(lineRow == -1)
-                    {
-                        tempPage.optionsCount = atoi(line.c_str()); //get # of options
-                        optionsMax = atoi(line.c_str()); //update cap for options
-                    }
+                    *_balance = atoi(line.c_str()); //update balance
                 }
-                else if(lineRow % 3 == 0)
+                if(lineRow == -2)
                 {
-                    tempOption.text = line; //for each option, save text
+                    *_date = atoi(line.c_str()); //update date
                 }
-                else if(lineRow % 3 == 1)
+                if(lineRow == -1)
                 {
-                    tempOption.link = line; //for each option, save link
-                }
-                else if(lineRow % 3 == 2)
-                {
-                    tempOption.rand = line; //fill this with null for now
-                    tempPage.options.push_back(tempOptions); //push back option to options vector in page
-                    optionsCount ++;
-
-                    if(optionsCount == optionsMax) //if gone through all options
-                    {
-                        (*_pages)[pageCount - 1].push_back(tempPage); //push back page to main vector tracking pages
-                        pageCount ++;
-                    }
-                    else //otherwise, repeat
-                    {
-                        lineRow = 0
-                    }
+                    *_cap = atoi(line.c_str()); //update cap
                 }
             }
-            else //pre-read of page stuff
+            else if(lineRow % 6 == 0)
             {
-                *_size = atoi(line.c_str()); //update how many p
-                //pageMax = atoi(line.c_str()); //get # of pages
-                //pageCount = 1; //transition to page read stuff
+                tempStock.name = line;
             }
-
-            lineRow ++; //each cycle, move forwards with line #
+            else if(lineRow % 6 == 1)
+            {
+                tempStock.cost = atoi(line.c_str());
+            }
+            else if(lineRow % 6 == 2)
+            {
+                tempStock.dividend = atoi(line.c_str());
+            }
+            else if(lineRow % 6 == 3)
+            {
+                tempStock.status = line;
+            }
+            else if(lineRow % 6 == 4)
+            {
+                tempStock.timeOwned = atoi(line.c_str());
+            }
+            else if(lineRow % 6 == 5)
+            {
+                tempStock.triedSelling = false; //by default set to false
+                tempStock.extraInfo = line;
+                (*_stocks).push_back(tempStock);
+                *_size += 1;
+            }
+            lineRow += 1;
         }
         pageFile_.close(); //Close file
     }
