@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1605462043 source:c:\users\max pc\documents\github\ics4u\rand\cyoa editor\main.cpp
+	<iostream>
+	<vector>
+	<limits>
+	<fstream>
+	<stdlib.h>
+	<windows.h>
+

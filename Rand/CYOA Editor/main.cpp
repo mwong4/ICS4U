@@ -1,7 +1,7 @@
 /*
 >- Author: Max Wong
 >- Date: November 11, 2020
->- Updated: Nov 13, 2020
+>- Updated: Nov 15 , 2020
 >- Purpose: To write a cyoa editor -> to advance coding knowledge with more general case infrastructureo
 
 To Do
@@ -19,6 +19,7 @@ display page hierarchy
 #include <limits>        //For error trapping
 #include <fstream>       //For txt file
 #include <stdlib.h>      //For type conversion
+#include <windows.h>     //For windows stuff
 
 using namespace std;
 
@@ -55,6 +56,7 @@ int main()
 
     displayAllPages(pages, pageSize); //call function to display all pages
 
+    system("PAUSE");
 
     return 0;
 }
