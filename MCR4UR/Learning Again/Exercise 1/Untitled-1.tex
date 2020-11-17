@@ -1,0 +1,83 @@
+\documentclass{article}
+
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\title{Section 1}
+\author{Max C Wong}
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{1-1}
+
+%milk
+\subsection{milk}
+
+Would you like 2\% milk? Yes please :\}
+
+The output \% is produced by the input \textbackslash\%, but \textbackslash is not produced by \textbackslash\textbackslash
+
+\section{1-2}
+
+%exponents
+\subsection{exponents}
+
+By convention, a tower of exponents $a^{b^c}$ in mathematics is always interpreted as $a^{(b^c)}$.
+In other words, exponents are riught-associative. The reason for this is that the
+left-associated interpretation ${(a^b)}^c$ can be expressed more simply as $a^{b\times c}$
+, by the laws of exponents.
+
+%limit
+\subsection{limit}
+
+$$\int^1_0 f(x)dx = \lim_{t \to \infty} t^{-1} \sum^t_{i=1}f(i/t)$$
+
+%fractions
+\subsection{fractions}
+
+$$\frac{1}{\sqrt[4]{5} - \sqrt[4]{2}} = \frac{(\sqrt[4]{5} + \sqrt[4]{2})(\sqrt{5} + \sqrt{2})}{3}$$
+$$1 + \frac{1}{1 + \frac{1}{1 + \frac{1}{1 + \cdots}}} = \frac{1 + \sqrt{5}}{2}$$
+
+\section{1-3}
+
+%lists
+\subsection{lists}
+
+\begin{enumerate}
+    \item for the money
+    \item for the show
+    \item to get ready
+    \begin{itemize}
+        \item now
+        \item go
+        \item[$\diamond$] chat 
+        \item go!
+    \end{itemize}
+\end{enumerate}
+
+%alligator
+\subsection{alligator}
+
+Grandpa said, ``When I was your age --- in the `roaring '20s --- we had it rough. The `alligator 
+shoes' we wore during the 1927--1928 school year were just to kick the gators tryin' to eat us."
+ My dad chimed in, ``I wouldn't have minded your -40 tempatures instead of our +40 ones!"
+
+%pate
+\subsection{p\^ate}
+
+\emph{En fran\c{c}ais,} \textbf{p\^ate} can mean either pastry or paste, its plural \textbf{p\^ates}
+most commonly refers to pasta noodles, and \textbf{p\^at\'e} is a congealed meat product.
+
+
+\end{document}
+
+%Fixing errors (1-1)
+%\documentclass{article}
+%\begin{document}
+%In \LaTeX, \textbackslash is the escape character.
+%\end{document}
