@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {1}Chapter 1: Function Characts. and Props.}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Functions}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Absolute value}{3}{}%
+\contentsline {subsection}{\numberline {1.3}Properties}{3}{}%
+\contentsline {subsection}{\numberline {1.4}Sketching Graphs}{3}{}%
+\contentsline {subsection}{\numberline {1.5}Inverse}{3}{}%
+\contentsline {subsection}{\numberline {1.6}Piecewise}{4}{}%
+\contentsline {subsection}{\numberline {1.7}Operations within}{4}{}%
+\contentsline {section}{\numberline {2}Chapter 3: Polynomial Functions}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Polynomial Functions}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Properties}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Factored Form}{5}{}%
+\contentsline {subsection}{\numberline {2.4}Transformations}{5}{}%
+\contentsline {subsection}{\numberline {2.5}Dividing}{5}{}%
+\contentsline {subsection}{\numberline {2.6}Factoring}{5}{}%
+\contentsline {subsection}{\numberline {2.7}Factoring Sum or Difference}{6}{}%
+\contentsline {section}{\numberline {3}Chapter 4: Polynomial Equ. and Ineq.}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Solving}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Solving Linear Inequalities}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Solving Polynomial Inequalities}{6}{}%
+\contentsline {subsection}{\numberline {3.4}Rates of Change in Polynomials}{6}{}%
+\contentsline {section}{\numberline {4}Chapter 5}{7}{}%
+\contentsline {section}{\numberline {5}Chapter 6}{7}{}%
+\contentsline {section}{\numberline {6}Chapter 7}{7}{}%
+\contentsline {section}{\numberline {7}Chapter 8}{7}{}%
+\contentsline {section}{\numberline {8}Chapter 9}{7}{}%
+\contentsline {section}{\numberline {9}Chapter 2}{7}{}%
