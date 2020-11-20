@@ -1,7 +1,7 @@
-PWD c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR
+PWD c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1
 INPUT C:\Users\Max pc\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.tex
-OUTPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.log
+INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.tex
+OUTPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.log
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -26,10 +26,10 @@ INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backen
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.aux
-INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.aux
-INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.aux
-OUTPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.aux
+INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux
+INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux
+INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux
+OUTPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
@@ -42,16 +42,16 @@ INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tf
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.toc
-INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.toc
-INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.toc
+INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.toc
+INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.toc
+INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.toc
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-OUTPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.pdf
+OUTPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.pdf
 INPUT C:\Users\Max pc\AppData\Local\MiKTeX\pdftex\config\pdftex.map
-OUTPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.toc
+OUTPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.toc
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
-INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Chapter 1.aux
+INPUT c:\Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux
 INPUT C:\Users\Max pc\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\Max pc\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\Max pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb

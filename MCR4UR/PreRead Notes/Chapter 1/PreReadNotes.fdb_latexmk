@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1605829637 "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Chapter 1.tex" "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Chapter 1.pdf" "Chapter 1" 1605829647
+["pdflatex"] 1605889459 "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex" "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.pdf" "PreReadNotes" 1605889460
   "C:/Users/Max pc/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1605629328 11548 e4d679ef5023781643b175721dab5dc9 ""
   "C:/Users/Max pc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1605575096 10294874 f86f19ff4d78088ad863e180d947a5ba ""
   "C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1605575105 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
@@ -30,15 +30,15 @@
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1603694016 20145 aad8c3dd3bc36e260347b84002182bc2 ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo" 1603694016 8449 a72d5d4e612221b46000c3d71724e0ef ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1600952516 23704 02c466ff883953a445c97e55638005fc ""
-  "Chapter 1.aux" 1605829637 2938 1e002f452aeaabad6909325538b10d50 "pdflatex"
-  "Chapter 1.tex" 1605829646 6371 1b3e17fa5ee8dcf593ad8d5e939b11f9 ""
-  "Chapter 1.toc" 1605829637 1799 5d44750739dcb5bfd93777eb999c41fa "pdflatex"
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Chapter 1.aux" 1605829637 2938 1e002f452aeaabad6909325538b10d50 ""
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Chapter 1.tex" 1605829646 6371 1b3e17fa5ee8dcf593ad8d5e939b11f9 ""
+  "PreReadNotes.aux" 1605889459 3530 d5a67560d0b199809d57a27a09764d60 "pdflatex"
+  "PreReadNotes.tex" 1605889457 6927 7b58afeef41eff1c6cce2ace3a637ad9 ""
+  "PreReadNotes.toc" 1605889459 2145 fc0123fc3fb765e7341d9405d9953423 "pdflatex"
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.aux" 1605889459 3530 d5a67560d0b199809d57a27a09764d60 ""
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex" 1605889457 6927 7b58afeef41eff1c6cce2ace3a637ad9 ""
   (generated)
-  "Chapter 1.pdf"
-  "Chapter 1.log"
-  "Chapter 1.aux"
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Chapter 1.pdf"
-  "Chapter 1.toc"
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Chapter 1.log"
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.log"
+  "PreReadNotes.aux"
+  "PreReadNotes.pdf"
+  "PreReadNotes.toc"
+  "PreReadNotes.log"
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.pdf"
