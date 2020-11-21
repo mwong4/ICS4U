@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  20 NOV 2020 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  21 NOV 2020 09:27
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex"
@@ -19,6 +19,24 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
 ) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count183
@@ -26,26 +44,43 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 ) ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux")
 \openout1 = `PreReadNotes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count184
+\scratchdimen=\dimen141
+\scratchbox=\box48
+\nofMPsegments=\count185
+\nofMParguments=\count186
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count187
+\MPscratchDim=\dimen142
+\MPnumerator=\count188
+\makeMPintoPDFobject=\count189
+\everyMPtoPDFconversion=\toks17
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <6> on input line 14.
  ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
@@ -53,30 +88,41 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
  [1
 
-{C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}])
+{C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2])
 \tf@toc=\write3
 \openout3 = `PreReadNotes.toc'.
 
- [2] [3] [4
+ [3] [4
 
 ] [5] [6]
-Overfull \hbox (8.25064pt too wide) in paragraph at lines 174--175
+Overfull \hbox (8.25064pt too wide) in paragraph at lines 176--177
 []\OT1/cmr/m/n/10 Reciprocals of lin-ear and quadratic func-tions fol-low a sim-i-lar gen-eral graphed
  []
 
-[7] [8] [9] [10] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux") ) 
+[7] [8] [9] [10] [11]
+<IMG_0836.JPG, id=50, 4047.12pt x 3035.34pt>
+File: IMG_0836.JPG Graphic file (type jpg)
+<use IMG_0836.JPG>
+Package pdftex.def Info: IMG_0836.JPG  used on input line 324.
+(pdftex.def)             Requested size: 345.0pt x 258.71838pt.
+
+Overfull \hbox (40.00006pt too wide) in paragraph at lines 324--325
+[][] 
+ []
+
+[12 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/IMG_0836.JPG>] [13] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux") ) 
 Here is how much of TeX's memory you used:
- 426 strings out of 479799
- 8279 string characters out of 2869209
- 278779 words of memory out of 3000000
- 17484 multiletter control sequences out of 15000+200000
+ 1204 strings out of 479799
+ 19196 string characters out of 2869209
+ 291256 words of memory out of 3000000
+ 18228 multiletter control sequences out of 15000+200000
  539678 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,6n,49p,268b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,8n,72p,268b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Max pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.pdf" (10 pages, 162779 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.pdf" (13 pages, 2816849 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

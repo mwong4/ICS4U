@@ -26,15 +26,28 @@
 \contentsline {subsection}{\numberline {4.4}Solving Rational Equations}{9}{}%
 \contentsline {subsection}{\numberline {4.5}Solving Rational Inequalities}{9}{}%
 \contentsline {subsection}{\numberline {4.6}Rates of Change}{9}{}%
-\contentsline {section}{\numberline {5}Chapter 6}{9}{}%
-\contentsline {subsection}{\numberline {5.1}}{9}{}%
-\contentsline {subsection}{\numberline {5.2}}{9}{}%
-\contentsline {subsection}{\numberline {5.3}}{9}{}%
-\contentsline {subsection}{\numberline {5.4}}{9}{}%
-\contentsline {subsection}{\numberline {5.5}}{10}{}%
-\contentsline {subsection}{\numberline {5.6}}{10}{}%
-\contentsline {subsection}{\numberline {5.7}}{10}{}%
-\contentsline {section}{\numberline {6}Chapter 7}{10}{}%
-\contentsline {section}{\numberline {7}Chapter 8}{10}{}%
-\contentsline {section}{\numberline {8}Chapter 9}{10}{}%
-\contentsline {section}{\numberline {9}Chapter 2}{10}{}%
+\contentsline {section}{\numberline {5}Chapter 6: Trigonometric functions}{9}{}%
+\contentsline {subsection}{\numberline {5.1}Radians}{9}{}%
+\contentsline {subsection}{\numberline {5.2}Radians on Cartesian Plane}{9}{}%
+\contentsline {subsection}{\numberline {5.3}Graphs of primary trig functions}{10}{}%
+\contentsline {subsection}{\numberline {5.4}Transformations}{10}{}%
+\contentsline {subsection}{\numberline {5.5}Reciprocal Graphs}{10}{}%
+\contentsline {subsection}{\numberline {5.6}Modelling}{10}{}%
+\contentsline {subsection}{\numberline {5.7}Rates of Change}{10}{}%
+\contentsline {section}{\numberline {6}Chapter 7: Identities and Equations}{11}{}%
+\contentsline {subsection}{\numberline {6.1}Equivalent Trig Functions}{11}{}%
+\contentsline {subsection}{\numberline {6.2}Compound Angle Formulas}{11}{}%
+\contentsline {subsection}{\numberline {6.3}Double angels}{11}{}%
+\contentsline {subsection}{\numberline {6.4}Prove Identities}{11}{}%
+\contentsline {subsection}{\numberline {6.5}Solve Linear Trig Equations}{12}{}%
+\contentsline {subsection}{\numberline {6.6}Solve Quadratic Trig Equations}{12}{}%
+\contentsline {section}{\numberline {7}Chapter 8}{13}{}%
+\contentsline {subsection}{\numberline {7.1}}{13}{}%
+\contentsline {subsection}{\numberline {7.2}}{13}{}%
+\contentsline {subsection}{\numberline {7.3}}{13}{}%
+\contentsline {subsection}{\numberline {7.4}}{13}{}%
+\contentsline {subsection}{\numberline {7.5}}{13}{}%
+\contentsline {subsection}{\numberline {7.6}}{13}{}%
+\contentsline {subsection}{\numberline {7.7}}{13}{}%
+\contentsline {section}{\numberline {8}Chapter 9}{13}{}%
+\contentsline {section}{\numberline {9}Chapter 2}{13}{}%
