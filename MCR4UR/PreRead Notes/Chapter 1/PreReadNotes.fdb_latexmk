@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1605968869 "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex" "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.pdf" "PreReadNotes" 1605968882
+["pdflatex"] 1605975419 "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex" "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.pdf" "PreReadNotes" 1605975420
   "C:/Users/Max pc/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1605629328 11548 e4d679ef5023781643b175721dab5dc9 ""
   "C:/Users/Max pc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1605575096 10294874 f86f19ff4d78088ad863e180d947a5ba ""
   "C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1605575105 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
@@ -19,6 +19,7 @@
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247593066 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247593066 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247593067 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1247593067 37912 07513ec114ac737ab54cea0152f4424b ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247593067 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247593066 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -41,15 +42,15 @@
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1601741526 4093 d7fa7d81d2870d509d25b17d0245e735 ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1600952516 23704 02c466ff883953a445c97e55638005fc ""
   "IMG_0836.JPG" 1605968555 2642346 726223d2409814a4826949335be432c8 ""
-  "PreReadNotes.aux" 1605968870 5865 3063ba6300e61bf8c8ce13f00520ebb1 "pdflatex"
-  "PreReadNotes.tex" 1605968881 13689 0c69cbaf182f0b9238cf6b356f009fd7 ""
-  "PreReadNotes.toc" 1605968870 3658 e34200463b1a3f48ee63078b486e04ed "pdflatex"
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.aux" 1605968870 5865 3063ba6300e61bf8c8ce13f00520ebb1 ""
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex" 1605968881 13689 0c69cbaf182f0b9238cf6b356f009fd7 ""
+  "PreReadNotes.aux" 1605975420 6133 3d1c9f52745c92a29a68af2526aebc01 "pdflatex"
+  "PreReadNotes.tex" 1605975418 15985 2ee97e077d8a1539d22701a5de1370c4 ""
+  "PreReadNotes.toc" 1605975420 3885 7c210d94e6f02f2c24dea84edc2c34f8 "pdflatex"
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.aux" 1605975420 6133 3d1c9f52745c92a29a68af2526aebc01 ""
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex" 1605975418 15985 2ee97e077d8a1539d22701a5de1370c4 ""
   (generated)
-  "PreReadNotes.toc"
+  "PreReadNotes.log"
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.log"
   "PreReadNotes.pdf"
   "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.pdf"
-  "PreReadNotes.log"
   "PreReadNotes.aux"
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.log"
+  "PreReadNotes.toc"
