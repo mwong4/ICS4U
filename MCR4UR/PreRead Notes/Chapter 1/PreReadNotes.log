@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  21 NOV 2020 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  22 NOV 2020 15:43
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/PreReadNotes.tex"
@@ -88,19 +88,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
  [1
 
-{C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2])
+{C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3])
 \tf@toc=\write3
 \openout3 = `PreReadNotes.toc'.
 
- [3] [4
+ [4] [5
 
-] [5] [6]
+] [6] [7]
 Overfull \hbox (8.25064pt too wide) in paragraph at lines 176--177
 []\OT1/cmr/m/n/10 Reciprocals of lin-ear and quadratic func-tions fol-low a sim-i-lar gen-eral graphed
  []
 
-[7] [8] [9] [10] [11]
-<IMG_0836.JPG, id=50, 4047.12pt x 3035.34pt>
+[8] [9] [10] [11] [12]
+<IMG_0836.JPG, id=53, 4047.12pt x 3035.34pt>
 File: IMG_0836.JPG Graphic file (type jpg)
 <use IMG_0836.JPG>
 Package pdftex.def Info: IMG_0836.JPG  used on input line 324.
@@ -110,19 +110,30 @@ Overfull \hbox (40.00006pt too wide) in paragraph at lines 324--325
 [][] 
  []
 
-[12 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/IMG_0836.JPG>] [13] [14] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux") ) 
+[13 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/IMG_0836.JPG>]
+<IMG_0837.JPG, id=58, 4047.12pt x 3035.34pt>
+File: IMG_0837.JPG Graphic file (type jpg)
+<use IMG_0837.JPG>
+Package pdftex.def Info: IMG_0837.JPG  used on input line 353.
+(pdftex.def)             Requested size: 345.0pt x 258.71838pt.
+
+Overfull \hbox (40.00006pt too wide) in paragraph at lines 353--354
+[][] 
+ []
+
+[14 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/PreRead Notes/Chapter 1/IMG_0837.JPG>] [15] [16] [17] [18] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.aux") ) 
 Here is how much of TeX's memory you used:
- 1204 strings out of 479799
- 19196 string characters out of 2869209
- 291256 words of memory out of 3000000
- 18228 multiletter control sequences out of 15000+200000
+ 1210 strings out of 479799
+ 19287 string characters out of 2869209
+ 292256 words of memory out of 3000000
+ 18233 multiletter control sequences out of 15000+200000
  539678 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,8n,72p,268b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,8n,72p,268b,224s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Max pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.pdf" (14 pages, 2831055 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\PreRead Notes\Chapter 1\PreReadNotes.pdf" (18 pages, 5623038 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
