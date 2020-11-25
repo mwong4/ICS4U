@@ -5,9 +5,9 @@
 >- Purpose: To write a cyoa editor -> to advance coding knowledge with more general case infrastructureo
 
 To Do
-prototype creating txt files
-
 add page
+
+edit page
 display page hierarchy
 
 */
@@ -38,11 +38,12 @@ struct Page //This stores the page information for each option
 };
 
 void getAnswer(int, int, int*); //(min, max, input) //Function used to get the players response as an integer (with error trapping)
-void writeFile(int, vector<Page>*); //This is for writing to a file
+void writeFile(int, vector<Page>*, int*); //This is for writing to a file
 void wipeFile(int); //This is for wiping a file
 void readFile(int, vector<Page>*, int*); //This is for reading form a file
 void displayPage(Page); //For displaying an individual page
 void displayAllPages(vector<Page>, int); //To display all pages
+void addPage(vector<Page>*, int*); //This function is used to add a new page entry
 
 int main()
 {
@@ -271,4 +272,53 @@ void displayAllPages(vector<Page> _pages, int _count)
     }
 
     return;
+}
+
+//This function is used to add a new page entry
+void addPage(vector<Page>* _pages, int* _pageCount)
+{
+    int intInput; //This is the integer input from the player
+    string strInput; //This is the string input from the player
+    Page tempPage; //This is to temporarily store a page data
+    Option tempOption; //This is to temporarily store option data
+
+    cout << "    [Add Page Editor]" << endl;
+    cout << " >- Enter Page Title" << endl;
+    cin >> strInput;
+    tempPage.title = strInput; //Get title input
+
+    cout << " >- Enter Page Text" << endl;
+    cin >> strInput;
+    tempPage.text = strInput; //get text input
+
+    cout << " >- How many options would you like? (enter 0-10)" << endl;
+    getAnswer(0, 10, &intInput); //get # of pages input
+    tempPage.optionCount = intInput;
+
+    //For each option, get all inputs
+    for(int i = 1; i < intInput; i++)
+    {
+        cout << "   [OPTION " << i << "]" << endl;
+        cout << " >- Enter Option Text" << endl;
+        cin >> strInput;
+        tempOption.text = strInput; //Get text input
+
+        cout << " >- Enter Option Link" << endl;
+        cin >> strInput;
+        tempOption.link = strInput; //Get link input
+
+        cout << " >- Enter Option Rand" << endl;
+        cin >> strInput;
+        tempOption.rand = strInput; //Get rand input
+
+        tempPage.options.push_back(tempOption); //Push option into the page options vector
+    }
+
+    //Push temp page into page vector and update data
+    (*_pages).push_back(tempPage);
+    *_pageCount += 1;
+
+    //Update directory data
+    wipeFile(1);
+    writeFile(1, _pages, _pageCount);
 }
