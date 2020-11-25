@@ -54,7 +54,9 @@ int main()
 
     cout << "Read File" << endl;
 
-    displayAllPages(pages, pageSize); //call function to display all pages
+    displayPage(pages[0]);
+
+    //displayAllPages(pages, pageSize); //call function to display all pages
 
     system("PAUSE");
 
@@ -165,7 +167,6 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
         *_size = 0;
         (*_pages).clear();
 
-        lineRow = 0;
         while(getline(pageFile_,line)) //This function uses the builtin function: getline
         {
             if(!atStart) //for each page
@@ -175,6 +176,7 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
                     if(lineRow == -3)
                     {
                         tempPage.title = line; //save title temporarily
+                        cout << tempPage.title << endl; //Test
                     }
                     if(lineRow == -2)
                     {
