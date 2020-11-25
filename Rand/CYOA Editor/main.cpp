@@ -51,12 +51,16 @@ int main()
     int pageSize = 0; //This stores the # of pages
 
     readFile(1, &pages, &pageSize); //Call function to read page data
+    cout << "Read File [main]" << endl;
 
-    cout << "Read File" << endl;
+    displayAllPages(pages, pageSize); //call function to display all pages
 
-    cout << pages[0].options[0].text << endl;
+    addPage(&pages, &pageSize);
+    cout << "Added Page [main]" << endl;
 
-    //displayPage(pages[1]);
+    readFile(1, &pages, &pageSize); //Call function to read page data
+    cout << "Read File [main]" << endl;
+
     displayAllPages(pages, pageSize); //call function to display all pages
 
     system("PAUSE");
@@ -89,6 +93,8 @@ void getAnswer (int _minLimit, int _maxLimit, int* _value)
     }
     while(findingInput);
     *_value = playerInput;//Otherwise input is good, return input
+
+    cout << "<Got Answer>" << endl;
     return;
 }
 
@@ -99,6 +105,7 @@ void writeFile(int _file, vector<Page>* _pages, int* _pageCount)
     if(_file == 1)
     {
         myfile.open("pageData.txt"); //Open files
+        myfile << *_pageCount << endl;
     }
     else if(_file == 2)
     {
@@ -129,6 +136,8 @@ void writeFile(int _file, vector<Page>* _pages, int* _pageCount)
     }
 
     myfile.close(); //Close file
+
+    cout << "<Wrote to File>" << endl;
     return;
 }
 
@@ -145,6 +154,8 @@ void wipeFile(int _file)
         file.open("playerData.txt", std::ofstream::out | std::ofstream::trunc);
     }
     file.close();
+
+    cout << "<Wiped File>" << endl;
     return;
 }
 
@@ -243,6 +254,7 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
         playerFile_.close(); //Close file
     }
 
+    cout << "<Read File>" << endl;
     return;
 }
 
@@ -271,6 +283,7 @@ void displayAllPages(vector<Page> _pages, int _count)
         displayPage(_pages[i]);
     }
 
+    cout << "<Displayed All Pages>" << endl;
     return;
 }
 
@@ -284,31 +297,32 @@ void addPage(vector<Page>* _pages, int* _pageCount)
 
     cout << "    [Add Page Editor]" << endl;
     cout << " >- Enter Page Title" << endl;
-    cin >> strInput;
+    getline(cin, strInput);
     tempPage.title = strInput; //Get title input
 
     cout << " >- Enter Page Text" << endl;
-    cin >> strInput;
+    getline(cin, strInput);
     tempPage.text = strInput; //get text input
 
-    cout << " >- How many options would you like? (enter 0-10)" << endl;
-    getAnswer(0, 10, &intInput); //get # of pages input
+    cout << " >- How many options would you like? (enter 1-10)" << endl;
+    getAnswer(1, 10, &intInput); //get # of pages input
     tempPage.optionCount = intInput;
+    cin.ignore(); //Clears up cin to be able to use getline (unreliable)
 
     //For each option, get all inputs
-    for(int i = 1; i < intInput; i++)
+    for(int i = 1; i <= intInput; i++)
     {
         cout << "   [OPTION " << i << "]" << endl;
         cout << " >- Enter Option Text" << endl;
-        cin >> strInput;
+        getline(cin, strInput);
         tempOption.text = strInput; //Get text input
 
         cout << " >- Enter Option Link" << endl;
-        cin >> strInput;
+        getline(cin, strInput);
         tempOption.link = strInput; //Get link input
 
         cout << " >- Enter Option Rand" << endl;
-        cin >> strInput;
+        getline(cin, strInput);
         tempOption.rand = strInput; //Get rand input
 
         tempPage.options.push_back(tempOption); //Push option into the page options vector
@@ -321,4 +335,7 @@ void addPage(vector<Page>* _pages, int* _pageCount)
     //Update directory data
     wipeFile(1);
     writeFile(1, _pages, _pageCount);
+
+    cout << "<Added Page>" << endl;
+    return;
 }
