@@ -1,13 +1,12 @@
 /*
 >- Author: Max Wong
 >- Date: November 11, 2020
->- Updated: Nov 15 , 2020
+>- Updated: Nov 25 , 2020
 >- Purpose: To write a cyoa editor -> to advance coding knowledge with more general case infrastructureo
 
 To Do
 prototype creating txt files
 
-data save/load
 add page
 display page hierarchy
 
@@ -54,9 +53,10 @@ int main()
 
     cout << "Read File" << endl;
 
-    displayPage(pages[0]);
+    cout << pages[0].options[0].text << endl;
 
-    //displayAllPages(pages, pageSize); //call function to display all pages
+    //displayPage(pages[1]);
+    displayAllPages(pages, pageSize); //call function to display all pages
 
     system("PAUSE");
 
@@ -150,6 +150,7 @@ void wipeFile(int _file)
 //This is for reading form a file
 void readFile(int _file, vector<Page>* _pages, int* _size)
 {
+    cout << "reading file" << endl;
     ifstream pageFile_("pageData.txt"); //This is used to store file raw data
     ifstream playerFile_("playerData.txt"); //This is used to store file raw data
 
@@ -159,6 +160,7 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
     int lineRow = -4; //This integer keeps count of the row number for the saving in array
     int optionsMax = 0; //This tracks how many options need to be read
     int optionsCount = 0; //This tracks the # of options currently read
+    int pageCount = 0; //Tracks how many pages have been read
     bool atStart = true; //Checks if at start or not
 
     if(pageFile_.is_open() && _file == 1) //If instricted to save the file
@@ -176,39 +178,51 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
                     if(lineRow == -3)
                     {
                         tempPage.title = line; //save title temporarily
-                        cout << tempPage.title << endl; //Test
+                        //cout << "Title: " << tempPage.title << endl;
                     }
                     if(lineRow == -2)
                     {
                         tempPage.text = line; //save text for page temp
+                        //cout << "Text: " << tempPage.text << endl;
                     }
                     if(lineRow == -1)
                     {
                         tempPage.optionCount = atoi(line.c_str()); //get # of options
                         optionsMax = atoi(line.c_str()); //update cap for options
+                        //cout << "Max: " << optionsMax << endl;
                     }
                 }
                 else if(lineRow % 3 == 0)
                 {
                     tempOption.text = line; //for each option, save text
+                    //cout << "Options Text: " << tempOption.text << endl;
                 }
                 else if(lineRow % 3 == 1)
                 {
                     tempOption.link = line; //for each option, save link
+                    //cout << "Options Link: " << tempOption.link << endl;
                 }
                 else if(lineRow % 3 == 2)
                 {
                     tempOption.rand = line; //fill this with null for now
+                    //cout << "Options Rand: " << tempOption.rand << endl;
                     tempPage.options.push_back(tempOption); //push back option to options vector in page
                     optionsCount ++;
 
                     if(optionsCount == optionsMax) //if gone through all options
                     {
+                        pageCount ++; //tick up page count
                         (*_pages).push_back(tempPage); //push back page to main vector tracking pages
+                        //cout << "push page" << endl;
+
+                        lineRow = -4; //reset fir new page read
+                        optionsCount = 0;
+                        optionsMax = 0;
+                        tempPage.options.clear();
                     }
                     else //otherwise, repeat
                     {
-                        lineRow = 0;
+                        lineRow = -1;
                     }
                 }
             }
@@ -234,8 +248,10 @@ void readFile(int _file, vector<Page>* _pages, int* _size)
 //For displaying an individual page
 void displayPage(Page _page)
 {
-    cout << " //////////" << _page.title << "//////////" << endl << endl; //Display page data
+    cout << "//////////" << _page.title << "//////////" << endl << endl; //Display page data
     cout << _page.text << endl << endl;
+
+    //cout << _page.optionCount << endl;
 
     for(int i = 0; i < _page.optionCount; i++) //Go through vector and display all otions data
     {

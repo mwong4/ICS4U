@@ -1,4 +1,4 @@
-1
+2
 HI
 bleh bleh bleh
 2
@@ -7,4 +7,16 @@ you went forwards
 rand
 gobackwards
 you fell
+rand
+Title
+Text
+3
+Option 1
+Link 1
+rand
+Option 2
+Link 2
+rand
+Option 3
+Link 3
 rand
