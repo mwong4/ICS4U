@@ -1,7 +1,7 @@
 /*
 >- Author: Max Wong
 >- Date: November 11, 2020
->- Updated: Nov 25 , 2020
+>- Updated: Nov 26, 2020
 >- Purpose: To write a cyoa editor -> to advance coding knowledge with more general case infrastructureo
 
 To Do
@@ -43,6 +43,8 @@ void readFile(int, vector<Page>*, int*); //This is for reading form a file
 void displayPage(Page); //For displaying an individual page
 void displayAllPages(vector<Page>, int); //To display all pages
 void addPage(vector<Page>*, int*); //This function is used to add a new page entry
+void modPage(vector<Page>*, int*, int); //This function is used to modify a specific page
+void deletePage(vector<Page>*, int*, int); //This function is used to delete a specific page
 
 int main()
 {
@@ -336,5 +338,28 @@ void addPage(vector<Page>* _pages, int* _pageCount)
     writeFile(1, _pages, _pageCount);
 
     cout << "<Added Page>" << endl;
+    return;
+}
+
+//This function is used to modify a specific page
+void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
+{
+    displayPage((*_pages)[_pos]); //Display specific page
+
+    //add option to modify certain elements
+
+    return;
+}
+
+//This function is used to delete a specific page
+void deletePage(vector<Page>* _pages, int* _pageCount, int _pos)
+{
+    (*_pages).erase((*_pages).begin(), _pos); //delete certain spot in the vector
+
+    //Update directory data
+    wipeFile(1);
+    writeFile(1, _pages, _pageCount);
+
+
     return;
 }
