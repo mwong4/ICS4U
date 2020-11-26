@@ -5,7 +5,6 @@
 >- Purpose: To write a cyoa editor -> to advance coding knowledge with more general case infrastructureo
 
 To Do
-add page
 
 edit page
 display page hierarchy
