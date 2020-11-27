@@ -7,6 +7,8 @@
 To Do
 
 edit page
+add are you sure section to edit page
+
 display page hierarchy
 
 */
@@ -344,10 +346,76 @@ void addPage(vector<Page>* _pages, int* _pageCount)
 //This function is used to modify a specific page
 void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
 {
+    int inputInt = 0; //For player int input
+    string inputStr = ""; //For player string input
+
     displayPage((*_pages)[_pos]); //Display specific page
 
-    //add option to modify certain elements
+    getAnswer(1, 4 + (*_pages)[_pos].optionCount, &inputInt); //call input function
+    cin.ignore(); //Clears up cin to be able to use getline (unreliable)
 
+    //add option to modify certain elements
+    cout << " >- Specify which element you want to edit" << endl;
+    cout << " [1] Edit Title" << endl;
+    cout << " [2] Edit Text" << endl;
+    cout << " [3] Add Option" << endl;
+    for(int i = 0; i < (*_pages)[_pos].optionCount; i++)
+    {
+        cout << " [" << 3 + i << "] Edit Option " << 3 + i << endl;
+    }
+    cout << " [" << 4 + (*_pages)[_pos].optionCount, &inputInt) << "] To Exit" << endl;
+
+    //Process input from player
+    if(inputInt == 1) //If requrest edit title
+    {
+        cout << " >- Input New Titile" << endl;
+        getline(cin, inputStr); //get input
+        (*_pages)[_pos].title = inputStr; //assign to variable
+
+    }
+    else if(inputInt == 2) //If request edit text
+    {
+        cout << " >- Input New Text" << endl;
+        getline(cin, inputStr); //get input
+        (*_pages)[_pos].text = inputStr; //assign to variable
+    }
+    else if(inputInt == 3) //If request to add option
+    {
+        //add option stuff
+    }
+    else if(inputInt != 4 + (*_pages)[_pos].optionCount, &inputInt))
+    {
+        cout << endl << " >- Specify which element you want to edit" << endl;
+        cout << " [1] Edit Option Text" << endl;
+        cout << " [2] Edit Option Link" << endl;
+        cout << " [3] Edit Option Rand" << endl;
+        if((*_pages)[_pos].optionCount > 1) cout << " [4] Delete Option" << endl; //if there is more than 1 option, allow option to delete
+
+        getAnswer(1, 4, &inputInt); //call input function
+
+        if(inputInt == 1)
+        {
+
+        }
+        if(inputInt == 2)
+        {
+
+        }
+        if(inputInt == 3)
+        {
+
+        }
+        if(inputInt == 4 && (*_pages)[_pos].optionCount > 1)
+        {
+            (*_pages)[_pos].optionCount -= 1;
+            //delete page
+        }
+
+    }
+
+    //Update directory data
+    wipeFile(1);
+    writeFile(1, _pages, _pageCount);
     return;
 }
 
@@ -359,7 +427,5 @@ void deletePage(vector<Page>* _pages, int* _pageCount, int _pos)
     //Update directory data
     wipeFile(1);
     writeFile(1, _pages, _pageCount);
-
-
     return;
 }
