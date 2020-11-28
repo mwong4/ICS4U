@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1606581392 "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex" "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.pdf" "MHF4U-Assignment1" 1606581396
+["pdflatex"] 1606582144 "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex" "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.pdf" "MHF4U-Assignment1" 1606582181
   "C:/Users/Max pc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1605575096 10294874 f86f19ff4d78088ad863e180d947a5ba ""
   "C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1606487959 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -30,6 +30,7 @@
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247593067 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247593067 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247593073 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
@@ -90,16 +91,16 @@
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1324294077 22913 a27d7908fc6f0385466454a966a316eb ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1580644884 12560 ce3f59ceae9d9a27bfe037d6bf1d903c ""
   "C:/Users/Max pc/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "MHF4U-Assignment1.aux" 1606581395 929 b55d2faa786e569d16d16e497986769a "pdflatex"
-  "MHF4U-Assignment1.out" 1606581395 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "MHF4U-Assignment1.tex" 1606581391 6067 d3baa441109ece0aa0d517bbd6205cd4 ""
+  "MHF4U-Assignment1.aux" 1606582147 929 b55d2faa786e569d16d16e497986769a "pdflatex"
+  "MHF4U-Assignment1.out" 1606582146 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "MHF4U-Assignment1.tex" 1606582180 6288 68aebd37a4f4339202da0594f91262ec ""
   "bamboo.png" 1606485521 28895 68f5db17028c8e0ffa22a4937b48613b ""
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.aux" 1606581395 929 b55d2faa786e569d16d16e497986769a ""
-  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex" 1606581391 6067 d3baa441109ece0aa0d517bbd6205cd4 ""
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.aux" 1606582147 929 b55d2faa786e569d16d16e497986769a ""
+  "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex" 1606582180 6288 68aebd37a4f4339202da0594f91262ec ""
   (generated)
   "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.log"
-  "MHF4U-Assignment1.aux"
   "MHF4U-Assignment1.out"
+  "MHF4U-Assignment1.aux"
   "MHF4U-Assignment1.log"
   "c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.pdf"
   "MHF4U-Assignment1.pdf"
