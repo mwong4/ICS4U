@@ -348,6 +348,8 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
 {
     int inputInt = 0; //For player int input
     string inputStr = ""; //For player string input
+    Option tempOption; //This is a temporary option
+    int savedPos = 0; //This retains what option the user wants to edit
 
     displayPage((*_pages)[_pos]); //Display specific page
 
@@ -381,10 +383,24 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
     }
     else if(inputInt == 3) //If request to add option
     {
-        //add option stuff
+        cout << " >- Enter Option Text" << endl;
+        getline(cin, inputStr);
+        tempOption.text = inputStr; //Get text input
+
+        cout << " >- Enter Option Link" << endl;
+        getline(cin, inputStr);
+        tempOption.link = inputStr; //Get link input
+
+        cout << " >- Enter Option Rand" << endl;
+        getline(cin, inputStr);
+        tempOption.rand = inputStr; //Get rand input
+
+        (*_pages)[_pos].options.push_back(tempOption); //Push option into the page options vector
     }
     else if(inputInt != 4 + (*_pages)[_pos].optionCount, &inputInt))
     {
+        savedPos = inputInt;//Save chosen option to edit
+
         cout << endl << " >- Specify which element you want to edit" << endl;
         cout << " [1] Edit Option Text" << endl;
         cout << " [2] Edit Option Link" << endl;
@@ -395,24 +411,25 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
 
         if(inputInt == 1)
         {
-
+            getline(cin, inputStr);
+            (*_pages)[_pos].options[savedPos - 4].text = inputStr; //Get text input
         }
         if(inputInt == 2)
         {
-
+            getline(cin, inputStr);
+            (*_pages)[_pos].options[savedPos - 4].link = inputStr; //Get link input
         }
         if(inputInt == 3)
         {
-
+            getline(cin, inputStr);
+            (*_pages)[_pos].options[savedPos - 4].rand = inputStr; //Get rand input
         }
         if(inputInt == 4 && (*_pages)[_pos].optionCount > 1)
         {
-            (*_pages)[_pos].optionCount -= 1;
-            //delete page
+            (*_pages)[_pos].optionCount -= 1; //Edit data
+            (*_pages)[_pos].options.erase(myvector.begin() savedPos - 4); //delete page
         }
-
     }
-
     //Update directory data
     wipeFile(1);
     writeFile(1, _pages, _pageCount);
