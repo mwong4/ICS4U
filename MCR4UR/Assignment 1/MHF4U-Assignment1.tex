@@ -23,6 +23,9 @@
 \setlength{\parskip}{0.15in}
 \setlength{\parindent}{0in}
 
+%commands
+\newcommand{\ls}{\space \space \space \space \space \space \space \space \space \space \space \space \space \space}
+
 
 \begin{document}
 
@@ -107,7 +110,7 @@ Declared References:
 %% PROBLEM 1
 \item  \textbf{Describe} the characteristics of the function $f(x) = -2|x-3|+2$ by filling in the table given below. \textbf{Write} a paragraph briefly explaining how you determined each characteristic.\\
 
-\vspace{2.5in}
+\vspace{0.3 cm}
 
 \renewcommand{\arraystretch}{3}  % making height of table rows a little bigger for student responses
 \begin{center}
@@ -126,7 +129,7 @@ y-intercept & (0,-4)\\
 \hline
 interval(s) of increase & none\\
 \hline
-interval(s) of decrease & \\
+interval(s) of decrease & \shortstack[l]{$f(x)$ decreasing on $(-\infty, 3)$ \\$f(x)$ decreasing on $[3, \infty)$}\\
 \hline
 discontinuities & none\\
 \hline
@@ -136,6 +139,21 @@ end behaviours & \shortstack[l]{as $x \to \infty, f(x) \to -\infty$ \\ as $x \to
 \hline
 \end{tabular}
 \end{center}
+
+The domain is all real whole numbers because of the key characteristic of an
+absolute value relationship. The range for the parent function of an absolute
+value relationship is all non negative values but since f(x)
+is reflected vertically and vertically translted 2 up the range becomes all
+real values below and equal to 2. Zeroes are found by solving for x=0.
+The y intercept is found by solving for x = 0 or simply using the vertical translation.
+In the parent function of f(x) there are 2 positive intervals but since the functions
+is reflected vertically and translated 3 to the right, there are 2 decreasing intervals to the
+left and right of x=3. This function does not have any restrictions or characteristics
+that cause discontinuities. Doing the even, odd and neither symmetry test with f(x), -f(x), f(-x) and -f(-x)
+I determined that there is even symmetry and due to the horizontal translation mentioned before the line
+of symmetry is at x=3. Referencing the intervals both ends of the function are decreasing.
+
+
 
 
 %% I would recommend sandwiching your solution to every problem between the kind of structure I have provided below re: initial \vspace, the Solution: heading and the ending \vspace.
@@ -153,6 +171,42 @@ end behaviours & \shortstack[l]{as $x \to \infty, f(x) \to -\infty$ \\ as $x \to
 \item Solve $|3x-5| \le 2$
 \item Solve $-|-2x-1| < -4$
 \end{enumerate}
+
+\vspace{0.3cm} 
+\textbf{Solution for (a):}
+\vspace{0.3cm} 
+
+\addtolength{\jot}{1em}
+\begin{align*}
+    |3x-5| & \le 2 \\
+    |3(x - \frac{5}{3})| & \le 2 && \text{Factor by 3}\\
+    |3||x - \frac{5}{3}| & \le 2 && \text{1st property of absolute value}\\
+    3|x - \frac{5}{3}| & \le 2 && \text{Since |3| = 3}\\
+    |x - \frac{5}{3}| & \le \frac{2}{3} &&  \text{divide by 3}\\
+    x - \frac{5}{3} & \le \pm \frac{2}{3} && |x| = c \longleftrightarrow x = \pm c\\
+    x & \le \frac{5}{3} \pm \frac{2}{3} && \text{add $\frac{5}{3}$ to both sides}\\
+    1 & \le x \le \frac{7}{3}\\
+\end{align*}
+$$ \text{The solutiont to the inequality} |3x-5| \le 2 \text{ is } \boxed{1 \le x \le \frac{7}{3}} $$
+
+\clearpage
+\vspace{0.3cm} 
+\textbf{Solution for (b):}
+\vspace{0.3cm} 
+
+\addtolength{\jot}{0.5em}
+\begin{align*}
+    -|-2x-1| & < -4 && \text{\shortstack[l]{multiply all by -1, flip inequality sign \\ 3rd property of inequalities}} \\
+    |-2x-1| & > 4 \\
+    |-2(x+\frac{1}{2})| & > 4 && \text{factor -2} \\
+    |-2||x+\frac{1}{2}| & > 4 && \text{1st properoty of absolute values} \\
+    2|x+\frac{1}{2}| & > 4 && |-2| = 2 \\
+    |x+\frac{1}{2}| & > 2 && \text{divide all by 2} \\
+    x+\frac{1}{2} & > \pm 2 && |x| = c \longleftrightarrow x = \pm c \\
+    x & > -\frac{1}{2} \pm 2 && \text{subtract } \frac{1}{2} \text{ } \\
+    x & < -\frac{5}{2}, \text{\space} \frac{3}{2} < x \\
+\end{align*}
+$$ \text{The solutiont to the inequality} -|-2x-1| < -4 \text{ is } \boxed{-\frac{5}{2}, \text{\space} \frac{3}{2} < x} $$
 
 \newpage
 

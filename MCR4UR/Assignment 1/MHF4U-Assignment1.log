@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  28 NOV 2020 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  30 NOV 2020 21:02
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex"
@@ -276,22 +276,22 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 ) ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.aux")
 \openout1 = `MHF4U-Assignment1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count279
@@ -309,7 +309,7 @@ LaTeX Font Info:    ... okay on input line 27.
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 30.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty"
@@ -319,16 +319,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count285
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
  ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.out") ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.out")
 \@outlinefile=\write3
 \openout3 = `MHF4U-Assignment1.out'.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 27.
+(lastpage)             ! on input line 30.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -369,42 +369,44 @@ Package caption Info: End \AtBeginDocument code.
 [1{C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[3] [4]
-<bamboo.png, id=33, 230.36063pt x 201.00093pt>
+[3] [4] [5
+
+]
+<bamboo.png, id=37, 230.36063pt x 201.00093pt>
 File: bamboo.png Graphic file (type png)
 <use bamboo.png>
-Package pdftex.def Info: bamboo.png  used on input line 165.
+Package pdftex.def Info: bamboo.png  used on input line 219.
 (pdftex.def)             Requested size: 230.36005pt x 201.00043pt.
- [5 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/bamboo.png>] [6] [7] 
+ [6 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/bamboo.png>] [7] [8] 
 AED: lastpage setting LastPage
 ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.aux")
 Package rerunfilecheck Info: File `MHF4U-Assignment1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 8518 strings out of 479799
- 134919 string characters out of 2869209
- 442381 words of memory out of 3000000
- 25349 multiletter control sequences out of 15000+200000
- 541345 words of font info for 52 fonts, out of 3000000 for 9000
+ 8525 strings out of 479799
+ 134973 string characters out of 2869209
+ 442397 words of memory out of 3000000
+ 25353 multiletter control sequences out of 15000+200000
+ 541990 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,13n,72p,565b,418s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,14n,72p,565b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.pdf" (7 pages, 134060 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.pdf" (8 pages, 138982 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
