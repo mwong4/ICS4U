@@ -56,15 +56,7 @@ int main()
     readFile(1, &pages, &pageSize); //Call function to read page data
     cout << "Read File [main]" << endl;
 
-    displayAllPages(pages, pageSize); //call function to display all pages
-
-    addPage(&pages, &pageSize);
-    cout << "Added Page [main]" << endl;
-
-    readFile(1, &pages, &pageSize); //Call function to read page data
-    cout << "Read File [main]" << endl;
-
-    displayAllPages(pages, pageSize); //call function to display all pages
+    deletePage(&pages, &pageSize, 0);
 
     system("PAUSE");
 
@@ -365,7 +357,7 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
     {
         cout << " [" << 3 + i << "] Edit Option " << 3 + i << endl;
     }
-    cout << " [" << 4 + (*_pages)[_pos].optionCount, &inputInt) << "] To Exit" << endl;
+    cout << " [" << 4 + (*_pages)[_pos].optionCount << "] To Exit" << endl;
 
     //Process input from player
     if(inputInt == 1) //If requrest edit title
@@ -397,7 +389,7 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
 
         (*_pages)[_pos].options.push_back(tempOption); //Push option into the page options vector
     }
-    else if(inputInt != 4 + (*_pages)[_pos].optionCount, &inputInt))
+    else if(inputInt != 4 + (*_pages)[_pos].optionCount)
     {
         savedPos = inputInt;//Save chosen option to edit
 
@@ -427,7 +419,7 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
         if(inputInt == 4 && (*_pages)[_pos].optionCount > 1)
         {
             (*_pages)[_pos].optionCount -= 1; //Edit data
-            (*_pages)[_pos].options.erase(myvector.begin() savedPos - 4); //delete page
+            (*_pages)[_pos].options.erase((*_pages)[_pos].options.begin() + savedPos - 4); //delete page
         }
     }
     //Update directory data
@@ -439,7 +431,8 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
 //This function is used to delete a specific page
 void deletePage(vector<Page>* _pages, int* _pageCount, int _pos)
 {
-    (*_pages).erase((*_pages).begin(), _pos); //delete certain spot in the vector
+    (*_pages).erase((*_pages).begin() + _pos); //delete certain spot in the vector
+    *_pageCount -= 1;
 
     //Update directory data
     wipeFile(1);
