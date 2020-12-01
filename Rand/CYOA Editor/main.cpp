@@ -56,7 +56,7 @@ int main()
     readFile(1, &pages, &pageSize); //Call function to read page data
     cout << "Read File [main]" << endl;
 
-    deletePage(&pages, &pageSize, 0);
+    modPage(&pages, &pageSize, 1);
 
     system("PAUSE");
 
@@ -263,7 +263,7 @@ void displayPage(Page _page)
 
     for(int i = 0; i < _page.optionCount; i++) //Go through vector and display all otions data
     {
-        cout << "[" << i << "] " << _page.options[i].text << " -> " << _page.options[i].link << " || " << _page.options[i].rand << endl;
+        cout << " #" << i+1 << " " << _page.options[i].text << " -> " << _page.options[i].link << " || " << _page.options[i].rand << endl;
     }
     cout << endl;
 
@@ -345,9 +345,6 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
 
     displayPage((*_pages)[_pos]); //Display specific page
 
-    getAnswer(1, 4 + (*_pages)[_pos].optionCount, &inputInt); //call input function
-    cin.ignore(); //Clears up cin to be able to use getline (unreliable)
-
     //add option to modify certain elements
     cout << " >- Specify which element you want to edit" << endl;
     cout << " [1] Edit Title" << endl;
@@ -355,9 +352,12 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
     cout << " [3] Add Option" << endl;
     for(int i = 0; i < (*_pages)[_pos].optionCount; i++)
     {
-        cout << " [" << 3 + i << "] Edit Option " << 3 + i << endl;
+        cout << " [" << 4 + i << "] Edit Option " << i+1 << endl;
     }
     cout << " [" << 4 + (*_pages)[_pos].optionCount << "] To Exit" << endl;
+
+    getAnswer(1, 4 + (*_pages)[_pos].optionCount, &inputInt); //call input function
+    cin.ignore(); //Clears up cin to be able to use getline (unreliable)
 
     //Process input from player
     if(inputInt == 1) //If requrest edit title
@@ -388,6 +388,7 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
         tempOption.rand = inputStr; //Get rand input
 
         (*_pages)[_pos].options.push_back(tempOption); //Push option into the page options vector
+        (*_pages)[_pos].optionCount += 1;
     }
     else if(inputInt != 4 + (*_pages)[_pos].optionCount)
     {
@@ -400,6 +401,7 @@ void modPage(vector<Page>* _pages, int* _pageCount, int _pos)
         if((*_pages)[_pos].optionCount > 1) cout << " [4] Delete Option" << endl; //if there is more than 1 option, allow option to delete
 
         getAnswer(1, 4, &inputInt); //call input function
+        cin.ignore();
 
         if(inputInt == 1)
         {
