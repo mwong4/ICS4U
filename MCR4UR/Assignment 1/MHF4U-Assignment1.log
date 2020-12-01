@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  30 NOV 2020 21:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  1 DEC 2020 16:46
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex"
@@ -381,13 +381,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[3] [4] [5
+[3]
+<A1-2 proof 1 (1).png, id=27, 1027.84pt x 212.795pt>
+File: A1-2 proof 1 (1).png Graphic file (type png)
+<use A1-2 proof 1 (1).png>
+Package pdftex.def Info: A1-2 proof 1 (1).png  used on input line 199.
+(pdftex.def)             Requested size: 505.42285pt x 104.64061pt.
+ [4 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-2 proof 1 (1).png>]
+<A1-2 proof 2 (1).png, id=38, 1023.825pt x 212.795pt>
+File: A1-2 proof 2 (1).png Graphic file (type png)
+<use A1-2 proof 2 (1).png>
+Package pdftex.def Info: A1-2 proof 2 (1).png  used on input line 227.
+(pdftex.def)             Requested size: 505.42285pt x 105.04648pt.
+ [5
 
-]
-<bamboo.png, id=40, 230.36063pt x 201.00093pt>
+ <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-2 proof 2 (1).png>]
+<bamboo.png, id=45, 230.36063pt x 201.00093pt>
 File: bamboo.png Graphic file (type png)
 <use bamboo.png>
-Package pdftex.def Info: bamboo.png  used on input line 235.
+Package pdftex.def Info: bamboo.png  used on input line 237.
 (pdftex.def)             Requested size: 230.36005pt x 201.00043pt.
  [6 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/bamboo.png>] [7] [8] 
 AED: lastpage setting LastPage
@@ -396,17 +408,17 @@ Package rerunfilecheck Info: File `MHF4U-Assignment1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 8527 strings out of 479799
- 134991 string characters out of 2869209
+ 8539 strings out of 479799
+ 135273 string characters out of 2869209
  442401 words of memory out of 3000000
- 25353 multiletter control sequences out of 15000+200000
+ 25363 multiletter control sequences out of 15000+200000
  541990 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,14n,72p,565b,416s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 66i,14n,72p,565b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.pdf" (8 pages, 141357 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.pdf" (8 pages, 149947 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  21 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
