@@ -24,8 +24,7 @@
 \setlength{\parindent}{0in}
 
 %commands
-\newcommand{\ls}{\space \space \space \space \space \space \space \space \space \space \space \space \space \space}
-
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 
 \begin{document}
 
@@ -54,7 +53,10 @@ Note: Your submitted work must be \textbf{your original work}.
 Family Name: Wong%Family Name Here
 First Name: Max%First Name Here
 
-Declared References: 
+\textbf{Declared References:} 
+
+Used this forum answer to number the an element within align (Question 2): \\
+\href{https://tex.stackexchange.com/questions/42726/align-but-show-one-equation-number-at-the-end}{stackexchange align* but show one equation number at the end}
 
 % Type your references here.
 % You can use as many lines as required.
@@ -154,8 +156,6 @@ I determined that there is even symmetry and due to the horizontal translation m
 of symmetry is at x=3. Referencing the intervals both ends of the function are decreasing.
 
 
-
-
 %% I would recommend sandwiching your solution to every problem between the kind of structure I have provided below re: initial \vspace, the Solution: heading and the ending \vspace.
 %\vspace{0.3cm} 
 %\textbf{Solution:}\\
@@ -174,26 +174,34 @@ of symmetry is at x=3. Referencing the intervals both ends of the function are d
 
 \vspace{0.3cm} 
 \textbf{Solution for (a):}
-\vspace{0.3cm} 
 
+%solution
 \addtolength{\jot}{1em}
 \begin{align*}
     |3x-5| & \le 2 \\
     |3(x - \frac{5}{3})| & \le 2 && \text{Factor by 3}\\
     |3||x - \frac{5}{3}| & \le 2 && \text{1st property of absolute value}\\
     3|x - \frac{5}{3}| & \le 2 && \text{Since |3| = 3}\\
-    |x - \frac{5}{3}| & \le \frac{2}{3} &&  \text{divide by 3}\\
-    x - \frac{5}{3} & \le \pm \frac{2}{3} && |x| = c \longleftrightarrow x = \pm c\\
-    x & \le \frac{5}{3} \pm \frac{2}{3} && \text{add $\frac{5}{3}$ to both sides}\\
-    1 & \le x \le \frac{7}{3}\\
+    |x - \frac{5}{3}| & \le \frac{2}{3} \numberthis &&  \text{divide by 3}\\
+    1 & \le x \le \frac{7}{3} && k - c \leq x \leq k + c \Longleftrightarrow |x-k| \leq c
 \end{align*}
 $$ \text{The solutiont to the inequality} |3x-5| \le 2 \text{ is } \boxed{1 \le x \le \frac{7}{3}} $$
+
+%proof
+\vspace{0.3em}
+\textbf{Checked answer by using the following line diagram and math starting from (1):}
+\addtolength{\jot}{0em}
+\begin{align*}
+    |x - \frac{5}{3}| & \le \frac{2}{3}\\
+    x - \frac{5}{3} & \le \pm \frac{2}{3} && |x| = c \longleftrightarrow x = \pm c\\
+    x & \le \frac{5}{3} \pm \frac{2}{3} && \text{add $\frac{5}{3}$ to both sides}
+\end{align*}
 
 \clearpage
 \vspace{0.3cm} 
 \textbf{Solution for (b):}
-\vspace{0.3cm} 
 
+%solution
 \addtolength{\jot}{0.5em}
 \begin{align*}
     -|-2x-1| & < -4 && \text{\shortstack[l]{multiply all by -1, flip inequality sign \\ 3rd property of inequalities}} \\
@@ -201,12 +209,20 @@ $$ \text{The solutiont to the inequality} |3x-5| \le 2 \text{ is } \boxed{1 \le 
     |-2(x+\frac{1}{2})| & > 4 && \text{factor -2} \\
     |-2||x+\frac{1}{2}| & > 4 && \text{1st properoty of absolute values} \\
     2|x+\frac{1}{2}| & > 4 && |-2| = 2 \\
-    |x+\frac{1}{2}| & > 2 && \text{divide all by 2} \\
-    x+\frac{1}{2} & > \pm 2 && |x| = c \longleftrightarrow x = \pm c \\
-    x & > -\frac{1}{2} \pm 2 && \text{subtract } \frac{1}{2} \text{ } \\
-    x & < -\frac{5}{2}, \text{\space} \frac{3}{2} < x \\
+    |x+\frac{1}{2}| & > 2  \numberthis && \text{divide all by 2} \\
+    x & < -\frac{5}{2}, \text{\space} \frac{3}{2} < x && |x-k| > c \Longleftrightarrow x < k-c \text{ or } x > k+c
 \end{align*}
 $$ \text{The solutiont to the inequality} -|-2x-1| < -4 \text{ is } \boxed{-\frac{5}{2}, \text{\space} \frac{3}{2} < x} $$
+
+%proof
+\vspace{0.5em}
+\textbf{Checked answer by using the following line diagram and math starting from (2):}
+\addtolength{\jot}{0em}
+\begin{align*}
+    |x+\frac{1}{2}| & > 2 \\
+    x+\frac{1}{2} & > \pm 2 && |x| = c \longleftrightarrow x = \pm c \\
+    x & > -\frac{1}{2} \pm 2 && \text{subtract } \frac{1}{2} \text{ }
+\end{align*}
 
 \newpage
 
