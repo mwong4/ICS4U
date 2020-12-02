@@ -176,20 +176,22 @@ of symmetry is at x=3. Referencing the intervals both ends of the function are d
 \textbf{Solution for (a):}
 
 %solution
-\addtolength{\jot}{1em}
+\addtolength{\jot}{1.5em}
 \begin{align*}
     |3x-5| & \le 2 \\
     |3(x - \frac{5}{3})| & \le 2 && \text{Factor by 3}\\
     |3||x - \frac{5}{3}| & \le 2 && \text{1st property of absolute value}\\
     3|x - \frac{5}{3}| & \le 2 && \text{Since |3| = 3}\\
     |x - \frac{5}{3}| & \le \frac{2}{3} \numberthis &&  \text{divide by 3}\\
-    1 & \le x \le \frac{7}{3} && k - c \leq x \leq k + c \Longleftrightarrow |x-k| \leq c
+    -\frac{5}{3} - \frac{2}{3} & \leq x \leq -\frac{5}{3} + \frac{2}{3} && k - c \leq x \leq k + c \Longleftrightarrow |x-k| \leq c \\
+    1 & \le x \le \frac{7}{3} && \text{simplify}
 \end{align*}
 $$ \therefore \text{The solutiont to the inequality} |3x-5| \le 2 \text{ is } \boxed{1 \le x \le \frac{7}{3}} $$
 
 %proof/check
-\vspace{0.3em}
-\textbf{Checked answer by using the following line diagram and math starting from (1):}
+\vspace{0.5em}
+\textbf{Check answer by starting from (1) to check the key points and use a line diagram to check the solution through logic:}
+\vspace{0.2em}
 \addtolength{\jot}{0em}
 \begin{align*}
     |x - \frac{5}{3}| & = \frac{2}{3}\\
@@ -201,9 +203,10 @@ $$ \therefore \text{The solutiont to the inequality} |3x-5| \le 2 \text{ is } \b
 \clearpage
 \vspace{0.3cm} 
 \textbf{Solution for (b):}
+\vspace{-1.5em}
 
 %solution
-\addtolength{\jot}{0.5em}
+\addtolength{\jot}{0.3em}
 \begin{align*}
     -|-2x-1| & < -4 && \text{\shortstack[l]{multiply all by -1, flip inequality sign \\ 3rd property of inequalities}} \\
     |-2x-1| & > 4 \\
@@ -211,13 +214,14 @@ $$ \therefore \text{The solutiont to the inequality} |3x-5| \le 2 \text{ is } \b
     |-2||x+\frac{1}{2}| & > 4 && \text{1st properoty of absolute values} \\
     2|x+\frac{1}{2}| & > 4 && |-2| = 2 \\
     |x+\frac{1}{2}| & > 2  \numberthis && \text{divide all by 2} \\
-    x & < -\frac{5}{2}, \text{\space} \frac{3}{2} < x && |x-k| > c \Longleftrightarrow x < k-c \text{ or } x > k+c
+    x & < -\frac{1}{2} - 2 \text{ or } x > -\frac{1}{2} + 2 && |x-k| > c \Longleftrightarrow x < k-c \text{ or } x > k+c \\
+    x & < -\frac{5}{2}, \text{\space} \frac{3}{2} < x && \text{simplify}
 \end{align*}
 $$ \therefore \text{The solutiont to the inequality} -|-2x-1| < -4 \text{ is } \boxed{-\frac{5}{2}, \text{\space} \frac{3}{2} < x} $$
 
 %proof/check
 \vspace{0.5em}
-\textbf{Checked answer by using the following line diagram and math starting from (2):}
+\textbf{Check answer by starting from (2) to check the key points and use a line diagram to check the solution through logic:}
 \addtolength{\jot}{0em}
 \begin{align*}
     |x+\frac{1}{2}| & = 2 \\
@@ -321,6 +325,67 @@ Rearrange the second equation $10 = b + c$ to isolate one of the variables to so
 %% PROBLEM 4
 \item \textbf{Define} (rewrite) $f(x) = |x^3 - x|$ as a piecewise function not including any expressions involving absolute value.
 
+\vspace{0.3cm} 
+\textbf{Solution for Question 4:}\\
+
+%proof
+Consider $f(x) = |x^3-x|$. The x intercepts (f(x) = 0) are found by converting the function to factor from.
+
+\begin{align*}
+    0 &= |x^3-x| \\
+    &= |x(x^2-1)| && \text{factor x}\\
+    &= |x(x+1)(x-1)| && (x^2-a^2) = (x+a)(x-a)\\
+    &= |x||x+1||x-1| && |ab| = |a||b| \text{ 1st property of absolute value}\\
+\end{align*}
+
+\vspace{-2em}
+From the calculations above, the x intercepts are at $x = 0, -1, 1$. Now Consider f(x) and it's non-absolute value equivalent, $g(x) = x^3-x$.
+\vspace{-1em}
+
+%graphic here
+\begin{center}
+    \includegraphics[scale = 0.5]{A1-4 diagram.png}
+\end{center}
+
+The 3 key points show us that there are 4 sections. The diagrams/Graphs shows that 2 of the 4 segments seperated by the x intercepts in g(x) represent negative values.
+In f(x), the absolute value function, these segments are reflected vertically to ensure they are not negative values.
+\vspace{1em}
+
+\begin{center}
+These segments are at: $ x \in (\infty, -1) $ and $ x \in (0, 1) $.
+
+(I used $<$ instead of $\leq$ because 0 is not negative, therefore it does not need to be reflected)
+\end{center}
+
+$\therefore$ using the information gathered I wrote the function in piecewise form.
+\vspace{1em}
+
+%Piecewise Function Here
+$$
+f(x) =
+\begin{cases}
+    x^3-x & : 1 \leq x, \\
+    & \text{\space} -1 \leq x \leq 0 \\
+    -x^3+x & : x < -1 \\
+    & \text{\space \space} 0 < x < 1
+\end{cases}
+$$
+
+\vspace{1em}
+We use $x^3-x$ to express  the segments that are positive and not reflected when comparing g(x) to f(x).
+\vspace{2em}
+Those parts of g(x) that are negative are positive in f(x) meaning there is a vertical reflection. 
+This is represented by $-(x^3-x)$ where the ``-" at the front is the vertical reflection. 
+In a simplified form, this is $-x^3+x$.
+
+%proof/check
+\vspace{3em}
+\textbf{Check answer by graphing original f(x) and piecewise f(x) version:}
+\vspace{-1.5em}
+\begin{center}
+    \includegraphics[scale=0.5]{A1-4 proof.png}
+    Both graphs look identical and when placed on the same graph, they cover each other exactly.
+\end{center}
 
 \newpage
 
