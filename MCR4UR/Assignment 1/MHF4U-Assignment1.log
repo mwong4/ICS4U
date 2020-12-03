@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  2 DEC 2020 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  3 DEC 2020 11:23
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/MHF4U-Assignment1.tex"
@@ -382,69 +382,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
  []
 
 [3]
-<A1-2 proof 1 (1).png, id=27, 1027.84pt x 212.795pt>
+<A1 - 1 Proof.PNG, id=27, 1114.76476pt x 532.389pt>
+File: A1 - 1 Proof.PNG Graphic file (type png)
+<use A1 - 1 Proof.PNG>
+Package pdftex.def Info: A1 - 1 Proof.PNG  used on input line 166.
+(pdftex.def)             Requested size: 505.42285pt x 241.37627pt.
+ [4 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1 - 1 Proof.PNG>]
+<A1-2 proof 1 (1).png, id=34, 1027.84pt x 212.795pt>
 File: A1-2 proof 1 (1).png Graphic file (type png)
 <use A1-2 proof 1 (1).png>
-Package pdftex.def Info: A1-2 proof 1 (1).png  used on input line 201.
+Package pdftex.def Info: A1-2 proof 1 (1).png  used on input line 211.
 (pdftex.def)             Requested size: 505.42285pt x 104.64061pt.
- [4 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-2 proof 1 (1).png>]
-<A1-2 proof 2 (1).png, id=39, 1023.825pt x 212.795pt>
+ [5 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-2 proof 1 (1).png>]
+<A1-2 proof 2 (1).png, id=46, 1023.825pt x 212.795pt>
 File: A1-2 proof 2 (1).png Graphic file (type png)
 <use A1-2 proof 2 (1).png>
-Package pdftex.def Info: A1-2 proof 2 (1).png  used on input line 231.
+Package pdftex.def Info: A1-2 proof 2 (1).png  used on input line 241.
 (pdftex.def)             Requested size: 505.42285pt x 105.04648pt.
- [5
+ [6
 
  <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-2 proof 2 (1).png>]
-<bamboo.png, id=46, 230.36063pt x 201.00093pt>
+<bamboo.png, id=53, 230.36063pt x 201.00093pt>
 File: bamboo.png Graphic file (type png)
 <use bamboo.png>
-Package pdftex.def Info: bamboo.png  used on input line 241.
+Package pdftex.def Info: bamboo.png  used on input line 251.
 (pdftex.def)             Requested size: 161.25133pt x 140.69968pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
-<A1-3 Diagram.png, id=47, 963.6pt x 722.7pt>
+<A1-3 Diagram.png, id=54, 963.6pt x 722.7pt>
 File: A1-3 Diagram.png Graphic file (type png)
 <use A1-3 Diagram.png>
-Package pdftex.def Info: A1-3 Diagram.png  used on input line 250.
+Package pdftex.def Info: A1-3 Diagram.png  used on input line 260.
 (pdftex.def)             Requested size: 192.71658pt x 144.53743pt.
-[6 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/bamboo.png> <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-3 Diagram.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+[7 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/bamboo.png> <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-3 Diagram.png>] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
-<A1-4 diagram.png, id=61, 963.6pt x 722.7pt>
+<A1-4 diagram.png, id=68, 963.6pt x 722.7pt>
 File: A1-4 diagram.png Graphic file (type png)
 <use A1-4 diagram.png>
-Package pdftex.def Info: A1-4 diagram.png  used on input line 347.
+Package pdftex.def Info: A1-4 diagram.png  used on input line 357.
 (pdftex.def)             Requested size: 481.79883pt x 361.3491pt.
-[8 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-4 diagram.png>]
-<A1-4 proof.png, id=68, 963.6pt x 533.995pt>
+[9 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-4 diagram.png>]
+<A1-4 proof.png, id=75, 963.6pt x 533.995pt>
 File: A1-4 proof.png Graphic file (type png)
 <use A1-4 proof.png>
-Package pdftex.def Info: A1-4 proof.png  used on input line 386.
+Package pdftex.def Info: A1-4 proof.png  used on input line 396.
 (pdftex.def)             Requested size: 481.79883pt x 266.99684pt.
- [9 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-4 proof.png>] [10] 
+ [10 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 1/A1-4 proof.png>] [11] [12] 
 AED: lastpage setting LastPage
 ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.aux")
 Package rerunfilecheck Info: File `MHF4U-Assignment1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 8559 strings out of 479799
- 135625 string characters out of 2869209
- 443407 words of memory out of 3000000
- 25378 multiletter control sequences out of 15000+200000
+ 8568 strings out of 479799
+ 135760 string characters out of 2869209
+ 444407 words of memory out of 3000000
+ 25383 multiletter control sequences out of 15000+200000
  541990 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,14n,72p,565b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.pdf" (10 pages, 311862 bytes).
+ 66i,14n,72p,565b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 1\MHF4U-Assignment1.pdf" (12 pages, 380922 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

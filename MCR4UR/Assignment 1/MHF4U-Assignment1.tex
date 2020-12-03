@@ -155,6 +155,15 @@ that cause discontinuities. Doing the even, odd and neither symmetry test with f
 I determined that there is even symmetry and due to the horizontal translation mentioned before the line
 of symmetry is at x=3. Referencing the intervals both ends of the function are decreasing.
 
+\newpage
+
+\textbf{Check answer by graphing and comparing result to answer given:}
+\vspace{1em}
+
+From the graph you can see that the answers in the table above match the relatioship described by the graph below.
+\vspace{2em}
+
+\includegraphics[width=\linewidth]{A1 - 1 Proof.PNG}
 
 %% I would recommend sandwiching your solution to every problem between the kind of structure I have provided below re: initial \vspace, the Solution: heading and the ending \vspace.
 %\vspace{0.3cm} 
@@ -174,15 +183,16 @@ of symmetry is at x=3. Referencing the intervals both ends of the function are d
 
 \vspace{0.3cm} 
 \textbf{Solution for (a):}
+\vspace{-1em}
 
 %solution
-\addtolength{\jot}{1.5em}
+\addtolength{\jot}{1.2em}
 \begin{align*}
     |3x-5| & \le 2 \\
-    |3(x - \frac{5}{3})| & \le 2 && \text{Factor by 3}\\
-    |3||x - \frac{5}{3}| & \le 2 && \text{1st property of absolute value}\\
-    3|x - \frac{5}{3}| & \le 2 && \text{Since |3| = 3}\\
-    |x - \frac{5}{3}| & \le \frac{2}{3} \numberthis &&  \text{divide by 3}\\
+    \bigg|3(x - \frac{5}{3})\bigg| & \le 2 && \text{Factor by 3}\\
+    |3| \bigg|x - \frac{5}{3} \bigg| & \le 2 && \text{1st property of absolute value}\\
+    3\bigg| x - \frac{5}{3}\bigg| & \le 2 && \text{Since |3| = 3}\\
+    \bigg| x - \frac{5}{3} \bigg| & \le \frac{2}{3} \numberthis &&  \text{divide by 3}\\
     -\frac{5}{3} - \frac{2}{3} & \leq x \leq -\frac{5}{3} + \frac{2}{3} && k - c \leq x \leq k + c \Longleftrightarrow |x-k| \leq c \\
     1 & \le x \le \frac{7}{3} && \text{simplify}
 \end{align*}
@@ -194,7 +204,7 @@ $$ \therefore \text{The solutiont to the inequality} |3x-5| \le 2 \text{ is } \b
 \vspace{0.2em}
 \addtolength{\jot}{0em}
 \begin{align*}
-    |x - \frac{5}{3}| & = \frac{2}{3}\\
+    \bigg|x - \frac{5}{3} \bigg| & = \frac{2}{3}\\
     x - \frac{5}{3} & = \pm \frac{2}{3} && |x| = c \longleftrightarrow x = \pm c\\
     x & = \frac{5}{3} \pm \frac{2}{3} && \text{add $\frac{5}{3}$ to both sides}
 \end{align*}
@@ -210,10 +220,10 @@ $$ \therefore \text{The solutiont to the inequality} |3x-5| \le 2 \text{ is } \b
 \begin{align*}
     -|-2x-1| & < -4 && \text{\shortstack[l]{multiply all by -1, flip inequality sign \\ 3rd property of inequalities}} \\
     |-2x-1| & > 4 \\
-    |-2(x+\frac{1}{2})| & > 4 && \text{factor -2} \\
-    |-2||x+\frac{1}{2}| & > 4 && \text{1st properoty of absolute values} \\
-    2|x+\frac{1}{2}| & > 4 && |-2| = 2 \\
-    |x+\frac{1}{2}| & > 2  \numberthis && \text{divide all by 2} \\
+    \bigg|-2(x+\frac{1}{2})\bigg| & > 4 && \text{factor -2} \\
+    |-2|\bigg|x+\frac{1}{2}\bigg| & > 4 && \text{1st properoty of absolute values} \\
+    2\bigg|x+\frac{1}{2}\bigg| & > 4 && |-2| = 2 \\
+    \bigg|x+\frac{1}{2}\bigg| & > 2  \numberthis && \text{divide all by 2} \\
     x & < -\frac{1}{2} - 2 \text{ or } x > -\frac{1}{2} + 2 && |x-k| > c \Longleftrightarrow x < k-c \text{ or } x > k+c \\
     x & < -\frac{5}{2}, \text{\space} \frac{3}{2} < x && \text{simplify}
 \end{align*}
@@ -224,7 +234,7 @@ $$ \therefore \text{The solutiont to the inequality} -|-2x-1| < -4 \text{ is } \
 \textbf{Check answer by starting from (2) to check the key points and use a line diagram to check the solution through logic:}
 \addtolength{\jot}{0em}
 \begin{align*}
-    |x+\frac{1}{2}| & = 2 \\
+    \bigg|x+\frac{1}{2}\bigg| & = 2 \\
     x+\frac{1}{2} & = \pm 2 && |x| = c \longleftrightarrow x = \pm c \\
     x & = -\frac{1}{2} \pm 2 && \text{subtract } \frac{1}{2} \text{ }
 \end{align*}
@@ -391,6 +401,59 @@ In a simplified form, this is $-x^3+x$.
 
 %% PROBLEM 5
 \item \textbf{Determine} the inverse of the function $g(x)=\dfrac{-2}{x-1}+4$. \textbf{Prove} that $g$ and $g^{-1}$ satisfy the expression $g(g^{-1}(x))=x$.
+
+%solution
+\vspace{1em}
+\textbf{Solution for Question 5: First we need to find the inverse of g(x) by swapping the dependant and independant variable}
+
+\begin{align*}
+    g(x) &=\dfrac{-2}{x-1}+4 \\
+    y &=\dfrac{-2}{x-1}+4 && \text{replace g(x) with y}
+\end{align*}
+
+\begin{center}
+    Now I swap x and y to create the inverse.
+\end{center}
+
+\begin{align*}
+    x &=\dfrac{-2}{y-1}+4 && \text{x and y have been ``swapped"} \\
+    x-4 &=\dfrac{-2}{y-1} && \text{subtracted 4 from both sides} \\
+    (x-4)(y-1) &= -2 && \text{multiply al by y-1} \\
+    xy-x-4y+4 &= -2 && \text{expand} \\
+    xy-4y-x+4 &= -2 && \text{Rearrange}\\
+    xy-4y &= -2-4+x && \text{subtract (-x+4) from both sides} \\
+    y(x-4) &= -6+x && \text{factor y on the left side, simplify} \\
+    y &= \frac{x-6}{x-4}
+\end{align*}
+
+$$\therefore \text{ the inverse of g(x) is: } \boxed{g^{-1}(x) = \frac{x-6}{x-4}} $$
+
+\vspace{3em}
+\begin{center}
+    \textbf{Solution continues on next page}
+\end{center}
+
+\newpage
+\begin{center}
+    \textbf{Now prove that $g(g^{-1}(x)) = x$ with the given function of g(x):}
+\end{center}
+
+\begin{align*}
+    g(x) &= \frac{-2}{x-1}+4\\
+    g^{-1}(x) &= \frac{x-6}{x-4} \\
+\end{align*}
+\vspace{-5em}
+
+\begin{center}
+    Given that $x = g(g^{-1}(x))$ and the know equations of g(x) and it's inverse:
+\end{center}
+\vspace{-2em}
+
+\begin{align*}
+    x &= g(g^{-1}(x)) \\
+    &= \frac{-2}{g^{-1}(x)-1}+4 && \text{substitute $g(x)$ as $\frac{-2}{x-1}+4$} \\
+    &= \frac{-2}{\frac{x-6}{x-4}-1}+4 && \text{substitute $g^{-1}(x)$ as $\frac{x-6}{x-4}$} \\
+\end{align*}
 
 \newpage
 
