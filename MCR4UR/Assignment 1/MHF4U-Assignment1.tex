@@ -14,6 +14,7 @@
 \usepackage{hyperref}
 \usepackage{array}
 \usepackage{geometry}
+\usepackage{bm} %for bold math font
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \setlength{\textheight}{10in}
 \setlength{\textwidth}{7.4in}
@@ -434,27 +435,67 @@ $$\therefore \text{ the inverse of g(x) is: } \boxed{g^{-1}(x) = \frac{x-6}{x-4}
 \end{center}
 
 \newpage
+\begin{proof}
+    \begin{center}
+        \textbf{Now prove that $\boldsymbol{g(g^{-1}(x)) = x}$ with the given function of g(x):}
+    \end{center}
+
+    \begin{align*}
+        g(x) &= \frac{-2}{x-1}+4\\
+        g^{-1}(x) &= \frac{x-6}{x-4} \\
+    \end{align*}
+    \vspace{-5em}
+
+    \begin{center}
+        Given that $x = g(g^{-1}(x))$ and the know equations of g(x) and it's inverse:
+    \end{center}
+    \vspace{-2em}
+
+    \begin{align*}
+        x &= g(g^{-1}(x)) \\
+        &= \frac{-2}{g^{-1}(x)-1}+4 && \text{substitute $g(x)$ as $\frac{-2}{x-1}+4$} \\
+        &= \frac{-2}{\frac{x-6}{x-4}-1}+4 && \text{substitute $g^{-1}(x)$ as $\frac{x-6}{x-4}$} \\
+        &= \frac{-2}{\frac{x-6}{x-4}-\frac{x-4}{x-4}}+4 && \text{1 rule: } \frac{x-4}{x-4} = 1 \\
+        &= \frac{-2}{\frac{x-6-x+4}{x-4}}+4 && \text{simplify} \\
+        &= \left( \frac{-2}{\frac{-2}{x-4}} \right) +4 \\
+        &= \left( \frac{-2}{1} \times \frac{x-4}{-2} \right) +4 && \text{divide both sides by } \\
+        &= x-4+4 && \text{simplify} \\
+        x &= x \\
+        LHS &= RHS
+    \end{align*}
+
+    \begin{center}
+        $\therefore$ Since LHS = RHS, $g(g^{-1}(x)) = x$. \qedhere
+    \end{center}
+\end{proof}
+\vspace{2em}
 \begin{center}
-    \textbf{Now prove that $g(g^{-1}(x)) = x$ with the given function of g(x):}
+    \textbf{proof/check on next page}
 \end{center}
+\newpage
+
+\textbf{Check my work by using an example point:}
+\vspace{1em}
+
+I took an arbitrary x value, x=0, and found the coordinate of x=0 on $g(x)$.
 
 \begin{align*}
-    g(x) &= \frac{-2}{x-1}+4\\
+    g(0) &= \frac{-2}{0-1}+4 \\
+    &= 6
+\end{align*}
+
+The coordinate at x=0 is (0,6). We know that the inverse of a relationship switches the values on the domain and range.
+This means that if (0,6) is a point on $g(x)$, (6,0) should be a point on $g^{-1}(x)$.
+
+\begin{align*}
     g^{-1}(x) &= \frac{x-6}{x-4} \\
+    g^{-1}(6) &= \frac{6-6}{6-4} \\
+    &= \frac{0}{2} \\
+    &= 0 \\
 \end{align*}
-\vspace{-5em}
+\vspace{-3em}
 
-\begin{center}
-    Given that $x = g(g^{-1}(x))$ and the know equations of g(x) and it's inverse:
-\end{center}
-\vspace{-2em}
-
-\begin{align*}
-    x &= g(g^{-1}(x)) \\
-    &= \frac{-2}{g^{-1}(x)-1}+4 && \text{substitute $g(x)$ as $\frac{-2}{x-1}+4$} \\
-    &= \frac{-2}{\frac{x-6}{x-4}-1}+4 && \text{substitute $g^{-1}(x)$ as $\frac{x-6}{x-4}$} \\
-\end{align*}
-
+Therefore, following the logic, the inverse of $g(x)$ found by this solution is in fact the inverse.
 \newpage
 
 \end{enumerate}
