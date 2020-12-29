@@ -1,0 +1,136 @@
+ %%
+%%
+\documentclass[12pt]{book}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longdivision}
+\setlength{\textheight}{10in}
+\setlength{\textwidth}{7.4in}
+\setlength{\topmargin}{-0.75in}
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\evensidemargin}{-0.5in}
+\setlength{\parskip}{0.15in}
+\setlength{\parindent}{0in}
+
+%commands
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\begin{document}
+
+
+\vspace{-1.0in}\begin{center}
+\Large{MHF4U : Advanced Functions }
+
+\Large{Assignment \#2}
+
+
+\end{center}
+
+%\medskip
+
+\vspace{0.015in}\hrulefill\ 
+
+\textbf{Reference Declaration} %  Fill in your Reference Declarations in this section before your submit your assignment.
+
+Complete the Reference Declaration section below in order for your assigment to be graded.
+
+If you used any references beyond the course text and lectures (such as other texts, discussions with colleagues or online resources), indicate this information in the space below.  If you did not use any aids, state this in the space provided. 
+
+Be sure to cite appropriate theorems throughout your work. You may use shorthand for well-known theorems like the FT (Factor Theorem), RRT (Rational Root Theorem), etc. 
+
+Note: Your submitted work must be \textbf{your original work}. 
+
+Family Name: Wong\\%Family Name Here
+First Name: Max%First Name Here
+
+Declared References: 
+
+Used this forum answer to number the an element (Question 1): \\
+\href{https://tex.stackexchange.com/questions/42726/align-but-show-one-equation-number-at-the-end}{stackexchange align* but show one equation number at the end} \\
+Used to do long division (Question 1): \\
+\href{http://ctan.math.washington.edu/tex-archive/macros/latex/contrib/longdivision/longdivision_manual.pdf} \\
+
+% Type your references here.
+% You can use as many lines as required.
+
+\vspace{0.015in}\hrulefill\ 
+
+\newpage
+
+%%%%%%%%%%%% PROBLEMS START HERE
+
+\begin{enumerate}
+
+%% PROBLEM 1
+\item Given the volume of a rectangular box is $V(x) = x^3 + 6x^2 + 11x + 6$, if the length of the box is $x+3$ cm, and its width is $x+2$ cm then \textbf{determine} the height of the box. Also, \textbf{determine} the domain and range of the function $V$.
+
+%% I would recommend sandwiching your solution to every problem between the kind of structure I have provided below re: initial \vspace, the Solution: heading and the ending \vspace.
+%\vspace{0.3cm} 
+%\textbf{Solution:}\\
+% Your solution starts here.
+%\vspace{0.3cm}
+
+\vspace{0.3cm} 
+\textbf{Solution to Question 1:}\\
+\vspace{0.1cm} 
+
+ Considering v(x) has a degree of 3. We are also given the length and width, $x+3$ and $x+2$ respectively. This means that:
+
+ $$(x+3)(x+2)(x+a) = v(x)$$
+
+ Where $a \in \mathbb{R}$. We know that there are 3 factors because of the degree. Since:
+
+ \begin{align*}
+    v(x) &= x^3+6x^2+11x+6 \\
+    \\
+    \therefore (x+3)(x+2)(x+a) &= x^3+6x^2+11x+6 && \text{Combining the previously listed equations}
+ \end{align*}
+
+ Dividing both sides by $(x+3)(x+2)$:
+
+ \addtolength{\jot}{1em}
+ \begin{align*}
+    (x+3)(x+2)(x+a) &= x^3+6x^2+11x+6 \\
+    (x+a) &= \frac{x^3+6x^2+11x+6}{(x+3)(x+2)} \\
+    (x+a) &= \frac{x^3+6x^2+11x+6}{x^2+5x+6} && \text{Expanding denominator bracket} \\
+ \end{align*}
+ 
+ \vspace{-1em}
+ Now, using long division, find the final missing value factor, $(x+a)$:
+
+\longdivision{1000}{3}
+
+ \vspace{0.3cm}
+
+\newpage
+
+%% PROBLEM 2
+\item Consider the quartic polynomial function $f(x) = x^4 - 5x^3 + x^2 + 21x - 18$. Given that there is a local minimum on $f(x)$ at $(-1,-32)$, use a logical argument to \textbf{prove} that this must the absolute minimum of $f(x)$ without graphing the function. \\
+
+Recall that $x=c$, where $c \in \mathbb{R}$, corresponds to a \emph{local minimum} of a function $f(x)$ on an interval $I = (a,b)$ which contains $c$ provided that for every value of $x$ on the interval $I$ we have that $f(c) \le f(x)$.
+
+
+\newpage
+
+%% PROBLEM 3
+\item Recall that a prime number is defined as an integer $n>1$ such that its only positive divisors are 1 and $n$. Let $\mathbb{P}$ represent the set of prime numbers. Suppose that you know that when you divide $g(x) = x^3 + 2x^2 + cx + d$ by $x-2$ you obtain a remainder of 14, \textbf{determine} the specific values of $c$ and $d$ given that $c \in \mathbb{Z}$ and $d \in \mathbb{P}$. 
+
+
+\newpage
+
+%% PROBLEM 4
+\item Solve $\dfrac{7}{x+2} + \dfrac{5}{x-2} = \dfrac{10x-2}{x^2 - 4}$.
+
+
+\newpage
+
+%% PROBLEM 5
+\item Solve $\bigg|\dfrac{x-4}{x+5}\bigg| \le 4$.
+
+\newpage
+
+\end{enumerate}
+\end{document} 
