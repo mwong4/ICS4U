@@ -6,7 +6,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{longdivision}
+\usepackage{polynom}
 \setlength{\textheight}{10in}
 \setlength{\textwidth}{7.4in}
 \setlength{\topmargin}{-0.75in}
@@ -50,8 +50,8 @@ Declared References:
 
 Used this forum answer to number the an element (Question 1): \\
 \href{https://tex.stackexchange.com/questions/42726/align-but-show-one-equation-number-at-the-end}{stackexchange align* but show one equation number at the end} \\
-Used to do long division (Question 1): \\
-\href{http://ctan.math.washington.edu/tex-archive/macros/latex/contrib/longdivision/longdivision_manual.pdf} \\
+Used YouTube tutorial to do long division with polynomials (Question 1): \\
+\href{https://www.youtube.com/watch?v=9JfhV2Dimms} \\
 
 % Type your references here.
 % You can use as many lines as required.
@@ -75,7 +75,6 @@ Used to do long division (Question 1): \\
 
 \vspace{0.3cm} 
 \textbf{Solution to Question 1:}\\
-\vspace{0.1cm} 
 
  Considering v(x) has a degree of 3. We are also given the length and width, $x+3$ and $x+2$ respectively. This means that:
 
@@ -86,7 +85,7 @@ Used to do long division (Question 1): \\
  \begin{align*}
     v(x) &= x^3+6x^2+11x+6 \\
     \\
-    \therefore (x+3)(x+2)(x+a) &= x^3+6x^2+11x+6 && \text{Combining the previously listed equations}
+    \therefore (x+3)(x+2)(x+a) &= x^3+6x^2+11x+6 && \text{Combining the previously listed equations} && \textbf{(1)}
  \end{align*}
 
  Dividing both sides by $(x+3)(x+2)$:
@@ -98,12 +97,45 @@ Used to do long division (Question 1): \\
     (x+a) &= \frac{x^3+6x^2+11x+6}{x^2+5x+6} && \text{Expanding denominator bracket} \\
  \end{align*}
  
- \vspace{-1em}
- Now, using long division, find the final missing value factor, $(x+a)$:
+ \vspace{-3.5em}
+ \begin{center}
+     Now, using long division, find the final missing value factor, $(x+a)$:
+ \end{center}
+ \vspace{-2em}
 
-\longdivision{1000}{3}
+%Do long division
+$$\polylongdiv{x^3+6x^2+11x+6}{x^2+5x+6}$$
 
- \vspace{0.3cm}
+\begin{center}
+    $\boxed{\therefore \text{the height of the box is x+1}}$
+    \vspace{1em}
+
+    Also since this relationship is of degree 3, it is a cubic function. Cubic functions have the properties of a domain and range of all real whole numbers.
+   
+    $\boxed{\therefore D \in \mathbb{R}, R \in \mathbb{R}}$
+\end{center}
+
+\newpage
+
+\textbf{Check work for question 1 by graphing and using a logical check:}
+\vspace{1em}
+From before, we stated that $(x+3)(x+2)(x+a) = x^3+6x^2+11x+6$. Now that we know the value of a (1), redo the operation to check the work.
+
+%Do Math Here
+\begin{align*}
+    x^3+6x^2+11x+6 &= (x+3)(x+2)(x+a)&& \text{From (1)}\\
+    x^3+6x^2+11x+6 &= (x+3)(x+2)(x+1) && a = 1\\
+    &= (x^2+5x+6)(x+1) && \text{multiply first 2 factors and simplify} \\
+    &= x^3+6x^2+11x+6 && \text{expand and simplify}\\
+    LHS &= RHS && \therefore \text{height is correct}
+\end{align*}
+
+\vspace{1em}
+From the graph, we can also see that domain and range are all real whole numbers.
+
+%Graph here
+\vspace{1.5em}
+\includegraphics[width=\linewidth]{a2-1 graph.PNG}
 
 \newpage
 
@@ -112,23 +144,40 @@ Used to do long division (Question 1): \\
 
 Recall that $x=c$, where $c \in \mathbb{R}$, corresponds to a \emph{local minimum} of a function $f(x)$ on an interval $I = (a,b)$ which contains $c$ provided that for every value of $x$ on the interval $I$ we have that $f(c) \le f(x)$.
 
+\vspace{0.3cm} 
+\textbf{Solution:}\\
+ Your solution starts here.
+\vspace{0.3cm}
 
 \newpage
 
 %% PROBLEM 3
 \item Recall that a prime number is defined as an integer $n>1$ such that its only positive divisors are 1 and $n$. Let $\mathbb{P}$ represent the set of prime numbers. Suppose that you know that when you divide $g(x) = x^3 + 2x^2 + cx + d$ by $x-2$ you obtain a remainder of 14, \textbf{determine} the specific values of $c$ and $d$ given that $c \in \mathbb{Z}$ and $d \in \mathbb{P}$. 
 
+\vspace{0.3cm} 
+\textbf{Solution:}\\
+ Your solution starts here.
+\vspace{0.3cm}
 
 \newpage
 
 %% PROBLEM 4
 \item Solve $\dfrac{7}{x+2} + \dfrac{5}{x-2} = \dfrac{10x-2}{x^2 - 4}$.
 
+\vspace{0.3cm} 
+\textbf{Solution:}\\
+ Your solution starts here.
+\vspace{0.3cm}
 
 \newpage
 
 %% PROBLEM 5
 \item Solve $\bigg|\dfrac{x-4}{x+5}\bigg| \le 4$.
+
+\vspace{0.3cm} 
+\textbf{Solution:}\\
+ Your solution starts here.
+\vspace{0.3cm}
 
 \newpage
 
