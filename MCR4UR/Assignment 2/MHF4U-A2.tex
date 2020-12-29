@@ -146,7 +146,75 @@ Recall that $x=c$, where $c \in \mathbb{R}$, corresponds to a \emph{local minimu
 
 \vspace{0.3cm} 
 \textbf{Solution:}\\
- Your solution starts here.
+ If we can create a factor table from this function we can better visualize 
+ the relaitonship and better prove the local minimum. First factor f(x) by 
+ finding the values of x where f(x) = 0. From experimentations:
+
+ \vspace{-0.8cm}
+ \begin{align*}
+    f(1) &= 0 \\
+    f(3) &= 0 \\
+    f(-2) &= 0
+ \end{align*}
+
+To find the 4th missing factor, divide f(x) by the current 3 known factors found:
+
+\begin{align*}
+    \text{missing factor} &= \frac{x^4 - 5x^3 + x^2 + 21x - 18}{(x-1)(x-3)(x+2)} \\
+    &= \frac{x^4 - 5x^3 + x^2 + 21x - 18}{(x^2-4x+3)(x+2)} && \text{expand and simplify denominator}\\
+    &= \frac{x^4 - 5x^3 + x^2 + 21x - 18}{(x^3+2x^2-4x^2-8x+3x+6} \\
+    &= \frac{x^4 - 5x^3 + x^2 + 21x - 18}{(x^3-2x^2-5x+6} && \text{simplified}
+\end{align*}
+
+\vspace{0.2cm}
+\begin{center}
+    Now use long division
+\end{center}
+\vspace{-0.5cm}
+$$\polylongdiv{x^4 - 5x^3 + x^2 + 21x - 18}{x^3-2x^2-5x+6}$$
+
+\newpage
+
+$\therefore$ in factor form $f(x) = {(x-3)}^2(x-1)(x+2)$. Since f(x) is positive 
+(no negative vertical reflection) and utilizing the x intercepts given by the factor form:
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & ($-\infty$, -2) & (-2, 1) & (1, 3) & (3, $\infty$) \\ \hline
+        x + 2 & $-$ & + & + & + \\ \hline
+        x - 1 & - & - & + & + \\ \hline
+        x - 3 & - & - & - & + \\ \hline
+        x - 3 & - & - & - & + \\ \hline
+        f(x) & + & - & + & + \\ \hline
+    \end{tabular}
+\end{center}
+
+Using the intervals from the factor table above and the known propterties 
+of linear and quadratic factors, we can create a rough diagram:
+
+%diagram here
+\begin{center}
+    \includegraphics[scale=0.06]{A2-2 Diagram.jpeg}
+\end{center}
+
+\vspace{0.5cm}
+We can agree that the minimum points are at the lowest points, and theoretically 
+with a positive quadric function there are two possible negative areas where the minimum
+is likely to reside within (since the negative interval sections are the lowest points). 
+On the diagram these spots are the areas where rate of change goes from negative to 
+positive (angled down proceeded by an angle up).
+
+\vspace{0.5cm}
+Lets check these two candidates. One of the possible minimums, at x=3, the line "skidms"
+the x-axis. This means that this segment does not actually drop into the negative parts 
+of the cartesian plane. This means that the only area that goes negative, at interval (-2, 1)
+is where the local minimum must reside. Since the x value x=-1 of the coordinate (-1, -32) is inside
+the previously identified interval, w can conclude that this coordinate is likely the local minimum.
+
+\vspace{0.5cm}
+\textbf{Check work for question 2 by using derivatives:}
+
 \vspace{0.3cm}
 
 \newpage
