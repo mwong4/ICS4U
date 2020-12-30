@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{polynom}
+\usepackage{amsthm}
 \setlength{\textheight}{10in}
 \setlength{\textwidth}{7.4in}
 \setlength{\topmargin}{-0.75in}
@@ -145,7 +146,7 @@ From the graph, we can also see that domain and range are all real whole numbers
 Recall that $x=c$, where $c \in \mathbb{R}$, corresponds to a \emph{local minimum} of a function $f(x)$ on an interval $I = (a,b)$ which contains $c$ provided that for every value of $x$ on the interval $I$ we have that $f(c) \le f(x)$.
 
 \vspace{0.3cm} 
-\textbf{Solution:}\\
+\textbf{Solution for question 2:}\\
  If we can create a factor table from this function we can better visualize 
  the relaitonship and better prove the local minimum. First factor f(x) by 
  finding the values of x where f(x) = 0. From experimentations:
@@ -199,21 +200,54 @@ of linear and quadratic factors, we can create a rough diagram:
 \end{center}
 
 \vspace{0.5cm}
-We can agree that the minimum points are at the lowest points, and theoretically 
+We can agree that the minimum points have the lowest values, and theoretically 
 with a positive quadric function there are two possible negative areas where the minimum
 is likely to reside within (since the negative interval sections are the lowest points). 
 On the diagram these spots are the areas where rate of change goes from negative to 
 positive (angled down proceeded by an angle up).
 
 \vspace{0.5cm}
-Lets check these two candidates. One of the possible minimums, at x=3, the line "skidms"
+\fbox{\parbox{\textwidth}{Lets check these two candidates. One of the possible minimums, where x=3, the line "skims"
 the x-axis. This means that this segment does not actually drop into the negative parts 
-of the cartesian plane. This means that the only area that goes negative, at interval (-2, 1)
+of the cartesian plane. This means that the only area that goes negative, at interval (-2, 1),
 is where the local minimum must reside. Since the x value x=-1 of the coordinate (-1, -32) is inside
-the previously identified interval, w can conclude that this coordinate is likely the local minimum.
+the previously identified interval, we can conclude that this coordinate is likely the local minimum.}}
 
 \vspace{0.5cm}
-\textbf{Check work for question 2 by using derivatives:}
+\textbf{Prove question 2 answer with a secondary proof using derivatives:}
+\vspace{0.3cm}
+
+If we factor the derivative of the function, the factors will produce the 
+x values for the points of relative extreme value.
+
+\begin{align*}
+    f(x) &= x^4 - 5x^3 + x^2 + 21x - 18 \\
+    f'(x) &= 4x^{4-1} - 5 \times 3x^{3-1} + 2x^{2-1} + 21x^{1-1} && \text{Get the derivative}\\
+    f'(x) &= 4x^3 - 15x^2 + 2x^1 + 21 && \text{simplify} \\
+\end{align*}
+
+\newpage
+
+Now factor the derivative: From experimentation we can find that:
+
+\begin{align*}
+    f'(-1) &= 0 \\
+    f'(3) &= 0 \\
+    f'\left( \frac{7}{4} \right) &= 0
+\end{align*}
+
+Therefore these are the points of extreme values, the only places where a 
+local minimum and maximum are possible. Now, if we find the f(x) value of these numbers
+ we can determine their y values.
+
+ \begin{align*}
+    f(-1) &=  -33\\
+    f(3) &=  0\\
+    f\left( \frac{7}{4} \right) &\approx 4.395 
+\end{align*}
+
+From this we can see that (-1, -33) is the lowest value.
+ $\therefore$ this proves that (-1, -33) is indeed the local extreme value.
 
 \vspace{0.3cm}
 
@@ -232,10 +266,64 @@ the previously identified interval, w can conclude that this coordinate is likel
 %% PROBLEM 4
 \item Solve $\dfrac{7}{x+2} + \dfrac{5}{x-2} = \dfrac{10x-2}{x^2 - 4}$.
 
+\vspace{0.5cm} 
+\textbf{Solution to question 4:}
+
 \vspace{0.3cm} 
-\textbf{Solution:}\\
- Your solution starts here.
-\vspace{0.3cm}
+To solve isolate all values to one side of the equal sign before simplifying. Then, when fully simplified, take the numerator and solve for x.
+
+\begin{align*}
+    \dfrac{7}{x+2} + \dfrac{5}{x-2} &= \dfrac{10x-2}{x^2 - 4} \\
+    \dfrac{7}{x+2} + \dfrac{5}{x-2} - \dfrac{10x-2}{x^2 - 4} &= 0 && \text{subtract } \dfrac{10x-2}{x^2 - 4} \text{ from both sides}\\
+    \dfrac{7}{x+2} + \dfrac{5}{x-2} - \dfrac{10x-2}{(x+2)(x-2))} &= 0 && x^2-4 = (x+2)(x-2)\\
+    \dfrac{7(x-2)}{(x+2)(x-2)} + \dfrac{5(x+2)}{(x-2)(x+2)} - \dfrac{10x-2}{(x+2)(x-2))} &= 0 && \text{Get common denominators} \\
+    \dfrac{7(x-2)+5(x+2)-(10x-2)}{(x+2)(x-2)} &= 0 && \text{Add all fractions together}\\
+    \dfrac{7x-14+5x+10-10x+2}{(x+2)(x-2)} &= 0 && \text{Expand and Simplify}\\
+    \dfrac{2x-2}{(x+2)(x-2)} &= 0\\
+\end{align*}
+
+\vspace{-0.8cm} 
+Now take the numerator and solve for x:
+\vspace{-0.2cm} 
+
+\begin{align*}
+    \dfrac{2x-2}{(x+2)(x-2)} &= 0\\
+    2x-2 &= 0\\
+    2x &= 2 && \text{subtract 2 from both sides}\\
+    \therefore x &= 1 && \text{divide all by 2}\\
+\end{align*}
+
+\vspace{-1cm} 
+$$\boxed{\therefore \text{the solution to } \dfrac{7}{x+2} + \dfrac{5}{x-2} = \dfrac{10x-2}{x^2 - 4} \text{ is } x = 1}$$
+
+\vspace{1cm} 
+\begin{center}
+    Proof is on next page
+\end{center}
+
+\newpage
+\textbf{prove question 4 by substituting x=1 back into the original equation:}\\
+
+%proof goes here
+\begin{proof}
+    \begin{align*}
+        LHS &= \dfrac{7}{x+2} + \dfrac{5}{x-2} \\
+        &= \dfrac{7}{1+2} + \dfrac{5}{1-2} && \text{Substitute x as 1} \\
+        &= \dfrac{7}{3} + \dfrac{5}{-1} && \text{Simplify} \\
+        &= \dfrac{7}{3} + \dfrac{-15}{3} \\
+        LHS &= \dfrac{-8}{3}
+    \end{align*}
+
+    \begin{align*}
+        RHS &= \dfrac{10x-2}{x^2 - 4} \\
+        &= \dfrac{10\times 1-2}{1^2 - 4} && \text{Substitute x as 1} \\
+        &= \dfrac{10-2}{1 - 4} && \text{Simplify}\\
+        RHS &= \dfrac{8}{-3}\\
+        RHS & =LHS && \qedhere
+    \end{align*}
+\end{proof}
+
+$\therefore$ the answer is correct. 
 
 \newpage
 
