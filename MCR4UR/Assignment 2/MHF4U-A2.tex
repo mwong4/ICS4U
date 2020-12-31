@@ -257,8 +257,25 @@ From this we can see that (-1, -33) is the lowest value.
 \item Recall that a prime number is defined as an integer $n>1$ such that its only positive divisors are 1 and $n$. Let $\mathbb{P}$ represent the set of prime numbers. Suppose that you know that when you divide $g(x) = x^3 + 2x^2 + cx + d$ by $x-2$ you obtain a remainder of 14, \textbf{determine} the specific values of $c$ and $d$ given that $c \in \mathbb{Z}$ and $d \in \mathbb{P}$. 
 
 \vspace{0.3cm} 
-\textbf{Solution:}\\
- Your solution starts here.
+\textbf{Solution to question 3:}
+\vspace{0.5 cm}
+ Since we know that $g(x)$ divided by $x-2$ gives a remainder of 14,
+ We can compare try the division and compare the resulting polynomial remainder
+with the real value of 14. Since we know a factor is ax $x=2$ (from $x-2$) leads 
+to a remainder or y value of 14, we can state that $g(2) = 14$.
+
+\begin{align*}
+    g(x) &= x^3 + 2x^2 + cx + d \\
+    g(2) &= 2^3 + 2\times 2^2 + c\times 2 + d && \text{Substitute x as 2}\\
+    g(2) &= 8 + 8 + 2c + d && \text{Simplify}\\
+    g(2) &= 16 + 2c + d \\
+    14 &= 16 + 2c + d && g(2) = 14\\
+    -2 &= 2c + d && \text{Subtract 16 from both sides}\\
+\end{align*}
+
+
+
+
 \vspace{0.3cm}
 
 \newpage
