@@ -273,10 +273,49 @@ to a remainder or y value of 14, we can state that $g(2) = 14$.
     -2 &= 2c + d && \text{Subtract 16 from both sides}\\
 \end{align*}
 
+\vspace{-1cm}
 
+Now that we have the equation $-2 = 2c + d$ and we know that $d \in \mathbb{P}$ and $c \in \mathbb{Z}$, consider the following.
 
+In the equation $-2 = 2c + d$, c is multiplied by 2. This means 
+that no matter the value of c, if it is an integer, the value 
+of 2c must be even. 2c and d are added together to also create 
+an even number: -2. When are two numbers are added together to 
+an even number both numbers must be even or both must be odd. 
+This means if 2c is even, d must also be even. The only prime 
+number that exists is 2 since all other numbers that are even 
+are divisible by 2. Therefore d must be 2. From this and the 
+equation, we can determine the value of c.
 
-\vspace{0.3cm}
+\vspace{-0.6cm}
+
+\begin{align*}
+    -2 &= 2c + d \\
+    -2 &= 2c + 2 && \text{Substitute d as 2} \\
+    -2 - 2 &= 2c && \text{subtract 2 to both sides}\\
+    -4 &= 2c && \text{Simplify} \\
+    \frac{-4}{2} &= c && \text{divide both sides by 2} \\
+    -2 &= c
+\end{align*}
+
+$$\boxed{\therefore \text{the value of c and d are -2 and 2 respectively.}}$$
+
+\newpage
+
+\textbf{Check Answer for Question 3 by substituting the know values of c and d back into the original equation as $g(2) = 14$:}
+
+\begin{align*}
+    g(x) &= x^3 + 2x^2 + cx + d && \text{Original equation}\\
+    g(x) &= x^3 + 2x^2 - 2x + 2 && \text{Since }c = -2, d = 2\\
+    g(2) &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && Substitute x as 2\\
+    14 &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && Substitute x as 2 && g(2) = 14\\
+    14 &= 8 + 8 - 4 + 2 && Substitute x as 2 && g(2) = 14\\
+    14 &= 14 \\
+    LHS &= RHS \\
+\end{align*}
+
+\vspace{-1cm}
+$$\therefore \text{the values of c and d found are correct}$$
 
 \newpage
 
