@@ -147,9 +147,12 @@ Recall that $x=c$, where $c \in \mathbb{R}$, corresponds to a \emph{local minimu
 
 \vspace{0.3cm} 
 \textbf{Solution for question 2:}\\
- If we can create a factor table from this function we can better visualize 
+ If we can create a sign table from this function we can better visualize 
  the relaitonship and better prove the local minimum. First factor f(x) by 
- finding the values of x where f(x) = 0. From experimentations:
+ finding the values of x where f(x) = 0. We know that factors are typically between
+ -6 and 6. From the Rational Root Theorum we can also narrow down our search by using
+ factors of the last term divided by the factors of the first term, plus minus. Possible 
+ candidates include x= -6, -3, -2, -1, 1, 2, 3 adnd 6.From experimentations:
 
  \vspace{-0.8cm}
  \begin{align*}
@@ -191,7 +194,7 @@ $\therefore$ in factor form $f(x) = {(x-3)}^2(x-1)(x+2)$. Since f(x) is positive
     \end{tabular}
 \end{center}
 
-Using the intervals from the factor table above and the known propterties 
+Using the intervals from the sign table above and the known propterties 
 of linear and quadratic factors, we can create a rough diagram:
 
 %diagram here
@@ -206,12 +209,19 @@ is likely to reside within (since the negative interval sections are the lowest 
 On the diagram these spots are the areas where rate of change goes from negative to 
 positive (angled down proceeded by an angle up).
 
-\vspace{0.5cm}
+\vspace{1cm}
 \fbox{\parbox{\textwidth}{Lets check these two candidates. One of the possible minimums, where x=3, the line "skims"
 the x-axis. This means that this segment does not actually drop into the negative parts 
 of the cartesian plane. This means that the only area that goes negative, at interval (-2, 1),
 is where the local minimum must reside. Since the x value x=-1 of the coordinate (-1, -32) is inside
 the previously identified interval, we can conclude that this coordinate is likely the local minimum.}}
+
+\vspace{2cm}
+\begin{center}
+    Proof is on the next page
+\end{center}
+
+\newpage
 
 \vspace{0.5cm}
 \textbf{Prove question 2 answer with a secondary proof using derivatives:}
@@ -225,8 +235,6 @@ x values for the points of relative extreme value.
     f'(x) &= 4x^{4-1} - 5 \times 3x^{3-1} + 2x^{2-1} + 21x^{1-1} && \text{Get the derivative}\\
     f'(x) &= 4x^3 - 15x^2 + 2x^1 + 21 && \text{simplify} \\
 \end{align*}
-
-\newpage
 
 Now factor the derivative: From experimentation we can find that:
 
@@ -307,9 +315,9 @@ $$\boxed{\therefore \text{the value of c and d are -2 and 2 respectively.}}$$
 \begin{align*}
     g(x) &= x^3 + 2x^2 + cx + d && \text{Original equation}\\
     g(x) &= x^3 + 2x^2 - 2x + 2 && \text{Since }c = -2, d = 2\\
-    g(2) &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && Substitute x as 2\\
-    14 &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && Substitute x as 2 && g(2) = 14\\
-    14 &= 8 + 8 - 4 + 2 && Substitute x as 2 && g(2) = 14\\
+    g(2) &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && \text{Substitute x as 2}\\
+    14 &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && g(2) = 14\\
+    14 &= 8 + 8 - 4 + 2\\
     14 &= 14 \\
     LHS &= RHS \\
 \end{align*}
@@ -426,7 +434,7 @@ Take (1), $-4 \le \dfrac{x-4}{x+5}$ and solve the inequality.
 \newpage
 
 \begin{center}
-To solve the rational inequality, we create a factor table
+To solve the rational inequality, we create a sign table
  to determine the appropriate intervals.
 \end{center}
 \vspace{0.5cm}
@@ -445,7 +453,7 @@ To solve the rational inequality, we create a factor table
 
 Since we are searching for values greater than or equal to zero,
  look for the intervals where the value is positiive or zero. We can see
-  from the factor table that, when including the values at zero:
+  from the sign table that, when including the values at zero:
 
 $$x \in (-\infty, -5], \left[ -\frac{16}{5}, \infty \right) \text{\space\space\space\space\space} (3)$$
 
@@ -468,7 +476,7 @@ Take (2), $\dfrac{x-4}{x+5} \le 4$ and solve the inequality.
 \newpage
 
 \begin{center}
-To solve the rational inequality, we create a factor table
+To solve the rational inequality, we create a sign table
  to determine the appropriate intervals.
 \end{center}
 \vspace{0.5cm}
@@ -487,7 +495,7 @@ To solve the rational inequality, we create a factor table
 
 Since we are searching for values greater than or equal to zero,
  look for the intervals where the value is positiive or zero. We can see
-  from the factor table that, when including the values at zero:
+  from the sign table that, when including the values at zero:
 
 $$x \in (-\infty, -8], [-5, \infty) \text{\space\space\space\space\space} (4)$$
 \vspace{0.1cm}
@@ -502,7 +510,7 @@ inequalities, which is why we look for overlap.
 From the line diagram, we can see that the 4 intervals overlap at 2 areas,
  highlighted by the green.
  
-$$\boxed{\therefore \text{the intervals that satisfy the inequality} \bigg|\dfrac{x-4}{x+5}\bigg| \le 4 \text{ are } (-\infty , -8] \text{ and } \left[ -\dfrac{16}{5}, \infty \right) \text{.}}$$
+$$\boxed{\therefore \text{the intervals that satisfy the inequality} \bigg|\dfrac{x-4}{x+5}\bigg| \le 4 \text{ are } (-\infty , -8] \cup \left[ -\dfrac{16}{5}, \infty \right) \text{.}}$$
 
 \vspace{2cm}
 \begin{center}
