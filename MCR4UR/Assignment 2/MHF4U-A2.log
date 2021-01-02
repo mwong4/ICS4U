@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  1 JAN 2021 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  2 JAN 2021 09:31
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/MHF4U-A2.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/MHF4U-A2.tex"
@@ -313,22 +313,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
-[10] [11] [12] [13] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 2\MHF4U-A2.aux")
+[10] [11] [12]
+<A2-5 Line Diagram (1).png, id=76, 1029.8475pt x 306.14375pt>
+File: A2-5 Line Diagram (1).png Graphic file (type png)
+<use A2-5 Line Diagram (1).png>
+Package pdftex.def Info: A2-5 Line Diagram (1).png  used on input line 488.
+(pdftex.def)             Requested size: 505.42285pt x 150.2453pt.
+<A2-5 Proof.PNG, id=77, 676.929pt x 436.63126pt>
+File: A2-5 Proof.PNG Graphic file (type png)
+<use A2-5 Proof.PNG>
+Package pdftex.def Info: A2-5 Proof.PNG  used on input line 498.
+(pdftex.def)             Requested size: 338.46367pt x 218.3151pt.
+ [13 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/A2-5 Line Diagram (1).png> <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/A2-5 Proof.PNG>] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 2\MHF4U-A2.aux")
 Package rerunfilecheck Info: File `MHF4U-A2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 6708 strings out of 479799
- 101445 string characters out of 2869209
+ 6721 strings out of 479799
+ 101725 string characters out of 2869209
  407221 words of memory out of 3000000
- 23566 multiletter control sequences out of 15000+200000
+ 23576 multiletter control sequences out of 15000+200000
  541659 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,12n,72p,491b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 2\MHF4U-A2.pdf" (13 pages, 1502411 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 2\MHF4U-A2.pdf" (13 pages, 1542813 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
