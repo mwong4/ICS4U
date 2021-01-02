@@ -387,9 +387,98 @@ $\therefore$ the answer is correct.
 \item Solve $\bigg|\dfrac{x-4}{x+5}\bigg| \le 4$.
 
 \vspace{0.3cm} 
-\textbf{Solution:}\\
- Your solution starts here.
+\textbf{Solution to question 5:}
+\vspace{0.5cm}
+ Consider the following identity of an absolute value inequality: $|x| \leq c \Longleftrightarrow -c \leq x \leq c$
+ . Lets apply this to the given equation where c is 4 and x is the fraction.
+
+ \begin{align*}
+    \bigg|\dfrac{x-4}{x+5}\bigg| &\le 4 \\
+    -4 \le \dfrac{x-4}{x+5} & \le 4 && \text{applying identity}
+ \end{align*}
+
+ \begin{center}
+    Now solve the inequality found as if it were composed of two seperate inequalities:
+\end{center}
+
+\begin{align*}
+    -4 &\le \dfrac{x-4}{x+5} && (1)\\
+    \dfrac{x-4}{x+5} &\le 4 && (2)
+\end{align*}
+
+%Solving (1)
+Take (1), $-4 \le \dfrac{x-4}{x+5}$ and solve the inequality.
+
+\begin{align*}
+    -4 &\le \dfrac{x-4}{x+5} && (1)\\
+    0 &\le \dfrac{x-4}{x+5} + 4 && \text{add 4 to both sides} \\
+    0 &\le \dfrac{x-4}{x+5} + \dfrac{(4)(x+5)}{x+5} && \text{Get same denominator} \\
+    0 &\le \dfrac{x-4}{x+5} + \dfrac{(4x+20}{x+5} && \text{Expand} \\
+    0 &\le \dfrac{x-4+4x+20}{x+5} && \text{Add fractions} \\
+    0 &\le \dfrac{5x+16}{x+5} && \text{Simplify} \\
+\end{align*}
+
+\begin{center}
+To solve the rational inequality, we create a factor table
+ to determine the appropriate intervals.
+\end{center}
+\vspace{0.5cm}
+
+\begin{center}
+    \begin{tabular}{|r|c|c|c|}
+        \hline
+        & $(-\infty, -5)$ & $\left(-5, -\dfrac{16}{5} \right)$ & $\left( -\dfrac{16}{5}, \infty \right)$ \\ \hline
+        5x+16 & - & - & + \\ \hline
+        x+5 & - & + & + \\ \hline
+        f(x) & + & - & + \\ \hline
+    \end{tabular}
+\end{center}
+
 \vspace{0.3cm}
+
+Since we are searching for values greater than or equal to zero,
+ look for the intervals where the value is positiive or zero. We can see
+  from the factor table that, when including the values at zero:
+
+$$x \in (-\infty, -5], \left[ -\frac{16}{5}, \infty \right) \text{\space\space\space\space\space} (3)$$
+
+%Solving (2)
+Take (2), $\dfrac{x-4}{x+5} \le 4$ and solve the inequality.
+
+\begin{align*}
+    \dfrac{x-4}{x+5} &\le 4 && (2)\\
+    \dfrac{x-4}{x+5} - 4 &\le 0 && \text{subtract 4 to both sides} \\
+    \dfrac{x-4}{x+5} - \dfrac{(4)(x+5)}{x+5} &\le 0 && \text{Get same denominator} \\
+    \dfrac{x-4}{x+5} - \dfrac{4x+20}{x+5} &\le 0 && \text{Expand} \\
+    \dfrac{x-4-(4x+20)}{x+5} &\le 0 && \text{Combibe fractions} \\
+    \dfrac{x-4-4x-20}{x+5} &\le 0 && \text{expand} \\
+    \dfrac{-3x-24}{x+5} &\le 0 && \text{Simplify} \\
+    \dfrac{3x+24}{x+5} &\geq 0 && \text{Multiply by -1 to all, flip inequality sign} \\
+\end{align*}
+
+\begin{center}
+To solve the rational inequality, we create a factor table
+ to determine the appropriate intervals.
+\end{center}
+\vspace{0.5cm}
+
+\begin{center}
+    \begin{tabular}{|r|c|c|c|}
+        \hline
+        & $(-\infty, -8)$ & $(-8, -5)$ & $(-5, \infty)$ \\ \hline
+        3x+24 & - & + & + \\ \hline
+        x+5 & - & - & + \\ \hline
+        f(x) & + & - & + \\ \hline
+    \end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+
+Since we are searching for values greater than or equal to zero,
+ look for the intervals where the value is positiive or zero. We can see
+  from the factor table that, when including the values at zero:
+
+$$x \in (-\infty, -8], [-5, \infty) \text{\space\space\space\space\space} (4)$$
 
 \newpage
 
