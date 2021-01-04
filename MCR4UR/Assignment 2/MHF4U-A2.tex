@@ -53,6 +53,7 @@ Used this forum answer to number the an element (Question 1): \\
 \href{https://tex.stackexchange.com/questions/42726/align-but-show-one-equation-number-at-the-end}{stackexchange align* but show one equation number at the end} \\
 Used YouTube tutorial to do long division with polynomials (Question 1 and 2): \\
 \href{https://www.youtube.com/watch?v=9JfhV2Dimms} \\
+Used Desmos for graphs
 
 % Type your references here.
 % You can use as many lines as required.
@@ -310,17 +311,19 @@ $$\boxed{\therefore \text{the value of c and d are -2 and 2 respectively.}}$$
 
 \newpage
 
-\textbf{Check Answer for Question 3 by substituting the know values of c and d back into the original equation as $g(2) = 14$:}
+\textbf{Check Answer for Question 3 by substituting the know values of c and d back into the original equation as g(2) = 14:}
 
-\begin{align*}
-    g(x) &= x^3 + 2x^2 + cx + d && \text{Original equation}\\
-    g(x) &= x^3 + 2x^2 - 2x + 2 && \text{Since }c = -2, d = 2\\
-    g(2) &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && \text{Substitute x as 2}\\
-    14 &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && g(2) = 14\\
-    14 &= 8 + 8 - 4 + 2\\
-    14 &= 14 \\
-    LHS &= RHS \\
-\end{align*}
+\begin{proof}
+    \begin{align*}
+        g(x) &= x^3 + 2x^2 + cx + d && \text{Original equation}\\
+        g(x) &= x^3 + 2x^2 - 2x + 2 && \text{Since }c = -2, d = 2\\
+        g(2) &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && \text{Substitute x as 2}\\
+        14 &= 2^3 + 2\times 2^2 - 2\times 2 + 2 && g(2) = 14\\
+        14 &= 8 + 8 - 4 + 2\\
+        14 &= 14 \\
+        LHS &= RHS && \qedhere\\
+    \end{align*}
+\end{proof}
 
 \vspace{-1cm}
 $$\therefore \text{the values of c and d found are correct}$$
@@ -375,14 +378,14 @@ $$\boxed{\therefore \text{the solution to } \dfrac{7}{x+2} + \dfrac{5}{x-2} = \d
         &= \dfrac{7}{1+2} + \dfrac{5}{1-2} && \text{Substitute x as 1} \\
         &= \dfrac{7}{3} + \dfrac{5}{-1} && \text{Simplify} \\
         &= \dfrac{7}{3} + \dfrac{-15}{3} \\
-        LHS &= \dfrac{-8}{3}
+        LHS &= -\dfrac{8}{3}
     \end{align*}
 
     \begin{align*}
         RHS &= \dfrac{10x-2}{x^2 - 4} \\
         &= \dfrac{10\times 1-2}{1^2 - 4} && \text{Substitute x as 1} \\
         &= \dfrac{10-2}{1 - 4} && \text{Simplify}\\
-        RHS &= \dfrac{8}{-3}\\
+        RHS &= -\dfrac{8}{3}\\
         RHS & =LHS && \qedhere
     \end{align*}
 \end{proof}

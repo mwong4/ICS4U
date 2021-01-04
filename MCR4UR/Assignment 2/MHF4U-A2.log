@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  4 JAN 2021 09:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  4 JAN 2021 09:20
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/MHF4U-A2.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/MHF4U-A2.tex"
@@ -274,15 +274,15 @@ LaTeX Info: Redefining \nameref on input line 22.
  [1{C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
@@ -290,10 +290,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 <a2-1 graph.PNG, id=25, 1153.30875pt x 535.40025pt>
 File: a2-1 graph.PNG Graphic file (type png)
 <use a2-1 graph.PNG>
-Package pdftex.def Info: a2-1 graph.PNG  used on input line 139.
+Package pdftex.def Info: a2-1 graph.PNG  used on input line 140.
 (pdftex.def)             Requested size: 505.42285pt x 234.63733pt.
  [3 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/a2-1 graph.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
@@ -301,15 +301,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 <A2-2 Diagram.jpeg, id=38, 3395.68625pt x 1339.0025pt>
 File: A2-2 Diagram.jpeg Graphic file (type jpg)
 <use A2-2 Diagram.jpeg>
-Package pdftex.def Info: A2-2 Diagram.jpeg  used on input line 202.
+Package pdftex.def Info: A2-2 Diagram.jpeg  used on input line 203.
 (pdftex.def)             Requested size: 203.73238pt x 80.33669pt.
 
-Overfull \hbox (36.17468pt too wide) in paragraph at lines 217--218
+Overfull \hbox (36.17468pt too wide) in paragraph at lines 218--219
 [][] 
  []
 
 [5 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/A2-2 Diagram.jpeg>] [6] [7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
 
  []
 
@@ -317,13 +317,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--370
 <A2-5 Line Diagram (1).png, id=76, 1029.8475pt x 306.14375pt>
 File: A2-5 Line Diagram (1).png Graphic file (type png)
 <use A2-5 Line Diagram (1).png>
-Package pdftex.def Info: A2-5 Line Diagram (1).png  used on input line 508.
+Package pdftex.def Info: A2-5 Line Diagram (1).png  used on input line 511.
 (pdftex.def)             Requested size: 505.42285pt x 150.2453pt.
  [13 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/A2-5 Line Diagram (1).png>]
 <A2-5 Proof.PNG, id=83, 676.929pt x 436.63126pt>
 File: A2-5 Proof.PNG Graphic file (type png)
 <use A2-5 Proof.PNG>
-Package pdftex.def Info: A2-5 Proof.PNG  used on input line 525.
+Package pdftex.def Info: A2-5 Proof.PNG  used on input line 528.
 (pdftex.def)             Requested size: 473.84708pt x 305.63979pt.
  [14 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 2/A2-5 Proof.PNG>] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 2\MHF4U-A2.aux")
 Package rerunfilecheck Info: File `MHF4U-A2.out' has not changed.
@@ -338,7 +338,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  66i,12n,72p,491b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 2\MHF4U-A2.pdf" (14 pages, 1542900 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 2\MHF4U-A2.pdf" (14 pages, 1543009 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
