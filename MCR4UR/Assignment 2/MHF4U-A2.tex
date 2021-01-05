@@ -140,7 +140,8 @@ From before, we stated that $(x+3)(x+2)(x+a) = x^3+6x^2+11x+6$. Now that we know
 \end{align*}
 
 \vspace{1em}
-From the graph, we can also see that domain and range are all real whole numbers.
+From the graph, we can also see that domain and ranges of the given function 
+visually matches those determined by the solution.
 
 %Graph here
 \vspace{1.5em}
@@ -226,10 +227,46 @@ is where the local minimum must reside. Since the x value x=-1 of the coordinate
 the previously identified interval, we can conclude that this coordinate is likely the local minimum. \qedhere}}
 \end{proof}
 
-\vspace{2cm}
+There is a possibility that 2 seperate local minimums can reside within the negative interval but 
+there must be a turn point (local maximum) that goes from up to down within the interval. The properties do not 
+support this idea because of the following logic:
+
+\vspace{0.5cm}
+Properties: We know that the function degree is 3 meaning that there are 3 and only 3 turning points. 
+We also know that the relationship "skims" the x-axis only at the farthest right of the three intercepts:
+at x=3, since only the x-3 factor is squared and $3>1>-2$.
+
+\vspace{0.5cm}
+Remember, the local maximum must be less than or equal to zero
+to indicate a second local minimum
+
+\newpage
+
+Case 1: if it skims the x-axis (y=0), the intercept that "skims" is in the middle at x=1, violating the second property.
+\vspace{0.5cm}
+
+Case 2: If the local maximum stays negative, not touching the x-axis,
+and then goes to the positive, there would be only 2 turning points with 
+no indication of a quadratic factor, violating the first second property.
+\vspace{0.5cm}
+
+Case 3: If the local maximum stays negative and then goes to the positive before skiming 
+the x-axis in the positive interval, like the real function, there wold be too many 
+turning points, violating the first property. 
+\vspace{0.5cm}
+
+Case 4: If the local maximum stays negative and then skims the x-axis in the negative 
+interval before infinitly going negative, there would be too few turning points 
+violating the first property.
+\vspace{1cm}
+
+%Diagram here
+\includegraphics[width=\linewidth]{A2-2 Cases.jpeg}
 \begin{center}
-    Proof is on the next page
+    From left to right, Case 1 to 4. All violate at least one property.
 \end{center}
+    
+$$\boxed{\therefore \text{2 local minimums within the negative interval is not possible}}$$
 
 \newpage
 
