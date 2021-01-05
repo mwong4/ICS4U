@@ -108,17 +108,24 @@ Used Desmos for graphs
 %Do long division
 $$\polylongdiv{x^3+6x^2+11x+6}{x^2+5x+6}$$
 
-\begin{center}
-    $\boxed{\therefore \text{the height of the box is x+1}}$
-    \vspace{1em}
+    $$\boxed{\therefore \text{the height of the box is x+1}}$$
+    \vspace{1cm}
+    \begin{center}
+        Second part of solution on next page
+    \end{center}
+    \newpage
 
-    Also since this relationship is of degree 3, it is a cubic function. Cubic functions have the properties of a domain and range of all real whole numbers.
+    Also since this relationship is of degree 3, it is a cubic function. Cubic functions have should 
+    the properties of a domain and range of all real whole numbers but since the dimensions of a 
+    of a 3D shape (Domain) cannot be negative in reality, the domain can only be 
+    equal to or greater than zero. When the domain is at zero, or f(0), we can calculate the 
+    minimum range value. 
+
+    $$f(0) = 0^3+6\times 0^2+11\times 0+6 = 6$$
    
-    $\boxed{\therefore D \in \mathbb{R}, R \in \mathbb{R}}$
-\end{center}
+    $$\boxed{\therefore D: \{ x \in \mathbb{R} | x \geq 0 \} , R: \{ y \in \mathbb{R} | y \geq 6 \}}$$
 
-\newpage
-
+\vspace{1cm}
 \textbf{Check work for question 1 by graphing and using a logical check:}
 \vspace{1em}
 From before, we stated that $(x+3)(x+2)(x+a) = x^3+6x^2+11x+6$. Now that we know the value of a (1), redo the operation to check the work.
@@ -142,12 +149,13 @@ From the graph, we can also see that domain and range are all real whole numbers
 \newpage
 
 %% PROBLEM 2
-\item Consider the quartic polynomial function $f(x) = x^4 - 5x^3 + x^2 + 21x - 18$. Given that there is a local minimum on $f(x)$ at $(-1,-32)$, use a logical argument to \textbf{prove} that this must the absolute minimum of $f(x)$ without graphing the function. \\
+\item Consider the quartic polynomial function $f(x) = x^4 - 5x^3 + x^2 + 21x - 18$. Given that there is a local minimum on $f(x)$ at $(-1,-32)$, use a logical argument to \textbf{prove} that this must be the absolute minimum of $f(x)$ without graphing the function. \\
 
 Recall that $x=c$, where $c \in \mathbb{R}$, corresponds to a \emph{local minimum} of a function $f(x)$ on an interval $I = (a,b)$ which contains $c$ provided that for every value of $x$ on the interval $I$ we have that $f(c) \le f(x)$.
 
 \vspace{0.3cm} 
 \textbf{Solution for question 2:}\\
+\begin{proof}
  If we can create a sign table from this function we can better visualize 
  the relaitonship and better prove the local minimum. First factor f(x) by 
  finding the values of x where f(x) = 0. We know that factors are typically between
@@ -215,7 +223,8 @@ positive (angled down proceeded by an angle up).
 the x-axis. This means that this segment does not actually drop into the negative parts 
 of the cartesian plane. This means that the only area that goes negative, at interval (-2, 1),
 is where the local minimum must reside. Since the x value x=-1 of the coordinate (-1, -32) is inside
-the previously identified interval, we can conclude that this coordinate is likely the local minimum.}}
+the previously identified interval, we can conclude that this coordinate is likely the local minimum. \qedhere}}
+\end{proof}
 
 \vspace{2cm}
 \begin{center}
@@ -402,7 +411,7 @@ $\therefore$ the answer is correct.
 
 \vspace{0.5cm}
  Consider the following identity of an absolute value inequality: $|x| \leq c \Longleftrightarrow -c \leq x \leq c$
- . Lets apply this to the given equation where c is 4 and x is the fraction.
+ . Lets apply this to the given equation where c is 4 and x is the absolute value rational function.
  \vspace{-0.3cm}
 
  \begin{align*}
@@ -410,10 +419,7 @@ $\therefore$ the answer is correct.
     -4 \le \dfrac{x-4}{x+5} & \le 4 && \text{applying identity}
  \end{align*}
 
- \begin{center}
-    Now solve the inequality found as if it were composed of two seperate inequalities:
-\end{center}
-\vspace{-1cm}
+Now solve the inequality found as if it were composed of two seperate inequalities with the rational function being repeated twice:
 
 \begin{align*}
     -4 &\le \dfrac{x-4}{x+5} && (1)\\
@@ -535,4 +541,5 @@ From the graph we can see that the intervals found seem to intervals
 \newpage
 
 \end{enumerate}
+
 \end{document} 
