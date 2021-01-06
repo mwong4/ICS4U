@@ -204,69 +204,73 @@ $\therefore$ in factor form $f(x) = {(x-3)}^2(x-1)(x+2)$. Since f(x) is positive
     \end{tabular}
 \end{center}
 
-Using the intervals from the sign table above and the known propterties 
-of linear and quadratic factors, we can create a rough diagram:
-
-%diagram here
-\begin{center}
-    \includegraphics[scale=0.06]{A2-2 Diagram.jpeg}
-\end{center}
-
 \vspace{0.5cm}
 We can agree that the minimum points have the lowest values, and theoretically 
-with a positive quadric function there are two possible negative areas where the minimum
-is likely to reside within (since the negative interval sections are the lowest points). 
-On the diagram these spots are the areas where rate of change goes from negative to 
-positive (angled down proceeded by an angle up).
+with a positive quadric function, the function must start in the top left and come down to form the shape "W".  
+There are two possible negative areas where the minimum is likely to reside within 
+(since the negative interval sections are the lowest points). 
+With a positive polynomial of degree 3, the "W" shape has two troughs beside 
+the triangle in the middle, which are the lowest points (the turning points, from down to up).
 
-\vspace{1cm}
-\fbox{\parbox{\textwidth}{Lets check these two candidates. One of the possible minimums, where x=3, the line "skims"
+\vspace{0.5cm}
+Lets check these two candidates. One of the possible minimums, where x=3, the line must "skims"
 the x-axis. This means that this segment does not actually drop into the negative parts 
-of the cartesian plane. This means that the only area that goes negative, at interval (-2, 1),
+of the cartesian plane. This also means that the only area that goes negative, at interval (-2, 1),
 is where the local minimum must reside. Since the x value x=-1 of the coordinate (-1, -32) is inside
-the previously identified interval, we can conclude that this coordinate is likely the local minimum. \qedhere}}
-\end{proof}
+the previously identified interval, we can conclude that this coordinate is likely the local minimum.
 
+\vspace{0.5cm}
 There is a possibility that 2 seperate local minimums can reside within the negative interval but 
-there must be a turn point (local maximum) that goes from up to down within the interval. The properties do not 
+there must be a turn point (local maximum) that goes from up to down between the two local minimums. The properties do not 
 support this idea because of the following logic:
 
 \vspace{0.5cm}
-Properties: We know that the function degree is 3 meaning that there are 3 and only 3 turning points. 
-We also know that the relationship "skims" the x-axis only at the farthest right of the three intercepts:
-at x=3, since only the x-3 factor is squared and $3>1>-2$.
+Properties: (1) We know that the function degree is 3 meaning that there are 3 and only 3 turning points. 
+(2) We also know that the relationship "skims" the x-axis only at the farthest right of the three intercepts:
+at x=3, since only the x-3 factor is squared and $3>1>-2$. (3) From the sign table that at x=3, it is positive, 
+therefore the "skim" point must be positive. (4) We also know from the facotred form that there are 3 intercepts.
 
 \vspace{0.5cm}
-Remember, the local maximum must be less than or equal to zero
-to indicate a second local minimum
+Remember, the local maximum must be less than or equal to zero and respect the properties
+to indicate a second local minimum.
+
+\vspace{0.5cm}
+NOTE: All cases are expressing the function from left to right with "positive" indicating y > 0 and "negative" indicating y < 0. 
+All examples start from the top left corner as a property of a positive polynomial function of degree 3.
 
 \newpage
 
-Case 1: if it skims the x-axis (y=0), the intercept that "skims" is in the middle at x=1, violating the second property.
+Case 1: If the function goes down (from positive to negative) then back up and skims the x-axis (y=0) on 
+the negative side, forming the first local minimum before dipping back down and up (all the way into the positives) 
+to form a second local minimum and continuing positively forever. The "skims" happens in the negative instead of the positive, violating the third property.
+The "skims" happens on the middle x-axis intercept in the middle at x=1 and not at the right most intercept, violating the second property.
 \vspace{0.5cm}
 
-Case 2: If the local maximum stays negative, not touching the x-axis,
-and then goes to the positive, there would be only 2 turning points with 
-no indication of a quadratic factor, violating the first second property.
+Case 2: If the function goes down (from positive to negative) then back up but stays negative, not touching the x-axis before going 
+back down before going back up (all the way into the positives), forming a second local minimum before going positively infinitly, there would be only 2 intercepts 
+as opposed to the required 3 intercepts, violating the fourth property.
 \vspace{0.5cm}
 
-Case 3: If the local maximum stays negative and then goes to the positive before skiming 
-the x-axis in the positive interval, like the real function, there wold be too many 
-turning points, violating the first property. 
+Case 3: If the function goes down (from positive to negative) then back up but stays negative, not touching the x-axis before going 
+back down before going back up (all the way into the positives), forming a second local minimum, then going down and skimming the 
+x-axis on the positive side proceeded by the direction upwards infinitly. This does satisfy (2) and (3) bur violates the third property 
+because there are 5 turning points instead of three.
 \vspace{0.5cm}
 
-Case 4: If the local maximum stays negative and then skims the x-axis in the negative 
-interval before infinitly going negative, there would be too few turning points 
-violating the first property.
-\vspace{1cm}
+Case 4: If the function goes down (from positive to negative) then back up but stays negative, not touching the x-axis before going 
+back down before going back up, "skimming" the x-axis on the negative side before going down negatively infinitly. This case has 4 
+turning points instead of three, violating the first property
+\vspace{0.5cm}
 
-%Diagram here
-\includegraphics[width=\linewidth]{A2-2 Cases.jpeg}
-\begin{center}
-    From left to right, Case 1 to 4. All violate at least one property.
-\end{center}
+We can see that the properties of the given function do now allow 2 local minimums to exist within the single 
+negative interval. Therefore there is only 1 local minimum within the only negative interval and since our point resides within this 
+interval
+
+$$\boxed{\text{and it is reasonable to assume that the point given is the local minimum.}} \qedhere$$
+
+\end{proof}
+
     
-$$\boxed{\therefore \text{2 local minimums within the negative interval is not possible}}$$
 
 \newpage
 
