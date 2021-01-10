@@ -3,6 +3,7 @@
 \documentclass[12pt]{book}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -38,8 +39,8 @@ Be sure to cite appropriate theorems throughout your work. You may use shorthand
 
 Note: Your submitted work must be \textbf{your original work}. 
 
-Family Name: \\%Family Name Here
-First Name: %First Name Here
+Family Name: Wong\\%Family Name Here
+First Name: Max%First Name Here
 
 Declared References: 
 
@@ -56,6 +57,45 @@ Declared References:
 
 %% PROBLEM 1
 \item Prove the identity $\sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\tan(x)}$. Remember to use proper form for proving trigonometric identities by indicating the identities you are using.
+
+\vspace{-0.4cm}
+\textbf{Solution to Question 1:}
+We can prove the identity by getting one side of the equal sign to be equivalent to the other side.
+\vspace{-3cm}
+
+\begin{proof}
+\addtolength{\jot}{1em}
+\begin{align*}
+    RHS &= 1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\tan(x)} && \text{RHS: Right Hand Side} \\
+    &= 1-\dfrac{\sin^2(x)}{1+\dfrac{1}{tan(x)}}-\dfrac{\cos^2(x)}{1+\tan(x)} && cot(x) = \dfrac{1}{tan(x)} \\
+    &= 1-\dfrac{\sin^2(x)}{1+\dfrac{1}{\dfrac{\sin(x)}{\cos(x)}}}-\dfrac{\cos^2(x)}{1+\dfrac{\sin(x)}{\cos(x)}} && tan(x) = \dfrac{\sin(x)}{\cos(x)} \\
+    &= 1-\dfrac{\sin^2(x)}{1+\dfrac{\cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{1+\dfrac{\sin(x)}{\cos(x)}} && \text{Simplify} \\
+    &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x)}{\sin(x)} +\dfrac{\cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{1+\dfrac{\sin(x)}{\cos(x)}} && 1 = \dfrac{\sin(x)}{\sin(x)} \\
+    &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x)}{\sin(x)} +\dfrac{\cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{\dfrac{\cos(x)}{\cos(x)}+\dfrac{\sin(x)}{\cos(x)}} && 1 = \dfrac{\cos(x)}{\cos(x)} \\
+    &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x) + \cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{\dfrac{\sin(x) + \cos(x)}{\cos(x)}} && \text{Simplfy} \\
+    &= 1-\sin^2(x) \div \dfrac{\sin(x) + \cos(x)}{\sin(x)} - \cos^2(x) \div \dfrac{\sin(x) + \cos(x)}{\cos(x)} \\
+    &= 1-\sin^2(x) \times \dfrac{\sin(x)}{\sin(x) + \cos(x)} - \cos^2(x) \times \dfrac{\cos(x)}{\sin(x) + \cos(x)} && \text{Convert } \div \text{ to } \times \\
+    &= 1-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && \text{Simplify} \\
+\end{align*}
+
+\addtolength{\jot}{1em}
+\begin{align*}
+    RHS &= \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)}-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && 1 = \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)} \\
+    &= \dfrac{\sin(x)+\cos(x) - \sin^3(x) - \cos^3(x)}{\sin(x)+\cos(x)} && \text{Simplfy} \\
+    &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(\sin^2(x))  - (\cos(x))(\cos^2(x))}{\sin(x)+\cos(x)} \\
+    &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(1 - \cos^2(x))  - (\cos(x))(\cos^2(x))}{\sin(x)+\cos(x)} && \sin^2(x) = 1 - \cos^2(x) \\
+    &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(1 - \cos^2(x))  - (\cos(x))(1 - \sin^2(x))}{\sin(x)+\cos(x)} && \cos^2(x) = 1 - \sin^2(x) \\
+    &= \dfrac{\sin(x)+\cos(x) -(\sin(x) - \cos^2(x)\sin(x))  - (\cos(x) - \sin^2(x)\cos(x))}{\sin(x)+\cos(x)} && \text{Expand} \\
+    &= \dfrac{\sin(x)+\cos(x) - \sin(x) + \cos^2(x)\sin(x)  - \cos(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} \\
+    &= \dfrac{\cos^2(x)\sin(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} && \text{Simplify}\\
+    &= \dfrac{(\sin(x)\cos(x))(\sin(x) + \cos(x))}{\sin(x)+\cos(x)} && \text{Factor } \sin(x)\cos(x) on numerator\\
+    &= \sin(x)\cos(x) && \text{Simplify}\\
+    &= RHS \qedhere\\
+\end{align*}
+\end{proof}
+
+\vspace{-1cm}
+$$\therefore \sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\tan(x)}$$
 
 \newpage
 
