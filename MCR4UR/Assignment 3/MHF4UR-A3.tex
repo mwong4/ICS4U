@@ -102,6 +102,28 @@ $$\therefore \sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\
 %% PROBLEM 2
 \item Determine equivalent expressions for both of $\sin(4x)$ and $\cos(4x)$ entirely in terms of $x$. You do not need to justify your steps.
 
+\textbf{Expand and simplify sin(4x) using indentities:}
+\addtolength{\jot}{1em}
+\begin{align*}
+    \sin(4x) &= ? \\
+    \sin(4x) &= \sin(2x+2x) && 2x+2x=4x \\
+    &= 2\sin(2x)\cos(2x) && \text{Double Angle Identity for sine where angle is 4x}\\
+    &= 2(2\sin(x)\cos(x))\cos(2x) && \text{Double Angle Identity for sine where angle is 2x}\\
+    &= 2(2\sin(x)\cos(x))(\cos^2(x)-\sin^2(x)) && \text{Double Angle Identity for cosine where angle is 2x}\\
+    &= 4\sin(x)\cos(x)(\cos^2(x)-\sin^2(x)) && \text{Expand}\\
+    \therefore \sin(4x) &= \boxed{4\sin(x)\cos^3(x)-4\sin^3(x)\cos(x)}\\
+\end{align*}
+
+\textbf{Expand and simplify cos(4x) using indentities:}
+\begin{align*}
+    \cos(4x) &= ? \\
+    \cos(4x) &= \cos(2x+2x) && 2x+2x=4x \\
+    &= \cos^2(2x) - \sin^2(2x) && \text{Double Angle Identity for cosine where angle is 4x}\\
+    &= (\cos^2(x) - \sin^2(x))^2 - \sin^2(2x) && \text{Double Angle Identity for cosine where angle is 2x}\\
+    &= (\cos^2(x) - \sin^2(x))^2 - (2\sin(x)\cos(x))^2 && \text{Double Angle Identity for sine where angle is 2x}\\
+    &= \cos^4(x) - 2\sin(x)^2\cos(x)^2 + \sin^2(x))^4 - 4\sin(x)^2\cos(x)^2 && \text{Apply exponents}\\
+    \therefore \cos(4x) &= \boxed{\cos^4(x) + \sin^2(x))^4 - 6\sin(x)^2\cos(x)^2} && \text{Simplify}\\
+\end{align*}
 
 \newpage
 

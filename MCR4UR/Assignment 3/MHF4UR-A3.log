@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  9 JAN 2021 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  11 JAN 2021 13:30
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/MHF4UR-A3.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/MHF4UR-A3.tex"
@@ -286,25 +286,35 @@ Overfull \hbox (74.3824pt too wide) detected at line 94
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2] [3] [4]
+ [2] [3]
+Overfull \hbox (9.03972pt too wide) detected at line 115
+[]
+ []
+
+
+Overfull \hbox (115.31564pt too wide) detected at line 126
+[]
+ []
+
+[4]
 <Inscribed1.png, id=30, 449.42906pt x 437.38406pt>
 File: Inscribed1.png Graphic file (type png)
 <use Inscribed1.png>
-Package pdftex.def Info: Inscribed1.png  used on input line 120.
+Package pdftex.def Info: Inscribed1.png  used on input line 142.
 (pdftex.def)             Requested size: 112.35698pt x 109.34573pt.
 <Inscribed2.png, id=31, 450.18187pt x 438.8897pt>
 File: Inscribed2.png Graphic file (type png)
 <use Inscribed2.png>
-Package pdftex.def Info: Inscribed2.png  used on input line 126.
+Package pdftex.def Info: Inscribed2.png  used on input line 148.
 (pdftex.def)             Requested size: 112.54518pt x 109.72215pt.
  [5 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/Inscribed1.png> <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/Inscribed2.png>] [6]
 <WorldMap.png, id=48, 279.29344pt x 179.16937pt>
 File: WorldMap.png Graphic file (type png)
 <use WorldMap.png>
-Package pdftex.def Info: WorldMap.png  used on input line 145.
+Package pdftex.def Info: WorldMap.png  used on input line 167.
 (pdftex.def)             Requested size: 209.46956pt x 134.3767pt.
 
-Overfull \hbox (137.19957pt too wide) in paragraph at lines 145--146
+Overfull \hbox (137.19957pt too wide) in paragraph at lines 167--168
 [][] 
  []
 
@@ -321,7 +331,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  66i,14n,72p,490b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 3\MHF4UR-A3.pdf" (7 pages, 259114 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 3\MHF4UR-A3.pdf" (7 pages, 262177 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
