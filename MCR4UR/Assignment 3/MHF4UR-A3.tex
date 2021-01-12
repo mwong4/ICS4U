@@ -137,17 +137,108 @@ $$\therefore \sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\
 
 %%% You can omit the inclusion of these images from your own submission.
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.25]{Inscribed1.png}
-\caption{Diagram for part a}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[scale=0.25]{Inscribed1.png}
+%\caption{Diagram for part a}
+%\end{figure}
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.25]{Inscribed2.png}
-\caption{Diagram for part b}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[scale=0.25]{Inscribed2.png}
+%\caption{Diagram for part b}
+%\end{figure}
+
+\vspace{0.5cm}
+\textbf{Solution for question 3 (a):}
+\vspace{0.3cm}
+First, let's get some labels. Take the inscribed rectangle and 
+label the origin B, the top right corner A and the bottom corner C.
+ABC form a right triangle. Label the appropriate sides 
+with their corresponding angles.
+
+%Diagram here
+
+\vspace{0.3cm}
+We know that C or the radius is 25 units. We also know that (a) 
+asks us to express the area with respect to "a" or the distance 
+between the y-axis and the right leg of the rectangle.
+
+From Pythagorean Theorum, we can also define b with respect to a and c:
+\begin{align*}
+    a^2 + b^2 &= c^2 \\
+    b^2 &= c^2 - a^2 && \text{Subtract } a^2 \text{ from both sides}\\
+    b &= \sqrt{c^2 - a^2} && \text{Square root } a^2 \text{ from both sides}\\
+\end{align*}
+
+\vspace{-0.5cm}
+When we look at the diagram, we can see that the big rectangle is split in 
+half by the y-axis. We can assume that both halfs are of the same dimensions 
+and thus area because both halfs only touch the circle at 1 point and since 
+they the circle is centered around the origin and both halfs share the same 
+horizontal lines (and thus same height), using pythagorean theorem their 
+x-distance from the origin must also be the same (same length/base).
+
+\vspace{0.3cm}
+If we solve the area of one half, we can multiply it by 2 to get the full area. 
+The area of a rectangle is $base \times height, \therefore$ the area of the parent rectangle 
+is $A = 2\times base \times height$ where A is the are, b is base and h is height. We know the base and height as a and b 
+so let's substitute them in. 
+
+\begin{align*}
+    A &= 2bh \\
+    A &= 2\times a \times b && \text{base = a, height = b} \\
+    &= 2\times a \times \sqrt{c^2 - a^2} && b = \sqrt{c^2 - a^2} \\
+    &= 2\times a \times \sqrt{25^2 - a^2} && \text{c = radius = 25} \\
+    A &= 2\times a \times \sqrt{625 - a^2} && \text{Simplify} \\
+\end{align*}
+
+\vspace{-1cm}
+$$\boxed{\therefore \text{The area of the rectangle in relation to a is } 2a\sqrt{625 - a^2}}$$
+
+\newpage
+
+\textbf{Solution for question 3 (b):}
+\vspace{0.3cm}
+Taking (a)'s solution, we can biggy back on the previously done work. We know that 
+Area is $2a\sqrt{625 - a^2}$ \textbf{(1)}. If we can find the value of a in terms of $\theta$, 
+we can substitute this value into (a)'s solution and determine the area.
+
+\vspace{0.3cm}
+Since B is the target angle, I will now refer the angle B as $\theta$. 
+Let's try and define $\cos(\theta)$ by using the labeling system from (a). 
+Consider the following:
+
+$$\cos(\theta) = \frac{adj}{hyp} = \frac{a}{c} \text{\space \space \space (2)}$$
+
+We want to isolate "a" within (2). If we multiply the whole equation by c, we can 
+cancel out the denominator in $\frac{a}{c}$.
+
+\begin{align*}
+    \cos(\theta) &= \frac{a}{c} \\
+    c \times \cos(\theta) &= \frac{a}{c} \times c && {Multiply all by c}\\
+    c\cos(\theta) &= a && {Simplify}\\
+    25\cos(\theta) &= a && {Since } c = 25\\
+\end{align*}
+
+\vspace{-0.5cm}
+\begin{center}
+    Now that we know the value of a, substitute this back into (1), the solution of (a):
+\end{center}
+\vspace{-0.5cm}
+
+\begin{align*}
+    A &= 2a\sqrt{625 - a^2} \\
+    &= 2(25\cos(\theta))\sqrt{625 - (25\cos(\theta))^2} && a=25\cos(\theta)\\
+    &= 50\cos(\theta)\sqrt{625 - 625\cos^2(\theta)} && \text{Simplify}\\
+    &= 50\cos(\theta)\sqrt{625(1 - \cos^2(\theta))} && \text{Factor 625}\\
+    &= 50\cos(\theta)\sqrt{625} \sqrt{1 - \cos^2(\theta)} && \sqrt{ab} = \sqrt{a}\sqrt{b}\\ %////////////////////////////TODO| Name Theorum
+    &= 50\cos(\theta)25 \sqrt{1 - \cos^2(\theta)} && \text{Simplify} \\
+    A &= 1250\cos(\theta)\sqrt{1 - \cos^2(\theta)} \\
+\end{align*}
+
+\vspace{-0.5cm}
+$$\boxed{\therefore \text{ The area in relation to } \theta \text{ is } 1250\cos(\theta)\sqrt{1 - \cos^2(\theta)}}$$
 
 \newpage
 
