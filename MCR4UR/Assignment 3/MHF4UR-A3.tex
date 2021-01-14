@@ -95,7 +95,7 @@ We can prove the identity by getting one side of the equal sign to be equivalent
 \end{proof}
 
 \vspace{-1cm}
-$$\therefore \sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\tan(x)}$$
+$$\boxed{\therefore \text{From the proof }\sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\tan(x)}}$$
 
 \newpage
 
@@ -111,9 +111,14 @@ $$\therefore \sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\
     &= 2(2\sin(x)\cos(x))\cos(2x) && \text{Double Angle Identity for sine where angle is 2x}\\
     &= 2(2\sin(x)\cos(x))(\cos^2(x)-\sin^2(x)) && \text{Double Angle Identity for cosine where angle is 2x}\\
     &= 4\sin(x)\cos(x)(\cos^2(x)-\sin^2(x)) && \text{Expand}\\
-    \therefore \sin(4x) &= \boxed{4\sin(x)\cos^3(x)-4\sin^3(x)\cos(x)}\\
+    \therefore \sin(4x) &= 4\sin(x)\cos^3(x)-4\sin^3(x)\cos(x)
 \end{align*}
 
+\begin{center}
+    The equivalent expresion of $\sin(4x)$ is $\boxed{4\sin(x)\cos^3(x)-4\sin^3(x)\cos(x)}$.
+\end{center}
+
+\vspace{1cm}
 \textbf{Expand and simplify cos(4x) using indentities:}
 \begin{align*}
     \cos(4x) &= ? \\
@@ -122,8 +127,12 @@ $$\therefore \sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\cot(x)}-\dfrac{\cos^2(x)}{1+\
     &= (\cos^2(x) - \sin^2(x))^2 - \sin^2(2x) && \text{Double Angle Identity for cosine where angle is 2x}\\
     &= (\cos^2(x) - \sin^2(x))^2 - (2\sin(x)\cos(x))^2 && \text{Double Angle Identity for sine where angle is 2x}\\
     &= \cos^4(x) - 2\sin(x)^2\cos(x)^2 + \sin^2(x))^4 - 4\sin(x)^2\cos(x)^2 && \text{Apply exponents}\\
-    \therefore \cos(4x) &= \boxed{\cos^4(x) + \sin^2(x))^4 - 6\sin(x)^2\cos(x)^2} && \text{Simplify}\\
+    \therefore \cos(4x) &= \cos^4(x) + \sin^2(x))^4 - 6\sin(x)^2\cos(x)^2 && \text{Simplify}
 \end{align*}
+
+\begin{center}
+    The equivalent expresion of $\cos(4x)$ is $\boxed{\cos^4(x) + \sin^2(x))^4 - 6\sin(x)^2\cos(x)^2}$.
+\end{center}
 
 \newpage
 
@@ -297,12 +306,13 @@ $x = \pi + \dfrac{\pi}{4} = \boxed{\dfrac{5\pi}{4}}$
 
 \newpage
 
-$$\therefore x = \dfrac{\pi}{4}, \dfrac{\pi}{2}, \dfrac{5\pi}{4} , \dfrac{3\pi}{2} \text{ if } x \in [0, 2\pi]$$
+$$\therefore \text{Combining everythibg together }x = \dfrac{\pi}{4}, \dfrac{\pi}{2}, \dfrac{5\pi}{4} , \dfrac{3\pi}{2} \text{ if } x \in [0, 2\pi]$$
 
 but the question states that $x \in \mathbb{R}$. We must create a pattern that extends 
 infinitly. We know that this pattern repeats at every period or $2\pi$.
 
-$$\boxed{\therefore x = \dfrac{\pi}{4} + 2\pi n, \dfrac{\pi}{2} + 2\pi n, \dfrac{5\pi}{4} + 2\pi n , \dfrac{3\pi}{2} + 2\pi n \text{ where } k \in \mathbb{Z}}$$
+$$\therefore \text{When }, 2\sin^2(x) + \sin(2x) = 2 \text{ where }(x \in \mathbb{R}):$$
+$$\boxed{x = \dfrac{\pi}{4} + 2\pi n, \dfrac{\pi}{2} + 2\pi n, \dfrac{5\pi}{4} + 2\pi n , \dfrac{3\pi}{2} + 2\pi n \text{ where } k \in \mathbb{Z}}$$
 
 \vspace{0.1cm}
 
@@ -317,6 +327,11 @@ Once you select a city, click on Climatological Information which is a tab above
 %\begin{minipage}{1in}
 %\includegraphics[scale=0.75]{WorldMap.png}
 %\end{minipage}
+
+%Data Table here
+\begin{center}
+    \includegraphics{mean minmax.PNG}
+\end{center}
 
 \vspace{0.3cm}
 \textbf{The process for solving question 5:}
@@ -336,16 +351,111 @@ gap between Jan and July.
 \underline{Mean Max}
 
 \vspace{0.3cm}
-\begin{tabular}{l|l}
+\begin{tabular}{|l|l|}
+    \hline
     Period & 365 days \\
+    \hline
     Max & 23.1 \\
+    \hline
     Min & 2.7 \\
-    Amplitude & =(Max+Min)/2\\
-    Axis & \\
-
+    \hline
+    Amplitude & =(Max-Min)/2\\
+    & = (23.1-2.7)/2 \\
+    & = 10.2 \\
+    \hline
+    Axis & =(Min + Amplitude)\\
+    & =(2.7+10.2) \\
+    & = 12.9 \\
+    \hline
+    Relationship looks like & inverse sine: year starts cold in winter, gets hot in \\
+    & summer, then return to winter. \\
+    \hline
+    Shift right 30 days & horizontal translation 30 days right. \\
+    \hline
 \end{tabular}
 
+\newpage
+
+\vspace{0.3cm}
+Therefore, with this information we can form a model. 
+Consider t(x) is the mean max tempature for x, a given day of the year. 
+The general formula is the following:
+
+$$t(x) = \text{vertical reflection} \times \text{amplitude} \times \cos\left( \dfrac{2\pi}{\text{period}}  (x - \text{horizontal shift}) \right) + \text{axis}$$
+
+\begin{center}
+    Now plug in the know values into the general formula:
+\end{center}
+
+$\therefore$ The model $\boxed{t(x) = -10.2\cos\left( \dfrac{2\pi}{365} (x - 30) \right) + 12.9}$ can be used to approximately represent the data of the mean max tempature.
+
+\vspace{0.3cm}
+\underline{test - February 28 (x = 59)}
+
+Now use x=59 to find a day in February. Compare this to the actual value
+
+$$t(59) \approx 3.945$$
+\vspace{0.1cm}
+$$\% Error = 100\left(1-\dfrac{\text{Model}}{\text{Actual}}\right) \approx 100\left(1-\dfrac{3.945}{4.3}\right) \approx \boxed{8.256\%}$$
+
+\begin{center}
+    $\therefore$ The model created, with this specific test, is accurate within approx 8 percent error.
+\end{center}
+
+\vspace{0.7cm}
 \underline{Mean Min}
+
+\vspace{0.3cm}
+\begin{tabular}{|l|l|}
+    \hline
+    Period & 365 days \\
+    \hline
+    Max & 12.6 \\
+    \hline
+    Min & -3.7 \\
+    \hline
+    Amplitude & =(Max-Min)/2\\
+    & = (12.6.1-(-3.7))/2 \\
+    & = 8.15 \\
+    \hline
+    Axis & =(Min + Amplitude)\\
+    & =(8.15-3.7) \\
+    & = 4.45 \\
+    \hline
+    Relationship looks like & inverse sine: year starts cold in winter, gets hot in \\
+    & summer, then return to winter. \\
+    \hline
+    Shift right 30 days & horizontal translation 30 days right. \\
+    \hline
+\end{tabular}
+
+\vspace{1cm}
+Therefore, with this information we can form a model. 
+Consider t(x) is the mean max tempature for x, a given day of the year. 
+Like before, the general formula is the following:
+
+$$t(x) = \text{vertical reflection} \times \text{amplitude} \times \cos\left( \dfrac{2\pi}{\text{period}}  (x - \text{horizontal shift}) \right) + \text{axis}$$
+
+\newpage
+
+\begin{center}
+    Now plug in the know values into the general formula:
+\end{center}
+
+$\therefore$ The model $\boxed{t(x) = -8.15\cos\left( \dfrac{2\pi}{365} (x - 30) \right) + 4.45}$ can be used to approximately represent the data of the mean max tempature.
+
+\vspace{0.3cm}
+\underline{test - February 28 (x = 59)}
+
+Now use x=59 to find a day in February. Compare this to the actual value
+
+$$t(59) \approx -2.705$$
+\vspace{0.1cm}
+$$\% Error = 100\left(1-\dfrac{\text{Model}}{\text{Actual}}\right) \approx 100\left(1-\dfrac{-2.705}{3.2}\right) \approx \boxed{15.457\%}$$
+
+\begin{center}
+    $\therefore$ The model created, with this specific test, is accurate within approx 15 percent error.
+\end{center}
 
 \newpage
 
