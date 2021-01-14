@@ -1,3 +1,9 @@
+/*
+>- Author: Max Wong
+>- Date: Jan 12, 2020
+>- Purpose: Practice for CCC Competition
+*/
+
 #include <iostream>
 
 using namespace std;
