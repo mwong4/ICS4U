@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  12 JAN 2021 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  13 JAN 2021 20:05
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/MHF4UR-A3.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/MHF4UR-A3.tex"
@@ -279,7 +279,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (74.3824pt too wide) detected at line 94
+Overfull \hbox (14.10962pt too wide) detected at line 79
+[]
+ []
+
+
+Overfull \hbox (12.12367pt too wide) detected at line 94
 []
  []
 
@@ -296,33 +301,39 @@ Overfull \hbox (115.31564pt too wide) detected at line 126
 []
  []
 
-[4] [5] [6] [7]
-<WorldMap.png, id=51, 279.29344pt x 179.16937pt>
+[4]
+<A3-3 Diagram.png, id=30, 963.6pt x 566.115pt>
+File: A3-3 Diagram.png Graphic file (type png)
+<use A3-3 Diagram.png>
+Package pdftex.def Info: A3-3 Diagram.png  used on input line 162.
+(pdftex.def)             Requested size: 240.89941pt x 141.5284pt.
+ [5 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/A3-3 Diagram.png>] [6] [7] [8] [9]
+<WorldMap.png, id=62, 279.29344pt x 179.16937pt>
 File: WorldMap.png Graphic file (type png)
 <use WorldMap.png>
-Package pdftex.def Info: WorldMap.png  used on input line 258.
+Package pdftex.def Info: WorldMap.png  used on input line 318.
 (pdftex.def)             Requested size: 209.46956pt x 134.3767pt.
 
-Overfull \hbox (137.19957pt too wide) in paragraph at lines 258--259
+Overfull \hbox (137.19957pt too wide) in paragraph at lines 318--319
 [][] 
  []
 
-[8 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/WorldMap.png>] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 3\MHF4UR-A3.aux")
+[10 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/WorldMap.png>] ("c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 3\MHF4UR-A3.aux")
 Package rerunfilecheck Info: File `MHF4UR-A3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 6311 strings out of 479799
- 95570 string characters out of 2869209
- 409689 words of memory out of 3000000
- 23180 multiletter control sequences out of 15000+200000
+ 6319 strings out of 479799
+ 95700 string characters out of 2869209
+ 409691 words of memory out of 3000000
+ 23185 multiletter control sequences out of 15000+200000
  541038 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,14n,72p,490b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 3\MHF4UR-A3.pdf" (8 pages, 265022 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 3\MHF4UR-A3.pdf" (10 pages, 287132 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

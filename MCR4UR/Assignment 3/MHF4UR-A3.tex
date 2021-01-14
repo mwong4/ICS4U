@@ -73,8 +73,8 @@ We can prove the identity by getting one side of the equal sign to be equivalent
     &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x)}{\sin(x)} +\dfrac{\cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{1+\dfrac{\sin(x)}{\cos(x)}} && 1 = \dfrac{\sin(x)}{\sin(x)} \\
     &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x)}{\sin(x)} +\dfrac{\cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{\dfrac{\cos(x)}{\cos(x)}+\dfrac{\sin(x)}{\cos(x)}} && 1 = \dfrac{\cos(x)}{\cos(x)} \\
     &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x) + \cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{\dfrac{\sin(x) + \cos(x)}{\cos(x)}} && \text{Simplfy} \\
-    &= 1-\sin^2(x) \div \dfrac{\sin(x) + \cos(x)}{\sin(x)} - \cos^2(x) \div \dfrac{\sin(x) + \cos(x)}{\cos(x)} \\
-    &= 1-\sin^2(x) \times \dfrac{\sin(x)}{\sin(x) + \cos(x)} - \cos^2(x) \times \dfrac{\cos(x)}{\sin(x) + \cos(x)} && \text{Convert } \div \text{ to } \times \\
+    &= 1-\sin^2(x) \div \dfrac{\sin(x) + \cos(x)}{\sin(x)} - \cos^2(x) \div \dfrac{\sin(x) + \cos(x)}{\cos(x)} && \dfrac{a}{b} = a \div b \\
+    &= 1-\sin^2(x) \times \dfrac{\sin(x)}{\sin(x) + \cos(x)} - \cos^2(x) \times \dfrac{\cos(x)}{\sin(x) + \cos(x)} && \text{Convert } \div \text{ to } \times \text{ with reciprocal} \\
     &= 1-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && \text{Simplify} \\
 \end{align*}
 
@@ -82,13 +82,13 @@ We can prove the identity by getting one side of the equal sign to be equivalent
 \begin{align*}
     RHS &= \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)}-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && 1 = \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)} \\
     &= \dfrac{\sin(x)+\cos(x) - \sin^3(x) - \cos^3(x)}{\sin(x)+\cos(x)} && \text{Simplfy} \\
-    &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(\sin^2(x))  - (\cos(x))(\cos^2(x))}{\sin(x)+\cos(x)} \\
+    &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(\sin^2(x))  - (\cos(x))(\cos^2(x))}{\sin(x)+\cos(x)} && a^3 = a\times a^2\\
     &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(1 - \cos^2(x))  - (\cos(x))(\cos^2(x))}{\sin(x)+\cos(x)} && \sin^2(x) = 1 - \cos^2(x) \\
     &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(1 - \cos^2(x))  - (\cos(x))(1 - \sin^2(x))}{\sin(x)+\cos(x)} && \cos^2(x) = 1 - \sin^2(x) \\
     &= \dfrac{\sin(x)+\cos(x) -(\sin(x) - \cos^2(x)\sin(x))  - (\cos(x) - \sin^2(x)\cos(x))}{\sin(x)+\cos(x)} && \text{Expand} \\
-    &= \dfrac{\sin(x)+\cos(x) - \sin(x) + \cos^2(x)\sin(x)  - \cos(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} \\
+    &= \dfrac{\sin(x)+\cos(x) - \sin(x) + \cos^2(x)\sin(x)  - \cos(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} && \text{Break brackets}\\
     &= \dfrac{\cos^2(x)\sin(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} && \text{Simplify}\\
-    &= \dfrac{(\sin(x)\cos(x))(\sin(x) + \cos(x))}{\sin(x)+\cos(x)} && \text{Factor } \sin(x)\cos(x) on numerator\\
+    &= \dfrac{(\sin(x)\cos(x))(\sin(x) + \cos(x))}{\sin(x)+\cos(x)} && \text{Factor } \sin(x)\cos(x)\\
     &= \sin(x)\cos(x) && \text{Simplify}\\
     &= RHS \qedhere\\
 \end{align*}
@@ -158,6 +158,9 @@ ABC form a right triangle. Label the appropriate sides
 with their corresponding angles.
 
 %Diagram here
+\begin{center}
+    \includegraphics[scale = 0.25]{A3-3 Diagram.png}
+\end{center}
 
 \vspace{0.3cm}
 We know that C or the radius is 25 units. We also know that (a) 
@@ -196,12 +199,19 @@ so let's substitute them in.
 \vspace{-1cm}
 $$\boxed{\therefore \text{The area of the rectangle in relation to a is } 2a\sqrt{625 - a^2}}$$
 
-\newpage
-
+\vspace{0.5cm}
 \textbf{Solution for question 3 (b):}
+
 \vspace{0.3cm}
 Taking (a)'s solution, we can biggy back on the previously done work. We know that 
-Area is $2a\sqrt{625 - a^2}$ \textbf{(1)}. If we can find the value of a in terms of $\theta$, 
+Area is:
+
+\begin{center}
+    $2a\sqrt{625 - a^2}$ \textbf{(1)} 
+\end{center}
+
+\vspace{0.2cm}
+If we can find the value of a in terms of $\theta$, 
 we can substitute this value into (a)'s solution and determine the area.
 
 \vspace{0.3cm}
@@ -216,12 +226,13 @@ cancel out the denominator in $\frac{a}{c}$.
 
 \begin{align*}
     \cos(\theta) &= \frac{a}{c} \\
-    c \times \cos(\theta) &= \frac{a}{c} \times c && {Multiply all by c}\\
-    c\cos(\theta) &= a && {Simplify}\\
-    25\cos(\theta) &= a && {Since } c = 25\\
+    c \times \cos(\theta) &= \frac{a}{c} \times c && \text{Multiply all by c}\\
+    c\cos(\theta) &= a && \text{Simplify}\\
+    25\cos(\theta) &= a && \text{Since } c = 25\\
 \end{align*}
 
-\vspace{-0.5cm}
+\newpage
+
 \begin{center}
     Now that we know the value of a, substitute this back into (1), the solution of (a):
 \end{center}
@@ -245,6 +256,55 @@ $$\boxed{\therefore \text{ The area in relation to } \theta \text{ is } 1250\cos
 
 %% PROBLEM 4
 \item Solve $2\sin^2(x) + \sin(2x) = 2$ $(x \in \mathbb{R})$. Be sure to effectively communicate the multiple solutions.
+
+\textbf{To solve question 4, we need to factor the function:}
+
+\begin{align*}
+    2\sin^2(x) + \sin(2x) &= 2 \\
+    2(1-\cos^2(x)) + \sin(2x) &= 2 && sin^2(x) = 1 - cos^2(x) \\
+    2(1-\cos^2(x)) + 2\sin(x)\cos(x) &= 2 && \sin(2x) = 2\sin(x)\cos(x) \\
+    2-2\cos^2(x) + 2\sin(x)\cos(x) &= 2 && \text{Expand}\\
+    2 - 2 - 2\cos^2(x) + 2\sin(x)\cos(x) &= 0 && \text{Subtract 2 from both sides}\\
+    - 2\cos^2(x) + 2\sin(x)\cos(x) &= 0 && \text{Simplify}\\
+    - 2\cos(x)(\cos(x) - 2\sin(x)) &= 0 && \text{Factor } -2\cos(x)\\
+\end{align*}
+
+From this, we know that cos(x) is equal to 0 and sin(x). With this, we can solve for the value of x.
+
+\vspace{0.3cm}
+\underline{When cos(x) = 0}
+
+\vspace{0.1cm}
+$x = \boxed{\dfrac{\pi}{2}}$. Cosine is also positive in quadrant 4 meaning that there is a 
+related accute angle in Q4:
+
+$x = 2\pi - \dfrac{\pi}{2} = \boxed{\dfrac{3\pi}{2}}$
+
+\vspace{0.3cm}
+\underline{When cos(x) = sin(x)}
+$\cos(x) = \sin(x)$ can also be expressed alternatively as $tan(x) = 1$ with the following procedure:
+
+\begin{align*}
+    \cos(x) &= \sin(x) \\
+    \dfrac{\cos(x)}{\sin(x)} &= 1 && \text{Divide both sides by } \sin(x) \\
+    \tan(x) &= 1 && \text{Quotient identity} \\ 
+\end{align*}
+
+We know that tan(x) = 1 when x is $\boxed{\dfrac{\pi}{4}}$. Since tangent is positive in 
+quadrant 4, the related accute angle is in Q3. 
+
+$x = \pi + \dfrac{\pi}{4} = \boxed{\dfrac{5\pi}{4}}$
+
+\newpage
+
+$$\therefore x = \dfrac{\pi}{4}, \dfrac{\pi}{2}, \dfrac{5\pi}{4} , \dfrac{3\pi}{2} \text{ if } x \in [0, 2\pi]$$
+
+but the question states that $x \in \mathbb{R}$. We must create a pattern that extends 
+infinitly. We know that this pattern repeats at every period or $2\pi$.
+
+$$\boxed{\therefore x = \dfrac{\pi}{4} + 2\pi n, \dfrac{\pi}{2} + 2\pi n, \dfrac{5\pi}{4} + 2\pi n , \dfrac{3\pi}{2} + 2\pi n \text{ where } k \in \mathbb{Z}}$$
+
+\vspace{0.1cm}
 
 
 \newpage
