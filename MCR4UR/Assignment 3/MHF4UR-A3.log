@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  14 JAN 2021 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  15 JAN 2021 10:39
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/MHF4UR-A3.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/MHF4UR-A3.tex"
@@ -279,12 +279,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (14.10962pt too wide) detected at line 79
-[]
- []
-
-
-Overfull \hbox (12.12367pt too wide) detected at line 94
+Overfull \hbox (6.9015pt too wide) detected at line 95
 []
  []
 
@@ -292,12 +287,12 @@ Overfull \hbox (12.12367pt too wide) detected at line 94
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2] [3]
-Overfull \hbox (9.03972pt too wide) detected at line 115
+Overfull \hbox (9.03972pt too wide) detected at line 116
 []
  []
 
 
-Overfull \hbox (105.99619pt too wide) detected at line 131
+Overfull \hbox (105.99619pt too wide) detected at line 132
 []
  []
 
@@ -305,7 +300,7 @@ Overfull \hbox (105.99619pt too wide) detected at line 131
 <A3-3 Diagram.png, id=30, 963.6pt x 566.115pt>
 File: A3-3 Diagram.png Graphic file (type png)
 <use A3-3 Diagram.png>
-Package pdftex.def Info: A3-3 Diagram.png  used on input line 171.
+Package pdftex.def Info: A3-3 Diagram.png  used on input line 172.
 (pdftex.def)             Requested size: 240.89941pt x 141.5284pt.
  [5 <c:/Users/Max pc/Documents/GitHub/ICS4U/MCR4UR/Assignment 3/A3-3 Diagram.png>] [6] [7] [8] [9]
 <mean minmax.PNG, id=62, 295.1025pt x 208.3785pt>
@@ -320,13 +315,13 @@ Package rerunfilecheck Info: File `MHF4UR-A3.out' has not changed.
 Here is how much of TeX's memory you used:
  6322 strings out of 479799
  95738 string characters out of 2869209
- 409691 words of memory out of 3000000
+ 410691 words of memory out of 3000000
  23185 multiletter control sequences out of 15000+200000
  541038 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,14n,72p,490b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 3\MHF4UR-A3.pdf" (12 pages, 177572 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\MCR4UR\Assignment 3\MHF4UR-A3.pdf" (12 pages, 177773 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)

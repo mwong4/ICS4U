@@ -72,23 +72,24 @@ We can prove the identity by getting one side of the equal sign to be equivalent
     &= 1-\dfrac{\sin^2(x)}{1+\dfrac{\cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{1+\dfrac{\sin(x)}{\cos(x)}} && \text{Simplify} \\
     &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x)}{\sin(x)} +\dfrac{\cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{1+\dfrac{\sin(x)}{\cos(x)}} && 1 = \dfrac{\sin(x)}{\sin(x)} \\
     &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x)}{\sin(x)} +\dfrac{\cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{\dfrac{\cos(x)}{\cos(x)}+\dfrac{\sin(x)}{\cos(x)}} && 1 = \dfrac{\cos(x)}{\cos(x)} \\
-    &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x) + \cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{\dfrac{\sin(x) + \cos(x)}{\cos(x)}} && \text{Simplfy} \\
+    &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x) + \cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{\dfrac{\sin(x) + \cos(x)}{\cos(x)}} && \text{Add fractions together} \\
     &= 1-\sin^2(x) \div \dfrac{\sin(x) + \cos(x)}{\sin(x)} - \cos^2(x) \div \dfrac{\sin(x) + \cos(x)}{\cos(x)} && \dfrac{a}{b} = a \div b \\
-    &= 1-\sin^2(x) \times \dfrac{\sin(x)}{\sin(x) + \cos(x)} - \cos^2(x) \times \dfrac{\cos(x)}{\sin(x) + \cos(x)} && \text{Convert } \div \text{ to } \times \text{ with reciprocal} \\
+    &= 1-\sin^2(x) \times \dfrac{\sin(x)}{\sin(x) + \cos(x)} - \cos^2(x) \times \dfrac{\cos(x)}{\sin(x) + \cos(x)} && a \div \frac{b}{c} = a \times \frac{c}{b} \\
     &= 1-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && \text{Simplify} \\
 \end{align*}
 
 \addtolength{\jot}{1em}
 \begin{align*}
-    RHS &= \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)}-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && 1 = \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)} \\
+    RHS &= 1-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} \\
+    &= \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)}-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && 1 = \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)} \\
     &= \dfrac{\sin(x)+\cos(x) - \sin^3(x) - \cos^3(x)}{\sin(x)+\cos(x)} && \text{Simplfy} \\
-    &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(\sin^2(x))  - (\cos(x))(\cos^2(x))}{\sin(x)+\cos(x)} && a^3 = a\times a^2\\
-    &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(1 - \cos^2(x))  - (\cos(x))(\cos^2(x))}{\sin(x)+\cos(x)} && \sin^2(x) = 1 - \cos^2(x) \\
-    &= \dfrac{\sin(x)+\cos(x) -(\sin(x))(1 - \cos^2(x))  - (\cos(x))(1 - \sin^2(x))}{\sin(x)+\cos(x)} && \cos^2(x) = 1 - \sin^2(x) \\
-    &= \dfrac{\sin(x)+\cos(x) -(\sin(x) - \cos^2(x)\sin(x))  - (\cos(x) - \sin^2(x)\cos(x))}{\sin(x)+\cos(x)} && \text{Expand} \\
+    &= \dfrac{\sin(x)+\cos(x) -[\sin(x)][\sin^2(x)]  - [\cos(x)][\cos^2(x)]}{\sin(x)+\cos(x)} && a^3 = a\times a^2\\
+    &= \dfrac{\sin(x)+\cos(x) -[\sin(x))(1 - \cos^2(x)]  - [\cos(x)][\cos^2(x)]}{\sin(x)+\cos(x)} && \sin^2(x) = 1 - \cos^2(x) \\
+    &= \dfrac{\sin(x)+\cos(x) -[\sin(x))(1 - \cos^2(x)]  - [\cos(x)][1 - \sin^2(x)]}{\sin(x)+\cos(x)} && \cos^2(x) = 1 - \sin^2(x) \\
+    &= \dfrac{\sin(x)+\cos(x) -[\sin(x) - \cos^2(x)\sin(x)]  - [\cos(x) - \sin^2(x)\cos(x)]}{\sin(x)+\cos(x)} && \text{Expand} \\
     &= \dfrac{\sin(x)+\cos(x) - \sin(x) + \cos^2(x)\sin(x)  - \cos(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} && \text{Break brackets}\\
     &= \dfrac{\cos^2(x)\sin(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} && \text{Simplify}\\
-    &= \dfrac{(\sin(x)\cos(x))(\sin(x) + \cos(x))}{\sin(x)+\cos(x)} && \text{Factor } \sin(x)\cos(x)\\
+    &= \dfrac{[\sin(x)\cos(x)][\sin(x) + \cos(x)]}{\sin(x)+\cos(x)} && \text{Factor } \sin(x)\cos(x)\\
     &= \sin(x)\cos(x) && \text{Simplify}\\
     &= RHS \qedhere\\
 \end{align*}
@@ -202,7 +203,7 @@ so let's substitute them in.
     A &= 2\times a \times b && \text{base = a, height = b} \\
     &= 2\times a \times \sqrt{c^2 - a^2} && b = \sqrt{c^2 - a^2} \\
     &= 2\times a \times \sqrt{25^2 - a^2} && \text{c = radius = 25} \\
-    A &= 2\times a \times \sqrt{625 - a^2} && \text{(1) \space (Simplify} \\
+    A &= 2\times a \times \sqrt{625 - a^2} && \text{(1) \space Simplify} \\
     A &= 2\times x \times \sqrt{625 - x^2} && x=a \\
 \end{align*}
 
@@ -274,12 +275,12 @@ $$\boxed{\therefore \text{ The area in relation to } \theta \text{ is } 1250\cos
     2(1-\cos^2(x)) + \sin(2x) &= 2 && sin^2(x) = 1 - cos^2(x) \\
     2(1-\cos^2(x)) + 2\sin(x)\cos(x) &= 2 && \sin(2x) = 2\sin(x)\cos(x) \\
     2-2\cos^2(x) + 2\sin(x)\cos(x) &= 2 && \text{Expand}\\
-    2 - 2 - 2\cos^2(x) + 2\sin(x)\cos(x) &= 0 && \text{Subtract 2 from both sides}\\
+    2 - 2\cos^2(x) + 2\sin(x)\cos(x) - 2 &= 0 && \text{Subtract 2 from both sides}\\
     - 2\cos^2(x) + 2\sin(x)\cos(x) &= 0 && \text{Simplify}\\
     - 2\cos(x)(\cos(x) - 2\sin(x)) &= 0 && \text{Factor } -2\cos(x)\\
 \end{align*}
 
-From this, we know that cos(x) is equal to 0 and sin(x). With this, we can solve for the value of x.
+From the factor theorum, we know that cos(x) is equal to 0 and sin(x) because $- 2\cos(x) = 0$ and $\cos(x) - 2\sin(x) = 0$. With this, we can solve for the value of x.
 
 \vspace{0.3cm}
 \underline{When cos(x) = 0}
@@ -292,12 +293,13 @@ $x = 2\pi - \dfrac{\pi}{2} = \boxed{\dfrac{3\pi}{2}}$
 
 \vspace{0.3cm}
 \underline{When cos(x) = sin(x)}
+
 $\cos(x) = \sin(x)$ can also be expressed alternatively as $tan(x) = 1$ with the following procedure:
 
 \begin{align*}
     \cos(x) &= \sin(x) \\
-    \dfrac{\cos(x)}{\sin(x)} &= 1 && \text{Divide both sides by } \sin(x) \\
-    \tan(x) &= 1 && \text{Quotient identity} \\ 
+    1 &= \dfrac{\sin(x)}{\cos(x)} && \text{Divide both sides by } \cos(x) \\
+    1 &= \tan(x) && \text{Quotient identity}
 \end{align*}
 
 We know that tan(x) = 1 when x is $\boxed{\dfrac{\pi}{4}}$. Since tangent is positive in 
@@ -316,8 +318,6 @@ $$\therefore \text{When }, 2\sin^2(x) + \sin(2x) = 2 \text{ where }(x \in \mathb
 $$\boxed{x = \dfrac{\pi}{4} + 2\pi n, \dfrac{\pi}{2} + 2\pi n, \dfrac{5\pi}{4} + 2\pi n , \dfrac{3\pi}{2} + 2\pi n \text{ where } k \in \mathbb{Z}}$$
 
 \vspace{0.1cm}
-
-%CHECK //////////////////////////////////////////////////////////////////////////////////////
 
 \newpage
 
@@ -392,11 +392,11 @@ $$t(x) = \text{vertical reflection} \times \text{amplitude} \times \cos\left( \d
 $\therefore$ The model $\boxed{t(x) = -10.2\cos\left( \dfrac{2\pi}{365} (x - 30) \right) + 12.9}$ can be used to approximately represent the data of the mean max tempature.
 
 \vspace{0.3cm}
-\underline{test - February 28 (x = 59)}
+\underline{Test - February 28 (x = 59)}
 
 Now use x=59 to find a day in February. Compare this to the actual value
 
-$$t(59) \approx 3.945$$
+$$t(59) = -10.2\cos\left( \dfrac{2\pi}{365} (59 - 30) \right) + 12.9 \approx 3.945$$
 \vspace{0.1cm}
 $$\% Error = 100\left(1-\dfrac{\text{Model}}{\text{Actual}}\right) \approx 100\left(1-\dfrac{3.945}{4.3}\right) \approx \boxed{8.256\%}$$
 
@@ -447,19 +447,17 @@ $$t(x) = \text{vertical reflection} \times \text{amplitude} \times \cos\left( \d
 $\therefore$ The model $\boxed{t(x) = -8.15\cos\left( \dfrac{2\pi}{365} (x - 30) \right) + 4.45}$ can be used to approximately represent the data of the mean max tempature.
 
 \vspace{0.3cm}
-\underline{test - February 28 (x = 59)}
+\underline{Test - February 28 (x = 59)}
 
 Now use x=59 to find a day in February. Compare this to the actual value
 
-$$t(59) \approx -2.705$$
+$$t(59) = -8.15\cos\left( \dfrac{2\pi}{365} (59 - 30) \right) + 4.45 \approx -2.705$$
 \vspace{0.1cm}
 $$\% Error = 100\left(1-\dfrac{\text{Model}}{\text{Actual}}\right) \approx 100\left(1-\dfrac{-2.705}{3.2}\right) \approx \boxed{15.457\%}$$
 
 \begin{center}
     $\therefore$ The model created, with this specific test, is accurate within approx 15 percent error.
 \end{center}
-
-%CHECK HERE ////////////////////////////////////////////////////////////////////////////////////////////
 
 \newpage
 
