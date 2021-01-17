@@ -75,23 +75,23 @@ We can prove the identity by getting one side of the equal sign to be equivalent
     &= 1-\dfrac{\sin^2(x)}{\dfrac{\sin(x) + \cos(x)}{\sin(x)}}-\dfrac{\cos^2(x)}{\dfrac{\sin(x) + \cos(x)}{\cos(x)}} && \text{Add fractions together} \\
     &= 1-\sin^2(x) \div \dfrac{\sin(x) + \cos(x)}{\sin(x)} - \cos^2(x) \div \dfrac{\sin(x) + \cos(x)}{\cos(x)} && \dfrac{a}{b} = a \div b \\
     &= 1-\sin^2(x) \times \dfrac{\sin(x)}{\sin(x) + \cos(x)} - \cos^2(x) \times \dfrac{\cos(x)}{\sin(x) + \cos(x)} && a \div \frac{b}{c} = a \times \frac{c}{b} \\
-    &= 1-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && \text{Simplify} \\
+    &= 1-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && \text{Simplify, multiply numerators} \\
 \end{align*}
 
 \addtolength{\jot}{1em}
 \begin{align*}
     RHS &= 1-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} \\
     &= \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)}-\dfrac{\sin^3(x)}{\sin(x) + \cos(x)} - \dfrac{\cos^3(x)}{\sin(x) + \cos(x)} && 1 = \dfrac{\sin(x)+\cos(x)}{\sin(x)+\cos(x)} \\
-    &= \dfrac{\sin(x)+\cos(x) - \sin^3(x) - \cos^3(x)}{\sin(x)+\cos(x)} && \text{Simplfy} \\
+    &= \dfrac{\sin(x)+\cos(x) - \sin^3(x) - \cos^3(x)}{\sin(x)+\cos(x)} && \text{Add together} \\
     &= \dfrac{\sin(x)+\cos(x) -[\sin(x)][\sin^2(x)]  - [\cos(x)][\cos^2(x)]}{\sin(x)+\cos(x)} && a^3 = a\times a^2\\
-    &= \dfrac{\sin(x)+\cos(x) -[\sin(x))(1 - \cos^2(x)]  - [\cos(x)][\cos^2(x)]}{\sin(x)+\cos(x)} && \sin^2(x) = 1 - \cos^2(x) \\
-    &= \dfrac{\sin(x)+\cos(x) -[\sin(x))(1 - \cos^2(x)]  - [\cos(x)][1 - \sin^2(x)]}{\sin(x)+\cos(x)} && \cos^2(x) = 1 - \sin^2(x) \\
+    &= \dfrac{\sin(x)+\cos(x) -[\sin(x)][1 - \cos^2(x)]  - [\cos(x)][\cos^2(x)]}{\sin(x)+\cos(x)} && \sin^2(x) = 1 - \cos^2(x) \\
+    &= \dfrac{\sin(x)+\cos(x) -[\sin(x)][1 - \cos^2(x)]  - [\cos(x)][1 - \sin^2(x)]}{\sin(x)+\cos(x)} && \cos^2(x) = 1 - \sin^2(x) \\
     &= \dfrac{\sin(x)+\cos(x) -[\sin(x) - \cos^2(x)\sin(x)]  - [\cos(x) - \sin^2(x)\cos(x)]}{\sin(x)+\cos(x)} && \text{Expand} \\
     &= \dfrac{\sin(x)+\cos(x) - \sin(x) + \cos^2(x)\sin(x)  - \cos(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} && \text{Break brackets}\\
     &= \dfrac{\cos^2(x)\sin(x) + \sin^2(x)\cos(x)}{\sin(x)+\cos(x)} && \text{Simplify}\\
     &= \dfrac{[\sin(x)\cos(x)][\sin(x) + \cos(x)]}{\sin(x)+\cos(x)} && \text{Factor } \sin(x)\cos(x)\\
     &= \sin(x)\cos(x) && \text{Simplify}\\
-    &= RHS \qedhere\\
+    &= LHS \qedhere\\
 \end{align*}
 \end{proof}
 
@@ -124,11 +124,11 @@ $$\boxed{\therefore \text{From the proof }\sin(x)\cos(x)=1-\dfrac{\sin^2(x)}{1+\
 \begin{align*}
     \cos(4x) &= ? \\
     \cos(4x) &= \cos(2x+2x) && 2x+2x=4x \\
-    &= \cos^2(2x) - \sin^2(2x) && \text{Double Angle Identity for cosine where angle is 4x}\\
-    &= (\cos^2(x) - \sin^2(x))^2 - \sin^2(2x) && \text{Double Angle Identity for cosine where angle is 2x}\\
-    &= (\cos^2(x) - \sin^2(x))^2 - (2\sin(x)\cos(x))^2 && \text{Double Angle Identity for sine where angle is 2x}\\
+    &= \cos^2(2x) - \sin^2(2x) && \text{Double Angle Iden. for cosine,} \theta=4x\\
+    &= (\cos^2(x) - \sin^2(x))^2 - \sin^2(2x) && \text{Double Angle Iden. for cosine,} \theta=2x\\
+    &= (\cos^2(x) - \sin^2(x))^2 - (2\sin(x)\cos(x))^2 && \text{Double Angle Iden. for sine,} \theta=2x\\
     &= \cos^4(x) - 2\sin(x)^2\cos(x)^2 + \sin^4(x) - 4\sin(x)^2\cos(x)^2 && \text{Apply exponents}\\
-    \therefore \cos(4x) &= \cos^4(x) + \sin^4(x) - 6\sin(x)^2\cos(x)^2 && \text{Simplify}
+    \therefore \cos(4x) &= \cos^4(x) + \sin^4(x) - 6\sin^2(x)\cos^2(x) && \text{Simplify}
 \end{align*}
 
 \begin{center}
@@ -256,11 +256,12 @@ cancel out the denominator in $\frac{a}{c}$.
     &= 50\cos(\theta)\sqrt{625(1 - \cos^2(\theta))} && \text{Factor 625}\\
     &= 50\cos(\theta)\sqrt{625} \sqrt{1 - \cos^2(\theta)} && \sqrt{ab} = \sqrt{a}\sqrt{b}\\ %////////////////////////////TODO| Name Theorum
     &= 50\cos(\theta)25 \sqrt{1 - \cos^2(\theta)} && \text{Simplify} \\
-    A &= 1250\cos(\theta)\sqrt{1 - \cos^2(\theta)} \\
+    &= 1250\cos(\theta)\sqrt{1 - \cos^2(\theta)} \\
+    A &= 1250\cos(\theta)\sqrt{\sin^2(\theta)} && \sin^2(\theta) = 1 - \cos^2(\theta)\\
 \end{align*}
 
 \vspace{-0.5cm}
-$$\boxed{\therefore \text{ The area in relation to } \theta \text{ is } 1250\cos(\theta)\sqrt{1 - \cos^2(\theta)}}$$
+$$\boxed{\therefore \text{ The area in relation to } \theta \text{ is } 1250\cos(\theta)\sqrt{\sin^2(\theta)}}$$
 
 \newpage
 
@@ -277,7 +278,7 @@ $$\boxed{\therefore \text{ The area in relation to } \theta \text{ is } 1250\cos
     2-2\cos^2(x) + 2\sin(x)\cos(x) &= 2 && \text{Expand}\\
     2 - 2\cos^2(x) + 2\sin(x)\cos(x) - 2 &= 0 && \text{Subtract 2 from both sides}\\
     - 2\cos^2(x) + 2\sin(x)\cos(x) &= 0 && \text{Simplify}\\
-    - 2\cos(x)(\cos(x) - 2\sin(x)) &= 0 && \text{Factor } -2\cos(x)\\
+    - 2\cos(x)(\cos(x) - \sin(x)) &= 0 && \text{Factor } -2\cos(x)\\
 \end{align*}
 
 From the factor theorum, we know that cos(x) is equal to 0 and sin(x) because $- 2\cos(x) = 0$ and $\cos(x) - 2\sin(x) = 0$. With this, we can solve for the value of x.
