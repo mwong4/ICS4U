@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1611108883 source:c:\users\max pc\documents\github\ics4u\ccc\2019\ccc practice 3\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+

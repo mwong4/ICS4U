@@ -7,6 +7,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <string.h>
+#include <stdio.h> //For converting string to array
+#include <stdlib.h>
 
 using namespace std;
 
@@ -61,39 +64,33 @@ int main()
         {
             if(group[0][i] == "X")
             {
-                group[0][i] = std::stoi(group[1][i], 10) - std::stoi(group[2][i], 10) + std::stoi(group[1][i], 10);
+                group[0][i] = std::stoi((group[1][i]).c_str()) - std::stoi((group[2][i]).c_str()) + std::stoi((group[1][i]).c_str());
             }
             if(group[1][i] == "X")
             {
-                group[1][i] = (std::stoi(group[2][i]) - std::stoi(group[0][i]))/2 + std::stoi(group[0][i])
+                group[1][i] = (std::stoi((group[2][i]).c_str()) - std::stoi((group[0][i]).c_str()))/2 + std::stoi((group[0][i]).c_str());
             }
             if(group[2][i] == "X")
             {
-                group[2][i] = std::stoi(group[1][i]) - std::stoi(group[0][i]) + std::stoi(group[1][i]);
+                group[2][i] = std::stoi((group[1][i]).c_str()) - std::stoi((group[0][i]).c_str()) + std::stoi((group[1][i]).c_str());
             }
         }
-    }
-
-    for(int i = 0; i < 3; i++)
-    {
         if(countLine(group[i][0], group[i][1], group[i][2]) == 1)
         {
             if(group[i][0] == "X")
             {
-                group[i][0] = 2*group[i][1] - group[i][2];
+                group[i][0] = to_string(std::stoi((group[i][1]).c_str()) - std::stoi((group[i][2]).c_str()) + std::stoi((group[i][1]).c_str()));
             }
             if(group[i][1] == "X")
             {
-                group[i][1] = (group[i][2] - group[i][0])/2 + group[i][0]
+                group[i][1] = to_string((std::stoi((group[i][2]).c_str()) - std::stoi((group[i][0]).c_str()))/2 + std::stoi((group[i][0]).c_str()));
             }
             if(group[i][2] == "X")
             {
-                group[i][2] = 2*group[i][1] - group[i][0];
+                group[i][2] = to_string(std::stoi((group[i][1]).c_str()) - std::stoi((group[i][0]).c_str()) + std::stoi((group[i][1]).c_str()));
             }
         }
     }
-
-
 
     //output
     cout << group[0][0] << " " << group[0][1] << " " << group[0][2] << endl;
