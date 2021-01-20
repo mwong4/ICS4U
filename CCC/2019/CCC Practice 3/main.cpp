@@ -54,40 +54,119 @@ int main()
     int xCount = 0;
 
     //input
-    cin >> group[0][0] >> group[0][1] >> group[0][2];
-    cin >> group[1][0] >> group[1][1] >> group[1][2];
-    cin >> group[2][0] >> group[2][1] >> group[2][2];
+    cin >> group[0][0];
+    if(group[0][0] == "X") xCount ++;
+    cin >> group[0][1];
+    if(group[0][1] == "X") xCount ++;
+    cin >> group[0][2];
+    if(group[0][2] == "X") xCount ++;
+    cin >> group[1][0];
+    if(group[1][0] == "X") xCount ++;
+    cin >> group[1][1];
+    if(group[1][1] == "X") xCount ++;
+    cin >> group[1][2];
+    if(group[1][2] == "X") xCount ++;
+    cin >> group[2][0];
+    if(group[2][0] == "X") xCount ++;
+    cin >> group[2][1];
+    if(group[2][1] == "X") xCount ++;
+    cin >> group[2][2];
+    if(group[2][2] == "X") xCount ++;
 
-    for(int i = 0; i < 3; i++)
+    if(xCount == 9)
     {
-        if(countLine(group[0][i], group[1][i], group[2][i]) == 1)
+        //For 9x
+        for(int i = 0; i < 3; i++)
         {
-            if(group[0][i] == "X")
+            for(int j = 0; j < 3; j++)
             {
-                group[0][i] = std::stoi((group[1][i]).c_str()) - std::stoi((group[2][i]).c_str()) + std::stoi((group[1][i]).c_str());
-            }
-            if(group[1][i] == "X")
-            {
-                group[1][i] = (std::stoi((group[2][i]).c_str()) - std::stoi((group[0][i]).c_str()))/2 + std::stoi((group[0][i]).c_str());
-            }
-            if(group[2][i] == "X")
-            {
-                group[2][i] = std::stoi((group[1][i]).c_str()) - std::stoi((group[0][i]).c_str()) + std::stoi((group[1][i]).c_str());
+                group[i][j] = "1";
             }
         }
-        if(countLine(group[i][0], group[i][1], group[i][2]) == 1)
+    }
+
+
+    while(xCount > 0)
+    {
+        if(xCount > 0)
         {
-            if(group[i][0] == "X")
+            for(int i = 0; i < 3; i++)
             {
-                group[i][0] = to_string(std::stoi((group[i][1]).c_str()) - std::stoi((group[i][2]).c_str()) + std::stoi((group[i][1]).c_str()));
+                //For 1x button
+                if(countLine(group[0][i], group[1][i], group[2][i]) == 1)
+                {
+                    if(group[0][i] == "X")
+                    {
+                        group[0][i] = std::stoi((group[1][i]).c_str()) - std::stoi((group[2][i]).c_str()) + std::stoi((group[1][i]).c_str());
+                        xCount --;
+                    }
+                    if(group[1][i] == "X")
+                    {
+                        group[1][i] = (std::stoi((group[2][i]).c_str()) - std::stoi((group[0][i]).c_str()))/2 + std::stoi((group[0][i]).c_str());
+                        xCount --;
+                    }
+                    if(group[2][i] == "X")
+                    {
+                        group[2][i] = std::stoi((group[1][i]).c_str()) - std::stoi((group[0][i]).c_str()) + std::stoi((group[1][i]).c_str());
+                        xCount --;
+                    }
+                }
+                if(countLine(group[i][0], group[i][1], group[i][2]) == 1)
+                {
+                    if(group[i][0] == "X")
+                    {
+                        group[i][0] = to_string(std::stoi((group[i][1]).c_str()) - std::stoi((group[i][2]).c_str()) + std::stoi((group[i][1]).c_str()));
+                        xCount --;
+                    }
+                    if(group[i][1] == "X")
+                    {
+                        group[i][1] = to_string((std::stoi((group[i][2]).c_str()) - std::stoi((group[i][0]).c_str()))/2 + std::stoi((group[i][0]).c_str()));
+                        xCount --;
+                    }
+                    if(group[i][2] == "X")
+                    {
+                        group[i][2] = to_string(std::stoi((group[i][1]).c_str()) - std::stoi((group[i][0]).c_str()) + std::stoi((group[i][1]).c_str()));
+                        xCount --;
+                    }
+                }
             }
-            if(group[i][1] == "X")
+        }
+
+        if(xCount > 1)
+        {
+            //For 2x spots
+            for(int i = 0; i < 3; i++)
             {
-                group[i][1] = to_string((std::stoi((group[i][2]).c_str()) - std::stoi((group[i][0]).c_str()))/2 + std::stoi((group[i][0]).c_str()));
-            }
-            if(group[i][2] == "X")
-            {
-                group[i][2] = to_string(std::stoi((group[i][1]).c_str()) - std::stoi((group[i][0]).c_str()) + std::stoi((group[i][1]).c_str()));
+                if(countLine(group[0][i], group[1][i], group[2][i]) == 2)
+                {
+                    if(group[0][i] == "X" && group[1][i] == "X")
+                    {
+                        xCount -= 2;
+                    }
+                    if(group[1][i] == "X" && group[2][i] == "X")
+                    {
+                        xCount -= 2;
+                    }
+                    if(group[0][i] == "X" && group[2][i] == "X")
+                    {
+                        xCount -= 2;
+                    }
+                }
+                if(countLine(group[i][0], group[i][1], group[i][2]) == 2)
+                {
+                    if(group[i][0] == "X" && group[i][1] == "X")
+                    {
+                        xCount -= 2;
+                    }
+                    if(group[i][1] == "X" && group[i][2] == "X")
+                    {
+                        xCount -= 2;
+                    }
+                    if(group[i][0] == "X" && group[i][2] == "X")
+                    {
+                        xCount -= 2;
+                    }
+                }
             }
         }
     }
