@@ -40,8 +40,8 @@ Be sure to cite appropriate theorems throughout your work. You may use shorthand
 
 Note: Your submitted work must be \textbf{your original work}. 
 
-Family Name: \\%Family Name Here
-First Name: %First Name Here
+Family Name: Wong\\%Family Name Here
+First Name: Max%First Name Here
 
 Declared References: 
 
@@ -49,6 +49,9 @@ Declared References:
 % You can use as many lines as required.
 
 \vspace{0.015in}\hrulefill\ 
+
+\vspace{0.5cm}
+\textbf{[NOTE]: Law of Logarithms is represented with LOL}
 
 \newpage
 
@@ -59,12 +62,48 @@ Declared References:
 %% PROBLEM 1
 \item \textbf{Determine} all real numbers $x$ that satisfy the equation $\log_3(x-7) + \log_3(x-9) = 1$.
 
+\vspace{0.5cm}
+\textbf{Solve question 1 by isolating equation to one sidem performing algebra before then factoring}
 
-%% I would recommend sandwiching your solution to every problem between the kind of structure I have provided below re: initial \vspace, the Solution: heading and the ending \vspace.
-%\vspace{0.3cm} 
-%\textbf{Solution:}\\
-% Your solution starts here.
-%\vspace{0.3cm}
+\vspace{0.2cm}
+First, we should identify restrictions. We know that if the parent 
+logarithm is $\log_a(b) = c$, b must be positive. Taking the two "b" values 
+from the equation:
+
+\vspace{-0.2cm}
+\begin{align*}
+    x-7 &> 0 && \text{Subtract 7 from both sides}\\
+    x &> 7 \\
+\end{align*}
+
+\vspace{-1.5cm}
+\begin{align*}
+    x-9 &> 0 && \text{Subtract 9 from both sides}\\
+    x &> 9 \\
+\end{align*}
+\vspace{-0.7cm}
+
+Since $x > 9 > 7$, we can say that the restriction is: ${x| x \in \mathbb{R}, x > 9}$
+Now we can start solving for x. Start by breaking the equation down into a form 
+that can be factored before factoring.
+
+\addtolength{\jot}{1em}
+\begin{align*}
+    \log_3(x-7) + \log_3(x-9) &= 1 \\
+    \log_3((x-7)(x-9)) &= 1 && \text{LOL Product } log_a(xy) = \log_a(x) + \log_a(y)\\
+    3^1 &= (x-7)(x-9) && \log_a(b) = c \Longleftrightarrow a^c = b\\
+    3 &= (x-7)(x-9) && \text{Simplify}\\
+    3 &= x^2-16x+63 && \text{Multiply factors, expand}\\
+    0 &= x^2-16x+63-3 && \text{Subtract 3 from both sides}\\
+    0 &= x^2-16x+60 && \text{Simplify}\\
+    0 &= (x-6)(x-10) && \text{Factor}\\
+    x &= 6, 10 \\
+\end{align*}
+
+Now we know that $x=6, 10$ but from the restriction, x must be greater 
+than 9. Therefore the solution $x=6$ is inadmissable.
+
+$$\boxed{\therefore \text{The solution to } \log_3(x-7) + \log_3(x-9) = 1 \text{ is } x=10}$$
 
 \newpage
 
