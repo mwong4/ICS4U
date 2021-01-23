@@ -115,6 +115,76 @@ $$\boxed{\therefore \text{The solution to } \log_3(x-7) + \log_3(x-9) = 1 \text{
 \item \textbf{Determine} after how many years is Earth ruled by a mega-murder.
 \end{enumerate}
 
+\vspace{0.5cm}
+\textbf{Solve question 2(a) by first identifying the key characteristics for a exponential model}
+
+\vspace{0.2cm}
+Consider the following the general formula for exponential functions, where c(t) is the number 
+of crows and t is the time in days since Judgement day:
+
+$$c(t) = \text{initial}(1+\text{growth rate})^{\frac{t}{\text{period}}}$$
+
+Let us determine the values required to definte the relationship from the 
+data provided in the question.
+
+\begin{center}
+    \begin{tabular}{ll}
+        Initial Population: & 40000 crows \\
+        Rate of growth: & 200 \% increase per period \\
+        & = +2 \\
+        Period of growth & 1.5 years \\
+    \end{tabular}
+\end{center}
+
+Now let's put this all together into the general formula above and simplify:
+
+\begin{center}
+    \begin{align*}
+        c(t) &= \text{initial}(1+\text{growth rate})^{\frac{t}{\text{period}}} \\
+        c(t) &= 40000(1+2)^{\frac{t}{1.5}} && \text{Substitute values in} \\
+        c(t) &= 40000(3)^{\frac{t}{1.5}} && \text{Simplify}\\
+    \end{align*}
+\end{center}
+
+\begin{center}
+    $\therefore$ The model that describes the relationship between number of crows (c(t)) and days after Judgement day (t) is $\boxed{40000(3)^{\frac{t}{1.5}}}$
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+    \textbf{Part b is on next page}
+\end{center}
+
+\newpage
+
+\vspace{0.5cm}
+\textbf{Solve question 2(b) by solving for the value of t}
+
+\vspace{0.2cm}
+We know that c(t) represents the number of magnificient crows and t represents the 
+time in days since Judgement day. If we know that the number of crows or c(t) is a murder 
+orone million, we can solve for t at c(t) = 1000000:
+
+\begin{align*}
+    c(t) &= 40000(3)^{\dfrac{t}{1.5}} && \text{From (a)} \\
+    1000000 &= 40000(3)^{\dfrac{t}{1.5}} && \text{Sub 1000000 as c(t)} \\
+    \frac{1000000}{40000} &= (3)^{\dfrac{t}{1.5}} && \text{Divide both sides by 40000} \\
+    25 &= (3)^{\dfrac{t}{1.5}} && \text{Simplify} \\
+    \log(25) &= \log((3)^{\dfrac{t}{1.5}}) && \text{Apply }\log_{10} \text{ to both sides} \\
+    \log(25) &= \dfrac{t}{1.5}\log(3) && \text{LOL Power rule, } \log_a(r^b) = b\log_ar \\
+    \log(5^2) &= \dfrac{t}{1.5}\log(3) && 25 = 5^2 \\
+    2\log(5) &= \dfrac{t}{1.5}\log(3) && \text{LOL Power rule} \\
+    \dfrac{2\log(5)}{log(3)} &= \frac{t}{1.5} && \text{Divide both sides by } log(3) \\
+    \dfrac{2\log(5)}{log(3)} \times 1.5 &= t && \text{Multiply both sides by 1.5} \\
+    \dfrac{3\log(5)}{log(3)} &= t && \text{Simplify, multiply 2 with 1.5} \\
+    \dfrac{3\log(5)}{log(3)} &\approx 4.394  \\
+\end{align*}
+
+\begin{center}
+    $\therefore$ it takes $\boxed{\dfrac{3\log(5)}{log(3)}}$ or approximately $\boxed{4.39}$ days since Judgement day 
+    to reach a mega-murder (one million) of crows.
+\end{center}
 
 \newpage
 
