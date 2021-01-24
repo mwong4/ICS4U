@@ -32,20 +32,22 @@ int main()
         {
             biggest = units[i];
         }
+        counter++;
 
-        if(i % groupSize == 2 && i != 0)
+        if(counter == 3 && i != 0)
         {
             //Reset
             frontScore += biggest;
             biggest = 0;
         }
     }
-    if(unitSize % groupSize != 0) frontScore += biggest;
+    if(counter != 3) frontScore += biggest;
 
     //Back calculation
     if(unitSize % groupSize != 0)
     {
         biggest = 0;
+        counter = 0;
         for(int i = unitSize - 1; i >= 0 ; i--)
         {
             if(units[i] > biggest)
