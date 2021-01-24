@@ -3,6 +3,7 @@
 \documentclass[12pt]{book}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -255,6 +256,32 @@ $$\boxed{\therefore \text{log(a), log(b), and log(c) form a arithmetic sequence.
 
 %% PROBLEM 4
 \item Given $a,b,c \in \mathbb{R^+}$ with $a\neq1$, $b\neq1$, $c\neq1$ \textbf{prove} $$\dfrac{1}{1+\log_a(bc)} + \dfrac{1}{1+\log_b(ac)} + \dfrac{1}{1+\log_c(ab)} = 1$$.
+
+\vspace{0.5cm}
+\textbf{Solve Question 4 by showing that both sides of the equation are equivalent statements:}
+
+\vspace{0.2cm}
+Take the left hand side and manipulate it to create the right hand side:
+
+\begin{proof}
+    \begin{align*}
+        LHS &= \dfrac{1}{1+\log_a(bc)} + \dfrac{1}{1+\log_b(ac)} + \dfrac{1}{1+\log_c(ab)} && \text{LHS = Left Hand Side} \\
+        &= \dfrac{1}{1+\dfrac{\log(bc)}{\log(a)}} + \dfrac{1}{1+\dfrac{\log(ac)}{\log(b)}} + \dfrac{1}{1+\dfrac{\log(ab)}{\log(c)}} && \text{Change of base identity}\\
+        &= \dfrac{1}{\dfrac{\log(a)}{\log(a)}+\dfrac{\log(bc)}{\log(a)}} + \dfrac{1}{\dfrac{\log(b)}{\log(b)}+\dfrac{\log(ac)}{\log(b)}} + \dfrac{1}{\dfrac{\log(c)}{\log(c)}+\dfrac{\log(ab)}{\log(c)}} && 1 = \dfrac{\log(a)}{\log(a)} = \dfrac{\log(b)}{\log(b)} = \dfrac{\log(c)}{\log(c)}\\
+        &= \dfrac{1}{\dfrac{\log(a)+\log(bc)}{\log(a)}} + \dfrac{1}{\dfrac{\log(b)+\log(ac)}{\log(b)}} + \dfrac{1}{\dfrac{\log(c)+\log(ab)}{\log(c)}} && \text{Add fractions}\\
+        &= 1\times \dfrac{\log(a)}{\log(a)+\log(bc)} + 1\times \dfrac{\log(b)}{\log(b)+\log(ac)} + 1\times \dfrac{\log(c)}{\log(c)+\log(ab)} && \frac{1}{\frac{a}{b}} = 1\times \frac{b}{a} \\
+        &= \dfrac{\log(a)}{\log(a)+\log(bc)} + \dfrac{\log(b)}{\log(b)+\log(ac)} + \dfrac{\log(c)}{\log(c)+\log(ab)} && \text{Simplify} \\
+        &= \dfrac{\log(a)}{\log(abc)} + \dfrac{\log(b)}{\log(abc)} + \dfrac{\log(c)}{\log(abc)} && \text{LOL Product rule} \\
+        &= \dfrac{\log(a)+\log(b)+\log(c)}{\log(abc)} && \text{Add fractions together} \\
+        &= \dfrac{\log(abc)}{\log(abc)} && \text{LOL Product rule} \\
+        &= 1 && \text{Simplify} \\
+        & = RHS \qedhere \\
+    \end{align*}
+\end{proof}
+
+\vspace{-1cm}
+$$\therefore \text{since LHS = RHS, } \dfrac{1}{1+\log_a(bc)} + \dfrac{1}{1+\log_b(ac)} + \dfrac{1}{1+\log_c(ab)} = 1$$
+
 
 
 \newpage
