@@ -289,7 +289,49 @@ $$\therefore \text{since LHS = RHS, } \dfrac{1}{1+\log_a(bc)} + \dfrac{1}{1+\log
 %% PROBLEM 5
 \item \textbf{Determine} the set of real numbers $a$ for which the equation $$\log_8(x-a+1) + \log_8(x-a-1) =1$$ has \emph{exactly one} real solution for $x$.
 
+\vspace{0.1cm}
+\textbf{Solution to question 5:}
 
+First off let's try and define the restrictions on "a". Consider the base 
+log function: $log_l(m)$. "m" must be a greater than or equal to 0 since the 
+log of a negative value cannot be solved. Therefore, from the question, the two 
+equations being logged must not be negative:
+
+\begin{align*}
+    x - a + 1 &> 0 && \text{From } \log_8(x-a+1) \\
+    x + 1 &> a && (1)\\
+\end{align*}
+\vspace{-1cm}
+\begin{align*}
+    x - a - 1 &> 0 && \text{From } \log_8(x-a-1) \\
+    x - 1 &> a && (2)\\
+\end{align*}
+
+since $x+1 > x-1 > a$, we can simply say that the restriction is $x-1 > a$. 
+Now let's try and convert the origianl equation into a form that is factorable 
+before solving for a:
+
+\begin{align*}
+    \log_8(x-a+1) + \log_8(x-a-1) &= 1 && \text{From question} \\
+    \log_8((x-a+1)(x-a-1)) &= 1 && \text{LOL Product rule, } \log_a(b) + \log_a(c) = \log_a(bc) \\
+    8^1 &= (x-a+1)(x-a-1) && \text{Convert log to exponent, } \log_a(b) = c \Longleftrightarrow a^c = b \\
+    8^1 &= x^2-ax-x-ax+a^2+a+x-a-1 && \text{Expand/ break brackets} \\
+    8 &= x^2-2ax+a^2-1 && \text{Simplify} \\
+    8+1 &=  x^2-2ax+a^2 && \text{Add 1 from both sides} \\
+    9 &=  x^2-2ax+a^2 && \text{Simplify} \\
+    3^2 &=  (x-a)^2 && \text{Factor perfect squares} \\
+    \sqrt{9} &= \sqrt{(x-a)^2} && \text{Square Root both sides} \\
+    |3| &= |(x-a)| && \text{Square Root both sides} \\
+    3 &= x-a && \text{Square Root both sides} \\
+    a &= x-3 && \text{Add a and -3 to both sides} \\
+\end{align*}
+
+From this we now know that $a=x-3$. Substituting the value of a into the 
+restriction we can see that $x-3<x-1$ is a true statement. We also know that 
+the value of a is based on x which has infinite solutions but following 
+restriction $x-1 > a$ or $x > a+1$.
+
+$$\therefore a = x-3 \text{ where } x \in \mathbb{R}, x>a+1 $$
 
 \newpage
 
