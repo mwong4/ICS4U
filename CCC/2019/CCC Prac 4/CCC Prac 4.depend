@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1611452601 source:c:\users\max pc\documents\github\ics4u\ccc\2019\ccc prac 4\main.cpp
+1611542468 source:c:\users\max pc\documents\github\ics4u\ccc\2019\ccc prac 4\main.cpp
 	<iostream>
 	<vector>
+	<tgmath.h>
 

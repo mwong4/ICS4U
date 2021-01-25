@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include<tgmath.h>
 
 using namespace std;
 
@@ -9,9 +10,9 @@ int main()
     int groupSize;
     int input;
 
-    int frontScore = 0;
-    int backScore = 0;
-    int biggest=0;
+    int largestScore = 0;
+    int tempScore;
+    int biggest;
 
     int counter = 0;
 
@@ -25,60 +26,36 @@ int main()
         units.push_back(input);
     }
 
-    //Front calculation
-    for(int i = 0; i < unitSize; i++)
+    for(int j = 0; j < ceil((unitSize*1.0)/groupSize); j++)
     {
-        if(units[i] > biggest)
-        {
-            biggest = units[i];
-        }
-        counter++;
-
-        if(counter == 3 && i != 0)
-        {
-            //Reset
-            frontScore += biggest;
-            biggest = 0;
-        }
-    }
-    if(counter != 3) frontScore += biggest;
-
-    //Back calculation
-    if(unitSize % groupSize != 0)
-    {
+        tempScore = 0;
         biggest = 0;
-        counter = 0;
-        for(int i = unitSize - 1; i >= 0 ; i--)
+
+        //Score Calculation
+        for(int i = 0; i < unitSize; i++)
         {
             if(units[i] > biggest)
             {
                 biggest = units[i];
             }
-            counter ++;
+            counter++;
 
-            if(counter == 3 && i != unitSize)
+            if((counter == groupSize && i != 0) || i + 1 == (unitSize % groupSize) + (groupSize*j))
             {
                 //Reset
-                backScore += biggest;
+                tempScore += biggest;
                 biggest = 0;
                 counter = 0;
             }
         }
-        backScore += biggest;
 
-        if(frontScore > backScore)
+        if(tempScore > largestScore)
         {
-            cout << frontScore << endl;
-        }
-        else
-        {
-            cout << backScore << endl;
+            largestScore = tempScore;
         }
     }
-    else
-    {
-        cout << frontScore << endl;
-    }
+
+    cout << largestScore;
 
     //cout << "f:" << frontScore << " b: " << backScore << endl;
     return 0;
