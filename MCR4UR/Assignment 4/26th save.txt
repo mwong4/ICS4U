@@ -1,0 +1,18 @@
+Let's apply a similar logic to the logs. If we assune that log(a), log(b) and log(c) 
+form a arithmetic sequence, then a common difference, y, can be added 
+to every term of the sequence in order to determine the proceeding term. From this, 
+we can form an equation and prove that this really is an arithmetic sequence.
+
+\begin{align*}
+    \log(a) + y &= \log(b) && \text{Add y to first term to get the second term} \\
+    y &= \log(b) - \log(a) && (4)\text{ Subtract log(a) from both sides} \\
+    \log(b) + y &= \log(c) && \text{Add y to second term to get the third term} \\
+    y &= \log(c) - \log(b) && (5)\text{ Subtract log(b) from both sides} \\
+\end{align*}
+
+Since both (4) and (5) are equal to the same value, y, we can 
+substitute on into the other as y and combine the two equation. 
+I label this (6):
+
+$$y = \log(b) - \log(a), y = \log(c) - \log(b)$$
+$$\log(b) - \log(a) = \log(c) - \log(b) \text{\space \space (6)}$$
