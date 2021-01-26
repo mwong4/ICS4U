@@ -215,41 +215,30 @@ I label this (3):
 $$x = \frac{b}{a}, x = \frac{c}{b}$$
 $$\frac{b}{a} = \frac{c}{b} \text{\space \space (3)}$$
 
-Let's apply a similar logic to the logs. If we assune that log(a), log(b) and log(c) 
-form a arithmetic sequence, then a common difference, y, can be added 
-to every term of the sequence in order to determine the proceeding term. From this, 
-we can form an equation and prove that this really is an arithmetic sequence.
-
-\begin{align*}
-    \log(a) + y &= \log(b) && \text{Add y to first term to get the second term} \\
-    y &= \log(b) - \log(a) && (4)\text{ Subtract log(a) from both sides} \\
-    \log(b) + y &= \log(c) && \text{Add y to second term to get the third term} \\
-    y &= \log(c) - \log(b) && (5)\text{ Subtract log(b) from both sides} \\
-\end{align*}
-
-Since both (4) and (5) are equal to the same value, y, we can 
-substitute on into the other as y and combine the two equation. 
-I label this (6):
-
-$$y = \log(b) - \log(a), y = \log(c) - \log(b)$$
-$$\log(b) - \log(a) = \log(c) - \log(b) \text{\space \space (6)}$$
-
-\newpage
-
-Now, with (3) and (6), since we know (3) is true, if we can express (6) to (3), 
-we can express show that (6) is also true, therefore proving the log(a), log(b) and log(c) 
-form a arithmetic sequence.
+Let's play around with (3) more to experiment around. We know 
+that (3) is a true statemnt so if we can somehow form a common 
+difference between log(a) to log(b) and log(b) to log(c), we 
+can derive a new true statement. Remember, an arithmetc sequence 
+has a common difference between each term meaning term (n) and term (n+1) 
+will have the same difference as term (n+1) and term (n+2):
 
 \begin{align*}
     \frac{b}{a} &= \frac{c}{b} && (3) \\
-    \log\left( \frac{b}{a} \right) &= \log\left( \frac{c}{b} \right) && \text{Apply } \log_10 \text{ to both sides} \\
+    \log\left( \frac{b}{a} \right) &= \log\left( \frac{c}{b} \right) && \text{Apply } \log_{10} \text{ to both sides} \\
     \log(b) - \log(a) &= \log(c) - \log(b) && \text{LOL quotient rule, } \log_r\left( \frac{m}{n} \right) = \log_r(m) - \log_r(n) \\
-    & \equiv (6)
+    & \equiv \text{Arithmetic Sequence}
 \end{align*}
 
-From this, (3) = (6). Therefore, since (3) is true, (6) must also be true.
+\newpage
 
-$$\boxed{\therefore \text{log(a), log(b), and log(c) form a arithmetic sequence.}}$$
+From the line $\log(b) - \log(a) = \log(c) - \log(b)$, we can 
+see that the difference between log(b) and log(a) is the same 
+as the difference of log(c) to log(b). An arithmetic sequence 
+requires a common difference between their terms and since our 
+current pattern, derived from a true statement shows this 
+characteristic.
+
+$$\boxed{\text{we can therefore conclude that } \text{log(a), log(b), and log(c) form a arithmetic sequence.}}$$
 
 \newpage
 
