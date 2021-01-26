@@ -314,26 +314,28 @@ before solving for a:
 \begin{align*}
     \log_8(x-a+1) + \log_8(x-a-1) &= 1 && \text{From question} \\
     \log_8((x-a+1)(x-a-1)) &= 1 && \text{LOL Product rule, } \log_a(b) + \log_a(c) = \log_a(bc) \\
-    8^1 &= (x-a+1)(x-a-1) && \text{Convert log to exponent, } \log_a(b) = c \Longleftrightarrow a^c = b \\
-    8^1 &= x^2-ax-x-ax+a^2+a+x-a-1 && \text{Expand/ break brackets} \\
-    8 &= x^2-2ax+a^2-1 && \text{Simplify} \\
-    8+1 &=  x^2-2ax+a^2 && \text{Add 1 from both sides} \\
-    9 &=  x^2-2ax+a^2 && \text{Simplify} \\
-    3^2 &=  (x-a)^2 && \text{Factor perfect squares} \\
-    \sqrt{9} &= \sqrt{(x-a)^2} && \text{Square Root both sides} \\
-    |3| &= |(x-a)| && \text{Square Root both sides} \\
-    3 &= x-a && \text{Square Root both sides} \\
-    a &= x-3 && \text{Add a and -3 to both sides} \\
+    (x-a+1)(x-a-1) &= 8^1 && \text{Convert log to exponent, } \log_a(b) = c \Longleftrightarrow a^c = b \\
+    x^2-ax-x-ax+a^2+a+x-a-1 &= 8^1 && \text{Expand/ break brackets} \\
+    x^2-2ax+a^2-1 &= 8 && \text{Simplify} \\
+    x^2-2ax+a^2 &= 8+1 && \text{Add 1 from both sides} \\
+    x^2-2ax+a^2 &= 9 && \text{Simplify} \\
+    (x-a)^2 &= 3^2 && \text{Factor perfect squares} \\
+    \sqrt{(x-a)^2} &= \sqrt{9} && \text{Square Root both sides} \\
+    \pm (x-a) &= \pm 3 && \text{Apply } \pm \\
+    x-a &= \pm 3 && \text{Equivalent to the above} \\
+    x\pm 3 &= a && \text{Add a and subtract } \pm \text{3 to both sides} \\
 \end{align*}
 
-From this we now know that $a=x-3$. Substituting the value of a into the 
-restriction we can see that $x-3<x-1$ is a true statement. We also know that 
-the value of a is based on x which has infinite solutions but following 
+From this we now know that $a=x-3$ and $a=x+3$. 
+
+Substituting the values of a into the 
+restriction we can see that $x-3<x-1$ which simplifies to $0<2$ (subtract x, add 3) which is a true statement. 
+We also find $x+3<x-1$ which simplifies to $0<-4$ (subtract x, add -3) which is a false statement. $a=x+3$ 
+violates the restriction and is thus an inadmissable solution. Therefore we can confirm that $a=x-3$.
+We also know that the value of a is based on x which has infinite solutions based on the 
 restriction $x-1 > a$ or $x > a+1$.
 
 $$\therefore a = x-3 \text{ where } x \in \mathbb{R}, x>a+1 $$
-
-%///////////////////////////TODO rule out x+3 / Email Blakely about it
 
 \newpage
 
