@@ -64,7 +64,7 @@ Declared References:
 \item \textbf{Determine} all real numbers $x$ that satisfy the equation $\log_3(x-7) + \log_3(x-9) = 1$.
 
 \vspace{0.5cm}
-\textbf{Solve question 1 by isolating equation to one sidem performing algebra before then factoring}
+\textbf{Solve question 1 by isolating the equation to one side by performing algebra before factoring}
 
 \vspace{0.2cm}
 First, we should identify restrictions. We know that if the parent 
@@ -84,14 +84,14 @@ from the equation:
 \end{align*}
 \vspace{-0.7cm}
 
-Since $x > 9 > 7$, we can say that the restriction is: ${x| x \in \mathbb{R}, x > 9}$
+Since $x > 9 > 7$, we can say that the restriction is: $\{x| x \in \mathbb{R}, x > 9\}$
 Now we can start solving for x. Start by breaking the equation down into a form 
 that can be factored before factoring.
 
 \addtolength{\jot}{1em}
 \begin{align*}
     \log_3(x-7) + \log_3(x-9) &= 1 \\
-    \log_3((x-7)(x-9)) &= 1 && \text{LOL Product } log_a(xy) = \log_a(x) + \log_a(y)\\
+    \log_3((x-7)(x-9)) &= 1 && \text{LOL Product rule, } log_a(xy) = \log_a(x) + \log_a(y)\\
     3^1 &= (x-7)(x-9) && \log_a(b) = c \Longleftrightarrow a^c = b\\
     3 &= (x-7)(x-9) && \text{Simplify}\\
     3 &= x^2-16x+63 && \text{Multiply factors, expand}\\
@@ -102,7 +102,7 @@ that can be factored before factoring.
 \end{align*}
 
 Now we know that $x=6, 10$ but from the restriction, x must be greater 
-than 9. Therefore the solution $x=6$ is inadmissable.
+than 9. Therefore the solution $x=6$ is inadmissable since is is smaller than 9.
 
 $$\boxed{\therefore \text{The solution to } \log_3(x-7) + \log_3(x-9) = 1 \text{ is } x=10}$$
 
@@ -120,24 +120,27 @@ $$\boxed{\therefore \text{The solution to } \log_3(x-7) + \log_3(x-9) = 1 \text{
 \textbf{Solve question 2(a) by first identifying the key characteristics for a exponential model}
 
 \vspace{0.2cm}
-Consider the following the general formula for exponential functions, where c(t) is the number 
+Consider the following general formula for exponential functions, where c(t) is the number 
 of crows and t is the time in days since Judgement day:
 
 $$c(t) = \text{initial}(1+\text{growth rate})^{\frac{t}{\text{period}}}$$
 
-Let us determine the values required to definte the relationship from the 
-data provided in the question.
+Where ``initial" is initial population, ``growth rate" is the rate of growth 
+per each period and ``period" is the time take for the population to change by 
+the growth rate. Let us determine the values required to definte the relationship 
+from the data provided in the question.
 
 \begin{center}
     \begin{tabular}{ll}
         Initial Population: & 40000 crows \\
-        Rate of growth: & 200 \% increase per period \\
-        & = +2 \\
+        Rate of growth: & 200 \% increase per period (+2/period) \\
         Period of growth & 1.5 years \\
     \end{tabular}
 \end{center}
 
-Now let's put this all together into the general formula above and simplify:
+\begin{center}
+    Now let's put this all together into the general formula above and simplify:
+\end{center}
 
 \begin{center}
     \begin{align*}
@@ -164,22 +167,22 @@ Now let's put this all together into the general formula above and simplify:
 
 \vspace{0.2cm}
 We know that c(t) represents the number of magnificient crows and t represents the 
-time in days since Judgement day. If we know that the number of crows or c(t) is a murder 
-orone million, we can solve for t at c(t) = 1000000:
+time in days since Judgement day. If we know that the number of crows or c(t) is a murder, 
+or one million, we can solve for t at c(t) = 1000000:
 
 \begin{align*}
     c(t) &= 40000(3)^{\dfrac{t}{1.5}} && \text{From (a)} \\
     1000000 &= 40000(3)^{\dfrac{t}{1.5}} && \text{Sub 1000000 as c(t)} \\
     \frac{1000000}{40000} &= (3)^{\dfrac{t}{1.5}} && \text{Divide both sides by 40000} \\
     25 &= (3)^{\dfrac{t}{1.5}} && \text{Simplify} \\
-    \log(25) &= \log((3)^{\dfrac{t}{1.5}}) && \text{Apply }\log_{10} \text{ to both sides} \\
+    \log(25) &= \log(3)^{\dfrac{t}{1.5}} && \text{Apply }\log_{10} \text{ to both sides} \\
     \log(25) &= \dfrac{t}{1.5}\log(3) && \text{LOL Power rule, } \log_a(r^b) = b\log_ar \\
     \log(5^2) &= \dfrac{t}{1.5}\log(3) && 25 = 5^2 \\
     2\log(5) &= \dfrac{t}{1.5}\log(3) && \text{LOL Power rule} \\
-    \dfrac{2\log(5)}{log(3)} &= \frac{t}{1.5} && \text{Divide both sides by } log(3) \\
-    \dfrac{2\log(5)}{log(3)} \times 1.5 &= t && \text{Multiply both sides by 1.5} \\
-    \dfrac{3\log(5)}{log(3)} &= t && \text{Simplify, multiply 2 with 1.5} \\
-    \dfrac{3\log(5)}{log(3)} &\approx 4.394  \\
+    \dfrac{2\log(5)}{\log(3)} &= \frac{t}{1.5} && \text{Divide both sides by } log(3) \\
+    \dfrac{2\log(5)}{\log(3)} \times 1.5 &= t && \text{Multiply both sides by 1.5} \\
+    \dfrac{3\log(5)}{\log(3)} &= t && \text{Simplify, multiply 2 with 1.5} \\
+    \dfrac{3\log(5)}{\log(3)} &\approx 4.394  \\
 \end{align*}
 
 \begin{center}
@@ -217,10 +220,10 @@ $$\frac{b}{a} = \frac{c}{b} \text{\space \space (3)}$$
 
 Let's play around with (3) more to experiment around. We know 
 that (3) is a true statemnt so if we can somehow form a common 
-difference between log(a) to log(b) and log(b) to log(c), we 
+difference between log(a) to log(b) and log(b) to log(c) using (3), we 
 can derive a new true statement. Remember, an arithmetc sequence 
-has a common difference between each term meaning term (n) and term (n+1) 
-will have the same difference as term (n+1) and term (n+2):
+has a common difference between each term, meaning that term (n) and term (n+1) 
+will have the same difference as term (n+1) and term (n+2) and so on:
 
 \begin{align*}
     \frac{b}{a} &= \frac{c}{b} && (3) \\
@@ -269,7 +272,7 @@ Take the left hand side and manipulate it to create the right hand side:
 \end{proof}
 
 \vspace{-1cm}
-$$\therefore \text{since LHS = RHS, } \dfrac{1}{1+\log_a(bc)} + \dfrac{1}{1+\log_b(ac)} + \dfrac{1}{1+\log_c(ab)} = 1$$
+$$\therefore \boxed{\text{since LHS = RHS, } \dfrac{1}{1+\log_a(bc)} + \dfrac{1}{1+\log_b(ac)} + \dfrac{1}{1+\log_c(ab)} = 1}$$
 
 
 
@@ -281,10 +284,10 @@ $$\therefore \text{since LHS = RHS, } \dfrac{1}{1+\log_a(bc)} + \dfrac{1}{1+\log
 \vspace{0.1cm}
 \textbf{Solution to question 5:}
 
-First off let's try and define the restrictions on "a". Consider the base 
-log function: $log_l(m)$. "m" must be a greater than or equal to 0 since the 
+First off let's try and define the restrictions on ``a". Consider the base 
+log function: $log_l(m)=n$. ``m" must be a greater than or equal to 0 since the 
 log of a negative value cannot be solved. Therefore, from the question, the two 
-equations being logged must not be negative:
+equations being logged must be greater than zero:
 
 \begin{align*}
     x - a + 1 &> 0 && \text{From } \log_8(x-a+1) \\
@@ -324,7 +327,7 @@ violates the restriction and is thus an inadmissable solution. Therefore we can 
 We also know that the value of a is based on x which has infinite solutions based on the 
 restriction $x-1 > a$ or $x > a+1$.
 
-$$\therefore a = x-3 \text{ where } x \in \mathbb{R}, x>a+1 $$
+$$\boxed{\therefore a = x-3 \text{ where } x \in \mathbb{R}, x>a+1}$$
 
 \newpage
 
