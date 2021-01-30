@@ -2,7 +2,7 @@
 >- Author: Max Wong
 >- Date: Jan 28, 2020
 >- Purpose: Practice for CCC Competition
->- Time on stage: 45 min
+>- Time on stage: 1hr 15min
 
 Problems
 -Dont know an accurate way of calculating max length
@@ -14,8 +14,15 @@ Solution: Try using sort and vector manipulation
 
 #include <iostream>
 #include <vector>
+#include <math.h>
 
 using namespace std;
+
+struct Output
+{
+    int maxLength = 0;
+    int maxCombinations = 0;
+};
 
 int oneCalc(int _size)
 {
@@ -29,56 +36,63 @@ int oneCalc(int _size)
     return total;
 }
 
+Output multiCalc(vector<int> _planks, Output _output, int _limit)
+{
+    vector <int> combinations;
+    int length;
+    int counter;
+
+    for(int i = 0; i < _limit)
+
+    return _output;
+}
+
+
 int main()
 {
     int nVal;
-    int input;
-    int sum = 0;
-    int outputLength = 0;
-    int outputHeights = 0;
     vector <int> planks;
-    int factorSize = 0;
-    vector <int> factors;
+    int input;
+
+    int cap;
+    Output output;
 
     //Input
     cin >> nVal;
     for(int i = 0; i < nVal; i++)
     {
         cin >> input;
-        sum += input;
         planks.push_back(input);
     }
 
-    //Calculate length
-    for(int i = 0; i < nVal; i++)
+
+    //Calculate cap
+    cap = ceil(nVal/2.0);
+    while(nVal % cap != 0 && cap > 1)
     {
-        if(sum % planks[i] == 0)
+        cap --;
+    }
+
+    //Combination calculations
+    for(int i = 2; i <= cap; i++)
+    {
+        if(nVal % i == 0)
         {
-            outputLength ++;
-            if(planks[i] != 1)
+            //Call function
+            for(int i = 2; i < cap; i++)
             {
-                factors.push_back(planks[i]);
-                factorSize ++;
+                output = multiCalc(planks, output, i);
             }
         }
-    }
 
-    //Calculate different heigh...
-    if(outputLength == 0 || outputLength == 1)
-    {
-        outputLength = 1;
-
-        outputHeights = oneCalc(nVal - 1);
-    }
-    else
-    {
-        for(int i = 0; i < factorSize; i++)
+        if(i == cap)
         {
-
+            output.maxLength = 1;
+            output.maxCombinations = oneCalc(nVal);
         }
     }
 
-    cout << outputLength << " " << outputHeights << endl;
+    cout << output.maxLength << " " << output.maxCombinations << endl;
 
 
     return 0;
