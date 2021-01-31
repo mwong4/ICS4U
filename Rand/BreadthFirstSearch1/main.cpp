@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Jan 30, 2020
-Date Updated: Jan 30, 2020
+Date Updated: Jan 31, 2020
 Purpose: To build a simple version of Breadth First Search
 
 
@@ -23,6 +23,8 @@ int main()
     int currentX = 1; //Current coordinates
     int currentY = 1;
     int savedDirection = 0; //0 = null, 1 up, 2 down, 3 right, 4 left
+    int smallest;
+    bool goVert = true;
 
     //stats
     int stepsTaken = 0;
@@ -66,11 +68,74 @@ int main()
         }
 
         //Decide on path
-        if(
+        smallest = 999;
+        if(grid[currentY + 1][currentX] < smallest)
+        {
+            smallest  = grid[currentY + 1][currentX];
+            savedDirection = 1;
+        }
+        else if(grid[currentY - 1][currentX] < smallest)
+        {
+            smallest  = grid[currentY - 1][currentX];
+            savedDirection = 2;
+        }
+        else if(grid[currentY][currentX + 1] < smallest)
+        {
+            smallest  = grid[currentY][currentX + 1];
+            savedDirection = 3;
+        }
+        else if(grid[currentY][currentX - 1] < smallest)
+        {
+            smallest  = grid[currentY][currentX - 1];
+            savedDirection = 4;
+        }
 
+        if(smallest >= 999) //Check for impossible solution
+        {
+            grid[currentY][currentX] = -1;
+            cout << "Robot is stuck, maze is unsolvable" << endl;
+        }
+        else //Update position
+        {
+            grid[currentY][currentX] += 2; //Encourage not turning back
 
+            //Update statistics
+            if(stepsTaken != 0)
+            {
+                if(!goVert && (savedDirection == 1 || savedDirection == 2))
+                {
+                    turnsTaken ++;
+                }
+                if(goVert && (savedDirection == 3 || savedDirection == 4))
+                {
+                    turnsTaken ++;
+                }
+            }
+            stepsTaken ++;
+
+            //Update position
+            if(savedDirection == 1)
+            {
+                currentY ++;
+                goVert = true;
+            }
+            else if(savedDirection == 2)
+            {
+                currentY --;
+                goVert = true;
+            }
+            else if(savedDirection == 3)
+            {
+                currentX ++;
+                goVert = false;
+            }
+            else if(savedDirection == 4)
+            {
+                currentX --;
+                goVert = false;
+            }
+        }
     }
-
 
     //Output grid
     for(int i = 0; i < gridSize+2; i++)
