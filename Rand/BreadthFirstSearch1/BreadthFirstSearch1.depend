@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1612057308 source:c:\users\max pc\documents\github\ics4u\rand\breadthfirstsearch1\main.cpp
+	<iostream>
+	<conio.h>
+
