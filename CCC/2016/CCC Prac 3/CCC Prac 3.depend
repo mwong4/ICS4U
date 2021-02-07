@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1612622128 source:c:\users\max pc\documents\github\ics4u\ccc\2016\ccc prac 3\main.cpp
+1612665738 source:c:\users\max pc\documents\github\ics4u\ccc\2016\ccc prac 3\main.cpp
 	<iostream>
 	<vector>
+	<algorithm>
 
