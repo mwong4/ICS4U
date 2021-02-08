@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1612806832 source:c:\users\max pc\documents\github\ics4u\exercises\simplesortsingle\main.cpp
+	<iostream>
+	<limits>
+	<windows.h>
+
