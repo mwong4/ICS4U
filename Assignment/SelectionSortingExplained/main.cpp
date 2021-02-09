@@ -7,6 +7,14 @@ Purpose: Show selecion sorting
 Source
 Error Trapping from ICS3U projects by Max Wong
 Color idea from Stack Overflow Forum: https://stackoverflow.com/questions/4053837/colorizing-text-in-the-console-with-c
+
+TODO
+
+Showing pass
+Display smallest
+Show swapping braces
+Legend
+
 */
 #include <iostream>
 #include <limits>        //For error trapping
@@ -20,7 +28,7 @@ void selectionSort(int[], int); //For selection sorting
 //General functions
 void menu(string, string[], int, int*); //Function used to output options to user and get input
 void inputInt(int, int, int*); //Function used to get the players response as an integer (with error trapping)
-void printArray(int[], int); //For printing out the array
+void printArray(int[], int, string, int, int, int, int, int); //For printing out the array
 void resetArray(int[], int); //For resetting the array
 
 int main()
@@ -34,7 +42,7 @@ int main()
     do
     {
         resetArray(elements, arraySize); //Call function to randomize array
-        printArray(elements, arraySize); //Call function to print out array
+        printArray(elements, arraySize, " ", 0, 0, 0, 0, 0); //Call function to print out array
         cout << endl;
 
         menu("Selection Sort", options, 1, &input); //Call menu function
@@ -65,16 +73,23 @@ void selectionSort(int _elements[], int _size)
         smallestPos = i;
         for(int j = i; j < _size; j++) //Go through and find smallest
         {
+            printArray(_elements, _size, "//Search for smallest", i, smallestPos, j, 0, 0);
             if(_elements[j] < smallest) //If a smaller value is found, save
             {
                 smallest = _elements[j]; //Save smallest and smallest position
                 smallestPos = j;
+
+                //Print array here
+                printArray(_elements, _size, "//Found new smallest", i, smallestPos, j, 0, 0);
             }
         }
         //swap values
         tempInt = smallest;
         _elements[smallestPos] = _elements[i];
         _elements[i] = tempInt;
+
+        //Print array here
+        printArray(_elements, _size, "//Swap smallest to front of correct positions", i, smallestPos, 0, i, smallestPos);
     }
 
     return;
@@ -129,15 +144,43 @@ void inputInt (int _maxLimit, int _minLimit, int* _value)
     return;
 }
 
-//For printing out the array
-void printArray(int _elements[], int _elementsSize)
+//For printing out the array (green for correct, blue for current smallest, yellow for currently being checked, red 1 & 2 for being swapped)
+void printArray(int _elements[], int _elementsSize, string _message, int _green, int _blue, int _yellow, int _redOne, int _redTwo)
 {
+    HANDLE  hConsole; //For color, 1=blue, 2=green, 6=red, 4=yellow, 15=white
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
     cout << " >- Elements: ";
     for(int i = 0; i < _elementsSize; i++)
     {
-        cout << _elements[i] << " ";
+        if(_message == " ") //if message does not need any explanation, print normally
+        {
+            cout << _elements[i] << " ";
+        }
+        else //Otherwise add all of the explanations
+        {
+            if(i <= _green && _message != "//Swap smallest to front of correct positions") //if before or equal to green marker, color green
+            {
+                SetConsoleTextAttribute(hConsole, 2);
+            }
+            else if(i == _blue && _message != "//Swap smallest to front of correct positions") //if i equals to blue marker, color blue
+            {
+                SetConsoleTextAttribute(hConsole, 1);
+            }
+            else if(i == _yellow && _message != "//Swap smallest to front of correct positions") //if i equals to yellow marker, color yellow
+            {
+                SetConsoleTextAttribute(hConsole, 6);
+            }
+            else if((i == _redOne || i == _redTwo) && _message == "//Swap smallest to front of correct positions") //if i equals to any red marker, color red
+            {
+                SetConsoleTextAttribute(hConsole, 4);
+            }
+            cout << _elements[i] << " ";
+            SetConsoleTextAttribute(hConsole, 15); //otherwise, reset to white
+        }
+
     }
-    cout << endl;
+    cout << "              " << _message << endl;
     return;
 }
 
@@ -146,8 +189,7 @@ void resetArray(int _array[], int _size)
 {
     for(int i = 0; i < _size; i++) //Go through every element, randomize value
     {
-        _array[i] = rand() % 100;
+        _array[i] = rand() % 15;
     }
     return;
 }
-
