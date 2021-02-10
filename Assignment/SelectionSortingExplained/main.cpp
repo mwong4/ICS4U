@@ -10,8 +10,7 @@ Color idea from Stack Overflow Forum: https://stackoverflow.com/questions/405383
 
 TODO
 
-Showing pass
-Display smallest
+Improved comments
 Show swapping braces
 Legend
 
@@ -150,12 +149,20 @@ void printArray(int _elements[], int _elementsSize, string _message, int _green,
     HANDLE  hConsole; //For color, 1=blue, 2=green, 6=red, 4=yellow, 15=white
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
-    cout << " >- Elements: ";
+    if(_message == " ") //NOT showing explanation mode
+    {
+        cout << " >- Elements: ";
+    }
+    else //Showing explanation mode
+    {
+        cout << " >- Pass [" << _green+1 << "]:"; //_green+1 is also the current pass number
+    }
+
     for(int i = 0; i < _elementsSize; i++)
     {
         if(_message == " ") //if message does not need any explanation, print normally
         {
-            cout << _elements[i] << " ";
+             cout << _elements[i] << " ";
         }
         else //Otherwise add all of the explanations
         {
