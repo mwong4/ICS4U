@@ -11,7 +11,6 @@ Color idea from Stack Overflow Forum: https://stackoverflow.com/questions/405383
 TODO
 
 Improved comments
-Show swapping braces
 Legend
 
 */
@@ -29,6 +28,7 @@ void menu(string, string[], int, int*); //Function used to output options to use
 void inputInt(int, int, int*); //Function used to get the players response as an integer (with error trapping)
 void printArray(int[], int, string, int, int, int, int, int); //For printing out the array
 void resetArray(int[], int); //For resetting the array
+void printLegend(); //Used for printing the color legend
 
 int main()
 {
@@ -199,4 +199,15 @@ void resetArray(int _array[], int _size)
         _array[i] = rand() % 15;
     }
     return;
+}
+
+//Used for printing the color legend
+void printLegend()
+{
+    HANDLE  hConsole; //For color, 1=blue, 2=green, 6=red, 4=yellow, 15=white
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+    cout << ">- [LEGEND]: ";
+    SetConsoleTextAttribute(hConsole, 1);
+
 }

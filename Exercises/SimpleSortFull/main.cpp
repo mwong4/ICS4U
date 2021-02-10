@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created:Feb 8, 2020
-Date Updated:Feb 8, 2020
+Date Updated:Feb 10, 2020
 Purpose: fully implemented sorting for all 3 basic systems
 
 Source
@@ -23,13 +23,13 @@ void selectionSort(int[], int); //For selection sorting
 void menu(string, string[], int, int*); //Function used to output options to user and get input
 void inputInt(int, int, int*); //Function used to get the players response as an integer (with error trapping)
 void printArray(int[], int); //For printing out the array
-void resetArray(int[]); //For resetting the array
+void resetArray(int[], int); //For resetting the array
 
 int main()
 {
     //Test case
-    int elementsSize = 9; //For the array size
-    int elements[9]; //The array storing the test case
+    int elementsSize = 8; //For the array size
+    int elements[8]; //The array storing the test case
 
     //For menu
     int input; //The value that the user inputs
@@ -37,7 +37,7 @@ int main()
 
     do
     {
-        resetArray(elements); //Call function to reset array
+        resetArray(elements, elementsSize); //Call function to reset array
 
         //Print out to user the test case
         cout << " >- Size: " << elementsSize << endl;
@@ -49,7 +49,7 @@ int main()
         if(input != 0) //If quit is not chosen
         {
             //Call sort function for the method chosen by user
-            cout << endl << ">- Sorting now..." << endl << endl;
+            cout << endl << ">- Sorting now..." << endl;
             if(input == 1)
             {
                 bubbleSort(elements, elementsSize);
@@ -111,7 +111,7 @@ void insertionSort(int _elements[], int _size)
     for(int i = 1; i < _size; i++)
     {
         counter = 1; //Reset counter
-        while(_elements[i-counter+1] < _elements[i-counter]) //If element to the left of "target" is larger, swap
+        while(_elements[i-counter+1] < _elements[i-counter] && i-counter >= 0) //If element to the left of "target" is larger, swap
         {
             //swap values
             tempInt = _elements[i-counter];
@@ -214,16 +214,11 @@ void printArray(int _elements[], int _elementsSize)
 }
 
 //For resetting the array
-void resetArray(int _array[])
+void resetArray(int _array[], int _size)
 {
-    _array[0] = 1;
-    _array[1] = 3;
-    _array[2] = 7;
-    _array[3] = 9;
-    _array[4] = 4;
-    _array[5] = 8;
-    _array[6] = 3;
-    _array[7] = 1;
-    _array[8] = 6;
+    for(int i = 0; i < _size; i++) //Go through every element, randomize value
+    {
+        _array[i] = rand() % 15;
+    }
     return;
 }
