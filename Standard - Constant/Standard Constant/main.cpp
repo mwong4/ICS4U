@@ -12,8 +12,8 @@ From ICS3U projects by Max Wong
 
 using namespace std;
 
-void menu(string, string[], int, int*); //Function used to output options to user and get input
-void inputInt(int, int, int*); //Function used to get the players response as an integer (with error trapping)
+int menu(string, string[], int); //Function used to output options to user and get input
+int inputInt(int, int); //Function used to get the players response as an integer (with error trapping)
 
 int main()
 {
@@ -21,15 +21,17 @@ int main()
     int opSize = 3;
     int input;
 
-    menu("Test Menu", options, opSize, &input);
+    input = menu("Test Menu", options, opSize);
     cout << "chose: " << input << endl;
 
     return 0;
 }
 
 //Function used to output options to user and get input
-void menu(string _title, string _options[], int _size, int* _value)
+int menu(string _title, string _options[], int _size)
 {
+    int input; //Input from user
+
     cout << "///// " << _title << " /////" << endl;
     for(int i = 0; i < _size; i++)
     {
@@ -37,18 +39,18 @@ void menu(string _title, string _options[], int _size, int* _value)
     }
     cout << " >- [" << _size+1 << "] Quit" << endl;
 
-    inputInt(_size+1, 1, _value);
+    input = inputInt(_size+1, 1);
 
     //If user chooses quit, default to 0
-    if(*_value == _size+1)
+    if(input == _size+1)
     {
-        *_value = 0;
+        return 0;
     }
-    return;
+    return input; //Otherwise, return
 }
 
 //Error trapping funcion that only accepts integers
-void inputInt (int _maxLimit, int _minLimit, int* _value)
+int inputInt (int _maxLimit, int _minLimit)
 {
     int playerInput; //This variable is used to get the player's input
     bool findingInput = true; //This bool determines if the loop continues running
@@ -72,6 +74,6 @@ void inputInt (int _maxLimit, int _minLimit, int* _value)
         }
     }
     while(findingInput);
-    *_value = playerInput;//Save value, return input
-    return;
+
+    return playerInput;//return input
 }

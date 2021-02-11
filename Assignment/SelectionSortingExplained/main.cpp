@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created:Feb 9, 2020
-Date Updated:Feb 10, 2020
+Date Updated:Feb 11, 2020
 Purpose: Show selecion sorting
 
 Source
@@ -23,8 +23,8 @@ using namespace std;
 void selectionSort(int[], int); //For selection sorting
 
 //General functions
-void menu(string, string[], int, int*); //Function used to output options to user and get input
-void inputInt(int, int, int*); //Function used to get the players response as an integer (with error trapping)
+int menu(string, string[], int); //Function used to output options to user and get input
+int inputInt(int, int); //Function used to get the players response as an integer (with error trapping)
 void printArray(int[], int, string, int, int, int, int, int); //For printing out the array
 void resetArray(int[], int); //For resetting the array
 void printLegend(); //Used for printing the color legend
@@ -95,26 +95,29 @@ void selectionSort(int _elements[], int _size)
 }
 
 //Function used to output options to user and get input
-void menu(string _title, string _options[], int _size, int* _value)
+int menu(string _title, string _options[], int _size)
 {
-    cout << "///// " << _title << " /////" << endl; //Print title and all of the options
+    int input; //Input from user
+
+    cout << "///// " << _title << " /////" << endl;
     for(int i = 0; i < _size; i++)
     {
         cout << " >- [" << i+1 << "] " << _options[i] << endl;
     }
     cout << " >- [" << _size+1 << "] Quit" << endl;
 
-    inputInt(_size+1, 1, _value); //Call function to get user input
+    input = inputInt(_size+1, 1);
 
-    if(*_value == _size+1) //If user chooses quit, default to 0
+    //If user chooses quit, default to 0
+    if(input == _size+1)
     {
-        *_value = 0;
+        return 0;
     }
-    return;
+    return input; //Otherwise, return
 }
 
 //Error trapping funcion that only accepts integers
-void inputInt (int _maxLimit, int _minLimit, int* _value)
+int inputInt (int _maxLimit, int _minLimit)
 {
     int playerInput; //This variable is used to get the player's input
     bool findingInput = true; //This bool determines if the loop continues running
@@ -138,8 +141,8 @@ void inputInt (int _maxLimit, int _minLimit, int* _value)
         }
     }
     while(findingInput);
-    *_value = playerInput;//Save value, return input
-    return;
+
+    return playerInput;//return input
 }
 
 //For printing out the array (green for correct, blue for current smallest, yellow for currently being checked, red 1 & 2 for being swapped)

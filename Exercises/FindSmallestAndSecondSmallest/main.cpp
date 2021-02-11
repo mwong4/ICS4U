@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created:Feb 10, 2020
-Date Updated:Feb 10, 2020
+Date Updated:Feb 11, 2020
 Purpose: Find smallest and second smallest recursively
 
 Source
@@ -14,62 +14,109 @@ Srand based on time from Cplusplus.com: http://www.cplusplus.com/reference/cstdl
 #include <windows.h>     //For system commands
 #include <stdlib.h>      //For srand
 #include <time.h>        //For time
-#include <stdio.h>       //For Null
+#include <stdio.h>       //For NULL
 #include <tgmath.h>      //For floor
 
 using namespace std;
 
 //Smallest and 2nd smallest functions
-int smallest(int[], int, int); //Recursively finds the smallest value
-
+int smallest(int[], int); //Recursively finds the smallest value
+int secondSmallest(int[], int, int); //Recursively find the second smallest value
 //General functions
-void menu(string, string[], int, int*); //Function used to output options to user and get input
-void inputInt(int, int, int*); //Function used to get the players response as an integer (with error trapping)
+int menu(string, string[], int); //Function used to output options to user and get input
+int inputInt(int, int); //Function used to get the players response as an integer (with error trapping)
 void resetArray(int[], int); //For resetting the array
+void printArray(int[], int); //For printing the array
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    int input = 1; //Input from user
+    int elements[8]; //The array that will be used
+    string options[3] = {"Smallest", "Second Smallest", "Randomize Array"}; //Options for menu
+
+    srand(time(NULL)); //Randomize srand based on time
+
+    resetArray(elements, 8);//Randomize array
+
+    while(input != 0)
+    {
+        printArray(elements, 8);//Print array
+        menu("Recursive Exercise 2", options, 3, &input); //Call menu function
+
+        if(input == 1) //If find smallest is chosen
+        {
+            cout << " >- Smallest: " << smallest(elements, 8) << endl; //Call function and print out
+        }
+        else if(input == 2) //If find second smallest is chosen
+        {
+
+        }
+        else if(input == 3) //If randomize array is chosen
+        {
+            resetArray(elements, 8); //Call function to reset array
+        }
+
+        system("pause"); //Wait for user input before scrambling
+        system("CLS");
+    }
+
     return 0;
 }
 
+//Recursively finds the smallest value
 int smallest(int _array[], int _size)
 {
-    if(_size == 0)
+    int smallVal; //The smallest value
+
+    if(_size == 0) //If at base case, return current value
     {
         return _array[0];
     }
-    else if(_array[_size-1] > smallest(_array[], _size-1))
+    else //Otherwise take the current element and all other before it, return which one is smaller
     {
-        return smallest(_array[], _size-1);
-    }
-    else
-    {
-        return _array[_size-1];
+        smallVal = smallest(_array, _size-1); //Perform calculation to find smallest first
+
+        if(smallVal > _array[_size-1]) //Current one is smaller
+        {
+            return _array[_size-1];
+        }
+        else //all others before are smaller
+        {
+            return smallVal;
+        }
     }
 }
 
-//Function used to output options to user and get input
-void menu(string _title, string _options[], int _size, int* _value)
+//Recursively find the second smallest value
+int secondSmallest(int _array[], int _size, int _smallest)
 {
-    cout << "///// " << _title << " /////" << endl; //Print title and all of the options
+
+}
+
+//Function used to output options to user and get input
+int menu(string _title, string _options[], int _size)
+{
+    int input; //Input from user
+
+    cout << "///// " << _title << " /////" << endl;
     for(int i = 0; i < _size; i++)
     {
         cout << " >- [" << i+1 << "] " << _options[i] << endl;
     }
     cout << " >- [" << _size+1 << "] Quit" << endl;
 
-    inputInt(_size+1, 1, _value); //Call function to get user input
+    input = inputInt(_size+1, 1);
 
-    if(*_value == _size+1) //If user chooses quit, default to 0
+    //If user chooses quit, default to 0
+    if(input == _size+1)
     {
-        *_value = 0;
+        return 0;
     }
-    return;
+    return input; //Otherwise, return
 }
 
 //Error trapping funcion that only accepts integers
-void inputInt (int _maxLimit, int _minLimit, int* _value)
+int inputInt (int _maxLimit, int _minLimit, int* _value)
 {
     int playerInput; //This variable is used to get the player's input
     bool findingInput = true; //This bool determines if the loop continues running
@@ -108,9 +155,9 @@ void resetArray(int _array[], int _size)
 }
 
 //For printing the array
-void resetArray(int _array[], int _size)
+void printArray(int _array[], int _size)
 {
-    cout << " >- "
+    cout << " >- ";
     for(int i = 0; i < _size; i++) //Go through every element, randomize value
     {
         cout << _array[i] << " ";

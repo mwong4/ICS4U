@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created:Feb 10, 2020
-Date Updated:Feb 10, 2020
+Date Updated:Feb 11, 2020
 Purpose: Do factorial recursively
 
 Source
@@ -14,7 +14,7 @@ Error Trapping from ICS3U projects by Max Wong
 using namespace std;
 
 int factorial(int); //Function for factorial
-void inputInt(int, int, int*); //Function used to get the players response as an integer (with error trapping)
+int inputInt(int, int); //Function used to get the players response as an integer (with error trapping)
 
 int main()
 {
@@ -41,7 +41,7 @@ int factorial(int _size)
 }
 
 //Error trapping funcion that only accepts integers
-void inputInt (int _maxLimit, int _minLimit, int* _value)
+int inputInt (int _maxLimit, int _minLimit)
 {
     int playerInput; //This variable is used to get the player's input
     bool findingInput = true; //This bool determines if the loop continues running
@@ -65,6 +65,6 @@ void inputInt (int _maxLimit, int _minLimit, int* _value)
         }
     }
     while(findingInput);
-    *_value = playerInput;//Save value, return input
-    return;
+
+    return playerInput;//return input
 }
