@@ -45,7 +45,7 @@ int main()
         printArray(elements, arraySize, " ", 0, 0, 0, 0, 0); //Call function to print out array
         cout << endl;
 
-        menu("Selection Sort", options, 1, &input); //Call menu function
+        input = menu("Selection Sort", options, 1); //Call menu function
 
         if(input == 1)
         {

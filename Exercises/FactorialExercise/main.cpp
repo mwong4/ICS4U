@@ -21,7 +21,7 @@ int main()
     int input; //Input from user
 
     cout << " >- Enter an integer between 0 and 9999, inclusively" << endl;
-    inputInt(9999, 0, &input); //Call function to get input
+    input = inputInt(9999, 0); //Call function to get input
 
     cout << endl << " >- " << input << "! = " << factorial(input) << endl; //Call function to perform factorial
     return 0;

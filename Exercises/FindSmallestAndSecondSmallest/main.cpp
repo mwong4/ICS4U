@@ -21,7 +21,7 @@ using namespace std;
 
 //Smallest and 2nd smallest functions
 int smallest(int[], int); //Recursively finds the smallest value
-int secondSmallest(int[], int, int); //Recursively find the second smallest value
+int secondSmallest(int[], int, int, int); //Recursively find the second smallest value
 //General functions
 int menu(string, string[], int); //Function used to output options to user and get input
 int inputInt(int, int); //Function used to get the players response as an integer (with error trapping)
@@ -41,7 +41,7 @@ int main()
     while(input != 0)
     {
         printArray(elements, 8);//Print array
-        menu("Recursive Exercise 2", options, 3, &input); //Call menu function
+        input = menu("Recursive Exercise 2", options, 3); //Call menu function
 
         if(input == 1) //If find smallest is chosen
         {
@@ -49,7 +49,7 @@ int main()
         }
         else if(input == 2) //If find second smallest is chosen
         {
-
+            cout << " >- Second Smallest: " << secondSmallest(elements, 8, 10000, 100000) << endl;
         }
         else if(input == 3) //If randomize array is chosen
         {
@@ -88,9 +88,25 @@ int smallest(int _array[], int _size)
 }
 
 //Recursively find the second smallest value
-int secondSmallest(int _array[], int _size, int _smallest)
+int secondSmallest(int _array[], int _size, int _smallest, int _secondSmallest)
 {
+    cout << "[" << _size << "]Smallest: " << _smallest << " Second Smallest: " << _secondSmallest << endl;
+    if(_array[_size-1] < _smallest) //If smaller than smallest
+    {
+        _secondSmallest = _smallest; //Shuffle smallest as second smallest
+        _smallest = _array[_size-1]; //Shuffle smallest as position iin array
+    }
+    else if(_array[_size-1] < _secondSmallest && _smallest <= _array[_size-1]) //Else if between smallest and second smallest
+    {
+        _secondSmallest = _array[_size-1]; //Set as new second smallest
+    }
 
+    if(_size == 0) //If end of array is reached, return second smallest up chain
+    {
+        return _secondSmallest;
+    }
+
+    return secondSmallest(_array, _size-1, _smallest, _secondSmallest); //Otherwise, by default call function again
 }
 
 //Function used to output options to user and get input
@@ -116,7 +132,7 @@ int menu(string _title, string _options[], int _size)
 }
 
 //Error trapping funcion that only accepts integers
-int inputInt (int _maxLimit, int _minLimit, int* _value)
+int inputInt (int _maxLimit, int _minLimit)
 {
     int playerInput; //This variable is used to get the player's input
     bool findingInput = true; //This bool determines if the loop continues running
@@ -140,8 +156,8 @@ int inputInt (int _maxLimit, int _minLimit, int* _value)
         }
     }
     while(findingInput);
-    *_value = playerInput;//Save value, return input
-    return;
+
+    return playerInput;//return input
 }
 
 //For resetting the array
