@@ -110,15 +110,15 @@ void insertionSort(int _elements[], int _size)
 
     for(int i = 1; i < _size; i++)
     {
-        counter = 1; //Reset counter
-        while(_elements[i-counter+1] < _elements[i-counter] && i-counter >= 0) //If element to the left of "target" is larger, swap
+        counter = i; //Reset counter
+        while(_elements[counter] < _elements[counter-1] && counter > 0) //If element to the left of "target" is larger, swap
         {
             //swap values
-            tempInt = _elements[i-counter];
-            _elements[i-counter] = _elements[i-counter+1];
-            _elements[i-counter+1] = tempInt;
+            tempInt = _elements[counter-1];
+            _elements[counter-1] = _elements[counter];
+            _elements[counter] = tempInt;
 
-            counter ++; //Update counter
+            counter --; //Update counter
         }
     }
     return;
