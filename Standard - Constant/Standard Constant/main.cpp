@@ -17,11 +17,10 @@ int inputInt(int, int); //Function used to get the players response as an intege
 
 int main()
 {
-    string options[] = {"test 1", "test 2", "test 3"};
-    int opSize = 3;
+    string options[3] = {"test 1", "test 2", "test 3"};
     int input;
 
-    input = menu("Test Menu", options, opSize);
+    input = menu("Test Menu", options, 3);
     cout << "chose: " << input << endl;
 
     return 0;
@@ -33,7 +32,7 @@ int menu(string _title, string _options[], int _size)
     int input; //Input from user
 
     cout << "///// " << _title << " /////" << endl;
-    for(int i = 0; i < _size; i++)
+    for(int i = 0; i < _size; i++) //Print out all options
     {
         cout << " >- [" << i+1 << "] " << _options[i] << endl;
     }
