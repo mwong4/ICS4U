@@ -31,13 +31,19 @@ int main()
 {
     string options[1] = {"Sort"}; //List of options for menu
     int input; //user input
+    int elements[8]; //This is the array being sorted
+
+    resetArray(elements, 8);
+    printArray(elements, 8);
 
     input = menu("Merge Sort", options, 1);
 
     if(input == 1)
     {
-
+        mergeSort(elements, 0, 8);
     }
+
+    printArray(elements, 8);
 
     return 0;
 }
@@ -45,12 +51,67 @@ int main()
 //Function that sorts using merge sort
 void mergeSort(int _array[], int _min, int _max)
 {
-    int mid = pow(2, floor(log(input)/log(2))); //Calculate closest power of 2 (floor)
+    int aSize = _max - _min;
+    int mid = pow(2, floor(log(aSize)/log(2))); //Calculate closest power of 2 (floor)
+    int tempInt; //Used for swapping
+    int markerLeft = _min; //used when merging back to current position on left half
+    int markerRight = mid; //used when merging back to current position on right half
+    int tempArray[aSize]; //In place of a link list
 
-    if(_max-_min == 1) //If reaching a boolean comparison
+    if(aSize == 1) //If reaching a boolean comparison
     {
         //compare, return
+        if(_array[_max-1] < _array[_min])
+        {
+            tempInt = _array[_max-1]; //Swap
+            _array[_max-1] = _array[_min];
+            _array[_min-1] = tempInt;
+
+            return;
+        }
     }
+    else if(_max == _min) //If single digit, not pair, return single as smallest
+    {
+        return;
+    }
+    else
+    {
+        //Do the splitting, call function twice for oth halves
+        mergeSort(_array, _min, mid);
+        mergeSort(_array, mid, _max);
+    }
+
+    //DO the merge back
+    for(int i = 0; i < aSize; i++)
+    {
+        if(markerLeft == mid) //If left half has reached cap, fill in with right half
+        {
+            tempArray[i] = _array[markerRight]; //Insert into temporary array
+            markerRight ++; //Increase marker
+        }
+        else if(markerRight == _max)  //If right half has reached cap, fill in with left half
+        {
+            tempArray[i] = _array[markerLeft]; //Insert into temporary array
+            markerLeft ++; //Increase marker
+        }
+        else if(_array[markerLeft] > _array[markerRight]) //Oterhwise if marker on right is smallest
+        {
+            tempArray[i] = markerRight; //Insert right marker
+            markerRight++; //Increase marker
+        }
+        else
+        {
+            tempArray[i] = markerLeft; //Otherwise, insert left marker
+            markerLeft ++; //Increase marker
+        }
+    }
+
+    for(int i = 0; i < aSize; i++) //Go through the temp array and copy it all back to the main array
+    {
+        _array[i] = tempArray[i];
+    }
+
+    return;
 }
 
 //Function used to output options to user and get input
@@ -107,11 +168,9 @@ int inputInt (int _maxLimit, int _minLimit)
 //For resetting the array
 void resetArray(int _array[], int _size)
 {
-    int counter = 0; //Counts up values
     for(int i = 0; i < _size; i++) //Go through every element, randomize value
     {
-        counter += rand() % 5; //Increases counter randomly
-        _array[i] = counter;
+        _array[i] = rand() % 10;
     }
     return;
 }
