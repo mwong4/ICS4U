@@ -5,7 +5,7 @@ Date Updated:Feb 11, 2020
 Purpose: To find the specific element in Pascal's traingle
 
 Source
-From ICS3U projects by Max Wong
+Error Trapping from ICS3U projects by Max Wong
 */
 
 #include <iostream>
