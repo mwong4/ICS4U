@@ -29,6 +29,8 @@ void printArray(int[], int); //For printing the array
 
 int main()
 {
+    srand(time(NULL));
+
     string options[1] = {"Sort"}; //List of options for menu
     int input; //user input
     int elements[8]; //This is the array being sorted
@@ -52,44 +54,65 @@ int main()
 void mergeSort(int _array[], int _min, int _max)
 {
     int aSize = _max - _min;
-    int mid = pow(2, floor(log(aSize)/log(2))); //Calculate closest power of 2 (floor)
+    int mid = _min + pow(2, floor(log(aSize)/log(2))); //Calculate closest power of 2 (floor)
     int tempInt; //Used for swapping
     int markerLeft = _min; //used when merging back to current position on left half
     int markerRight = mid; //used when merging back to current position on right half
     int tempArray[aSize]; //In place of a link list
 
-    if(aSize == 1) //If reaching a boolean comparison
+    if(aSize == mid) //If perfect 8th
     {
+        mid/= 2;
+    }
+
+    printArray(_array, 8);
+
+    cout << _min << ":" << _max << "-" << mid << endl;
+
+    if(aSize == 2) //If reaching a boolean comparison
+    {
+        cout << "Hit pair" << endl;
         //compare, return
         if(_array[_max-1] < _array[_min])
         {
             tempInt = _array[_max-1]; //Swap
             _array[_max-1] = _array[_min];
-            _array[_min-1] = tempInt;
+            _array[_min] = tempInt;
+            cout << "Swapped" << endl;
+            printArray(_array, 8);
 
             return;
         }
     }
-    else if(_max == _min) //If single digit, not pair, return single as smallest
+    else if(aSize == 1) //If single digit, not pair, return single as smallest
     {
         return;
     }
     else
     {
+        cout << "Split" << endl;
         //Do the splitting, call function twice for oth halves
         mergeSort(_array, _min, mid);
         mergeSort(_array, mid, _max);
     }
 
+    cout << "merging back" << endl;
+    printArray(_array, 8);
+
+    for(int i = 0; i < aSize; i++) //Go through the main array and copy into temp array
+    {
+        tempArray[i] = _array[i];
+    }
+
     //DO the merge back
     for(int i = 0; i < aSize; i++)
     {
-        if(markerLeft == mid) //If left half has reached cap, fill in with right half
+        if(markerLeft == mid-1) //If left half has reached cap, fill in with right half
         {
             tempArray[i] = _array[markerRight]; //Insert into temporary array
             markerRight ++; //Increase marker
         }
-        else if(markerRight == _max)  //If right half has reached cap, fill in with left half
+        else if(markerRight == _max-1)  //If right half has reached cap, fill in with left half
         {
             tempArray[i] = _array[markerLeft]; //Insert into temporary array
             markerLeft ++; //Increase marker
@@ -110,6 +133,8 @@ void mergeSort(int _array[], int _min, int _max)
     {
         _array[i] = tempArray[i];
     }
+
+    printArray(_array, 8);
 
     return;
 }

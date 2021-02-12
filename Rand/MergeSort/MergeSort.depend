@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1613150690 source:c:\users\max pc\documents\github\ics4u\rand\mergesort\main.cpp
+	<iostream>
+	<limits>
+	<windows.h>
+	<stdlib.h>
+	<time.h>
+	<stdio.h>
+	<math.h>
+
