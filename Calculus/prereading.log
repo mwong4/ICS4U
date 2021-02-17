@@ -1,0 +1,176 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  16 FEB 2021 19:53
+entering extended mode
+**"c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/prereading.tex"
+("c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/prereading.tex"
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03> ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls"
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo"
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count183
+\l__pdf_internal_box=\box47
+) ("c:/Users\Max pc\Documents\GitHub\ICS4U\Calculus\prereading.aux")
+\openout1 = `prereading.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count184
+\scratchdimen=\dimen141
+\scratchbox=\box48
+\nofMPsegments=\count185
+\nofMParguments=\count186
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count187
+\MPscratchDim=\dimen142
+\MPnumerator=\count188
+\makeMPintoPDFobject=\count189
+\everyMPtoPDFconversion=\toks17
+) ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 21.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 21.
+<Pre-Reading/Chapter 1/IMG_0953.JPG, id=1, 4045.1125pt x 1811.76875pt>
+File: Pre-Reading/Chapter 1/IMG_0953.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0953.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0953.JPG  used on input line 39.
+(pdftex.def)             Requested size: 345.0pt x 154.50974pt.
+<Pre-Reading/Chapter 1/IMG_0958.JPG, id=2, 3033.3325pt x 619.31375pt>
+File: Pre-Reading/Chapter 1/IMG_0958.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0958.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0958.JPG  used on input line 40.
+(pdftex.def)             Requested size: 345.0pt x 70.43051pt.
+<Pre-Reading/Chapter 1/IMG_0959.JPG, id=3, 3008.23875pt x 780.9175pt>
+File: Pre-Reading/Chapter 1/IMG_0959.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0959.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0959.JPG  used on input line 41.
+(pdftex.def)             Requested size: 345.0pt x 89.55934pt.
+<Pre-Reading/Chapter 1/IMG_0960.JPG, id=4, 2965.0775pt x 1149.29375pt>
+File: Pre-Reading/Chapter 1/IMG_0960.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0960.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0960.JPG  used on input line 42.
+(pdftex.def)             Requested size: 345.0pt x 133.718pt.
+<Pre-Reading/Chapter 1/IMG_0961.JPG, id=5, 3035.34pt x 1130.2225pt>
+File: Pre-Reading/Chapter 1/IMG_0961.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0961.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0961.JPG  used on input line 43.
+(pdftex.def)             Requested size: 345.0pt x 128.4466pt.
+ [1
+
+{C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2 <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0953.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0958.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0959.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0960.JPG>]
+File: Pre-Reading/Chapter 1/IMG_0961.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0961.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0961.JPG  used on input line 48.
+(pdftex.def)             Requested size: 345.0pt x 128.4466pt.
+<Pre-Reading/Chapter 1/IMG_0965.JPG, id=26, 3033.3325pt x 916.42375pt>
+File: Pre-Reading/Chapter 1/IMG_0965.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0965.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0965.JPG  used on input line 49.
+(pdftex.def)             Requested size: 345.0pt x 104.21889pt.
+<Pre-Reading/Chapter 1/IMG_0966.JPG, id=27, 3035.34pt x 780.9175pt>
+File: Pre-Reading/Chapter 1/IMG_0966.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0966.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0966.JPG  used on input line 50.
+(pdftex.def)             Requested size: 345.0pt x 88.74907pt.
+<Pre-Reading/Chapter 1/IMG_0967.JPG, id=28, 3033.3325pt x 709.65125pt>
+File: Pre-Reading/Chapter 1/IMG_0967.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0967.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0967.JPG  used on input line 51.
+(pdftex.def)             Requested size: 345.0pt x 80.704pt.
+<Pre-Reading/Chapter 1/IMG_0968.JPG, id=29, 3033.3325pt x 620.3175pt>
+File: Pre-Reading/Chapter 1/IMG_0968.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0968.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0968.JPG  used on input line 52.
+(pdftex.def)             Requested size: 345.0pt x 70.54466pt.
+<Pre-Reading/Chapter 1/IMG_0969.JPG, id=30, 3035.34pt x 984.67876pt>
+File: Pre-Reading/Chapter 1/IMG_0969.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0969.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0969.JPG  used on input line 53.
+(pdftex.def)             Requested size: 345.0pt x 111.90596pt.
+<Pre-Reading/Chapter 1/IMG_0970.JPG, id=31, 3035.34pt x 664.4825pt>
+File: Pre-Reading/Chapter 1/IMG_0970.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0970.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0970.JPG  used on input line 54.
+(pdftex.def)             Requested size: 345.0pt x 75.51656pt.
+<Pre-Reading/Chapter 1/IMG_0971.JPG, id=32, 3035.34pt x 620.3175pt>
+File: Pre-Reading/Chapter 1/IMG_0971.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0971.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0971.JPG  used on input line 55.
+(pdftex.def)             Requested size: 345.0pt x 70.49733pt.
+ [3 <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0961.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0965.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0966.JPG>]
+<Pre-Reading/Chapter 1/IMG_0972.JPG, id=36, 3033.3325pt x 1159.33125pt>
+File: Pre-Reading/Chapter 1/IMG_0972.JPG Graphic file (type jpg)
+<use Pre-Reading/Chapter 1/IMG_0972.JPG>
+Package pdftex.def Info: Pre-Reading/Chapter 1/IMG_0972.JPG  used on input line 64.
+(pdftex.def)             Requested size: 303.35101pt x 115.93991pt.
+ [4 <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0967.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0968.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0969.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0970.JPG> <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0971.JPG>] [5 <c:/Users/Max pc/Documents/GitHub/ICS4U/Calculus/Pre-Reading/Chapter 1/IMG_0972.JPG>] ("c:/Users\Max pc\Documents\GitHub\ICS4U\Calculus\prereading.aux") ) 
+Here is how much of TeX's memory you used:
+ 1270 strings out of 479799
+ 21281 string characters out of 2869209
+ 288250 words of memory out of 3000000
+ 18285 multiletter control sequences out of 15000+200000
+ 539370 words of font info for 43 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 66i,6n,72p,237b,191s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Max pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calculus\prereading.pdf" (5 pages, 7921103 bytes).
+PDF statistics:
+ 84 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+
