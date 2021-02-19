@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1611927343 source:c:\users\max pc\documents\github\ics4u\ccc\2017\prac 3\main.cpp
+	<iostream>
+	<vector>
+	<math.h>
+

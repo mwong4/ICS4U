@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1610627935 source:c:\users\max pc\documents\github\ics4u\ccc\ccc practice 2\main.cpp
+	<iostream>
+	<tgmath.h>
+
