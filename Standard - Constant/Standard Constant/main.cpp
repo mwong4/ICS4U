@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
-Date Created:Feb 8, 2020
-Date Updated:Feb 8, 2020
+Date Created:Feb 8, 2021
+Date Updated:Feb 8, 2021
 Purpose: Standard functions for all projects
 
 Source
