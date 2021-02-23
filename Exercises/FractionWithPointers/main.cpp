@@ -2,7 +2,7 @@
 Author: Max Wong
 Date Created:Feb 22, 2021
 Date Updated:Feb 22, 2021
-Purpose: Standard functions for all projects
+Purpose: TO practice pointers
 
 Source
 From ICS3U projects by Max Wong
