@@ -60,3 +60,5 @@ void Fraction::div(Fraction *_fracOne, Fraction *_fracTwo)
     denominator = ((* _fracOne).denominator) * ((*_fracTwo).numerator);
     return;
 }
+
+
