@@ -6,9 +6,6 @@ Purpose: To track all books and their associated authors
 
 Source
 From ICS3U projects by Max Wong
-
-TO DO:
-Ask about best practice for same name overload!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 #include <iostream>
 
