@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1614185703 source:c:\users\max pc\documents\github\ics4u\exercises\squareclass\main.cpp
+	<iostream>
+	"Rectangle.h"
+
+1614185519 c:\users\max pc\documents\github\ics4u\exercises\squareclass\include\rectangle.h
+	<iostream>
+
+1614185676 source:c:\users\max pc\documents\github\ics4u\exercises\squareclass\src\rectangle.cpp
+	"Rectangle.h"
+
