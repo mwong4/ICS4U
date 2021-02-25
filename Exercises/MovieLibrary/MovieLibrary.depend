@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1614270124 source:c:\users\max pc\documents\github\ics4u\exercises\movielibrary\main.cpp
+	<iostream>
+	"Movie.h"
+	"Actor.h"
+
+1614269409 source:c:\users\max pc\documents\github\ics4u\exercises\movielibrary\src\actor.cpp
+	"Actor.h"
+
+1614268623 c:\users\max pc\documents\github\ics4u\exercises\movielibrary\include\actor.h
+	"Movie.h"
+	<iostream>
+
+1614270016 c:\users\max pc\documents\github\ics4u\exercises\movielibrary\include\movie.h
+	<iostream>
+
+1614269957 source:c:\users\max pc\documents\github\ics4u\exercises\movielibrary\src\movie.cpp
+	"Movie.h"
+	"Actor.h"
+

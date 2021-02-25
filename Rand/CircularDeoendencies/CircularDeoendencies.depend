@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1614264375 source:c:\users\max pc\documents\github\ics4u\rand\circulardeoendencies\main.cpp
+	<iostream>
+	"Author.h"
+	"Book.h"
+
+1614264228 source:c:\users\max pc\documents\github\ics4u\rand\circulardeoendencies\src\author.cpp
+	"Author.h"
+
+1614264316 c:\users\max pc\documents\github\ics4u\rand\circulardeoendencies\include\author.h
+	<iostream>
+
+1614264180 source:c:\users\max pc\documents\github\ics4u\rand\circulardeoendencies\src\book.cpp
+	"Book.h"
+
+1614264322 c:\users\max pc\documents\github\ics4u\rand\circulardeoendencies\include\book.h
+	"Author.h"
+	<iostream>
+
