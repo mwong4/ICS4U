@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Feb 25, 2020
+Date Updated: Feb 25, 2020
+Purpose: Source code for actor class
+Type: Source
+*/
+
 #include "Actor.h"
 
 Actor::Actor()

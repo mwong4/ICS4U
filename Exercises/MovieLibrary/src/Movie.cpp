@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Feb 25, 2020
+Date Updated: Feb 25, 2020
+Purpose: Source code for movies
+Type: Source
+*/
+
 #include "Movie.h"
 #include "Actor.h"
 

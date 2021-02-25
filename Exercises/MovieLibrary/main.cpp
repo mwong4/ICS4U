@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Feb 25, 2020
+Date Updated: Feb 25, 2020
+Purpose: To learn about circular dependencies and forwards declaration
+Type: Main
+*/
+
 #include <iostream>
 #include "Movie.h"
 #include "Actor.h"

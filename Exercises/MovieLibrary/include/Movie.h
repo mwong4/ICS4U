@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Feb 25, 2020
+Date Updated: Feb 25, 2020
+Purpose: Header for movies
+Type: Header
+*/
+
 #ifndef MOVIE_H
 #define MOVIE_H
 #include <iostream>
