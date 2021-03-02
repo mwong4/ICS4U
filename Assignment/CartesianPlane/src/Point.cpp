@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Feb 25, 2020
-Date Updated: Feb 26, 2020
+Date Updated: Mar 2, 2020
 Purpose: Holds all data and methods for Point class
 Type: Source
 */
@@ -38,7 +38,7 @@ float Point::distanceFromPoint(Point* _point)
 }
 
 //To determine the equation given another point
-void Point::determineEquation(Point* _point, Line* _line)
+Line* Point::determineEquation(Point* _point, Line* _line)
 {
     if(xCoord == (*_point).getX()) //If x coords are the same
     {
@@ -58,7 +58,7 @@ void Point::determineEquation(Point* _point, Line* _line)
         (*_line).setSlope((yCoord-(*_point).getY())/(xCoord-(*_point).getX())); //Calculate slope
         (*_line).setIntercept(yCoord - ((*_line).getSlope()*xCoord)); //Calculate y intercept
     }
-    return;
+    return _line;
 }
 
 //To display the point

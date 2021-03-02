@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Feb 25, 2020
-Date Updated: Feb 26, 2020
+Date Updated: Mar 2, 2020
 Purpose: To perform multiple operations on the cartesian plane using objects
 Type: Main
 */
@@ -25,9 +25,9 @@ int main()
     Line line1, line2, line3;
 
     //Test case 1:
-    point1.determineEquation(&point2, &line1);
+    line1 = *(point1.determineEquation(&point2, &line1));
     line1.display();
-    point2.determineEquation(&point3, &line2);
+    line2 = *(point2.determineEquation(&point3, &line2));
     line2.display();
     if(line1.determineInterception(&line2, &point4))
     {
@@ -35,9 +35,9 @@ int main()
     }
 
     //Test Case 2:
-    point1.determineEquation(&point2, &line1);
+    line1 = *(point1.determineEquation(&point2, &line1));
     line1.display();
-    point2.determineEquation(&point5, &line2);
+    line2 = *(point2.determineEquation(&point5, &line2));
     line2.display();
     if(line1.determineInterception(&line2, &point4))
     {
@@ -45,9 +45,9 @@ int main()
     }
 
     //Test Case 3:
-    point3.determineEquation(&point6, &line1);
+    line1 = *(point3.determineEquation(&point6, &line1));
     line1.display();
-    point2.determineEquation(&point5, &line2);
+    line2 = *(point2.determineEquation(&point5, &line2));
     line2.display();
     if(line1.determineInterception(&line2, &point4))
     {

@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1614190223 source:c:\users\max pc\documents\github\ics4u\exercises\fractionobjects\main.cpp
+1614704260 source:c:\users\max pc\documents\github\ics4u\exercises\fractionobjects\main.cpp
 	<iostream>
 	"Fraction.h"
 
-1614189892 c:\users\max pc\documents\github\ics4u\exercises\fractionobjects\include\fraction.h
+1614704170 c:\users\max pc\documents\github\ics4u\exercises\fractionobjects\include\fraction.h
 	<iostream>
 
 1614190003 source:c:\users\max pc\documents\github\ics4u\exercises\fractionobjects\src\fraction.cpp

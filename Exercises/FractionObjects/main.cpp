@@ -1,26 +1,26 @@
 /*
 Author: Max Wong
 Date Created: Feb 24, 2020
-Date Updated: Feb 24, 2020
-Purpose: test methods for rectangle exercise
+Date Updated: Mar 2, 2020
+Purpose: Main file for fraction exercise
 Type: Main
 */
 
 #include <iostream>
-#include "Fraction.h"
+#include "Fraction.h" //Include fraction object
 
 using namespace std;
 
 int main()
 {
-    Fraction fracOne(7, 8);
+    Fraction fracOne(7, 8); //Instantiate fraction 1 and 2
     Fraction fracTwo(3, 4);
-    Fraction output;
+    Fraction output; //Output fraction
 
 
     //Addition
     cout << "//Add//" << endl;
-    output.add(&fracOne, &fracTwo); //Call method to add
+    output = fracOne.add(&fracTwo); //Call method to add
     fracOne.displayFraction(); //Display
     cout << " + ";
     fracTwo.displayFraction();
@@ -29,17 +29,17 @@ int main()
 
     //Subtraction
     cout << endl << "//Subtract//" << endl;
-    output.sub(&fracOne, &fracTwo); //Call method to subtract
+    output = fracOne.sub(&fracTwo); //Call method to add
     output.displayFraction();
 
     //Multiplication
     cout << endl << "//Multiply//" << endl;
-    output.mul(&fracOne, &fracTwo); //Call method to multiply
+    output = *(fracOne.mul(&fracTwo, &output)); //Call method to add
     output.displayFraction();
 
     //Division
     cout << endl << "//Division//" << endl;
-    output.div(&fracOne, &fracTwo); //Call method to division
+    output = *(fracOne.div(&fracTwo, &output)); //Call method to add
     output.displayFraction();
 
     return 0;

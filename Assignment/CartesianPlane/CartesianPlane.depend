@@ -11,9 +11,9 @@
 1614361159 c:\users\max pc\documents\github\ics4u\assignment\cartesianplane\include\line.h
 	"Point.h"
 
-1614361158 c:\users\max pc\documents\github\ics4u\assignment\cartesianplane\include\point.h
+1614702752 c:\users\max pc\documents\github\ics4u\assignment\cartesianplane\include\point.h
 
-1614361157 source:c:\users\max pc\documents\github\ics4u\assignment\cartesianplane\src\point.cpp
+1614702777 source:c:\users\max pc\documents\github\ics4u\assignment\cartesianplane\src\point.cpp
 	"Point.h"
 	"Line.h"
 	<iostream>

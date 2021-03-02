@@ -1,9 +1,9 @@
 /*
 Author: Max Wong
 Date Created: Feb 24, 2020
-Date Updated: Feb 24, 2020
-Purpose: Defining all methods
-Type: Class
+Date Updated: Mar 2, 2020
+Purpose: Source file for fractions
+Type: Source
 */
 
 #include "Fraction.h"
@@ -33,32 +33,36 @@ void Fraction::displayFraction()
     cout << numerator << "/" << denominator;
 }
 
-void Fraction::add(Fraction *_fracOne, Fraction *_fracTwo)
+Fraction Fraction::add(Fraction *_fracTwo)
 {
-    numerator = ((*_fracOne).numerator * (*_fracTwo).denominator) + ((*_fracTwo).numerator * (*_fracOne).denominator);
-    denominator = ((* _fracOne).denominator) * ((*_fracTwo).denominator);
-    return;
+    Fraction tempFraction; //Temporary fraction
+
+    tempFraction.numerator = (numerator * (*_fracTwo).denominator) + ((*_fracTwo).numerator * denominator);
+    tempFraction.denominator = (denominator) * ((*_fracTwo).denominator);
+    return tempFraction;
 }
 
-void Fraction::sub(Fraction *_fracOne, Fraction *_fracTwo)
+Fraction Fraction::sub(Fraction *_fracTwo)
 {
-    numerator = ((*_fracOne).numerator * (*_fracTwo).denominator) - ((*_fracTwo).numerator * (*_fracOne).denominator);
-    denominator = ((* _fracOne).denominator) * ((*_fracTwo).denominator);
-    return;
+    Fraction tempFraction; //Temporary fraction
+
+    tempFraction.numerator = (numerator * (*_fracTwo).denominator) - ((*_fracTwo).numerator * denominator);
+    tempFraction.denominator = (denominator) * ((*_fracTwo).denominator);
+    return tempFraction;
 }
 
-void Fraction::mul(Fraction *_fracOne, Fraction *_fracTwo)
+Fraction* Fraction::mul(Fraction *_fracTwo, Fraction *_output)
 {
-    numerator = ((*_fracOne).numerator) * ((*_fracTwo).numerator);
-    denominator = ((* _fracOne).denominator) * ((* _fracTwo).denominator);
-    return;
+    (*_output).numerator = (numerator) * ((*_fracTwo).numerator);
+    (*_output).denominator = (denominator) * ((* _fracTwo).denominator);
+    return _output;
 }
 
-void Fraction::div(Fraction *_fracOne, Fraction *_fracTwo)
+Fraction* Fraction::div(Fraction *_fracTwo, Fraction *_output)
 {
-    numerator = ((*_fracOne).numerator) * ((*_fracTwo).denominator);
-    denominator = ((* _fracOne).denominator) * ((*_fracTwo).numerator);
-    return;
+    (*_output).numerator = (numerator) * ((*_fracTwo).denominator);
+    (*_output).denominator = (denominator) * ((*_fracTwo).numerator);
+    return _output;
 }
 
 
