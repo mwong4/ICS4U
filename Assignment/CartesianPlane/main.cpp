@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Feb 25, 2020
-Date Updated: Feb 25, 2020
+Date Updated: Feb 26, 2020
 Purpose: To perform multiple operations on the cartesian plane using objects
 Type: Main
 */
@@ -14,12 +14,44 @@ using namespace std;
 
 int main()
 {
-    Line lineOne(2, 1), lineTwo(4, 2);
-    Point pointOne(1, 5), pointTwo(3, 5);
+    //Maloley Test Cases
+    Point point1(1, 2); //1, 2
+    Point point2(1, 3); //1, 3
+    Point point3(4, 3); //4, 3
+    Point point4;
+    Point point5(2,5); //2, 5
+    Point point6(6,7); //6, 7
 
-    if(pointOne.determineEquation(&pointTwo, &lineOne))
+    Line line1, line2, line3;
+
+    //Test case 1:
+    point1.determineEquation(&point2, &line1);
+    line1.display();
+    point2.determineEquation(&point3, &line2);
+    line2.display();
+    if(line1.determineInterception(&line2, &point4))
     {
-        lineOne.displayLine();
+        point4.display();
+    }
+
+    //Test Case 2:
+    point1.determineEquation(&point2, &line1);
+    line1.display();
+    point2.determineEquation(&point5, &line2);
+    line2.display();
+    if(line1.determineInterception(&line2, &point4))
+    {
+        point4.display();
+    }
+
+    //Test Case 3:
+    point3.determineEquation(&point6, &line1);
+    line1.display();
+    point2.determineEquation(&point5, &line2);
+    line2.display();
+    if(line1.determineInterception(&line2, &point4))
+    {
+        point4.display();
     }
 
     return 0;

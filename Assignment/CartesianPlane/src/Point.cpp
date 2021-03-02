@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Feb 25, 2020
-Date Updated: Feb 25, 2020
+Date Updated: Feb 26, 2020
 Purpose: Holds all data and methods for Point class
 Type: Source
 */
@@ -38,29 +38,31 @@ float Point::distanceFromPoint(Point* _point)
 }
 
 //To determine the equation given another point
-bool Point::determineEquation(Point* _point, Line* _line)
+void Point::determineEquation(Point* _point, Line* _line)
 {
     if(xCoord == (*_point).getX()) //If x coords are the same
     {
-        cout << ">- Error, vertical line at x = " << xCoord << endl;
-        return false;
+        (*_line).setVert(true); //Eanble vert
+        (*_line).setSlope(1);
+        (*_line).setIntercept(xCoord); //Set x=??? value to y-intercept
     }
     else if(yCoord == (*_point).getY()) //else if y coords are the same
     {
+        (*_line).setVert(false); //Dusable vert
         (*_line).setSlope(0);
-        (*_line).setIntercept(yCoord);
-        return true;
+        (*_line).setIntercept(yCoord); //Set y constant to y-intercept
     }
     else
     {
+        (*_line).setVert(false); //Disable vert
         (*_line).setSlope((yCoord-(*_point).getY())/(xCoord-(*_point).getX())); //Calculate slope
         (*_line).setIntercept(yCoord - ((*_line).getSlope()*xCoord)); //Calculate y intercept
-        return true;
     }
+    return;
 }
 
 //To display the point
-void Point::displayPoint()
+void Point::display()
 {
     cout << "(" << xCoord << "," << yCoord << ")" << endl;
     return;
