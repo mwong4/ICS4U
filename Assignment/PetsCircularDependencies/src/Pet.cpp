@@ -23,23 +23,19 @@ Pet::Pet()
 }
 
 //Cusom constructor
-Pet::Pet(string _name, string _type, int _age, Owner *_owners[], int _size)
+Pet::Pet(string _name, string _type, int _age, Owner *_ownerOne, Owner *_ownerTwo, Owner *_ownerThree)
 {
     name = _name; //Set misc values
     type = _type;
     age = _age;
 
-    for(int i = 0; i < 10; i++) //Set all owners and empty spots to nullptr
+    for(int i = 0; i < 3; i++) //Set all owners and empty spots to nullptr
     {
-        if(i < _size)
-        {
-            owners[i] = _owners[i];
-        }
-        else
-        {
-            owners[i] = nullptr;
-        }
+        owners[i] = nullptr;
     }
+    owners[0] = _ownerOne;
+    owners[1] = _ownerTwo;
+    owners[2] = _ownerThree;
 
     return;
 }
@@ -61,5 +57,16 @@ void Pet::displayPet()
         counter++; //Increase counter
     }
 
+    if(counter == 0) //If there are no owners
+    {
+        cout << "Sorry, no owners found" << endl;
+    }
+
     return;
+}
+
+//getters and setters
+string Pet::getName()
+{
+    return name;
 }

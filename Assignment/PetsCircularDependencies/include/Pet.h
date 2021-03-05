@@ -18,11 +18,14 @@ class Pet
 {
     public:
         Pet();
-        Pet(string, string, int, Owner*[], int); //Cusom constructor
+        Pet(string, string, int, Owner*, Owner*, Owner*); //Cusom constructor
         virtual ~Pet();
 
         //General Methods
         void displayPet(); //For displaying pet data
+
+        //getters and setters
+        string getName();
 
     protected:
 
@@ -30,7 +33,7 @@ class Pet
         string name; //Name of pet
         string type; //Type of animal
         int age; //Pet age
-        Owner *owners[10]; //All owners
+        Owner *owners[3]; //All owners
 };
 
 #endif // PET_H

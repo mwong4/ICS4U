@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Feb 25, 2020
-Date Updated: Feb 26, 2020
+Date Updated: mar 4, 2020
 Purpose: Header file for Line class
 Type: Header
 */
@@ -19,15 +19,15 @@ class Line
         Line(float, float, bool); //Custom Constructor
         virtual ~Line();
 
-        bool determineInterception(Line*, Point*); //To determine the point of an intersection with another line
-        bool isParallel(Line*); //To determine if another line is parallel
-        Line determinePerpundicular(Point*); //To determine perpundicular line through certain point
+        Point determineInterception(const Line*, const Point*); //To determine the point of an intersection with another line
+        bool isParallel(const Line*); //To determine if another line is parallel
+        Line determinePerpundicular(const Point*); //To determine perpundicular line through certain point
         void display(); //To display line
 
         //Getters and Setter
-        float getSlope();
-        float getIntercept();
-        bool getVert();
+        float getSlope() const;
+        float getIntercept() const;
+        bool getVert() const;
         void setSlope(float);
         void setIntercept(float);
         void setVert(bool);

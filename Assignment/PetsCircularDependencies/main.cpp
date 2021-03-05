@@ -15,14 +15,16 @@ using namespace std;
 int main()
 {
     //Create and instantiate owners and pets
-    Owner *owners[3] = {new Owner("Emily", nullptr), new Owner("Jetta", nullptr), new Owner("Horace", nullptr)};
-    Pet *myPet = new Pet("Clifford", "The Killer Dog", 42, owners, 3);
+    Owner *ownerOne = new Owner("Emily", nullptr);
+    Owner *ownerTwo = new Owner("Jetta", nullptr);
+    Owner *ownerThree = new Owner("Horace", nullptr);
+
+    Pet *myPet = new Pet("Clifford", "The Killer Dog", 42, ownerOne, ownerTwo, ownerThree);
 
     //Set pets to all owners
-    for(int i = 0; i < 3; i++)
-    {
-        (*owners[i]).setPet(myPet);
-    }
+    (*ownerOne).setPet(myPet);
+    (*ownerTwo).setPet(myPet);
+    (*ownerThree).setPet(myPet);
 
     (*myPet).displayPet(); //Call method in pets to display itself
 

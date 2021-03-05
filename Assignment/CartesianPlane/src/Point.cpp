@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Feb 25, 2020
-Date Updated: Mar 2, 2020
+Date Updated: Mar 4, 2020
 Purpose: Holds all data and methods for Point class
 Type: Source
 */
@@ -38,27 +38,29 @@ float Point::distanceFromPoint(Point* _point)
 }
 
 //To determine the equation given another point
-Line* Point::determineEquation(Point* _point, Line* _line)
+Line Point::determineEquation(const Point* _point, const Line* _line)
 {
+    Line output = *(_line); //Copy _line into output
+
     if(xCoord == (*_point).getX()) //If x coords are the same
     {
-        (*_line).setVert(true); //Eanble vert
-        (*_line).setSlope(1);
-        (*_line).setIntercept(xCoord); //Set x=??? value to y-intercept
+        output.setVert(true); //Eanble vert
+        output.setSlope(1);
+        output.setIntercept(xCoord); //Set x=??? value to y-intercept
     }
     else if(yCoord == (*_point).getY()) //else if y coords are the same
     {
-        (*_line).setVert(false); //Dusable vert
-        (*_line).setSlope(0);
-        (*_line).setIntercept(yCoord); //Set y constant to y-intercept
+        output.setVert(false); //Dusable vert
+        output.setSlope(0);
+        output.setIntercept(yCoord); //Set y constant to y-intercept
     }
     else
     {
-        (*_line).setVert(false); //Disable vert
-        (*_line).setSlope((yCoord-(*_point).getY())/(xCoord-(*_point).getX())); //Calculate slope
-        (*_line).setIntercept(yCoord - ((*_line).getSlope()*xCoord)); //Calculate y intercept
+        output.setVert(false); //Disable vert
+        output.setSlope((yCoord-(*_point).getY())/(xCoord-(*_point).getX())); //Calculate slope
+        output.setIntercept(yCoord - (output.getSlope()*xCoord)); //Calculate y intercept
     }
-    return _line;
+    return output;
 }
 
 //To display the point
@@ -69,12 +71,12 @@ void Point::display()
 }
 
 //Getters and Setters
-float Point::getX()
+float Point::getX() const
 {
     return xCoord;
 }
 
-float Point::getY()
+float Point::getY() const
 {
     return yCoord;
 }

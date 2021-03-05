@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Feb 25, 2020
-Date Updated: Mar 2, 2020
+Date Updated: Mar 4, 2020
 Purpose: Header file for Point class
 Type: Header
 */
@@ -21,12 +21,12 @@ class Point
         virtual ~Point();
 
         float distanceFromPoint(Point*); //To calculate distance from another point
-        Line* determineEquation(Point*, Line*); //To determine the equation given another point
+        Line determineEquation(const Point*, const Line*); //To determine the equation given another point
         void display(); //To display the point
 
         //Getters and Setters
-        float getX();
-        float getY();
+        float getX() const;
+        float getY() const;
         void setX(float);
         void setY(float);
 

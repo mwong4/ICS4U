@@ -32,7 +32,18 @@ Owner::~Owner()
 //For displaying owner data
 void Owner::displayOwner()
 {
-    cout << "-" << name << endl;
+    cout << "-" << name << " : ";
+
+    if(pet != nullptr) //If there is a pet
+    {
+        cout << (*pet).getName();
+    }
+    else //if there isnt one
+    {
+        cout << "no pet" << endl;
+    }
+
+    cout << endl;
     return;
 }
 
