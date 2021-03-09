@@ -28,7 +28,7 @@ Queue::Queue(Container *_front, Container *_back)
 Queue::~Queue()
 {
     //dtor
-    delete ptr_front;
+    //delete ptr_front;
 }
 
 //general functions

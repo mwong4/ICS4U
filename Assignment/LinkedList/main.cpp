@@ -7,11 +7,22 @@ Type: Main
 */
 
 #include <iostream>
+#include "LinkedList.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    LinkedList myList;
+    myList.insertAt(4, 0);
+    myList.insertAt(2, 0);
+    myList.insertAt(1, 0);
+    myList.insertAt(3, 1);
+    myList.insertOn(5, 5);
+    myList.insertOn(6, 4);
+
+    myList.display();
+
+    cout << "End Program" << endl;
     return 0;
 }

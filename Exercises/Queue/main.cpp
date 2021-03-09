@@ -15,6 +15,17 @@ int main()
 {
     Queue myQueue; //Initializing queue
 
+    /*
+    myQueue.push(1);
+    myQueue.push(2);
+    myQueue.push(3);
+    myQueue.push(4);
+    myQueue.push(5);
+    myQueue.displayQueue();
+    myQueue.clear();
+    myQueue.displayQueue();
+    */
+
     //Popping from an empty queue
     cout << myQueue.pop() << endl;
     myQueue.displayQueue();
