@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1615245051 source:c:\users\max pc\documents\github\ics4u\exercises\queue\main.cpp
+	<iostream>
+	"Queue.h"
+
+1615245310 source:c:\users\max pc\documents\github\ics4u\exercises\queue\src\queue.cpp
+	"Queue.h"
+	<iostream>
+
+1615245306 c:\users\max pc\documents\github\ics4u\exercises\queue\include\queue.h
+	"Container.h"
+
+1615243338 c:\users\max pc\documents\github\ics4u\exercises\queue\include\container.h
+
+1615243196 source:c:\users\max pc\documents\github\ics4u\exercises\queue\src\container.cpp
+	<iostream>
+	"Container.h"
+
