@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 9, 2020
-Date Updated: Mar 10, 2020
+Date Updated: Mar 9, 2020
 Purpose: Header for Linked List class
 Type: Header
 */
@@ -13,6 +13,7 @@ Type: Header
 
 using namespace std;
 
+template<typename contentType>
 class LinkedList
 {
     public:

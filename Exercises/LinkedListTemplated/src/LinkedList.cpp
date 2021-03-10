@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 9, 2020
-Date Updated: Mar 10, 2020
+Date Updated: Mar 9, 2020
 Purpose: Source file for Linked List class
 Type: Source
 */

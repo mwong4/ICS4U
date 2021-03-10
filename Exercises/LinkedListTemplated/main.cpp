@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 9, 2020
-Date Updated: Mar 10, 2020
+Date Updated: Mar 9, 2020
 Purpose: To implement a basic double Linked List
 Type: Main
 
@@ -16,6 +16,7 @@ using namespace std;
 
 int main()
 {
+    /*
     LinkedList myList;
     myList.insertAt(4, 0);
     myList.insertAt(2, 0);
@@ -29,6 +30,7 @@ int main()
     cout << myList.removeSpot(3) << endl;
 
     myList.display();
+    */
 
     cout << "End Program" << endl;
     return 0;

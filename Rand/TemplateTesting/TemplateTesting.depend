@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1615393695 source:c:\users\max pc\documents\github\ics4u\rand\templatetesting\main.cpp
+	<iostream>
+	"Test.h"
+
+1615401810 c:\users\max pc\documents\github\ics4u\rand\templatetesting\include\test.h
+
+1615402000 source:c:\users\max pc\documents\github\ics4u\rand\templatetesting\src\test.cpp
+	"Test.h"
+	<iostream>
+

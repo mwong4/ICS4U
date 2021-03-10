@@ -4,36 +4,41 @@ Date Created: Mar 10, 2021
 Date Edited: Mar 10, 2021
 Purpose: To learn templating
 
-
+Sources:
+https://www.youtube.com/watch?v=I-hZkUa9mIs
+https://www.cplusplus.com/doc/oldtutorial/templates/
 */
 
 #include <iostream>
+#include "Test.h"
 
 using namespace std;
 
-template <typename Value>
-Value input(Value& val)
-{
-    return val;
-}
-
-void display();
+//template <typename Variable> void display(Variable);
 
 int main()
 {
-    display();
+    /*
+    display<float>(4);
+    display<string>("hello");
+    display<int>(4);
+    display(4);
+    */
+
+    Test <string>myTest();
 
     cout << "Hello world!" << endl;
     return 0;
 }
 
-void display()
+/*
+template<typename Variable>
+void display(Variable value)
 {
-    int test1 = 1;
-    string test2 = "woah";
-    char test3 = 'c';
-
-    cout << "hi" << endl;
-    val(test1);
+    cout << value << endl;
     return;
 }
+*/
+
+
+

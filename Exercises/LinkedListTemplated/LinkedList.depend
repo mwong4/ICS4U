@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1615388189 source:c:\users\max pc\documents\github\ics4u\assignment\linkedlist\main.cpp
+	<iostream>
+	"LinkedList.h"
+
+1615305907 source:c:\users\max pc\documents\github\ics4u\assignment\linkedlist\src\node.cpp
+	"Node.h"
+	<iostream>
+
+1615305463 c:\users\max pc\documents\github\ics4u\assignment\linkedlist\include\node.h
+
+1615382727 source:c:\users\max pc\documents\github\ics4u\assignment\linkedlist\src\linkedlist.cpp
+	"LinkedList.h"
+	<iostream>
+
+1615389085 c:\users\max pc\documents\github\ics4u\assignment\linkedlist\include\linkedlist.h
+	"Node.h"
+
+1615389078 source:c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\src\linkedlist.cpp
+	"LinkedList.h"
+	<iostream>
+
+1615403773 c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\include\linkedlist.h
+	"Node.h"
+
+1615393504 c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\include\node.h
+
+1615305907 source:c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\src\node.cpp
+	"Node.h"
+	<iostream>
+
