@@ -6,7 +6,6 @@ Purpose: To implement a basic double Linked List
 Type: Main
 
 ////TODO////
--Const consistency
 -Templating
 */
 
