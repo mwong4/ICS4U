@@ -66,7 +66,7 @@ bool LinkedList::search(const Node* _target) const
 }
 
 //Returns value of nth position
-int LinkedList::index(int _location) const
+int LinkedList::index(const int _location) const
 {
     Node *ptr_target = findNode( _location); //Call function to conver n value to node
     if(ptr_target != nullptr) //If the function did not return nullptr
@@ -77,7 +77,7 @@ int LinkedList::index(int _location) const
 }
 
 //Finds the nth position of the first occurance of a given value
-int LinkedList::findIndex(int _value) const
+int LinkedList::findIndex(const int _value) const
 {
     Node *ptr_current = ptr_front; //Temporary node which is the target
     int counter = 0; //Stores nth position
@@ -208,7 +208,7 @@ int LinkedList::remove(Node* _target)
 }
 
 //Removes the specific nth spot
-int LinkedList::removeSpot(int _location)
+int LinkedList::removeSpot(const int _location)
 {
     if(0 <= _location && _location < count) //If location specified is in the list
     {
@@ -221,7 +221,7 @@ int LinkedList::removeSpot(int _location)
 }
 
 //Removes the first occurance of a value
-int LinkedList::removeOccurance(int _value)
+int LinkedList::removeOccurance(const int _value)
 {
     int location = findIndex(_value); //Find n value from first occurance of value, calling findindex method
 
@@ -241,6 +241,24 @@ void LinkedList::clear()
     ptr_back = nullptr;
     count = 0;
     return;
+}
+
+//Returns node pointer at nth term
+Node* LinkedList::findNode(const int _location) const
+{
+    Node *current = ptr_front; //Temporary node which is the target
+    int counter = 0; //Temporary counter
+
+    while(current != nullptr) //Go through list until hit nullptr
+    {
+        if(counter == _location) //If the pointers for the searched value and the current match, return true
+        {
+            return current;
+        }
+        current = (*current).getNext(); //Reset current to next node in line
+        counter ++;
+    }
+    return nullptr; //Return false
 }
 
 //geters/seters
@@ -275,22 +293,4 @@ void LinkedList::setCount(int _count)
 {
     count = _count;
     return;
-}
-
-//Returns node pointer at nth term
-Node* LinkedList::findNode(int _location) const
-{
-    Node *current = ptr_front; //Temporary node which is the target
-    int counter = 0; //Temporary counter
-
-    while(current != nullptr) //Go through list until hit nullptr
-    {
-        if(counter == _location) //If the pointers for the searched value and the current match, return true
-        {
-            return current;
-        }
-        current = (*current).getNext(); //Reset current to next node in line
-        counter ++;
-    }
-    return nullptr; //Return false
 }
