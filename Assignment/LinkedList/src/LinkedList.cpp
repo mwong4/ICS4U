@@ -4,13 +4,6 @@ Date Created: Mar 9, 2020
 Date Updated: Mar 9, 2020
 Purpose: Source file for Linked List class
 Type: Source
-
-////TODO////
-A remove function that removes a node from the list. This function may or may not return the value stored in that node.
-A remove function that removes the nth node from the list.
-A remove function that |removes the first occurrence of a specified value from the list.
-
-test
 */
 
 #include "LinkedList.h"
@@ -189,20 +182,54 @@ void LinkedList::insertAt(const int _value, const int _location)
 }
 
 //Removes specific node and returns value
-int LinkedList::remove(Node*)
+int LinkedList::remove(Node* _target)
 {
+    int tempContent; //Content that will be retained and returned
+    if(_target != nullptr)
+    {
+        if((*_target).getPrevious() != nullptr) //Make sure previous node is not nullptr
+        {
+            (*(*_target).getPrevious()).setNext((*_target).getNext()); //Link previous node to next node
+        }
+
+        if((*_target).getNext() != nullptr) //Make sure bnext node is not nullptr
+        {
+            (*(*_target).getNext()).setPrevious((*_target).getPrevious()); //Link next node to previous node
+        }
+
+        (*_target).setNext(nullptr); //Set current target notes pointers all to null
+        (*_target).setPrevious(nullptr);
+
+        tempContent = (*_target).getContent(); //Extract content from target
+        delete _target; //Destroy link
+        return tempContent; //return contents
+    }
     return -9999;
 }
 
 //Removes the specific nth spot
-int LinkedList::removeSpot(int)
+int LinkedList::removeSpot(int _location)
 {
-    return -9999;
+    if(0 <= _location && _location < count) //If location specified is in the list
+    {
+        Node *ptr_target = findNode(_location); //Find node pointer from n value using method
+        return remove(ptr_target); //Call remove method to destroy node
+    }
+
+    cout << "Sorry, position in list does not exist" << endl;
+    return -9999; //Otherwise print and return null
 }
 
 //Removes the first occurance of a value
-int LinkedList::removeOccurance(int)
+int LinkedList::removeOccurance(int _value)
 {
+    int location = findIndex(_value); //Find n value from first occurance of value, calling findindex method
+
+    if(location != -9999) //If no match was found
+    {
+        return removeSpot(location); //Call remove spot method and return output
+    }
+    cout << "Sorry, value was not found in list" << endl;
     return -9999;
 }
 

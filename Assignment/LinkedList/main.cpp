@@ -23,6 +23,10 @@ int main()
 
     myList.display();
 
+    cout << myList.removeSpot(3) << endl;
+
+    myList.display();
+
     cout << "End Program" << endl;
     return 0;
 }
