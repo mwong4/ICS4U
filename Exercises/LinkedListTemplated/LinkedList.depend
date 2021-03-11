@@ -16,16 +16,21 @@
 1615389085 c:\users\max pc\documents\github\ics4u\assignment\linkedlist\include\linkedlist.h
 	"Node.h"
 
-1615389078 source:c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\src\linkedlist.cpp
+1615480428 source:c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\src\linkedlist.cpp
 	"LinkedList.h"
 	<iostream>
 
-1615403773 c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\include\linkedlist.h
+1615480386 c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\include\linkedlist.h
 	"Node.h"
 
-1615393504 c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\include\node.h
+1615481699 c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\include\node.h
 
-1615305907 source:c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\src\node.cpp
+1615482037 source:c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\src\node.cpp
 	"Node.h"
 	<iostream>
+
+1615481459 source:c:\users\max pc\documents\github\ics4u\exercises\linkedlisttemplated\main.cpp
+	<iostream>
+	"LinkedList.h"
+	"Node.h"
 

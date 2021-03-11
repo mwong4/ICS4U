@@ -1,8 +1,8 @@
 /*
 Author: Max Wong
-Date Created: Mar 9, 2020
-Date Updated: Mar 9, 2020
-Purpose: To implement a basic double Linked List
+Date Created: Mar 11, 2020
+Date Updated: Mar 11, 2020
+Purpose: To implement a Linked List using templates
 Type: Main
 
 ////TODO////
@@ -11,26 +11,16 @@ Type: Main
 
 #include <iostream>
 #include "LinkedList.h"
+#include "Node.h"
 
 using namespace std;
 
 int main()
 {
-    /*
-    LinkedList myList;
-    myList.insertAt(4, 0);
-    myList.insertAt(2, 0);
-    myList.insertAt(1, 0);
-    myList.insertAt(3, 1);
-    myList.insertOn(5, 5);
-    myList.insertOn(6, 4);
+    Node <int>newNode();
 
-    myList.display();
-
-    cout << myList.removeSpot(3) << endl;
-
-    myList.display();
-    */
+    newNode.setContent(14);
+    //newNode.display();
 
     cout << "End Program" << endl;
     return 0;

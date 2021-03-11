@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
-Date Created: Mar 9, 2020
-Date Updated: Mar 9, 2020
+Date Created: Mar 11, 2020
+Date Updated: Mar 11, 2020
 Purpose: Source file for Node class
 Type: Source
 */
@@ -10,26 +10,15 @@ Type: Source
 
 #include<iostream>
 
-template<typename contentType>
+template <typename contentType>
 Node<contentType>::Node()
 {
     //ctor
-    ptr_previous = nullptr; //Set to friendly null like values
-    ptr_next = nullptr;
-    //content = 0;
+    ptr_next = nullptr; //Set both pointers to null
+    ptr_previous = nullptr;
 }
 
-//Custom constructor
-template<typename contentType>
-Node<contentType>::Node(Node *_next, Node *_previous, const contentType _content)
-{
-    ptr_next = _next; //Set all values
-    ptr_previous = _previous;
-    content = _content;
-    return;
-}
-
-template<typename contentType>
+template <typename contentType>
 Node<contentType>::~Node()
 {
     //dtor
@@ -38,46 +27,49 @@ Node<contentType>::~Node()
 }
 
 //Displays the content of the node
+template <typename contentType>
 void Node<contentType>::display() const
 {
     cout << content;
     return;
 }
 
-
 //geters/seters
-Node* Node::getNext() const
+template <typename contentType>
+Node<contentType>* Node<contentType>::getNext() const
 {
     return ptr_next;
 }
 
-Node* Node::getPrevious() const
+template <typename contentType>
+Node<contentType>* Node<contentType>::getPrevious() const
 {
     return ptr_previous;
 }
 
-int Node::getContent() const
+template <typename contentType>
+contentType Node<contentType>::getContent() const
 {
     return content;
 }
 
-void Node::setNext(Node* _next)
+template <typename contentType>
+void Node<contentType>::setNext(Node* _next)
 {
     ptr_next = _next;
     return;
 }
 
-void Node::setPrevious(Node* _previous)
+template <typename contentType>
+void Node<contentType>::setPrevious(Node* _previous)
 {
     ptr_previous = _previous;
     return;
 }
 
-template<typename contentType>
+template <typename contentType>
 void Node<contentType>::setContent(contentType _content)
 {
     content = _content;
     return;
 }
-
-

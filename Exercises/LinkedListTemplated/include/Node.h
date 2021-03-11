@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
-Date Created: Mar 9, 2020
-Date Updated: Mar 9, 2020
+Date Created: Mar 11, 2020
+Date Updated: Mar 11, 2020
 Purpose: Header for Node class
 Type: Header
 */
@@ -11,12 +11,11 @@ Type: Header
 
 using namespace std;
 
-template<typename contentType>
+template <typename contentType>
 class Node
 {
     public:
         Node();
-        Node(Node*, Node*, const contentType); //Custom constructor
         virtual ~Node();
 
         void display() const; //Displays the content of the node
@@ -24,7 +23,7 @@ class Node
         //geters/seters
         Node* getNext() const;
         Node* getPrevious() const;
-        int getContent() const;
+        contentType getContent() const;
         void setNext(Node*);
         void setPrevious(Node*);
         void setContent(contentType);
@@ -35,6 +34,7 @@ class Node
         Node* ptr_next;
         Node* ptr_previous;
         contentType content;
+
 };
 
 #endif // NODE_H
