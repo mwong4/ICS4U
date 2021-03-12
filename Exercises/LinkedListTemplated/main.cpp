@@ -19,7 +19,7 @@ int main()
 {
     Node <int>newNode();
 
-    newNode.setContent(14);
+    newNode.getContent<int>();
     //newNode.display();
 
     cout << "End Program" << endl;
