@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1615571664 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\main.cpp
+	<iostream>
+	"Triangle.h"
+	"Rectangle.h"
+
+1615566083 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\rectangle.cpp
+	"Rectangle.h"
+
+1615566177 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\rectangle.h
+	"Polygon.h"
+
+1615571291 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\triangle.cpp
+	"Triangle.h"
+	<math.h>
+
+1615571279 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\triangle.h
+	"Polygon.h"
+
+1615571300 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\polygon.h
+
+1615571411 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\polygon.cpp
+	"Polygon.h"
+	<iostream>
+
