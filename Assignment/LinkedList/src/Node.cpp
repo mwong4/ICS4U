@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 9, 2020
-Date Updated: Mar 9, 2020
+Date Updated: Mar 10, 2020
 Purpose: Source file for Node class
 Type: Source
 */
@@ -30,7 +30,7 @@ Node::Node(Node *_next, Node *_previous, const int _content)
 Node::~Node()
 {
     //dtor
-    cout << "Deleting value " << content << endl;
+    cout << "+ Deleting value " << content << endl;
     delete ptr_next;
 }
 

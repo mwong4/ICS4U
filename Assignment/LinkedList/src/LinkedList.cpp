@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 9, 2020
-Date Updated: Mar 9, 2020
+Date Updated: Mar 16, 2020
 Purpose: Source file for Linked List class
 Type: Source
 */
@@ -39,7 +39,7 @@ void LinkedList::display() const
 {
     Node* ptr_target = ptr_front; //Stores target, set initially to front
 
-    cout << "List (f->b): ";
+    cout << ">- List (f->b): ";
     while(ptr_target != nullptr)//If target is not null
     {
         (*ptr_target).display(); //Call target to display itself
@@ -116,9 +116,12 @@ void LinkedList::insertFront(Node* _inserting)
 //Inserts a node after a given node
 void LinkedList::insert(Node* _inserting, Node* _target)
 {
-    if(count == 1) //If adding to a single link, set to back
+    if(ptr_back == _target) //If adding to back, set to back
     {
         ptr_back = _inserting;
+    }
+    else //Element behind inserting exhists, link back up with inserting element
+    {
         (*(*_target).getNext()).setPrevious(_inserting); //Setting behind's previous to new link
     }
 
@@ -153,7 +156,7 @@ void LinkedList::insertOn(const int _value, const int _target)
     }
     else
     {
-        cout << "Sorry, value cannot be found within list" << endl;
+        cout << "[Sorry, value cannot be found within list]" << endl;
     }
 
     return;
@@ -173,9 +176,14 @@ void LinkedList::insertAt(const int _value, const int _location)
     {
         insert(ptr_newNode, findNode(_location));
     }
+    else if(_location >= count) //If trying to insert to back
+    {
+        cout << "[Trying to insert to back]" << endl;
+        insert(ptr_newNode, findNode(count - 1));
+    }
     else
     {
-        cout << "Sorry, location not in list" << endl;
+        cout << "[Sorry, location not in list]" << endl;
     }
 
     return;
@@ -191,6 +199,10 @@ int LinkedList::remove(Node* _target)
         {
             (*(*_target).getPrevious()).setNext((*_target).getNext()); //Link previous node to next node
         }
+        else if((*_target).getNext() != nullptr) //Is front, reassign front
+        {
+            setFront((*_target).getNext()); //Set front to next item in line
+        }
 
         if((*_target).getNext() != nullptr) //Make sure bnext node is not nullptr
         {
@@ -201,6 +213,14 @@ int LinkedList::remove(Node* _target)
         (*_target).setPrevious(nullptr);
 
         tempContent = (*_target).getContent(); //Extract content from target
+        count --;
+
+        if(count == 0) //if whole list has been cleared
+        {
+            ptr_front = nullptr; //Reset front and back pointers
+            ptr_back = nullptr;
+        }
+
         delete _target; //Destroy link
         return tempContent; //return contents
     }
@@ -210,13 +230,21 @@ int LinkedList::remove(Node* _target)
 //Removes the specific nth spot
 int LinkedList::removeSpot(const int _location)
 {
-    if(0 <= _location && _location < count) //If location specified is in the list
+    if(0 <= _location) //If positive
     {
-        Node *ptr_target = findNode(_location); //Find node pointer from n value using method
-        return remove(ptr_target); //Call remove method to destroy node
+        if(_location < count) //If within list
+        {
+            Node *ptr_target = findNode(_location); //Find node pointer from n value using method
+            return remove(ptr_target); //Call remove method to destroy node
+        }
+        else if(count != 0)//If to the right of list (number line)
+        {
+            cout << "[Trying to remove from back]" << endl;
+            return remove(ptr_back); //Call remove method to destroy node
+        }
     }
 
-    cout << "Sorry, position in list does not exist" << endl;
+    cout << "[Sorry, position in list does not exist]" << endl;
     return -9999; //Otherwise print and return null
 }
 
@@ -229,13 +257,14 @@ int LinkedList::removeOccurance(const int _value)
     {
         return removeSpot(location); //Call remove spot method and return output
     }
-    cout << "Sorry, value was not found in list" << endl;
+    cout << "[Sorry, value was not found in list]" << endl;
     return -9999;
 }
 
 //Resets whole list
 void LinkedList::clear()
 {
+    cout << "[Clearing List]" << endl;
     delete ptr_front; //Delete whole list from front
     ptr_front = nullptr; //Reset all queue values to default
     ptr_back = nullptr;

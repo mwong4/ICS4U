@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 9, 2020
-Date Updated: Mar 9, 2020
+Date Updated: Mar 10, 2020
 Purpose: Header for Node class
 Type: Header
 */
