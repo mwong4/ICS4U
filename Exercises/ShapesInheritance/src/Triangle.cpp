@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 12, 2021
-Date Updated: Mar 12, 2021
+Date Updated: Mar 17, 2021
 Purpose: Source file for triangle class
 Type: Source
 */
@@ -12,6 +12,12 @@ Type: Source
 Triangle::Triangle()
 {
     //ctor
+
+}
+
+//Custom constructor, calls superclass
+Triangle::Triangle(float _sides[], int _size) : Polygon(_sides, _size)
+{
 
 }
 

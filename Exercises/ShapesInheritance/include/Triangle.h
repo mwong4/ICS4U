@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 12, 2021
-Date Updated: Mar 12, 2021
+Date Updated: Mar 17, 2021
 Purpose: Header file for triangle class
 Type: Header
 */
@@ -16,6 +16,7 @@ class Triangle: public Polygon
 {
     public:
         Triangle();
+        Triangle(float[], int); //Custom constructor
         virtual ~Triangle();
 
         //general functions

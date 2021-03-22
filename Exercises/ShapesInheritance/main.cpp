@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 12, 2021
-Date Updated: Mar 12, 2021
+Date Updated: Mar 17, 2021
 Purpose: To learn inheritence
 Type: Main
 
@@ -21,13 +21,8 @@ int main()
     float rectangleDimensions[4] = {3, 4, 3, 4};
     float triangleDimensions[3] = {3, 4, 5};
 
-    Triangle myTri;
-    Rectangle myRec;
-
-    myTri.setSize(3); //Set Values
-    myTri.setSides(triangleDimensions);
-    myRec.setSize(4);
-    myRec.setSides(rectangleDimensions);
+    Triangle myTri(triangleDimensions, 3); //Initialize polyons with their appropriate dimensions
+    Rectangle myRec(rectangleDimensions, 4);
 
     //Calculate for triangle
     cout << "//Shape 1//" << endl;

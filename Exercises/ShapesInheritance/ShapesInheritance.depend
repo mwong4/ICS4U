@@ -1,25 +1,25 @@
 # depslib dependency file v1.0
-1615571664 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\main.cpp
+1615999503 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\main.cpp
 	<iostream>
 	"Triangle.h"
 	"Rectangle.h"
 
-1615566083 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\rectangle.cpp
+1615569683 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\rectangle.cpp
 	"Rectangle.h"
 
-1615566177 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\rectangle.h
+1615999195 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\rectangle.h
 	"Polygon.h"
 
-1615571291 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\triangle.cpp
+1615999481 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\triangle.cpp
 	"Triangle.h"
 	<math.h>
 
-1615571279 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\triangle.h
+1615999175 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\triangle.h
 	"Polygon.h"
 
-1615571300 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\polygon.h
+1615574900 c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\include\polygon.h
 
-1615571411 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\polygon.cpp
+1615575011 source:c:\users\max pc\documents\github\ics4u\exercises\shapesinheritance\src\polygon.cpp
 	"Polygon.h"
 	<iostream>
 

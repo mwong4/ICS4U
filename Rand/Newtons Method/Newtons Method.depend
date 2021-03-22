@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1616264466 source:c:\users\max pc\documents\github\ics4u\rand\newtons method\main.cpp
+	<iostream>
+
+1616264597 source:c:\users\max pc\documents\github\ics4u\rand\newtons method\src\lines.cpp
+	"Lines.h"
+
+1616265024 c:\users\max pc\documents\github\ics4u\rand\newtons method\include\lines.h
+
+1616264840 source:c:\users\max pc\documents\github\ics4u\rand\newtons method\src\term.cpp
+	"Term.h"
+
+1616265021 c:\users\max pc\documents\github\ics4u\rand\newtons method\include\term.h
+
