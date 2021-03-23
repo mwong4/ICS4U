@@ -30,6 +30,6 @@ Residential::~Residential()
 void Residential::display()
 {
     Building::display(); //call parent display
-    cout << address << ", " << squareFootage << " meters squared || bedrooms: " << numberOfBedrooms << ", bathrooms: " << numberOfBathrooms << endl;
+    cout << "bedrooms: " << numberOfBedrooms << ", bathrooms: " << numberOfBathrooms << endl;
     return;
 }

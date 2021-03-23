@@ -25,3 +25,29 @@
 	<iostream>
 	"Building.h"
 
+1616464947 source:c:\users\max pc\documents\github\ics4u\exercises\buildingpolymorphism\main.cpp
+	<iostream>
+	"Residential.h"
+	"Commercial.h"
+	"Building.h"
+
+1616464936 c:\users\max pc\documents\github\ics4u\exercises\buildingpolymorphism\include\residential.h
+	<iostream>
+	"Building.h"
+
+1616464889 c:\users\max pc\documents\github\ics4u\exercises\buildingpolymorphism\include\building.h
+	<iostream>
+
+1616464938 c:\users\max pc\documents\github\ics4u\exercises\buildingpolymorphism\include\commercial.h
+	<iostream>
+	"Building.h"
+
+1616465372 source:c:\users\max pc\documents\github\ics4u\exercises\buildingpolymorphism\src\commercial.cpp
+	"Commercial.h"
+
+1616465294 source:c:\users\max pc\documents\github\ics4u\exercises\buildingpolymorphism\src\residential.cpp
+	"Residential.h"
+
+1616465336 source:c:\users\max pc\documents\github\ics4u\exercises\buildingpolymorphism\src\building.cpp
+	"Building.h"
+

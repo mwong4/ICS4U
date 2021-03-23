@@ -30,5 +30,6 @@ Building::~Building()
 //Display function
 void Building::display()
 {
+    cout << address << ", " << squareFootage << " meters squared ||";
     return;
 }

@@ -30,7 +30,7 @@ Commercial::~Commercial()
 void Commercial::display()
 {
     Building::display(); //call parent display
-    cout << address << ", " << squareFootage << " meters squared || loading docks: " << loadingDock;
+    cout << "loading docks: " << loadingDock;
 
     if(accessToWater) //if access to water, display
     {
