@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1616463604 source:c:\users\max pc\documents\github\ics4u\rand\buildingpolymorphism\main.cpp
+	<iostream>
+	"Residential.h"
+	"Commercial.h"
+	"Building.h"
+
+1616462247 source:c:\users\max pc\documents\github\ics4u\rand\buildingpolymorphism\src\building.cpp
+	"Building.h"
+
+1616464889 c:\users\max pc\documents\github\ics4u\rand\buildingpolymorphism\include\building.h
+	<iostream>
+
+1616462261 source:c:\users\max pc\documents\github\ics4u\rand\buildingpolymorphism\src\residential.cpp
+	"Residential.h"
+
+1616464936 c:\users\max pc\documents\github\ics4u\rand\buildingpolymorphism\include\residential.h
+	<iostream>
+	"Building.h"
+
+1616462274 source:c:\users\max pc\documents\github\ics4u\rand\buildingpolymorphism\src\commercial.cpp
+	"Commercial.h"
+
+1616464938 c:\users\max pc\documents\github\ics4u\rand\buildingpolymorphism\include\commercial.h
+	<iostream>
+	"Building.h"
+
