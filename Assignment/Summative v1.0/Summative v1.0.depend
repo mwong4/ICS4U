@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1616690340 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
+	<iostream>
+
+1616692183 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\stack.cpp
+	"Stack.h"
+
+1616692247 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\stack.h
+	"Node.h"
+
+1616694184 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\node.h
+	<iostream>
+
+1616693557 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\node.cpp
+	"Node.h"
+
