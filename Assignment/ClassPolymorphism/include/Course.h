@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 24, 2020
-Date Updated: Mar 24, 2020
+Date Updated: Mar 25, 2020
 Purpose: Header file for course class
 Type: Header
 */
@@ -19,12 +19,12 @@ class Course
 {
     public:
         Course();
-        Course(string, string, Student*[], Teacher*); //custom constructor
+        Course(string, string); //custom constructor
         virtual ~Course();
 
         //main methods
-        void assignTeacher(const Teacher*); //For assigning teacher
-        void assignStudent(const Student*); //For assgining student
+        void assignTeacher(Teacher*); //For assigning teacher
+        void assignStudent(Student*); //For assgining student
         void removeTeacher(const Teacher*); //For removing teacher
         void removeStudent(const Student*); //For removing student
         const void display(bool); //To display class

@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 24, 2020
-Date Updated: Mar 24, 2020
+Date Updated: Mar 25, 2020
 Purpose: Header file for teacher class
 Type: Header
 */
@@ -13,11 +13,11 @@ Type: Header
 
 using namespace std;
 
-class Teacher: protected Person
+class Teacher: public Person
 {
     public:
         Teacher();
-        Teacher(string, long int, Course*[], string); //custom constructor
+        Teacher(string, long int, string); //custom constructor
         virtual ~Teacher();
 
 

@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 24, 2020
-Date Updated: Mar 24, 2020
+Date Updated: Mar 25, 2020
 Purpose: Source file for person class
 Type: Source
 */

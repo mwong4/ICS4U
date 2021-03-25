@@ -1,31 +1,37 @@
 # depslib dependency file v1.0
-1616599614 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\main.cpp
+1616685902 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\main.cpp
 	<iostream>
-
-1616607083 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\src\person.cpp
+	"Course.h"
 	"Person.h"
-
-1616607069 c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\include\person.h
-	<iostream>
-
-1616608056 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\src\student.cpp
 	"Student.h"
-
-1616607189 c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\include\student.h
-	<iostream>
-	"Person.h"
-
-1616608063 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\src\teacher.cpp
 	"Teacher.h"
 
-1616607053 c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\include\teacher.h
+1616678643 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\src\person.cpp
+	"Person.h"
+
+1616684468 c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\include\person.h
+	<iostream>
+
+1616685028 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\src\student.cpp
+	"Student.h"
+	"Course.h"
+
+1616684503 c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\include\student.h
 	<iostream>
 	"Person.h"
 
-1616608217 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\src\course.cpp
+1616685029 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\src\teacher.cpp
+	"Teacher.h"
 	"Course.h"
 
-1616607090 c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\include\course.h
+1616684497 c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\include\teacher.h
+	<iostream>
+	"Person.h"
+
+1616685962 source:c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\src\course.cpp
+	"Course.h"
+
+1616684284 c:\users\max pc\documents\github\ics4u\assignment\classpolymorphism\include\course.h
 	<iostream>
 	"Teacher.h"
 	"Student.h"

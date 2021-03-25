@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 24, 2020
-Date Updated: Mar 24, 2020
+Date Updated: Mar 25, 2020
 Purpose: Header file for Person class
 Type: Header
 */
