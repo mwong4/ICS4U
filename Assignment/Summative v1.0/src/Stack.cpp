@@ -42,24 +42,28 @@ void Stack::push(char _direction)
 //Pop top and return content
 char Stack::pop()
 {
+    char tempDirection = 'N'; //Used to store direction
+
     if(count > 0) //if top exists
     {
-        char tempDirection = (*ptr_top).direction; //Used to store direction, set to current top content
+        tempDirection = (*ptr_top).direction; //Set to current top content
         Node *target = ptr_top; //A pointer to the node to be destroyed, set to current top
 
         ptr_top = (*ptr_top).ptr_next; //set new top
+        (*target).ptr_next = nullptr; // disconnect target
         delete target; //delete target
-
-        return tempDirection; //return direction
+        count --;
     }
 
-    return 'N'; //return null if top does not exist
+    return tempDirection; //return direction
 }
 
 //Clear whole chain
 void Stack::clear()
 {
     delete ptr_top;
+    count = 0; //Reset all variables
+    ptr_top = nullptr;
 }
 
 //Return value at top
@@ -71,7 +75,16 @@ char Stack::peak() const
 //display whole chain
 void Stack::display() const
 {
-    (*ptr_top).display();
+    cout << ">- ";
+    if(count > 0) //If not empty
+    {
+        (*ptr_top).display();
+    }
+    else
+    {
+        cout << "Stack is empty" << endl;
+    }
+    cout << endl;
     return;
 }
 

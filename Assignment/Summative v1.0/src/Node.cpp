@@ -31,6 +31,9 @@ Node::~Node()
 void Node::display() const
 {
     cout << direction << ", ";
-    (*ptr_next).display();
+    if(ptr_next != nullptr) //if not null
+    {
+        (*ptr_next).display();
+    }
     return;
 }
