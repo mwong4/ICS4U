@@ -34,15 +34,21 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Exit.h" />
 		<Unit filename="include/Interactable.h" />
 		<Unit filename="include/Map.h" />
 		<Unit filename="include/Node.h" />
+		<Unit filename="include/Space.h" />
 		<Unit filename="include/Stack.h" />
+		<Unit filename="include/Wall.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Exit.cpp" />
 		<Unit filename="src/Interactable.cpp" />
 		<Unit filename="src/Map.cpp" />
 		<Unit filename="src/Node.cpp" />
+		<Unit filename="src/Space.cpp" />
 		<Unit filename="src/Stack.cpp" />
+		<Unit filename="src/Wall.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Mar 26, 2020
+Date Updated: Mar 26, 2020
+Purpose: Header file for Space class
+Type: Header
+*/
+
 #ifndef SPACE_H
 #define SPACE_H
 #include "Interactable.h" //Include parent class

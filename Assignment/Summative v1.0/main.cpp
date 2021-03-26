@@ -7,6 +7,7 @@ Type: Main
 
 TODO
 -Set up exit
+
 -Set up player (Manual)
 -Set up crumb
 -Set up auto-solver
@@ -27,13 +28,15 @@ Sources
 #include "Interactable.h" //include interactable class
 #include "Wall.h" //include wall class
 #include "Space.h" //include space class
+#include "Exit.h" //include exit class
 
 using namespace std;
 
 int main()
 {
     Interactable *wall = new Wall(178, 15); //Initialize wall
-    Interactable *emty = new Space(0, 15); //Initialize wall
+    Interactable *emty = new Space(0, 15); //Initialize space
+    Interactable *exit = new Exit(64, 15, false, nullptr, 10, 10); //Initilaize exit
 
     Interactable* mapOne[100] = //initialize array of interactables for map
     {
@@ -45,11 +48,11 @@ int main()
         emty, emty, wall, wall, emty, wall, wall, emty, wall, wall,
         wall, emty, emty, wall, emty, wall, wall, emty, emty, wall,
         wall, wall, emty, emty, emty, wall, wall, wall, emty, wall,
-        wall, emty, emty, wall, wall, wall, wall, wall, emty, emty,
+        wall, emty, emty, wall, wall, wall, wall, wall, emty, exit,
         wall, emty, wall, wall, wall, wall, wall, wall, wall, wall
     };
 
-    Map myMap(10, 10, mapOne); //initiaize map object
+    Map myMap(10, 10, mapOne, exit); //initiaize map object
 
     myMap.printMap(); //Print map
 

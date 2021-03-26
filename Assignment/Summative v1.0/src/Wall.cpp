@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Mar 26, 2020
+Date Updated: Mar 26, 2020
+Purpose: Source file for Wall class
+Type: Source
+*/
+
 #include "Wall.h"
 #include "Interactable.h" //Include parent class
 

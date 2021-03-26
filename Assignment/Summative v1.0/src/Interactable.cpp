@@ -44,3 +44,14 @@ int Interactable::getColour() const
 {
     return colour;
 }
+
+bool Interactable::getHidden() const
+{
+    return true;
+}
+
+void Interactable::setHidden(bool _hidden)
+{
+    return;
+}
+

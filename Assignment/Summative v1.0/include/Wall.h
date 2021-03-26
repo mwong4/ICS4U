@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Mar 26, 2020
+Date Updated: Mar 26, 2020
+Purpose: Header file for Wall class
+Type: Header
+*/
+
 #ifndef WALL_H
 #define WALL_H
 #include "Interactable.h"

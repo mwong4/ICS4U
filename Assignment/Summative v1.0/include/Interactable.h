@@ -23,6 +23,8 @@ class Interactable
         //getters/setters
         char getSymbol() const;
         int getColour() const;
+        virtual bool getHidden() const;
+        virtual void setHidden(bool);
 
     protected:
 
