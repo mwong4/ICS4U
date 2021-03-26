@@ -20,3 +20,19 @@
 
 1616770439 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
 
+1616772092 source:c:\users\max pc\documents\github\ics4u\rand\memory leak maybe\main.cpp
+	<iostream>
+	"Stack.h"
+
+1616692785 c:\users\max pc\documents\github\ics4u\rand\memory leak maybe\include\stack.h
+	"Node.h"
+
+1616694184 c:\users\max pc\documents\github\ics4u\rand\memory leak maybe\include\node.h
+	<iostream>
+
+1616772015 source:c:\users\max pc\documents\github\ics4u\rand\memory leak maybe\src\node.cpp
+	"Node.h"
+
+1616771978 source:c:\users\max pc\documents\github\ics4u\rand\memory leak maybe\src\stack.cpp
+	"Stack.h"
+

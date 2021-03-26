@@ -34,13 +34,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/Interactable.h" />
-		<Unit filename="include/Map.h" />
 		<Unit filename="include/Node.h" />
 		<Unit filename="include/Stack.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Interactable.cpp" />
-		<Unit filename="src/Map.cpp" />
 		<Unit filename="src/Node.cpp" />
 		<Unit filename="src/Stack.cpp" />
 		<Extensions>
