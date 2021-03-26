@@ -12,12 +12,14 @@ Interactable::Interactable()
 {
     //ctor
     symbol = 0;
+    colour = 15; //set color to white
 }
 
 //Custom constructor
-Interactable::Interactable(int _asciiCode)
+Interactable::Interactable(int _asciiCode, int _colour)
 {
     symbol = _asciiCode;
+    colour = _colour;
 }
 
 Interactable::~Interactable()
@@ -26,8 +28,12 @@ Interactable::~Interactable()
 }
 
 //getters/setters
-
 char Interactable::getSymbol() const
 {
     return symbol;
+}
+
+int Interactable::getColour() const
+{
+    return colour;
 }

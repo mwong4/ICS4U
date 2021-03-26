@@ -4,9 +4,28 @@ Date Created: Mar 23, 2020
 Date Updated: Mar 26, 2020
 Purpose: Final project for ICS4U
 Type: Main
+
+TODO
+-Set up interactables properly
+-Set up wall
+-Set up space
+
+-Set up exit
+-Set up player (Manual)
+-Set up crumb
+-Set up auto-solver
+-Set up electronics
+
+-Set up main
+
+Sources
+-"https://theasciicode.com.ar/" for ASCII character chart
+-"https://stackoverflow.com/questions/4053837/colorizing-text-in-the-console-with-c" for color
 */
 
+//Included libraries
 #include <iostream>
+
 #include "Map.h" //include map class
 #include "Interactable.h" //include interactable class
 
@@ -14,8 +33,8 @@ using namespace std;
 
 int main()
 {
-    Interactable *wall = new Interactable(178); //Initialize wall
-    Interactable *emty = new Interactable(0); //Initialize wall
+    Interactable *wall = new Interactable(178, 15); //Initialize wall
+    Interactable *emty = new Interactable(0, 15); //Initialize wall
 
     Interactable* mapOne[100] = //initialize array of interactables for map
     {

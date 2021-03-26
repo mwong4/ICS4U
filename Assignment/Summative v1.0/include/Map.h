@@ -10,6 +10,7 @@ Type: Header
 #define MAP_H
 
 #include <iostream>
+#include <windows.h> //For Colour
 
 #include "Interactable.h" //include interchangable class
 

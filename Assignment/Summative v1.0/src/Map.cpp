@@ -40,14 +40,18 @@ Map::~Map()
 //For printing out map
 void Map::printMap() const
 {
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
     for(int i = 1; i < 101; i++) //go through whole 2d array
     {
+         SetConsoleTextAttribute(hConsole, (*mapArray[i-1]).getColour()); //Set colour based on colour property
         cout << (*mapArray[i-1]).getSymbol(); //print out each spot
         if(i % width == 0) //For every new line, print enter character
         {
             cout << endl;
         }
     }
+     SetConsoleTextAttribute(hConsole, 15);
     return;
 }
 
