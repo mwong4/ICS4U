@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1616776266 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
+1616776976 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
 	<iostream>
 	"Map.h"
 	"Interactable.h"
@@ -16,10 +16,10 @@
 1616702781 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\node.cpp
 	"Node.h"
 
-1616775953 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\interactable.cpp
+1616776933 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\interactable.cpp
 	"Interactable.h"
 
-1616775915 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
+1616776874 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
 
 1616776341 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\map.cpp
 	"Map.h"
@@ -27,5 +27,19 @@
 1616776272 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\map.h
 	<iostream>
 	<windows.h>
+	"Interactable.h"
+
+1616777568 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\space.cpp
+	"Space.h"
+	"Interactable.h"
+
+1616777719 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\space.h
+	"Interactable.h"
+
+1616777580 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\wall.cpp
+	"Wall.h"
+	"Interactable.h"
+
+1616777412 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\wall.h
 	"Interactable.h"
 

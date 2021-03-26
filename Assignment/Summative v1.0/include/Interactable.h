@@ -17,6 +17,9 @@ class Interactable
         Interactable(int, int); //Custom constructor
         virtual ~Interactable();
 
+        //General functions
+        virtual bool checkSolid(); //Will go to derived class and return if solid or not
+
         //getters/setters
         char getSymbol() const;
         int getColour() const;

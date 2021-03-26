@@ -6,17 +6,14 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--Set up interactables properly
--Set up wall
--Set up space
-
 -Set up exit
 -Set up player (Manual)
 -Set up crumb
 -Set up auto-solver
--Set up electronics
 
+-Set up basic electronics
 -Set up main
+-Set up advanced electronics
 
 Sources
 -"https://theasciicode.com.ar/" for ASCII character chart
@@ -28,13 +25,15 @@ Sources
 
 #include "Map.h" //include map class
 #include "Interactable.h" //include interactable class
+#include "Wall.h" //include wall class
+#include "Space.h" //include space class
 
 using namespace std;
 
 int main()
 {
-    Interactable *wall = new Interactable(178, 15); //Initialize wall
-    Interactable *emty = new Interactable(0, 15); //Initialize wall
+    Interactable *wall = new Wall(178, 15); //Initialize wall
+    Interactable *emty = new Space(0, 15); //Initialize wall
 
     Interactable* mapOne[100] = //initialize array of interactables for map
     {
@@ -55,6 +54,6 @@ int main()
     myMap.printMap(); //Print map
 
 
-    cout << "End Program" << endl;
+    cout << endl << "End Program" << endl;
     return 0;
 }

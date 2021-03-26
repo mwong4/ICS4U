@@ -27,6 +27,13 @@ Interactable::~Interactable()
     //dtor
 }
 
+//General functions
+//Will go to derived class and return if solid or not
+bool Interactable::checkSolid()
+{
+    return true;
+}
+
 //getters/setters
 char Interactable::getSymbol() const
 {
