@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Mar 26, 2020
+Date Updated: Mar 26, 2020
+Purpose: Source file for Interactable class
+Type: Source
+*/
+
 #include "Interactable.h"
 
 Interactable::Interactable()
@@ -16,6 +24,8 @@ Interactable::~Interactable()
 {
     //dtor
 }
+
+//getters/setters
 
 char Interactable::getSymbol() const
 {

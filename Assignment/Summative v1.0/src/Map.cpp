@@ -1,3 +1,11 @@
+/*
+Author: Max Wong
+Date Created: Mar 26, 2020
+Date Updated: Mar 26, 2020
+Purpose: Source file for Map class
+Type: Source
+*/
+
 #include "Map.h"
 
 Map::Map()
@@ -5,20 +13,22 @@ Map::Map()
     //ctor
     width = 10;
     height = 10;
+    for(int i = 0; i < 100; i++) //Set whole map to null by default
+    {
+        mapArray[i] = nullptr;
+    }
 }
 
 //Custom constructor
-Map::Map(int _width, int _height, Interactable[10][10] _map)
+Map::Map(int _width, int _height, Interactable *_map[])
 {
     width = _width;
     height = _height;
 
-    for(int i = 0; i < 10; i++)
+    //set class var to input
+    for(int i = 0; i < 100; i++) //go through whole 2d array
     {
-        for(int j = 0; j < 10; j++)
-        {
-            Interactable[j][i] = _map[j][i];
-        }
+        mapArray[i] = _map[i]; //set each spot
     }
 }
 
@@ -28,19 +38,21 @@ Map::~Map()
 }
 
 //For printing out map
-void printMap() const
+void Map::printMap() const
 {
-    for(int i = 0; i < 10; i++) //go through whole 2d array
-        for(int j = 0; j < 10; j++)
+    for(int i = 1; i < 101; i++) //go through whole 2d array
+    {
+        cout << (*mapArray[i-1]).getSymbol(); //print out each spot
+        if(i % width == 0) //For every new line, print enter character
         {
-            cout << (*Interactable[j][i]).getSymbol(); //print out each spot
+            cout << endl;
         }
-        cout << endl;
     }
+    return;
 }
 
 //To get the interactable on a certain spot
-void getInteractable(const int, const int) const
+Interactable* Map::getInteractable(const int _width, const int _height) const
 {
-
+    return new Interactable;
 }
