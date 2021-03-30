@@ -31,6 +31,11 @@ Exit::~Exit()
     //dtor
 }
 
+bool Exit::checkSolid()
+{
+    return false;
+}
+
 //Getters/Setters
 Map* Exit::getNextMap() const
 {

@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 28, 2020
-Date Updated: Mar 29, 2020
+Date Updated: Mar 30, 2020
 Purpose: Source file for Player class
 Type: Source
 */
@@ -20,7 +20,7 @@ Player::Player()
 }
 
 //Custom constructor
-Player::Player(int _x, int _y, bool _auto)
+Player::Player(int _x, int _y, bool _auto, Map *_map, int _symbol, int _colour) : Interactable(_symbol, _colour)
 {
     xCoord = _x;
     yCoord = _y;
@@ -31,6 +31,7 @@ Player::Player(int _x, int _y, bool _auto)
 Player::~Player()
 {
     //dtor
+    (*directions).clear();
 }
 
 //General Functions
@@ -68,16 +69,49 @@ char Player::getInput()
     return ' '; //return null if no valid input
 }
 
-//Checks to see if inputed move is legal
-bool Player::checkValid() const
+//Checks to see if inputed move is legal and if good, Updates position of player
+bool Player::updatePosition(char _direction)
 {
+    int xShift = 0; //The shift in X or Y
+    int yShift = 0;
 
+    if(_direction == 'U') //Convert direction into shift
+    {
+        yShift = 1;
+    }
+    else if(_direction == 'D')
+    {
+        yShift = -1;
+    }
+    else if(_direction == 'L')
+    {
+        xShift = -1;
+    }
+    else if(_direction == 'R')
+    {
+        xShift = 1;
+    }
+
+    //Check validity of shift, if outside map size
+    if((xCoord + xShift) < 1 || (xCoord + xShift) > (*ptr_map).getWidth() || (yCoord + yShift) < 1 || (yCoord + yShift) > (*ptr_map).getHeight())
+    {
+        return false;
+    }
+    else if((*(*ptr_map).getInteractable((xCoord + xShift), (yCoord + yShift))).checkSolid()) //If new spot chosen is solid
+    {
+        return false;
+    }
+    else //otherwise all good, update position
+    {
+        xCoord += xShift;
+        yCoord += yShift;
+        return true;
+    }
 }
 
-//Updates position of player
-void Player::updatePosition()
+bool Player::checkSolid()
 {
-
+    return true;
 }
 
 //getters/setters

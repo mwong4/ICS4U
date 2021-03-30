@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2020
-Date Updated: Mar 29, 2020
+Date Updated: Mar 30, 2020
 Purpose: Source file for Map class
 Type: Source
 */
@@ -77,7 +77,7 @@ void Map::printMap() const
 //To get the interactable on a certain spot
 Interactable* Map::getInteractable(const int _width, const int _height) const
 {
-    return new Interactable;
+    return mapArray[(width*(_height-1))+(_width-1)];
 }
 
 //In charge of swapping two values in the map
@@ -98,4 +98,14 @@ bool Map::checkWin() const
         return true;
     }
     return false; //else return false
+}
+
+int Map::getWidth() const
+{
+    return width;
+}
+
+int Map::getHeight() const
+{
+    return height;
 }

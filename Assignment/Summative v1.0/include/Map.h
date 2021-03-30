@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2020
-Date Updated: Mar 29, 2020
+Date Updated: Mar 30, 2020
 Purpose: Header file for Map class
 Type: Header
 */
@@ -30,6 +30,10 @@ class Map
         Interactable* getInteractable(const int, const int) const; //To get the interactable on a certain spot
         void swapInteractable(Interactable*, Interactable*); //In charge of swapping two values in the map
         bool checkWin() const; //used to check and see if player is at exit
+
+        //getters/setters
+        int getWidth() const;
+        int getHeight() const;
 
     protected:
 

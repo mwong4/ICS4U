@@ -19,6 +19,8 @@ class Exit : public Interactable
         Exit(int, int, bool, Map*, int, int); //Custom constructor
         virtual ~Exit();
 
+        bool checkSolid(); //Returns if solid or not
+
         //Getters/Setters
         Map* getNextMap() const;
         int getX() const;
