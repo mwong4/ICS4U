@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2020
-Date Updated: Mar 26, 2020
+Date Updated: Mar 29, 2020
 Purpose: Header file for Interactable class
 Type: Header
 */
@@ -25,8 +25,11 @@ class Interactable
         int getColour() const;
         virtual bool getHidden() const;
         virtual void setHidden(bool);
+        virtual int getX() const;
+        virtual int getY() const;
 
     protected:
+
 
     private:
         char symbol; //symbol representing object

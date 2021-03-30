@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2020
-Date Updated: Mar 26, 2020
+Date Updated: Mar 29, 2020
 Purpose: Source file for Map class
 Type: Source
 */
@@ -13,7 +13,8 @@ Map::Map()
     //ctor
     width = 10;
     height = 10;
-    mazeExit = nullptr;
+    ptr_mazeExit = nullptr;
+    ptr_player = nullptr;
     for(int i = 0; i < 100; i++) //Set whole map to null by default
     {
         mapArray[i] = nullptr;
@@ -21,11 +22,12 @@ Map::Map()
 }
 
 //Custom constructor
-Map::Map(int _width, int _height, Interactable *_map[], Interactable* _exit)
+Map::Map(int _width, int _height, Interactable *_map[], Interactable* _exit, Interactable* _player)
 {
     width = _width;
     height = _height;
-    mazeExit = _exit;
+    ptr_mazeExit = _exit;
+    ptr_player = _player;
 
     //set class var to input
     for(int i = 0; i < 100; i++) //go through whole 2d array
@@ -47,9 +49,9 @@ void Map::printMap() const
     for(int i = 1; i < 101; i++) //go through whole 2d array
     {
          SetConsoleTextAttribute(hConsole, (*mapArray[i-1]).getColour()); //Set colour based on colour property
-        if(mapArray[i-1] == mazeExit) //Check if pointer is exit
+        if(mapArray[i-1] == ptr_mazeExit) //Check if pointer is exit
         {
-            if((*mazeExit).getHidden()) //If is exit and check if hidden is false
+            if((*ptr_mazeExit).getHidden()) //If is exit and check if hidden is false
             {
                 cout << " ";
             }
@@ -79,11 +81,21 @@ Interactable* Map::getInteractable(const int _width, const int _height) const
 }
 
 //In charge of swapping two values in the map
-void swapInteractable(Interactable* _ptrOne, Interactable* _ptrTwo)
+void Map::swapInteractable(Interactable* _ptrOne, Interactable* _ptrTwo)
 {
     Interactable* tempPtr; //temporary spot for swapping
     tempPtr = _ptrOne; //Swap values
     _ptrOne = _ptrTwo;
     _ptrTwo = tempPtr;
     return; //return void
+}
+
+//used to check and see if player is at exit
+bool Map::checkWin() const
+{
+    if((*ptr_player).getX() == (*ptr_mazeExit).getX() && (*ptr_player).getY() == (*ptr_mazeExit).getY()) //If coords of exit and player are the same, return true
+    {
+        return true;
+    }
+    return false; //else return false
 }

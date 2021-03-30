@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2020
-Date Updated: Mar 26, 2020
+Date Updated: Mar 29, 2020
 Purpose: Source file for Interactable class
 Type: Source
 */
@@ -53,5 +53,15 @@ bool Interactable::getHidden() const
 void Interactable::setHidden(bool _hidden)
 {
     return;
+}
+
+int Interactable::getX() const
+{
+    return 0;
+}
+
+int Interactable::getY() const
+{
+    return 0;
 }
 

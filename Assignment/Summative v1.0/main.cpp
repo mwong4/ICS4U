@@ -6,9 +6,8 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--Set up exit
-
 -Set up player (Manual)
+
 -Set up crumb
 -Set up auto-solver
 
@@ -52,7 +51,7 @@ int main()
         wall, emty, wall, wall, wall, wall, wall, wall, wall, wall
     };
 
-    Map myMap(10, 10, mapOne, exit); //initiaize map object
+    Map myMap(10, 10, mapOne, exit, nullptr); //initiaize map object
 
     myMap.printMap(); //Print map
 
