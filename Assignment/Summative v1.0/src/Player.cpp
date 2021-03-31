@@ -20,7 +20,7 @@ Player::Player()
 }
 
 //Custom constructor
-Player::Player(int _x, int _y, bool _auto, Map *_map, int _symbol, int _colour) : Interactable(_symbol, _colour)
+Player::Player(int _symbol, int _colour, int _x, int _y, bool _auto, Map *_map) : Interactable(_symbol, _colour)
 {
     xCoord = _x;
     yCoord = _y;
@@ -74,14 +74,16 @@ bool Player::updatePosition(char _direction)
 {
     int xShift = 0; //The shift in X or Y
     int yShift = 0;
+    Interactable **ptr_tempContainer;
+    Interactable **ptr_tempObject;
 
     if(_direction == 'U') //Convert direction into shift
     {
-        yShift = 1;
+        yShift = -1;
     }
     else if(_direction == 'D')
     {
-        yShift = -1;
+        yShift = 1;
     }
     else if(_direction == 'L')
     {
@@ -103,10 +105,10 @@ bool Player::updatePosition(char _direction)
     }
     else //otherwise all good, update position and map
     {
-        (*ptr_map).swapInteractable((*ptr_map).getContainer(), (*ptr_map).getInteractable(xCoord, yCoord)); //swap container and player
+        (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and player
         xCoord += xShift; //update coordinats
         yCoord += yShift;
-        (*ptr_map).swapInteractable((*ptr_map).getContainer(), (*ptr_map).getInteractable(xCoord, yCoord)); //swap container and new position
+        (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and new position
         return true;
     }
 }

@@ -19,13 +19,14 @@ class Player : public Interactable
 {
     public:
         Player();
-        Player(int, int, bool, Map*, int, int); //Custom constructor
+        Player(int, int, int, int, bool, Map*); //Custom constructor
         virtual ~Player();
 
         void toggleAutoSolver(); //Used to toggle auto solver
-        char getInput(); //Get's input from user when manually controlling
 
+        char getInput(); //Get's input from user when manually controlling
         bool checkSolid(); //Returns if solid or not
+        bool updatePosition(char); //Checks to see if inputed move is legal and if good, Updates position of player
 
         //getters/setters
         int getX() const;
@@ -40,8 +41,6 @@ class Player : public Interactable
         Stack *directions; //Tracks the stack of directions
         bool autoSolve; //Toggle false for manual control
         Map* ptr_map; //Pointer to map for accessing map info for movement
-
-        bool updatePosition(char); //Checks to see if inputed move is legal and if good, Updates position of player
 
 };
 

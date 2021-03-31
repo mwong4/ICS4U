@@ -83,13 +83,21 @@ Interactable* Map::getInteractable(const int _width, const int _height) const
     return mapArray[(width*(_height-1))+(_width-1)];
 }
 
-//In charge of swapping two values in the map
-void Map::swapInteractable(Interactable* _ptrOne, Interactable* _ptrTwo)
+//Returns double pointer, same as above
+Interactable** Map::getInteractableP(const int _width, const int _height)
 {
-    Interactable* tempPtr; //temporary spot for swapping
+    return &mapArray[(width*(_height-1))+(_width-1)];
+}
+
+//In charge of swapping two values in the map
+void Map::swapInteractable(Interactable** _ptrOne, Interactable** _ptrTwo)
+{
+    cout << _ptrOne << "," << _ptrTwo << endl;
+    Interactable** tempPtr; //temporary spot for swapping
     tempPtr = _ptrOne; //Swap values
     _ptrOne = _ptrTwo;
     _ptrTwo = tempPtr;
+    cout << _ptrOne << "," << _ptrTwo << endl;
     return; //return void
 }
 
@@ -116,4 +124,9 @@ int Map::getHeight() const
 Interactable* Map::getContainer() const
 {
     return ptr_container;
+}
+
+Interactable** Map::getContainerP()
+{
+    return &ptr_container;
 }

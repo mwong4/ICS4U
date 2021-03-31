@@ -27,13 +27,15 @@ class Map
         //General Functions
         void printMap() const; //For printing out map
         Interactable* getInteractable(const int, const int) const; //To get the interactable on a certain spot
-        void swapInteractable(Interactable*, Interactable*); //In charge of swapping two values in the map
+        Interactable** getInteractableP(const int, const int); //Return double pointer
+        void swapInteractable(Interactable**, Interactable**); //In charge of swapping two pointers of pointers in the map
         bool checkWin() const; //used to check and see if player is at exit
 
         //getters/setters
         int getWidth() const;
         int getHeight() const;
         Interactable* getContainer() const;
+        Interactable** getContainerP();
 
     protected:
 
