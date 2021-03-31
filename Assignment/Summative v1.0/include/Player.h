@@ -30,6 +30,7 @@ class Player : public Interactable
         //getters/setters
         int getX() const;
         int getY() const;
+        void setMap(Map*);
 
     protected:
 

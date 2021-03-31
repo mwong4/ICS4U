@@ -9,6 +9,9 @@ Type: Header
 #ifndef INTERACTABLE_H
 #define INTERACTABLE_H
 
+class Map;
+
+using namespace std;
 
 class Interactable
 {
@@ -23,10 +26,13 @@ class Interactable
         //getters/setters
         char getSymbol() const;
         int getColour() const;
+
+        //virtual functions for derived classes
         virtual bool getHidden() const;
         virtual void setHidden(bool);
         virtual int getX() const;
         virtual int getY() const;
+        virtual void setMap(Map*);
 
     protected:
 

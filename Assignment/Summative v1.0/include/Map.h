@@ -12,17 +12,16 @@ Type: Header
 #include <iostream>
 #include <windows.h> //For Colour
 
-#include "Interactable.h" //include interchangable class
+#include "Interactable.h" //include interactable class
 #include "Exit.h" //include exit class
 
 using namespace std;
-
 
 class Map
 {
     public:
         Map();
-        Map(int, int, Interactable*[], Interactable*, Interactable*); //Custom constructor
+        Map(int, int, Interactable*[], Interactable*, Interactable*, Interactable*); //Custom constructor
         virtual ~Map();
 
         //General Functions
@@ -34,6 +33,7 @@ class Map
         //getters/setters
         int getWidth() const;
         int getHeight() const;
+        Interactable* getContainer() const;
 
     protected:
 
@@ -41,8 +41,9 @@ class Map
         int width; //represents width of array
         int height; //represents height of array
         Interactable *mapArray[100]; //double array containing whole map
-        Interactable* ptr_mazeExit; //Pointer storing the exit
-        Interactable* ptr_player; //Pointer storing the player
+        Interactable *ptr_mazeExit; //Pointer storing the exit
+        Interactable *ptr_player; //Pointer storing the player
+        Interactable *ptr_container; //When player is moving around, represents what is under player's feet
 };
 
 #endif // MAP_H

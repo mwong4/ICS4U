@@ -7,6 +7,7 @@ Type: Source
 */
 
 #include "Interactable.h"
+#include "Map.h"; //include map class
 
 Interactable::Interactable()
 {
@@ -63,5 +64,10 @@ int Interactable::getX() const
 int Interactable::getY() const
 {
     return 0;
+}
+
+void Interactable::setMap(Map *_map)
+{
+    return;
 }
 

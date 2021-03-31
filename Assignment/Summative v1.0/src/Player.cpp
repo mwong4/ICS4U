@@ -101,10 +101,12 @@ bool Player::updatePosition(char _direction)
     {
         return false;
     }
-    else //otherwise all good, update position
+    else //otherwise all good, update position and map
     {
-        xCoord += xShift;
+        (*ptr_map).swapInteractable((*ptr_map).getContainer(), (*ptr_map).getInteractable(xCoord, yCoord)); //swap container and player
+        xCoord += xShift; //update coordinats
         yCoord += yShift;
+        (*ptr_map).swapInteractable((*ptr_map).getContainer(), (*ptr_map).getInteractable(xCoord, yCoord)); //swap container and new position
         return true;
     }
 }
@@ -123,4 +125,10 @@ int Player::getX() const
 int Player::getY() const
 {
     return yCoord;
+}
+
+void Player::setMap(Map *_map)
+{
+    ptr_map = _map;
+    return;
 }

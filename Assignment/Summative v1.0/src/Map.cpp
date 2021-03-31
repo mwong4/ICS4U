@@ -7,6 +7,7 @@ Type: Source
 */
 
 #include "Map.h"
+#include "Interactable.h"
 
 Map::Map()
 {
@@ -15,6 +16,7 @@ Map::Map()
     height = 10;
     ptr_mazeExit = nullptr;
     ptr_player = nullptr;
+    ptr_container = nullptr;
     for(int i = 0; i < 100; i++) //Set whole map to null by default
     {
         mapArray[i] = nullptr;
@@ -22,12 +24,13 @@ Map::Map()
 }
 
 //Custom constructor
-Map::Map(int _width, int _height, Interactable *_map[], Interactable* _exit, Interactable* _player)
+Map::Map(int _width, int _height, Interactable *_map[], Interactable* _exit, Interactable* _player, Interactable* _container)
 {
     width = _width;
     height = _height;
     ptr_mazeExit = _exit;
     ptr_player = _player;
+    ptr_container = _container;
 
     //set class var to input
     for(int i = 0; i < 100; i++) //go through whole 2d array
@@ -108,4 +111,9 @@ int Map::getWidth() const
 int Map::getHeight() const
 {
     return height;
+}
+
+Interactable* Map::getContainer() const
+{
+    return ptr_container;
 }

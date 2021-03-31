@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 23, 2020
-Date Updated: Mar 26, 2020
+Date Updated: Mar 30, 2020
 Purpose: Final project for ICS4U
 Type: Main
 
@@ -28,6 +28,7 @@ Sources
 #include "Wall.h" //include wall class
 #include "Space.h" //include space class
 #include "Exit.h" //include exit class
+#include "Player.h" //include player class
 
 using namespace std;
 
@@ -36,6 +37,7 @@ int main()
     Interactable *wall = new Wall(178, 15); //Initialize wall
     Interactable *emty = new Space(0, 15); //Initialize space
     Interactable *exit = new Exit(64, 15, false, nullptr, 10, 10); //Initilaize exit
+    Interactable *plyr = new Player(2, 2, false, nullptr, 169, 15); //Initialize Player
 
     Interactable* mapOne[100] = //initialize array of interactables for map
     {
@@ -51,9 +53,16 @@ int main()
         wall, emty, wall, wall, wall, wall, wall, wall, wall, wall
     };
 
-    Map myMap(10, 10, mapOne, exit, nullptr); //initiaize map object
+    Map myMap(10, 10, mapOne, exit, plyr, emty); //initiaize map object
+    (*plyr).setMap(&myMap); //Set map for player
 
-    myMap.printMap(); //Print map
+    while(true)
+    {
+        myMap.printMap(); //Print map
+        cout << "Container: " << (*myMap.getContainer()).getSymbol() << endl;
+        //(*plyr).updatePosition((*plyr).getInput());
+
+    }
 
 
     cout << endl << "End Program" << endl;
