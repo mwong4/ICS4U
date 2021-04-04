@@ -36,6 +36,7 @@ int main()
 {
     Wall wallObj(178, 15); //Initialize wall
     Space spaceObj(83, 15); //Initialize space
+    Space spaceTemp(84, 15); //Initialize space
     Exit exitObj(64, 15, false, nullptr, 10, 10); //Initilaize exit
     Player playerObj(168, 15, 2, 2, false, nullptr); //Initialize Player
 
@@ -48,7 +49,7 @@ int main()
     {
         wall, wall, wall, wall, wall, wall, emty, wall, wall, wall,
         wall, plyr, wall, wall, wall, emty, emty, emty, wall, wall,
-        wall, emty, emty, emty, emty, emty, wall, emty, wall, wall,
+        wall, &spaceTemp, emty, emty, emty, emty, wall, emty, wall, wall,
         wall, emty, wall, emty, wall, wall, wall, emty, wall, wall,
         wall, emty, wall, emty, emty, emty, emty, emty, wall, wall,
         emty, emty, wall, wall, emty, wall, wall, emty, wall, wall,
@@ -66,13 +67,12 @@ int main()
 
     while(true)
     {
-        myMap.printMap(); //Print map
         cout << "Container: " << (*myMap.getContainer()).getSymbol() << endl;
-        //playerObj.updatePosition('D');
         cout << playerObj.updatePosition(playerObj.getInput()) << endl;
         cout << playerObj.getX() << "," << playerObj.getY() << endl;
+        myMap.printMap(); //Print map
         system("PAUSE");
-        //system("CLS");
+        system("CLS");
 
     }
 

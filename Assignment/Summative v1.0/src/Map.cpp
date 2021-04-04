@@ -92,12 +92,12 @@ Interactable** Map::getInteractableP(const int _width, const int _height)
 //In charge of swapping two values in the map
 void Map::swapInteractable(Interactable** _ptrOne, Interactable** _ptrTwo)
 {
-    cout << _ptrOne << "," << _ptrTwo << endl;
-    Interactable** tempPtr; //temporary spot for swapping
-    tempPtr = _ptrOne; //Swap values
-    _ptrOne = _ptrTwo;
-    _ptrTwo = tempPtr;
-    cout << _ptrOne << "," << _ptrTwo << endl;
+    cout << (*_ptrOne) << "," << (*_ptrTwo) << endl;
+    Interactable* tempPtr; //temporary spot for swapping
+    tempPtr = (*_ptrOne); //Swap values
+    (*_ptrOne) = (*_ptrTwo);
+    (*_ptrTwo) = tempPtr;
+    cout << (*_ptrOne) << "," << (*_ptrTwo) << endl;
     return; //return void
 }
 
