@@ -36,6 +36,7 @@ class Map
         int getHeight() const;
         Interactable* getContainer() const;
         Interactable** getContainerP();
+        void setContainer(Interactable*);
 
     protected:
 

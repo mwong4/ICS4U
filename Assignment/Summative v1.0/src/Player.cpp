@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 28, 2020
-Date Updated: Mar 30, 2020
+Date Updated: Apr 4, 2020
 Purpose: Source file for Player class
 Type: Source
 */
@@ -9,6 +9,7 @@ Type: Source
 #include "Player.h"
 #include "Interactable.h" //include interactable class
 #include "Map.h" //Inclduing map class
+#include "Crumb.h" //Include crumb class
 
 Player::Player()
 {
@@ -17,15 +18,17 @@ Player::Player()
     yCoord = 0;
     autoSolve = true;
     directions = new Stack();
+    ptr_crumb = nullptr;
 }
 
 //Custom constructor
-Player::Player(int _symbol, int _colour, int _x, int _y, bool _auto, Map *_map) : Interactable(_symbol, _colour)
+Player::Player(int _symbol, int _colour, int _x, int _y, bool _auto, Map *_map, Crumb *_crumb) : Interactable(_symbol, _colour)
 {
     xCoord = _x;
     yCoord = _y;
     autoSolve = _auto;
     directions = new Stack();
+    ptr_crumb = _crumb;
 }
 
 Player::~Player()
@@ -74,8 +77,9 @@ bool Player::updatePosition(char _direction)
 {
     int xShift = 0; //The shift in X or Y
     int yShift = 0;
-    Interactable **ptr_tempContainer;
-    Interactable **ptr_tempObject;
+    //Interactable **ptr_tempContainer;
+    //Interactable **ptr_tempObject;
+    char emptySymbol = 0; //Used to compare and check container value
 
     if(_direction == 'U') //Convert direction into shift
     {
@@ -105,6 +109,11 @@ bool Player::updatePosition(char _direction)
     }
     else //otherwise all good, update position and map
     {
+        if((*(*ptr_map).getContainer()).getSymbol() == emptySymbol) //If container value was "space"
+        {
+            (*ptr_map).setContainer(ptr_crumb); //Set container as a crumb
+        }
+
         (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and player
         xCoord += xShift; //update coordinats
         yCoord += yShift;

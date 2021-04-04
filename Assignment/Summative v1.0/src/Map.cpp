@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2020
-Date Updated: Mar 30, 2020
+Date Updated: Apr 4, 2020
 Purpose: Source file for Map class
 Type: Source
 */
@@ -92,12 +92,10 @@ Interactable** Map::getInteractableP(const int _width, const int _height)
 //In charge of swapping two values in the map
 void Map::swapInteractable(Interactable** _ptrOne, Interactable** _ptrTwo)
 {
-    cout << (*_ptrOne) << "," << (*_ptrTwo) << endl;
     Interactable* tempPtr; //temporary spot for swapping
     tempPtr = (*_ptrOne); //Swap values
     (*_ptrOne) = (*_ptrTwo);
     (*_ptrTwo) = tempPtr;
-    cout << (*_ptrOne) << "," << (*_ptrTwo) << endl;
     return; //return void
 }
 
@@ -129,4 +127,10 @@ Interactable* Map::getContainer() const
 Interactable** Map::getContainerP()
 {
     return &ptr_container;
+}
+
+void Map::setContainer(Interactable* _obj)
+{
+    ptr_container = _obj;
+    return;
 }
