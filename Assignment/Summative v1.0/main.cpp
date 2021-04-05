@@ -1,12 +1,13 @@
 /*
 Author: Max Wong
-Date Created: Mar 23, 2020
-Date Updated: Apr 5, 2020
+Date Created: Mar 23, 2021
+Date Updated: Apr 5, 2021
 Purpose: Final project for ICS4U
 Type: Main
 
 TODO
 -Wire
+
 -Gate
 -Toggle
 

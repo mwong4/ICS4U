@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
-Date Created: Mar 26, 2020
-Date Updated: Mar 29, 2020
+Date Created: Mar 26, 2021
+Date Updated: Mar 29, 2021
 Purpose: Source file for Interactable class
 Type: Source
 */
@@ -44,6 +44,12 @@ char Interactable::getSymbol() const
 int Interactable::getColour() const
 {
     return colour;
+}
+
+void Interactable::setColour(int _colour)
+{
+    colour = _colour;
+    return;
 }
 
 bool Interactable::getHidden() const

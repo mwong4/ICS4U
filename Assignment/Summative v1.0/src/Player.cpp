@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
-Date Created: Mar 28, 2020
-Date Updated: Apr 5, 2020
+Date Created: Mar 28, 2021
+Date Updated: Apr 5, 2021
 Purpose: Source file for Player class
 Type: Source
 */

@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
-Date Created: Mar 26, 2020
-Date Updated: Mar 26, 2020
+Date Created: Mar 26, 2021
+Date Updated: Mar 26, 2021
 Purpose: Source file for Wall class
 Type: Source
 */
