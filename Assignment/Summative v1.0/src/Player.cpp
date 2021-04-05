@@ -75,8 +75,9 @@ char Player::getInput()
 }
 
 //Checks to see if inputed move is legal and if good, Updates position of player
-bool Player::updatePosition(char _direction)
+bool Player::updatePosition(char _direction, bool _backTracking)
 {
+    cout << "Input: " << _direction << endl;
     int xShift = 0; //The shift in X or Y
     int yShift = 0;
     //Interactable **ptr_tempContainer;
@@ -103,14 +104,22 @@ bool Player::updatePosition(char _direction)
     //Check validity of shift, if outside map size
     if((xCoord + xShift) < 1 || (xCoord + xShift) > (*ptr_map).getWidth() || (yCoord + yShift) < 1 || (yCoord + yShift) > (*ptr_map).getHeight())
     {
+        cout << "[ERROR] direction " << _direction << " outside map" << endl;
         return false;
     }
     else if((*(*ptr_map).getInteractable((xCoord + xShift), (yCoord + yShift))).checkSolid()) //If new spot chosen is solid
     {
+        cout << "[ERROR] direction " << _direction << " is solid" << endl;
+        return false;
+    }
+    else if((*(*ptr_map).getInteractable((xCoord + xShift), (yCoord + yShift))).getSymbol() == '*' && !_backTracking) //If next position has crumb and player is not backtracking
+    {
+        cout << "[ERROR] direction " << _direction << " is illegal backtrack" << endl;
         return false;
     }
     else //otherwise all good, update position and map
     {
+        cout << "Went direction: " << _direction << endl;
         if((*(*ptr_map).getContainer()).getSymbol() == emptySymbol) //If container value was "space"
         {
             (*ptr_map).setContainer(ptr_crumb); //Set container as a crumb
@@ -122,6 +131,7 @@ bool Player::updatePosition(char _direction)
         (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and new position
         return true;
     }
+    return false;
 }
 
 //Returns true
@@ -152,27 +162,55 @@ void Player::loadStack(char _exclude)
     return;
 }
 
+//Returns the opposite direction of input char
+char Player::getOpposite(char _input)
+{
+    if(_input == 'U')
+    {
+        return 'D';
+    }
+    else if(_input == 'D')
+    {
+        return 'U';
+    }
+    else if(_input == 'L')
+    {
+        return 'R';
+    }
+    else if(_input == 'R')
+    {
+        return 'L';
+    }
+    return ' ';
+}
+
 //Remote control for user, called on each step aotu-taken by algorithm
 void Player::autoSolver()
 {
     char current; //Current direction described by stack
     bool finishedMove = false; //Turned true when position is successfully updated
+    bool backTracking = false;
 
     while(!finishedMove)
     {
         if((*directions).peak() == 'B') //if current top is a backtrack
         {
-            (*directions).pop();
-            //////////////////////////////////////////////////////// Make sure next turn B is not pushed
+            cout << "Backtracking!" << endl;
+            (*directions).pop(); //pop marker
+            backTracking = true; //Set backtracking to true
         }
         else
         {
             current = (*directions).pop(); //get and pop top
-            if(updatePosition(current)) //Try and update position, if success
+            if(updatePosition(current, backTracking)) //Try and update position, if success
             {
                 finishedMove = true; //close down loop
-                loadStack(current); //Reload stack
-                //////////////////////////////////////////////////// Make sure next turn B is not pushed
+                if(!backTracking) //If this step is not backtracking
+                {
+                    (*directions).push(getOpposite(current)); //push opposite direction
+                    (*directions).push('B'); //push backtrack marker
+                }
+                loadStack(getOpposite(current)); //Reload stack
             }
         }
     }

@@ -6,9 +6,10 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--Set up auto-solver
--Implement backtracking
--Implement with crumbs
+-Check win
+
+-Redo directions with int
+-Fix Map
 
 -Set up basic electronics
 -Set up main
@@ -64,7 +65,7 @@ int main()
 
     while(true)
     {
-        //cout << "Is Solid: " << playerObj.updatePosition(playerObj.getInput()) << endl;
+        //cout << "Is Solid: " << playerObj.updatePosition(playerObj.getInput(), true) << endl;
         playerObj.autoSolver();
         myMap.printMap(); //Print map
         cout << playerObj.getX() << "," << playerObj.getY() << endl;
