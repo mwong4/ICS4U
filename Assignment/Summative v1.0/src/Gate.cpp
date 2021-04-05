@@ -8,13 +8,14 @@ Type: Source
 
 #include "Gate.h"
 
-Gate::Gate()
+Gate::Gate() : Electronic()
 {
     //ctor
+    alternateSymbol = 0;
 }
 
 //Custom constructor
-Gate::Gate(int _symbol, int _colour, bool _powered, Electronic* _next, int _altColour, int _altSymbol) : Electronic(_symbol, _colour, _powered, _next, _altColour)
+Gate::Gate(int _symbol, int _colour, bool _powered, int _altColour, int _altSymbol) : Electronic(_symbol, _colour, _powered, nullptr, _altColour)
 {
     alternateSymbol = _altSymbol;
 }
@@ -31,7 +32,7 @@ bool Gate::checkSolid()
 }
 
 //Toggles power and other stuff
-void Gate::toggle()
+void Gate::togglePower()
 {
     char tempSymbol; //Used for swapping symbols
 
@@ -41,12 +42,7 @@ void Gate::toggle()
     setSymbol(tempSymbol); //Set as as colour
 
     //Toggle bool
-    powered = true;
+    powered = !powered;
 
-    //If next object exists, set it to powered
-    if(ptr_next != nullptr)
-    {
-        (*ptr_next).toggle();
-    }
     return;
 }

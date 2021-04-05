@@ -31,7 +31,7 @@ bool Wire::checkSolid()
 }
 
 //Toggles power and other stuff
-void Wire::toggle()
+void Wire::togglePower()
 {
     int tempInt; //Used for swapping colours
 
@@ -41,12 +41,12 @@ void Wire::toggle()
     setColour(tempInt); //Set as as colour
 
     //Toggle bool
-    powered = true;
+    powered = !powered;
 
     //If next object exists, set it to powered
     if(ptr_next != nullptr)
     {
-        (*ptr_next).toggle();
+        (*ptr_next).togglePower();
     }
     return;
 }

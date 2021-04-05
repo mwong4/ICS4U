@@ -21,7 +21,7 @@ class Wire : public Electronic
         virtual ~Wire();
 
         bool checkSolid(); //Returns solidity status
-        void toggle(); //Toggles power and other stuff
+        void togglePower(); //Toggles power and other stuff
 
     protected:
 

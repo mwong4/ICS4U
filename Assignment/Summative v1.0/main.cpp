@@ -6,7 +6,10 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--Toggle
+
+-Toggling electronics when manual
+-Use Toggle
+-Tests
 
 -Set up main
 -Button Toggle

@@ -36,7 +36,7 @@ bool Electronic::checkSolid()
 }
 
 //Used on all electronics to toggle power and extra stuff
-void Electronic::toggle()
+void Electronic::togglePower()
 {
     powered = !powered; //toggle power
     return;

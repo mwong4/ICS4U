@@ -21,7 +21,7 @@ class Electronic : public Interactable
         virtual ~Electronic();
 
         virtual bool checkSolid(); //returns solidity
-        virtual void toggle(); //Used on all electronics to toggle power and extra stuff
+        virtual void togglePower(); //Used on all electronics to toggle power and extra stuff
 
     protected:
         bool powered; //Store if component is powered
