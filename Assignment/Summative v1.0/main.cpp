@@ -6,10 +6,13 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
+-Wire
+-Gate
+-Toggle
 
--Set up basic electronics
 -Set up main
--Set up advanced electronics
+-Button Toggle
+-Portal
 
 Sources
 -"https://theasciicode.com.ar/" for ASCII character chart
@@ -59,20 +62,32 @@ int main()
     Map myMap(10, 10, mapOne, exit, plyr, emty); //initiaize map object
     playerObj.setMap(&myMap); //Set map for player
 
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
+    string input; //Input from user
+
+    cout << "Press [1] for auto-solver, [2] for manual controls" << endl;
+    cin >> input;
+    if(input == "1") //Get user choice on auto vs manual
+    {
+        playerObj.toggleAutoSolver();
+    }
+
+    //Gameloop, kepp running until player reaches exit
     while(!myMap.checkWin())
     {
-        //cout << "Is Solid: " << playerObj.updatePosition(playerObj.getInput(), true) << endl;
-        playerObj.autoSolver();
+        if(input != "1") //if manual, display instructions
+        {
+            cout << "WASD or Arrow keys to move" << endl;
+        }
+        playerObj.nextTurn(); //Call function to get next turn, encapsulated
         myMap.printMap(); //Print map
-        cout << playerObj.getX() << "," << playerObj.getY() << endl;
-        cout << "Container: " << (*myMap.getContainer()).getSymbol() << endl;
-        cout << "Check win: " << myMap.checkWin() << endl;
-        system("PAUSE");
+
+        system("PAUSE"); //Get any input before clearing screen
         system("CLS");
     }
 
     cout << "You Win!" << endl;
-
     cout << endl << "End Program" << endl;
     return 0;
 }

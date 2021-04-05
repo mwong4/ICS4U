@@ -43,7 +43,7 @@ Player::~Player()
 //Used to toggle auto solver
 void Player::toggleAutoSolver()
 {
-    autoSolve != autoSolve; //Flip value
+    autoSolve = !autoSolve; //Flip value
     cout << ">- Auto Toggled" << endl;
     return;
 }
@@ -66,10 +66,6 @@ int Player::getInput()
     else if((GetKeyState('D') & 0x8000) || (GetKeyState(VK_RIGHT) & 0x8000))
     {
         return 3;
-    }
-    else if(GetKeyState(VK_ESCAPE) & 0x8000)
-    {
-        return 20;
     }
     return 10; //return null if no valid input
 }
@@ -196,6 +192,21 @@ void Player::autoSolver()
                 loadStack(getOpposite(current)); //Reload stack
             }
         }
+    }
+    return;
+}
+
+//The encapsulated master control for player
+void Player::nextTurn()
+{
+    cout << autoSolve << endl;
+    if(autoSolve) //If auto solve is toggled
+    {
+        autoSolver(); //Use auto solver
+    }
+    else //else, manually get input and update positions
+    {
+        updatePosition(getInput(), true);
     }
     return;
 }
