@@ -37,7 +37,7 @@ int main()
 {
     Wall wallObj(178, 15); //Initialize wall
     Space spaceObj(0, 15); //Initialize space
-    Exit exitObj(64, 15, false, nullptr, 10, 10); //Initilaize exit
+    Exit exitObj(64, 15, false, nullptr, 10, 9); //Initilaize exit
     Crumb crumbObj(42, 15); //Initialize crumb
     Player playerObj(168, 15, 2, 2, false, nullptr, &crumbObj); //Initialize Player
 
@@ -75,7 +75,7 @@ int main()
         system("CLS");
     }
 
-
+    cout << "You Win!" << endl;
 
     cout << endl << "End Program" << endl;
     return 0;
