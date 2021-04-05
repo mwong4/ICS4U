@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 28, 2020
-Date Updated: Apr 4, 2020
+Date Updated: Apr 5, 2020
 Purpose: Header file for Player class
 Type: Header
 */
@@ -25,11 +25,11 @@ class Player : public Interactable
 
         void toggleAutoSolver(); //Used to toggle auto solver
 
-        char getInput(); //Get's input from user when manually controlling
+        int getInput(); //Get's input from user when manually controlling
         bool checkSolid(); //Returns if solid or not
-        bool updatePosition(char, bool); //Checks to see if inputed move is legal and if good, Updates position of player
-        void loadStack(char); //Loads stack exlucing char inputted
-        char getOpposite(char); //Returns the opposite direction of input char
+        bool updatePosition(int, bool); //Checks to see if inputed move is legal and if good, Updates position of player
+        void loadStack(int); //Loads stack exlucing char inputted
+        int getOpposite(int); //Returns the opposite direction of input char
         void autoSolver(); //Remote control for user, called on each step aotu-taken by algorithm
 
         //getters/setters

@@ -6,8 +6,6 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--Redo directions with int
--Fix Map
 
 -Set up basic electronics
 -Set up main

@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 23, 2020
-Date Updated: Mar 25, 2020
+Date Updated: Apr 5, 2020
 Purpose: Header File for Node class, for auto-solver
 Type: Header
 */
@@ -18,14 +18,14 @@ class Node
 
     public:
         Node();
-        Node(const char, Node*); //Custom constructor
+        Node(const int, Node*); //Custom constructor
         virtual ~Node();
 
         void display() const;
 
     protected:
         Node* ptr_next; //Next element
-        char direction; //content of the node
+        int direction; //content of the node, (0U, 1L, 2D, 3R, 30B)
 
     private:
 

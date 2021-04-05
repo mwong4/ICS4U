@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 23, 2020
-Date Updated: Mar 25, 2020
+Date Updated: Apr 5, 2020
 Purpose: Source File for Stack, for auto-solver
 Type: Source
 */
@@ -28,8 +28,8 @@ Stack::~Stack()
 }
 
 //general functions
-//Push to top of stack
-void Stack::push(char _direction)
+//Push to top of stack (0U, 1L, 2D, 3R, 30B)
+void Stack::push(int _direction)
 {
     //initialize with direction and next being current top
     Node *tempNode = new Node(_direction, ptr_top); //new node to be pushed onto stack
@@ -38,10 +38,10 @@ void Stack::push(char _direction)
     return;
 }
 
-//Pop top and return content
-char Stack::pop()
+//Pop top and return content (0U, 1L, 2D, 3R)
+int Stack::pop()
 {
-    char tempDirection = 'N'; //Used to store direction
+    int tempDirection = 0; //Used to store direction
 
     if(count > 0) //if top exists
     {
@@ -66,7 +66,7 @@ void Stack::clear()
 }
 
 //Return value at top
-char Stack::peak() const
+int Stack::peak() const
 {
     return (*ptr_top).direction;
 }

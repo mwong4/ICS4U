@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 23, 2020
-Date Updated: Mar 25, 2020
+Date Updated: Apr 5, 2020
 Purpose: Source File for Node class, for auto-solver
 Type: Source
 */
@@ -11,12 +11,12 @@ Type: Source
 Node::Node()
 {
     //ctor
-    direction = ' '; //null
+    direction = 0; //null
     ptr_next = nullptr;
 }
 
 //Custom constructor
-Node::Node(const char _direction, Node *_next)
+Node::Node(const int _direction, Node *_next)
 {
     direction = _direction; //set direction, next is null
     ptr_next = _next;

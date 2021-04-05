@@ -1,15 +1,9 @@
 /*
 Author: Max Wong
 Date Created: Mar 23, 2020
-Date Updated: Mar 25, 2020
+Date Updated: Apr 5, 2020
 Purpose: Header File for Stack class, for auto-solver
 Type: Header
-
-peak
-push
-pop
-clear
-display
 */
 
 #ifndef STACK_H
@@ -26,10 +20,10 @@ class Stack
         virtual ~Stack();
 
         //general functions
-        void push(char); //Push to top of stack
-        char pop(); //Pop top and return content
+        void push(int); //Push to top of stack
+        int pop(); //Pop top and return content
         void clear(); //Clear whole chain
-        char peak() const; //Return value at top
+        int peak() const; //Return value at top
         void display() const; //display whole chain
 
     protected:
