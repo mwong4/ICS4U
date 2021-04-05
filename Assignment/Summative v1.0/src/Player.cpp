@@ -18,6 +18,7 @@ Player::Player()
     yCoord = 0;
     autoSolve = true;
     directions = new Stack();
+    loadStack(' '); //Load stack
     ptr_crumb = nullptr;
 }
 
@@ -28,6 +29,7 @@ Player::Player(int _symbol, int _colour, int _x, int _y, bool _auto, Map *_map, 
     yCoord = _y;
     autoSolve = _auto;
     directions = new Stack();
+    loadStack(' '); //Load stack
     ptr_crumb = _crumb;
 }
 
@@ -122,9 +124,59 @@ bool Player::updatePosition(char _direction)
     }
 }
 
+//Returns true
 bool Player::checkSolid()
 {
     return true;
+}
+
+//Loads stack exlucing char inputted
+void Player::loadStack(char _exclude)
+{
+    if(_exclude != 'R') //If exclude char is not right, push right
+    {
+        (*directions).push('R');
+    }
+    if(_exclude != 'L') //If exclude char is not left, push left
+    {
+        (*directions).push('L');
+    }
+    if(_exclude != 'D') //If exclude char is not down, push down
+    {
+        (*directions).push('D');
+    }
+    if(_exclude != 'U') //If exclude char is not up, push up
+    {
+        (*directions).push('U');
+    }
+    return;
+}
+
+//Remote control for user, called on each step aotu-taken by algorithm
+void Player::autoSolver()
+{
+    char current; //Current direction described by stack
+    bool finishedMove = false; //Turned true when position is successfully updated
+
+    while(!finishedMove)
+    {
+        if((*directions).peak() == 'B') //if current top is a backtrack
+        {
+            (*directions).pop();
+            //////////////////////////////////////////////////////// Make sure next turn B is not pushed
+        }
+        else
+        {
+            current = (*directions).pop(); //get and pop top
+            if(updatePosition(current)) //Try and update position, if success
+            {
+                finishedMove = true; //close down loop
+                loadStack(current); //Reload stack
+                //////////////////////////////////////////////////// Make sure next turn B is not pushed
+            }
+        }
+    }
+    return;
 }
 
 //getters/setters

@@ -28,6 +28,8 @@ class Player : public Interactable
         char getInput(); //Get's input from user when manually controlling
         bool checkSolid(); //Returns if solid or not
         bool updatePosition(char); //Checks to see if inputed move is legal and if good, Updates position of player
+        void loadStack(char); //Loads stack exlucing char inputted
+        void autoSolver(); //Remote control for user, called on each step aotu-taken by algorithm
 
         //getters/setters
         int getX() const;

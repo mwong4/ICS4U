@@ -20,7 +20,6 @@ Stack::Stack(int _count)
 {
     count = _count;
     ptr_top = nullptr;
-
 }
 
 Stack::~Stack()
