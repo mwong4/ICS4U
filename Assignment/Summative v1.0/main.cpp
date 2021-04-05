@@ -63,13 +63,14 @@ int main()
     Map myMap(10, 10, mapOne, exit, plyr, emty); //initiaize map object
     playerObj.setMap(&myMap); //Set map for player
 
-    while(true)
+    while(!myMap.checkWin())
     {
         //cout << "Is Solid: " << playerObj.updatePosition(playerObj.getInput(), true) << endl;
         playerObj.autoSolver();
         myMap.printMap(); //Print map
         cout << playerObj.getX() << "," << playerObj.getY() << endl;
         cout << "Container: " << (*myMap.getContainer()).getSymbol() << endl;
+        cout << "Check win: " << myMap.checkWin() << endl;
         system("PAUSE");
         system("CLS");
     }

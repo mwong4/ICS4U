@@ -77,7 +77,6 @@ char Player::getInput()
 //Checks to see if inputed move is legal and if good, Updates position of player
 bool Player::updatePosition(char _direction, bool _backTracking)
 {
-    cout << "Input: " << _direction << endl;
     int xShift = 0; //The shift in X or Y
     int yShift = 0;
     //Interactable **ptr_tempContainer;
@@ -104,22 +103,21 @@ bool Player::updatePosition(char _direction, bool _backTracking)
     //Check validity of shift, if outside map size
     if((xCoord + xShift) < 1 || (xCoord + xShift) > (*ptr_map).getWidth() || (yCoord + yShift) < 1 || (yCoord + yShift) > (*ptr_map).getHeight())
     {
-        cout << "[ERROR] direction " << _direction << " outside map" << endl;
+        //cout << "[ERROR] direction " << _direction << " outside map" << endl;
         return false;
     }
     else if((*(*ptr_map).getInteractable((xCoord + xShift), (yCoord + yShift))).checkSolid()) //If new spot chosen is solid
     {
-        cout << "[ERROR] direction " << _direction << " is solid" << endl;
+        //cout << "[ERROR] direction " << _direction << " is solid" << endl;
         return false;
     }
     else if((*(*ptr_map).getInteractable((xCoord + xShift), (yCoord + yShift))).getSymbol() == '*' && !_backTracking) //If next position has crumb and player is not backtracking
     {
-        cout << "[ERROR] direction " << _direction << " is illegal backtrack" << endl;
+        //cout << "[ERROR] direction " << _direction << " is illegal backtrack" << endl;
         return false;
     }
     else //otherwise all good, update position and map
     {
-        cout << "Went direction: " << _direction << endl;
         if((*(*ptr_map).getContainer()).getSymbol() == emptySymbol) //If container value was "space"
         {
             (*ptr_map).setContainer(ptr_crumb); //Set container as a crumb
