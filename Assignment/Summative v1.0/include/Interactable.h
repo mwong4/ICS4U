@@ -25,6 +25,7 @@ class Interactable
 
         //getters/setters
         char getSymbol() const;
+        void setSymbol(char);
         int getColour() const;
         void setColour(int);
 

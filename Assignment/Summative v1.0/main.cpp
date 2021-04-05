@@ -6,9 +6,6 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--Wire
-
--Gate
 -Toggle
 
 -Set up main

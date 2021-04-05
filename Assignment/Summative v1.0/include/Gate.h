@@ -2,23 +2,23 @@
 Author: Max Wong
 Date Created: Apr 5, 2021
 Date Updated: Apr 5, 2021
-Purpose: Header file for wire class
+Purpose: Header file for gate class
 Type: Header
 */
 
-#ifndef WIRE_H
-#define WIRE_H
+#ifndef GATE_H
+#define GATE_H
 
 #include "Electronic.h" //include electronic class
 
 using namespace std;
 
-class Wire : public Electronic
+class Gate : public Electronic
 {
     public:
-        Wire();
-        Wire(int, int, bool, Electronic*, int); //Custom constructor
-        virtual ~Wire();
+        Gate();
+        Gate(int, int, bool, Electronic*, int, int); //Custom constructor
+        virtual ~Gate();
 
         bool checkSolid(); //Returns solidity status
         void toggle(); //Toggles power and other stuff
@@ -26,6 +26,7 @@ class Wire : public Electronic
     protected:
 
     private:
+        char alternateSymbol;
 };
 
-#endif // WIRE_H
+#endif // GATE_H

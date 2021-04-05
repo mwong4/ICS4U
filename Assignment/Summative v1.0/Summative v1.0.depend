@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1617640800 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
+1617651905 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
 	<iostream>
 	"Map.h"
 	"Interactable.h"
@@ -25,7 +25,7 @@
 	"Interactable.h"
 	"Map.h"
 
-1617648581 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
+1617652252 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
 
 1617640792 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\map.cpp
 	"Map.h"
@@ -83,9 +83,15 @@
 1617648931 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\electronic.h
 	"Interactable.h"
 
-1617648487 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\wire.cpp
+1617651809 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\wire.cpp
 	"Wire.h"
 
-1617642275 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\wire.h
+1617650970 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\wire.h
+	"Electronic.h"
+
+1617652309 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\gate.cpp
+	"Gate.h"
+
+1617651715 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\gate.h
 	"Electronic.h"
 

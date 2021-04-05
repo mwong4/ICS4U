@@ -41,6 +41,12 @@ char Interactable::getSymbol() const
     return symbol;
 }
 
+void Interactable::setSymbol(char _symbol)
+{
+    symbol = _symbol;
+    return;
+}
+
 int Interactable::getColour() const
 {
     return colour;
