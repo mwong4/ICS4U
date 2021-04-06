@@ -209,9 +209,13 @@ void Player::nextTurn()
         updatePosition(getInput(), true);
     }
 
-    if((*(*ptr_map).getContainer()).getSymbol() == '[' || (*(*ptr_map).getContainer()).getSymbol() == ']') //If player is on the switch, use it
+    //If player is on the switch
+    if((*(*ptr_map).getContainer()).getSymbol() == '[' || (*(*ptr_map).getContainer()).getSymbol() == ']')
     {
-        (*(*ptr_map).getContainer()).togglePower();
+        (*(*ptr_map).getContainer()).togglePower(); //use switch
+        (*ptr_map).clearCrumbs(); //Clear crumbs
+        (*directions).clear(); //Clear stack
+        loadStack(' '); //Reload stack
     }
     return;
 }

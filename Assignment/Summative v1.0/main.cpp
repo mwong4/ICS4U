@@ -6,10 +6,6 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--clear crumbs iterator
--Set up AI electronic support
--Toggling electronics when manual
-
 -Buggy Movement
 -Set up main
 -Button Toggle
