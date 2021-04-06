@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2021
-Date Updated: Apr 4, 2021
+Date Updated: Apr 6, 2021
 Purpose: Source file for Map class
 Type: Source
 */
@@ -17,6 +17,7 @@ Map::Map()
     ptr_mazeExit = nullptr;
     ptr_player = nullptr;
     ptr_container = nullptr;
+    ptr_empty = nullptr;
     for(int i = 0; i < 100; i++) //Set whole map to null by default
     {
         mapArray[i] = nullptr;
@@ -24,16 +25,17 @@ Map::Map()
 }
 
 //Custom constructor
-Map::Map(int _width, int _height, Interactable *_map[], Interactable* _exit, Interactable* _player, Interactable* _container)
+Map::Map(int _width, int _height, Interactable *_map[], Interactable* _exit, Interactable* _player, Interactable* _container, Interactable* _empty)
 {
     width = _width;
     height = _height;
     ptr_mazeExit = _exit;
     ptr_player = _player;
     ptr_container = _container;
+    ptr_empty = _empty;
 
     //set class var to input
-    for(int i = 0; i < 100; i++) //go through whole 2d array
+    for(int i = 0; i < (_width*_height); i++) //go through whole 2d array
     {
         mapArray[i] = _map[i]; //set each spot
     }
@@ -49,7 +51,7 @@ void Map::printMap() const
 {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
-    for(int i = 1; i < 101; i++) //go through whole 2d array
+    for(int i = 1; i < width*height+1; i++) //go through whole 2d array
     {
          SetConsoleTextAttribute(hConsole, (*mapArray[i-1]).getColour()); //Set colour based on colour property
         if(mapArray[i-1] == ptr_mazeExit) //Check if pointer is exit
@@ -99,6 +101,13 @@ void Map::swapInteractable(Interactable** _ptrOne, Interactable** _ptrTwo)
     return; //return void
 }
 
+//Used to set a certain spot
+void Map::setSpot(Interactable* _input, int _index)
+{
+    mapArray[_index] = _input;
+    return;
+}
+
 //used to check and see if player is at exit
 bool Map::checkWin() const
 {
@@ -109,6 +118,20 @@ bool Map::checkWin() const
     return false; //else return false
 }
 
+//Iterator for clearing all crumbs
+void Map::clearCrumbs()
+{
+    for(int i = 0; i < width*height; i++) //Go through whole map
+    {
+        if((*mapArray[i]).getSymbol() == '*') //If crumb is found
+        {
+            setSpot(ptr_empty, i); //call setter to set spot to empty
+        }
+    }
+    return;
+}
+
+//getters/setters
 int Map::getWidth() const
 {
     return width;

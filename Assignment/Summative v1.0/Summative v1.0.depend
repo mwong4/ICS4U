@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1617656349 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
+1617724754 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
 	<iostream>
 	"Map.h"
 	"Interactable.h"
@@ -8,6 +8,9 @@
 	"Exit.h"
 	"Player.h"
 	"Crumb.h"
+	"Wire.h"
+	"Gate.h"
+	"Toggle.h"
 
 1617640923 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\stack.cpp
 	"Stack.h"
@@ -21,17 +24,17 @@
 1617640908 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\node.cpp
 	"Node.h"
 
-1617652372 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\interactable.cpp
+1617718769 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\interactable.cpp
 	"Interactable.h"
 	"Map.h"
 
-1617652252 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
+1617718775 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
 
-1617640792 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\map.cpp
+1617724794 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\map.cpp
 	"Map.h"
 	"Interactable.h"
 
-1617640797 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\map.h
+1617724699 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\map.h
 	<iostream>
 	<windows.h>
 	"Interactable.h"
@@ -59,7 +62,7 @@
 1617640859 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\exit.h
 	"Interactable.h"
 
-1617640913 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\player.cpp
+1617718763 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\player.cpp
 	"Player.h"
 	"Interactable.h"
 	"Map.h"
@@ -95,8 +98,9 @@
 1617655372 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\gate.h
 	"Electronic.h"
 
-1617655258 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\toggle.cpp
+1617656467 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\toggle.cpp
 	"Toggle.h"
 
-1617655258 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\toggle.h
+1617655929 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\toggle.h
+	"Electronic.h"
 

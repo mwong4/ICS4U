@@ -3,15 +3,21 @@
 
 using namespace std;
 
+void print(int);
+
 int main()
 {
-    test a;
-    test *b;
-    test **c;
-
-    b = &a;
-    c = &b;
+    for(int i = 0; i < 225; i++)
+    {
+        print(i);
+    }
 
     cout << "Hello world!" << endl;
     return 0;
+}
+
+void print(int _input)
+{
+    char temp = _input;
+    cout << _input << ". " << temp << endl;
 }

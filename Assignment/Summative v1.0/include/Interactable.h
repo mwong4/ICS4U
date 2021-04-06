@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2021
-Date Updated: Mar 29, 2021
+Date Updated: Apr 6, 2021
 Purpose: Header file for Interactable class
 Type: Header
 */
@@ -35,6 +35,7 @@ class Interactable
         virtual int getX() const;
         virtual int getY() const;
         virtual void setMap(Map*);
+        virtual void togglePower(); //Used on all electronics to toggle power and extra stuff
 
     protected:
 

@@ -1,16 +1,16 @@
 /*
 Author: Max Wong
 Date Created: Mar 23, 2021
-Date Updated: Apr 5, 2021
+Date Updated: Apr 6, 2021
 Purpose: Final project for ICS4U
 Type: Main
 
 TODO
-
+-clear crumbs iterator
+-Set up AI electronic support
 -Toggling electronics when manual
--Use Toggle
--Tests
 
+-Buggy Movement
 -Set up main
 -Button Toggle
 -Portal
@@ -30,37 +30,52 @@ Sources
 #include "Exit.h" //include exit class
 #include "Player.h" //include player class
 #include "Crumb.h" //include crumb class
+#include "Wire.h" //include wire class
+#include "Gate.h" //include gate class
+#include "Toggle.h" //include toggle class
 
 using namespace std;
 
 int main()
 {
+    //Basic Objects
     Wall wallObj(178, 15); //Initialize wall
     Space spaceObj(0, 15); //Initialize space
-    Exit exitObj(64, 15, false, nullptr, 10, 2); //Initilaize exit
+    Exit exitObj(69, 15, false, nullptr, 11, 1); //Initilaize exit
     Crumb crumbObj(42, 15); //Initialize crumb
-    Player playerObj(168, 15, 3, 4, false, nullptr, &crumbObj); //Initialize Player
+    Player playerObj(129, 15, 3, 4, false, nullptr, &crumbObj); //Initialize Player
 
+    //Electronics
+    Gate gateObj(177, 15, false, 6, 0);
+    Wire wireObj(35, 15, false, &gateObj, 6);
+    Toggle toggleObj(91, 15, false, &wireObj, 6, 93);
+
+
+    //Pointers for map
     Interactable *wall = &wallObj;
     Interactable *emty = &spaceObj;
     Interactable *exit = &exitObj;
     Interactable *plyr = &playerObj;
+    Interactable *tog1 = &toggleObj;
+    Interactable *wir1 = &wireObj;
+    Interactable *gat1 = &gateObj;
 
-    Interactable* mapOne[100] = //initialize array of interactables for map
+    Interactable* mapOne[121] = //initialize array of interactables for map
     {
-        wall, emty, emty, emty, wall, emty, wall, wall, wall, wall,
-        wall, emty, wall, emty, wall, emty, emty, emty, emty, exit,
-        emty, emty, emty, emty, wall, wall, emty, wall, wall, wall,
-        emty, wall, plyr, wall, wall, wall, emty, emty, emty, wall,
-        emty, emty, emty, emty, wall, wall, emty, wall, emty, wall,
-        wall, wall, wall, emty, wall, wall, emty, wall, emty, wall,
-        emty, emty, emty, emty, emty, wall, emty, emty, emty, wall,
-        emty, wall, emty, wall, emty, wall, emty, wall, wall, wall,
-        emty, emty, emty, wall, emty, emty, emty, wall, wall, wall,
-        wall, wall, wall, wall, wall, wall, wall, wall, wall, wall
+        wall, emty, emty, emty, wall, emty, wall, emty, wall, wall, exit,
+        wall, emty, wall, emty, wall, emty, emty, emty, wall, wall, emty,
+        emty, emty, emty, emty, wall, wall, emty, wall, emty, emty, gat1,
+        emty, wall, plyr, wall, wall, wall, emty, emty, emty, wall, wir1,
+        emty, emty, emty, emty, wall, wall, emty, wall, emty, wall, wir1,
+        wall, wall, wall, emty, wall, wall, emty, wall, emty, wall, wir1,
+        emty, emty, emty, emty, emty, wall, emty, emty, emty, wall, wir1,
+        emty, wall, emty, wall, emty, wall, emty, wall, wall, wall, wir1,
+        emty, emty, emty, wall, emty, emty, emty, tog1, wir1, wir1, wir1,
+        wall, wall, wall, wall, wall, emty, wall, wall, wall, wall, wall,
+        wall, wall, emty, emty, emty, emty, emty, emty, wall, wall, wall
     };
 
-    Map myMap(10, 10, mapOne, exit, plyr, emty); //initiaize map object
+    Map myMap(11, 11, mapOne, exit, plyr, emty, emty); //initiaize map object
     playerObj.setMap(&myMap); //Set map for player
 
     ////////////////////////////////////////////////////////////////////////////////////////////

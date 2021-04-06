@@ -35,24 +35,32 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Crumb.h" />
+		<Unit filename="include/Electronic.h" />
 		<Unit filename="include/Exit.h" />
+		<Unit filename="include/Gate.h" />
 		<Unit filename="include/Interactable.h" />
 		<Unit filename="include/Map.h" />
 		<Unit filename="include/Node.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="include/Space.h" />
 		<Unit filename="include/Stack.h" />
+		<Unit filename="include/Toggle.h" />
 		<Unit filename="include/Wall.h" />
+		<Unit filename="include/Wire.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Crumb.cpp" />
+		<Unit filename="src/Electronic.cpp" />
 		<Unit filename="src/Exit.cpp" />
+		<Unit filename="src/Gate.cpp" />
 		<Unit filename="src/Interactable.cpp" />
 		<Unit filename="src/Map.cpp" />
 		<Unit filename="src/Node.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Unit filename="src/Space.cpp" />
 		<Unit filename="src/Stack.cpp" />
+		<Unit filename="src/Toggle.cpp" />
 		<Unit filename="src/Wall.cpp" />
+		<Unit filename="src/Wire.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

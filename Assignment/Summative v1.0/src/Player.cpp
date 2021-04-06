@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 28, 2021
-Date Updated: Apr 5, 2021
+Date Updated: Apr 6, 2021
 Purpose: Source file for Player class
 Type: Source
 */
@@ -207,6 +207,11 @@ void Player::nextTurn()
     else //else, manually get input and update positions
     {
         updatePosition(getInput(), true);
+    }
+
+    if((*(*ptr_map).getContainer()).getSymbol() == '[' || (*(*ptr_map).getContainer()).getSymbol() == ']') //If player is on the switch, use it
+    {
+        (*(*ptr_map).getContainer()).togglePower();
     }
     return;
 }

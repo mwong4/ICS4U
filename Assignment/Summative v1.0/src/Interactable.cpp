@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2021
-Date Updated: Mar 29, 2021
+Date Updated: Par 6, 2021
 Purpose: Source file for Interactable class
 Type: Source
 */
@@ -79,6 +79,11 @@ int Interactable::getY() const
 }
 
 void Interactable::setMap(Map *_map)
+{
+    return;
+}
+
+void Interactable::togglePower()
 {
     return;
 }
