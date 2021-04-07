@@ -15,7 +15,7 @@ Toggle::Toggle() : Electronic()
 }
 
 //Custom constructor
-Toggle::Toggle(int _symbol, int _colour, bool _powered, Electronic* _next, int _altColour, int _altSymbol) : Electronic(_symbol, _colour, _powered, _next, _altColour)
+Toggle::Toggle(int _symbol, int _colour, bool _powered, Interactable* _next, int _altColour, int _altSymbol) : Electronic(_symbol, _colour, _powered, _next, _altColour)
 {
     alternateSymbol = _altSymbol;
 }

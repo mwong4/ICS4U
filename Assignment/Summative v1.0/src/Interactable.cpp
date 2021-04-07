@@ -83,6 +83,16 @@ void Interactable::setMap(Map *_map)
     return;
 }
 
+void Interactable::toggleAutoSolver()
+{
+    return;
+}
+
+void Interactable::nextTurn()
+{
+    return;
+}
+
 void Interactable::togglePower()
 {
     return;

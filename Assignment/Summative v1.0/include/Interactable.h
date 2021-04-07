@@ -35,6 +35,8 @@ class Interactable
         virtual int getX() const;
         virtual int getY() const;
         virtual void setMap(Map*);
+        virtual void toggleAutoSolver(); //For player, auto solver
+        virtual void nextTurn();
         virtual void togglePower(); //Used on all electronics to toggle power and extra stuff
 
     protected:

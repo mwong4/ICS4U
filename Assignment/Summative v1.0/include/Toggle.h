@@ -17,7 +17,7 @@ class Toggle : public Electronic
 {
     public:
         Toggle();
-        Toggle(int, int, bool, Electronic*, int, int); //Custom constructor
+        Toggle(int, int, bool, Interactable*, int, int); //Custom constructor
         virtual ~Toggle();
 
         bool checkSolid(); //Returns solidity status

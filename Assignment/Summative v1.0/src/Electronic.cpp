@@ -17,7 +17,7 @@ Electronic::Electronic() : Interactable()
 }
 
 //Custom constructor
-Electronic::Electronic(int _symbol, int _colour, bool _powered, Electronic* _next, int _altColour) : Interactable(_symbol, _colour)
+Electronic::Electronic(int _symbol, int _colour, bool _powered, Interactable* _next, int _altColour) : Interactable(_symbol, _colour)
 {
     powered = _powered;
     ptr_next = _next;

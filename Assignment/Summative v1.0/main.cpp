@@ -7,7 +7,7 @@ Type: Main
 
 TODO
 -Buggy Movement
--Set up main
+-Multi Maps
 -Button Toggle
 -Portal
 
@@ -34,45 +34,35 @@ using namespace std;
 
 int main()
 {
-    //Basic Objects
-    Wall wallObj(178, 15); //Initialize wall
-    Space spaceObj(0, 15); //Initialize space
-    Exit exitObj(69, 15, false, nullptr, 11, 1); //Initilaize exit
+    //Pointers for map, initialize variables
+    Interactable *wal1 = new Wall(178, 15); //Initialize wall;
+    Interactable *emt1 = new Space(0, 15); //Initialize space;
+    Interactable *ext1 = new Exit(69, 15, false, nullptr, 11, 1); //Initilaize exit
     Crumb crumbObj(42, 15); //Initialize crumb
-    Player playerObj(129, 15, 3, 4, false, nullptr, &crumbObj); //Initialize Player
-
+    Interactable *ply1 = new Player(129, 15, 3, 4, false, nullptr, &crumbObj); //Initialize Player
     //Electronics
-    Gate gateObj(177, 15, false, 6, 0);
-    Wire wireObj(35, 15, false, &gateObj, 6);
-    Toggle toggleObj(91, 15, false, &wireObj, 6, 93);
+    Interactable *gat1 = new Gate(177, 15, false, 6, 0);
+    Interactable *wir1 = new Wire(35, 15, false, gat1, 6);
+    Interactable *tog1 = new Toggle(91, 15, false, wir1, 6, 93);
 
-
-    //Pointers for map
-    Interactable *wall = &wallObj;
-    Interactable *emty = &spaceObj;
-    Interactable *exit = &exitObj;
-    Interactable *plyr = &playerObj;
-    Interactable *tog1 = &toggleObj;
-    Interactable *wir1 = &wireObj;
-    Interactable *gat1 = &gateObj;
 
     Interactable* mapOne[121] = //initialize array of interactables for map
     {
-        wall, emty, emty, emty, wall, emty, wall, emty, wall, wall, exit,
-        wall, emty, wall, emty, wall, emty, emty, emty, wall, wall, emty,
-        emty, emty, emty, emty, wall, wall, emty, wall, emty, emty, gat1,
-        emty, wall, plyr, wall, wall, wall, emty, emty, emty, wall, wir1,
-        emty, emty, emty, emty, wall, wall, emty, wall, emty, wall, wir1,
-        wall, wall, wall, emty, wall, wall, emty, wall, emty, wall, wir1,
-        emty, emty, emty, emty, emty, wall, emty, emty, emty, wall, wir1,
-        emty, wall, emty, wall, emty, wall, emty, wall, wall, wall, wir1,
-        emty, emty, emty, wall, emty, emty, emty, tog1, wir1, wir1, wir1,
-        wall, wall, wall, wall, wall, emty, wall, wall, wall, wall, wall,
-        wall, wall, emty, emty, emty, emty, emty, emty, wall, wall, wall
+        wal1, emt1, emt1, emt1, wal1, emt1, wal1, emt1, wal1, wal1, ext1,
+        wal1, emt1, wal1, emt1, wal1, emt1, emt1, emt1, wal1, wal1, emt1,
+        emt1, emt1, emt1, emt1, wal1, wal1, emt1, wal1, emt1, emt1, gat1,
+        emt1, wal1, ply1, wal1, wal1, wal1, emt1, emt1, emt1, wal1, wir1,
+        emt1, emt1, emt1, emt1, wal1, wal1, emt1, wal1, emt1, wal1, wir1,
+        wal1, wal1, wal1, emt1, wal1, wal1, emt1, wal1, emt1, wal1, wir1,
+        emt1, emt1, emt1, emt1, emt1, wal1, emt1, emt1, emt1, wal1, wir1,
+        emt1, wal1, emt1, wal1, emt1, wal1, emt1, wal1, wal1, wal1, wir1,
+        emt1, emt1, emt1, wal1, emt1, emt1, emt1, tog1, wir1, wir1, wir1,
+        wal1, wal1, wal1, wal1, wal1, emt1, wal1, wal1, wal1, wal1, wal1,
+        wal1, wal1, emt1, emt1, emt1, emt1, emt1, emt1, wal1, wal1, wal1
     };
 
-    Map myMap(11, 11, mapOne, exit, plyr, emty, emty); //initiaize map object
-    playerObj.setMap(&myMap); //Set map for player
+    Map myMap(11, 11, mapOne, exit, plyr, emt1, emt1); //initiaize map object
+    (*plyr).setMap(&myMap); //Set map for player
 
     ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -82,7 +72,7 @@ int main()
     cin >> input;
     if(input == "1") //Get user choice on auto vs manual
     {
-        playerObj.toggleAutoSolver();
+        (*plyr).toggleAutoSolver();
     }
 
     //Gameloop, kepp running until player reaches exit
@@ -92,7 +82,7 @@ int main()
         {
             cout << "WASD or Arrow keys to move" << endl;
         }
-        playerObj.nextTurn(); //Call function to get next turn, encapsulated
+        (*plyr).nextTurn(); //Call function to get next turn, encapsulated
         myMap.printMap(); //Print map
 
         system("PAUSE"); //Get any input before clearing screen

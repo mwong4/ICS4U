@@ -17,7 +17,7 @@ class Electronic : public Interactable
 {
     public:
         Electronic();
-        Electronic(int, int, bool, Electronic*, int); //Custom constructor
+        Electronic(int, int, bool, Interactable*, int); //Custom constructor
         virtual ~Electronic();
 
         virtual bool checkSolid(); //returns solidity
@@ -26,7 +26,7 @@ class Electronic : public Interactable
     protected:
         bool powered; //Store if component is powered
         int altColour; //Alternate colour when powered
-        Electronic *ptr_next; //Connects all electronics to a switch
+        Interactable *ptr_next; //Connects all electronics to a switch
 
     private:
 

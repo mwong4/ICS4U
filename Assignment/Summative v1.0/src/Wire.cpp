@@ -14,7 +14,7 @@ Wire::Wire() : Electronic()
 }
 
 //Custom constructor
-Wire::Wire(int _symbol, int _colour, bool _powered, Electronic* _next, int _altColour) : Electronic(_symbol, _colour, _powered, _next, _altColour)
+Wire::Wire(int _symbol, int _colour, bool _powered, Interactable* _next, int _altColour) : Electronic(_symbol, _colour, _powered, _next, _altColour)
 {
 
 }

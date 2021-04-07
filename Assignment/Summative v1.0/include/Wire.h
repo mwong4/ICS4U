@@ -17,7 +17,7 @@ class Wire : public Electronic
 {
     public:
         Wire();
-        Wire(int, int, bool, Electronic*, int); //Custom constructor
+        Wire(int, int, bool, Interactable*, int); //Custom constructor
         virtual ~Wire();
 
         bool checkSolid(); //Returns solidity status
