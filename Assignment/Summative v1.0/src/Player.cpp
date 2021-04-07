@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 28, 2021
-Date Updated: Apr 6, 2021
+Date Updated: Apr 7, 2021
 Purpose: Source file for Player class
 Type: Source
 */
@@ -75,8 +75,6 @@ bool Player::updatePosition(int _direction, bool _backTracking)
 {
     int xShift = 0; //The shift in X or Y
     int yShift = 0;
-    //Interactable **ptr_tempContainer;
-    //Interactable **ptr_tempObject;
     char emptySymbol = 0; //Used to compare and check container value
 
     //Convert direction into shift (0U, 1L, 2D, 3R, 30B)
@@ -96,21 +94,22 @@ bool Player::updatePosition(int _direction, bool _backTracking)
     {
         xShift = 1;
     }
+    else //If some rand or null value, return false
+    {
+        return false;
+    }
 
     //Check validity of shift, if outside map size
     if((xCoord + xShift) < 1 || (xCoord + xShift) > (*ptr_map).getWidth() || (yCoord + yShift) < 1 || (yCoord + yShift) > (*ptr_map).getHeight())
     {
-        //cout << "[ERROR] direction " << _direction << " outside map" << endl;
         return false;
     }
     else if((*(*ptr_map).getInteractable((xCoord + xShift), (yCoord + yShift))).checkSolid()) //If new spot chosen is solid
     {
-        //cout << "[ERROR] direction " << _direction << " is solid" << endl;
         return false;
     }
     else if((*(*ptr_map).getInteractable((xCoord + xShift), (yCoord + yShift))).getSymbol() == '*' && !_backTracking) //If next position has crumb and player is not backtracking
     {
-        //cout << "[ERROR] direction " << _direction << " is illegal backtrack" << endl;
         return false;
     }
     else //otherwise all good, update position and map
@@ -174,7 +173,6 @@ void Player::autoSolver()
     {
         if((*directions).peak() == 30) //if current top is a backtrack
         {
-            cout << "Backtracking!" << endl;
             (*directions).pop(); //pop marker
             backTracking = true; //Set backtracking to true
         }
@@ -199,7 +197,6 @@ void Player::autoSolver()
 //The encapsulated master control for player
 void Player::nextTurn()
 {
-    cout << autoSolve << endl;
     if(autoSolve) //If auto solve is toggled
     {
         autoSolver(); //Use auto solver

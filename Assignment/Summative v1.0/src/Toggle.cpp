@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Apr 5, 2021
-Date Updated: Apr 5, 2021
+Date Updated: Apr 7, 2021
 Purpose: Source file for toggle class
 Type: Source
 */

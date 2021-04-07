@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 23, 2021
-Date Updated: Apr 6, 2021
+Date Updated: Apr 7, 2021
 Purpose: Final project for ICS4U
 Type: Main
 
@@ -61,8 +61,8 @@ int main()
         wal1, wal1, emt1, emt1, emt1, emt1, emt1, emt1, wal1, wal1, wal1
     };
 
-    Map myMap(11, 11, mapOne, exit, plyr, emt1, emt1); //initiaize map object
-    (*plyr).setMap(&myMap); //Set map for player
+    Map myMapOne(11, 11, mapOne, ext1, ply1, emt1, emt1); //initiaize map object
+    (*ply1).setMap(&myMapOne); //Set map for player
 
     ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -72,18 +72,18 @@ int main()
     cin >> input;
     if(input == "1") //Get user choice on auto vs manual
     {
-        (*plyr).toggleAutoSolver();
+        (*ply1).toggleAutoSolver();
     }
 
     //Gameloop, kepp running until player reaches exit
-    while(!myMap.checkWin())
+    while(!myMapOne.checkWin())
     {
         if(input != "1") //if manual, display instructions
         {
             cout << "WASD or Arrow keys to move" << endl;
         }
-        (*plyr).nextTurn(); //Call function to get next turn, encapsulated
-        myMap.printMap(); //Print map
+        (*ply1).nextTurn(); //Call function to get next turn, encapsulated
+        myMapOne.printMap(); //Print map
 
         system("PAUSE"); //Get any input before clearing screen
         system("CLS");

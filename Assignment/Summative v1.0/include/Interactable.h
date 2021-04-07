@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2021
-Date Updated: Apr 6, 2021
+Date Updated: Apr 7, 2021
 Purpose: Header file for Interactable class
 Type: Header
 */

@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2021
-Date Updated: Par 6, 2021
+Date Updated: Par 7, 2021
 Purpose: Source file for Interactable class
 Type: Source
 */
