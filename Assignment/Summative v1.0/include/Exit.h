@@ -16,13 +16,12 @@ class Exit : public Interactable
 {
     public:
         Exit();
-        Exit(int, int, bool, Map*, int, int); //Custom constructor
+        Exit(int, int, bool, int, int); //Custom constructor
         virtual ~Exit();
 
         bool checkSolid(); //Returns if solid or not
 
         //Getters/Setters
-        Map* getNextMap() const;
         int getX() const;
         int getY() const;
         bool getHidden() const;
@@ -32,7 +31,6 @@ class Exit : public Interactable
 
     private:
         bool hidden; //stores if exit is hidden or not
-        Map* ptr_next; //Stores the next map
         int xCoord; //Stores position of exit
         int yCoord;
 };

@@ -209,6 +209,7 @@ void Player::nextTurn()
 {
     if(autoSolve) //If auto solve is toggled
     {
+        system("PAUSE");
         autoSolver(); //Use auto solver
     }
     else //else, manually get input and update positions

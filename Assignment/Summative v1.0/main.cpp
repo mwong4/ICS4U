@@ -7,8 +7,10 @@ Type: Main
 
 TODO
 -Multi Maps
--Button Toggle
 -Portal
+-Second Map
+-Link up
+-Menu/looping game
 
 Sources
 -"https://theasciicode.com.ar/" for ASCII character chart
@@ -32,37 +34,64 @@ Sources
 
 using namespace std;
 
+void play(Map*, Interactable*, string); //Used to play game, contains game loop
+
 int main()
 {
     //Pointers for map, initialize variables
-    Interactable *wal1 = new Wall(178, 15); //Initialize wall;
-    Interactable *emt1 = new Space(0, 15); //Initialize space;
-    Interactable *ext1 = new Exit(69, 15, false, nullptr, 11, 1); //Initilaize exit
+    Interactable *wall = new Wall(178, 15); //Initialize wall;
+    Interactable *emty = new Space(0, 15); //Initialize space;
     Crumb crumbObj(42, 15); //Initialize crumb
+
+    ///Map 1 Stuff
+    Interactable *ext1 = new Exit(69, 15, false, 11, 1); //Initilaize exit
     Interactable *ply1 = new Player(129, 15, 3, 4, false, nullptr, &crumbObj); //Initialize Player
     //Electronics
     Interactable *gat1 = new Gate(177, 15, false, 6, 0);
     Interactable *wir1 = new Wire(35, 15, false, gat1, 6);
     Interactable *tog1 = new Toggle(91, 15, false, wir1, 6, 93);
 
-
     Interactable* mapOne[121] = //initialize array of interactables for map
     {
-        wal1, emt1, emt1, emt1, wal1, emt1, wal1, emt1, wal1, wal1, ext1,
-        wal1, emt1, wal1, emt1, wal1, emt1, emt1, emt1, wal1, wal1, emt1,
-        emt1, emt1, emt1, emt1, wal1, wal1, emt1, wal1, emt1, emt1, gat1,
-        emt1, wal1, ply1, wal1, wal1, wal1, emt1, emt1, emt1, wal1, wir1,
-        emt1, emt1, emt1, emt1, wal1, wal1, emt1, wal1, emt1, wal1, wir1,
-        wal1, wal1, wal1, emt1, wal1, wal1, emt1, wal1, emt1, wal1, wir1,
-        emt1, emt1, emt1, emt1, emt1, wal1, emt1, emt1, emt1, wal1, wir1,
-        emt1, wal1, emt1, wal1, emt1, wal1, emt1, wal1, wal1, wal1, wir1,
-        emt1, emt1, emt1, wal1, emt1, emt1, emt1, tog1, wir1, wir1, wir1,
-        wal1, wal1, wal1, wal1, wal1, emt1, wal1, wal1, wal1, wal1, wal1,
-        wal1, wal1, emt1, emt1, emt1, emt1, emt1, emt1, wal1, wal1, wal1
+        wall, emty, emty, emty, wall, emty, wall, emty, wall, wall, ext1,
+        wall, emty, wall, emty, wall, emty, emty, emty, wall, wall, emty,
+        emty, emty, emty, emty, wall, wall, emty, wall, emty, emty, gat1,
+        emty, wall, ply1, wall, wall, wall, emty, emty, emty, wall, wir1,
+        emty, emty, emty, emty, wall, wall, emty, wall, emty, wall, wir1,
+        wall, wall, wall, emty, wall, wall, emty, wall, emty, wall, wir1,
+        emty, emty, emty, emty, emty, wall, emty, emty, emty, wall, wir1,
+        emty, wall, emty, wall, emty, wall, emty, wall, wall, wall, wir1,
+        emty, emty, emty, wall, emty, emty, emty, tog1, wir1, wir1, wir1,
+        wall, wall, wall, wall, wall, emty, wall, wall, wall, wall, wall,
+        wall, wall, emty, emty, emty, emty, emty, emty, wall, wall, wall
     };
 
-    Map myMapOne(11, 11, mapOne, ext1, ply1, emt1, emt1); //initiaize map object
+    Map myMapOne(11, 11, mapOne, ext1, ply1, emty, emty); //initiaize map object
     (*ply1).setMap(&myMapOne); //Set map for player
+
+    ///Map 2 Stuff
+    Interactable *ext2 = new Exit(69, 15, false, 2, 2); //Initilaize exit
+    Interactable *ply2 = new Player(129, 15, 2, 11, false, nullptr, &crumbObj); //Initialize Player
+    //Electronics
+
+    Interactable* mapTwo[144] = //initialize array of interactables for map
+    {
+        wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall,
+        wall, ext2, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, wall, wall, wall, wall, wall, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, emty, wall, wall, wall, wall, wall, wall,
+        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, ply2, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall
+    };
+
+    Map myMapTwo(12, 12, mapTwo, ext2, ply2, emty, emty); //initiaize map object
+    (*ply2).setMap(&myMapTwo); //Set map for player
 
     ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -73,21 +102,30 @@ int main()
     if(input == "1") //Get user choice on auto vs manual
     {
         (*ply1).toggleAutoSolver();
+        (*ply2).toggleAutoSolver();
     }
 
-    //Gameloop, kepp running until player reaches exit
-    while(!myMapOne.checkWin())
-    {
-        if(input != "1") //if manual, display instructions
-        {
-            cout << "WASD keys to move" << endl;
-        }
-        (*ply1).nextTurn(); //Call function to get next turn, encapsulated
-        system("CLS"); //Clear console
-        myMapOne.printMap(); //Print map
-    }
+    play(&myMapOne, ply1, input); //Call function to play map 1
+
+    play(&myMapTwo, ply2, input); //Call function to play map 2
 
     cout << "You Win!" << endl;
     cout << endl << "End Program" << endl;
     return 0;
+}
+
+//Used to play game, contains game loop
+void play(Map* _map, Interactable* _player, string _controls)
+{
+    //Gameloop for level 1, keep running until player reaches exit
+    while(!(*_map).checkWin())
+    {
+        if(_controls != "1") //if manual, display instructions
+        {
+            cout << "WASD keys to move" << endl;
+        }
+        (*_player).nextTurn(); //Call function to get next turn, encapsulated
+        system("CLS"); //Clear console
+        (*_map).printMap(); //Print map
+    }
 }

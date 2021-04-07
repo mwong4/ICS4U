@@ -14,14 +14,12 @@ Exit::Exit() : Interactable()
 {
     //ctor
     hidden = false;
-    ptr_next = nullptr;
 }
 
 //Custom constructor
-Exit::Exit(int _asciiCode, int _colour, bool _hidden, Map* _next, int _xCoord, int _yCoord) : Interactable(_asciiCode, _colour)
+Exit::Exit(int _asciiCode, int _colour, bool _hidden, int _xCoord, int _yCoord) : Interactable(_asciiCode, _colour)
 {
     hidden = _hidden;
-    ptr_next = _next;
     xCoord = _xCoord;
     yCoord = _yCoord;
 }
@@ -37,11 +35,6 @@ bool Exit::checkSolid()
 }
 
 //Getters/Setters
-Map* Exit::getNextMap() const
-{
-    return ptr_next;
-}
-
 int Exit::getX() const
 {
     return xCoord;
