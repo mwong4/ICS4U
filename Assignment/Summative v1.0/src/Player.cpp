@@ -51,21 +51,31 @@ void Player::toggleAutoSolver()
 //Get's input from user when manually controlling (0U, 1L, 2D, 3R, 30B)
 int Player::getInput()
 {
-    if((GetKeyState('W') & 0x8000) || (GetKeyState(VK_UP) & 0x8000)) //Check for escape and WASD or arrow key input, return approrpriate direction/code
+    HANDLE hstdin; //handle variables
+    DWORD mode; //input mode
+    int input; //input from user
+
+    hstdin = GetStdHandle( STD_INPUT_HANDLE ); //Set up handle stuff
+    GetConsoleMode( hstdin, &mode ); //get console mode settings
+    SetConsoleMode( hstdin, ENABLE_ECHO_INPUT | ENABLE_PROCESSED_INPUT ); //set to unbuffered mode
+
+    input = cin.get(); //get input
+
+    if(input == 119) //Check for WASD key input, return approrpriate direction/int
     {
-        return 0;
+        return 0; //W -> U
     }
-    else if((GetKeyState('S') & 0x8000) || (GetKeyState(VK_DOWN) & 0x8000))
+    else if(input == 115)
     {
-        return 2;
+        return 2; //S -> D
     }
-    else if((GetKeyState('A') & 0x8000) || (GetKeyState(VK_LEFT) & 0x8000))
+    else if(input == 97)
     {
-        return 1;
+        return 1; //A -> L
     }
-    else if((GetKeyState('D') & 0x8000) || (GetKeyState(VK_RIGHT) & 0x8000))
+    else if(input == 100)
     {
-        return 3;
+        return 3; //D -> R
     }
     return 10; //return null if no valid input
 }

@@ -6,7 +6,6 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--Buggy Movement
 -Multi Maps
 -Button Toggle
 -Portal
@@ -14,6 +13,7 @@ TODO
 Sources
 -"https://theasciicode.com.ar/" for ASCII character chart
 -"https://stackoverflow.com/questions/4053837/colorizing-text-in-the-console-with-c" for color
+-"http://www.cplusplus.com/forum/beginner/9503/" For WASD input system
 */
 
 //Included libraries
@@ -80,13 +80,11 @@ int main()
     {
         if(input != "1") //if manual, display instructions
         {
-            cout << "WASD or Arrow keys to move" << endl;
+            cout << "WASD keys to move" << endl;
         }
         (*ply1).nextTurn(); //Call function to get next turn, encapsulated
+        system("CLS"); //Clear console
         myMapOne.printMap(); //Print map
-
-        system("PAUSE"); //Get any input before clearing screen
-        system("CLS");
     }
 
     cout << "You Win!" << endl;
