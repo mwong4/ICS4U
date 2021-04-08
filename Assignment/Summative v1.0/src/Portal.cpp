@@ -13,19 +13,17 @@ Portal::Portal() : Electronic()
     //ctor
     xCoord = 0;
     yCoord = 0;
+    opX = 0;
+    opY = 0;
 }
 
 //Custom constructor
-Portal::Portal(int _symbol, int _colour, bool _powered, Interactable* _next, int _altColour, int _x, int _y) : Electronic(_symbol, _colour, _powered, _next, _altColour)
+Portal::Portal(int _symbol, int _colour, bool _powered, Interactable* _next, int _altColour, int _x, int _y, int _opX, int _opY) : Electronic(_symbol, _colour, _powered, _next, _altColour)
 {
     xCoord = _x;
     yCoord = _y;
-
-    if(_powered) //if set power to true on start, call toggle at start since default state is powered OFF
-    {
-        _powered = false;
-        togglePower(true);
-    }
+    opX = _opX;
+    opY = _opY;
 }
 
 Portal::~Portal()
@@ -51,3 +49,15 @@ void Portal::togglePower(bool _portal)
         (*ptr_next).togglePower(false);
     }
 }
+
+//getters/setters
+int Portal::getX() const
+{
+    return opX;
+}
+
+int Portal::getY() const
+{
+    return opY;
+}
+

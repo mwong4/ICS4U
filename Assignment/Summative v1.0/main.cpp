@@ -74,10 +74,9 @@ int main()
     Interactable *ext2 = new Exit(69, 15, false, 2, 2); //Initilaize exit
     Interactable *ply2 = new Player(129, 15, 2, 11, false, nullptr, &crumbObj); //Initialize Player
     //Electronics
-    Interactable *ptl1 = new Portal(64, 15, false, nullptr, 6, 4, 10); //initialize portals
-    Interactable *ptl2 = new Portal(64, 15, true, ptl1, 6, 10, 10);
+    Interactable *ptl1 = new Portal(64, 6, true, nullptr, 15, 4, 10, 10, 10); //initialize portals
+    Interactable *ptl2 = new Portal(64, 6, true, ptl1, 15, 10, 10, 4, 10);
     (*ptl1).setNext(ptl2); //Set next for portal 1
-
 
     Interactable* mapTwo[144] = //initialize array of interactables for map
     {
@@ -112,8 +111,6 @@ int main()
 
     play(&myMapTwo, ply2, input); //Call function to play map 2
     play(&myMapOne, ply1, input); //Call function to play map 1
-
-
 
     cout << "You Win!" << endl;
     cout << endl << "End Program" << endl;

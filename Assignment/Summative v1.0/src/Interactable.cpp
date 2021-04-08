@@ -70,12 +70,12 @@ void Interactable::setHidden(bool _hidden)
 
 int Interactable::getX() const
 {
-    return 0;
+    return 999;
 }
 
 int Interactable::getY() const
 {
-    return 0;
+    return 999;
 }
 
 void Interactable::setMap(Map *_map)

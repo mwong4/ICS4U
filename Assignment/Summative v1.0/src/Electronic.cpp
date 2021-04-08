@@ -72,3 +72,13 @@ void Electronic::setNext(Interactable* _next)
     ptr_next = _next;
     return;
 }
+
+int Electronic::getX() const
+{
+    return 111;
+}
+
+int Electronic::getY() const
+{
+    return 111;
+}

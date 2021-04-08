@@ -28,6 +28,8 @@ class Electronic : public Interactable
 
         //getters/setters
         void setNext(Interactable*);
+        virtual int getX() const;
+        virtual int getY() const;
 
     protected:
         bool powered; //Store if component is powered

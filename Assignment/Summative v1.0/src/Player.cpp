@@ -207,13 +207,13 @@ void Player::autoSolver()
 //For teleporting player
 void Player::teleport()
 {
-    cout << "teleport" << endl;
-    cout << xCoord << ", " << yCoord << endl;
+    int portalX = (*(*ptr_map).getContainer()).getX(); //set x and y of portal's linked portal
+    int portalY = (*(*ptr_map).getContainer()).getY();
+
     (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and player
-    xCoord = (*(*ptr_map).getContainer()).getX(); //set x and y
-    yCoord = (*(*ptr_map).getContainer()).getY();
-    (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and new position
-    cout << xCoord << ", " << yCoord << endl;
+    xCoord = portalX; //update player coordinates
+    yCoord = portalY;
+    (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(portalX, portalY)); //swap container and new position
 
     return;
 }
@@ -238,19 +238,17 @@ void Player::nextTurn()
     //If player is on the switch or portal
     if(containerChar == '[' || containerChar == ']' || containerChar == '@')
     {
-        if(containerChar == '@') //If specifically on portal, teleport
+        if(containerChar != '@') //If specifically on portal, teleport
         {
-            teleport();
+            (*(*ptr_map).getContainer()).togglePower(true); //use switch
         }
         else
         {
-            (*(*ptr_map).getContainer()).togglePower(true); //use switch
+            teleport();
         }
         (*ptr_map).clearCrumbs(); //Clear crumbs
         (*directions).clear(); //Clear stack
         loadStack(' '); //Reload stack
-
-
     }
     return;
 }
