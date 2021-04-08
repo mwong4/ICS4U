@@ -21,7 +21,7 @@ class Gate : public Electronic
         virtual ~Gate();
 
         bool checkSolid(); //Returns solidity status
-        void togglePower(); //Toggles power and other stuff
+        void togglePower(bool); //Toggles power and other stuff
 
     protected:
 

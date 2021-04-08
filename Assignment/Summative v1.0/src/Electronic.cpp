@@ -36,8 +36,39 @@ bool Electronic::checkSolid()
 }
 
 //Used on all electronics to toggle power and extra stuff
-void Electronic::togglePower()
+void Electronic::togglePower(bool _portal)
 {
     powered = !powered; //toggle power
+    return;
+}
+
+//For swapping colour
+int Electronic::swapColour(int _altColour)
+{
+    int tempInt; //Used for swapping colours
+    //Swap colours
+    tempInt = _altColour; //Save alternate colour
+    _altColour = getColour(); //Save current colour into alt
+    setColour(tempInt); //Set as as colour
+
+    return _altColour;
+}
+
+//For swapping symbol
+char Electronic::swapSymbol(char _alternateSymbol)
+{
+    char tempSymbol; //Used for swapping symbols
+    //Swap symbol
+    tempSymbol = _alternateSymbol; //Save alternate symbol
+    _alternateSymbol = getSymbol(); //Save current symbol into alt
+    setSymbol(tempSymbol); //Set as as symbol
+
+    return _alternateSymbol;
+}
+
+//getters/setters
+void Electronic::setNext(Interactable* _next)
+{
+    ptr_next = _next;
     return;
 }

@@ -204,9 +204,25 @@ void Player::autoSolver()
     return;
 }
 
+//For teleporting player
+void Player::teleport()
+{
+    cout << "teleport" << endl;
+    cout << xCoord << ", " << yCoord << endl;
+    (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and player
+    xCoord = (*(*ptr_map).getContainer()).getX(); //set x and y
+    yCoord = (*(*ptr_map).getContainer()).getY();
+    (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and new position
+    cout << xCoord << ", " << yCoord << endl;
+
+    return;
+}
+
 //The encapsulated master control for player
 void Player::nextTurn()
 {
+    char containerChar; //for detecting switch or portal
+
     if(autoSolve) //If auto solve is toggled
     {
         system("PAUSE");
@@ -217,13 +233,24 @@ void Player::nextTurn()
         updatePosition(getInput(), true);
     }
 
-    //If player is on the switch
-    if((*(*ptr_map).getContainer()).getSymbol() == '[' || (*(*ptr_map).getContainer()).getSymbol() == ']')
+    containerChar = (*(*ptr_map).getContainer()).getSymbol(); //Get symbol of container
+
+    //If player is on the switch or portal
+    if(containerChar == '[' || containerChar == ']' || containerChar == '@')
     {
-        (*(*ptr_map).getContainer()).togglePower(); //use switch
+        if(containerChar == '@') //If specifically on portal, teleport
+        {
+            teleport();
+        }
+        else
+        {
+            (*(*ptr_map).getContainer()).togglePower(true); //use switch
+        }
         (*ptr_map).clearCrumbs(); //Clear crumbs
         (*directions).clear(); //Clear stack
         loadStack(' '); //Reload stack
+
+
     }
     return;
 }

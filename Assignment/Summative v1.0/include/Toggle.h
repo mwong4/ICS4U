@@ -17,16 +17,17 @@ class Toggle : public Electronic
 {
     public:
         Toggle();
-        Toggle(int, int, bool, Interactable*, int, int); //Custom constructor
+        Toggle(int, int, bool, Interactable*, Interactable*, int, int); //Custom constructor
         virtual ~Toggle();
 
         bool checkSolid(); //Returns solidity status
-        void togglePower(); //Toggles power and other stuff
+        void togglePower(bool); //Toggles power and other stuff
 
     protected:
 
     private:
         char alternateSymbol;
+        Interactable* ptr_secondElectronic; //second electronic
 };
 
 #endif // TOGGLE_H

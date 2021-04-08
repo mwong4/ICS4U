@@ -37,7 +37,8 @@ class Interactable
         virtual void setMap(Map*);
         virtual void toggleAutoSolver(); //For player, auto solver
         virtual void nextTurn();
-        virtual void togglePower(); //Used on all electronics to toggle power and extra stuff
+        virtual void togglePower(bool); //Used on all electronics to toggle power and extra stuff
+        virtual void setNext(Interactable*); //set next for portal
 
     protected:
 

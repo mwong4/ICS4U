@@ -31,6 +31,7 @@ class Player : public Interactable
         void loadStack(int); //Loads stack exlucing char inputted
         int getOpposite(int); //Returns the opposite direction of input char
         void autoSolver(); //Remote control for user, called on each step aotu-taken by algorithm
+        void teleport(); //For teleporting player
         void nextTurn(); //The encapsulated master control for player
 
         //getters/setters

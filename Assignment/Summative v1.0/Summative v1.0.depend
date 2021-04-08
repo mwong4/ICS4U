@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1617812260 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
+1617852181 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\main.cpp
 	<iostream>
 	"Map.h"
 	"Interactable.h"
@@ -11,6 +11,7 @@
 	"Wire.h"
 	"Gate.h"
 	"Toggle.h"
+	"Portal.h"
 
 1617640923 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\stack.cpp
 	"Stack.h"
@@ -24,17 +25,17 @@
 1617640908 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\node.cpp
 	"Node.h"
 
-1617806498 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\interactable.cpp
+1617852143 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\interactable.cpp
 	"Interactable.h"
 	"Map.h"
 
-1617806493 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
+1617852154 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\interactable.h
 
-1617724794 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\map.cpp
+1617852169 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\map.cpp
 	"Map.h"
 	"Interactable.h"
 
-1617724699 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\map.h
+1617852170 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\map.h
 	<iostream>
 	<windows.h>
 	"Interactable.h"
@@ -62,13 +63,13 @@
 1617811698 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\exit.h
 	"Interactable.h"
 
-1617812357 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\player.cpp
+1617845647 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\player.cpp
 	"Player.h"
 	"Interactable.h"
 	"Map.h"
 	"Crumb.h"
 
-1617806565 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\player.h
+1617815860 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\player.h
 	"Stack.h"
 	"Interactable.h"
 	"Map.h"
@@ -80,27 +81,33 @@
 1617640847 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\crumb.h
 	"Interactable.h"
 
-1617806511 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\electronic.cpp
+1617852102 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\electronic.cpp
 	"Electronic.h"
 
-1617806508 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\electronic.h
+1617852103 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\electronic.h
 	"Interactable.h"
 
-1617806559 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\wire.cpp
+1617816399 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\wire.cpp
 	"Wire.h"
 
-1617806534 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\wire.h
+1617816022 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\wire.h
 	"Electronic.h"
 
-1617806554 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\gate.cpp
+1617816152 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\gate.cpp
 	"Gate.h"
 
-1617806533 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\gate.h
+1617816032 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\gate.h
 	"Electronic.h"
 
-1617806557 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\toggle.cpp
+1617816456 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\toggle.cpp
 	"Toggle.h"
 
-1617806535 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\toggle.h
+1617816027 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\toggle.h
+	"Electronic.h"
+
+1617852116 source:c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\src\portal.cpp
+	"Portal.h"
+
+1617852117 c:\users\max pc\documents\github\ics4u\assignment\summative v1.0\include\portal.h
 	"Electronic.h"
 

@@ -93,8 +93,14 @@ void Interactable::nextTurn()
     return;
 }
 
-void Interactable::togglePower()
+void Interactable::togglePower(bool _portal)
 {
     return;
 }
+
+void Interactable::setNext(Interactable* _next)
+{
+    return;
+}
+
 

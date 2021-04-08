@@ -21,7 +21,13 @@ class Electronic : public Interactable
         virtual ~Electronic();
 
         virtual bool checkSolid(); //returns solidity
-        virtual void togglePower(); //Used on all electronics to toggle power and extra stuff
+        virtual void togglePower(bool); //Used on all electronics to toggle power and extra stuff
+
+        int swapColour(int); //For swapping colour
+        char swapSymbol(char); //For swapping symbol
+
+        //getters/setters
+        void setNext(Interactable*);
 
     protected:
         bool powered; //Store if component is powered

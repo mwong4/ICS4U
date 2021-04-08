@@ -12,12 +12,14 @@ Toggle::Toggle() : Electronic()
 {
     //ctor
     alternateSymbol = 0;
+    ptr_secondElectronic = nullptr;
 }
 
 //Custom constructor
-Toggle::Toggle(int _symbol, int _colour, bool _powered, Interactable* _next, int _altColour, int _altSymbol) : Electronic(_symbol, _colour, _powered, _next, _altColour)
+Toggle::Toggle(int _symbol, int _colour, bool _powered, Interactable* _next, Interactable* _nextTwo, int _altColour, int _altSymbol) : Electronic(_symbol, _colour, _powered, _next, _altColour)
 {
     alternateSymbol = _altSymbol;
+    ptr_secondElectronic = _nextTwo;
 }
 
 Toggle::~Toggle()
@@ -32,29 +34,20 @@ bool Toggle::checkSolid()
 }
 
 //Toggles power and other stuff
-void Toggle::togglePower()
+void Toggle::togglePower(bool _portal)
 {
-    char tempSymbol; //Used for swapping symbols
-    int tempInt; //Used for swapping colours
+    alternateSymbol = swapSymbol(alternateSymbol); //Swap symbol
+    altColour = swapColour(altColour);//Swap colours
+    Electronic::togglePower(true); //Toggle bool
 
-    //Swap symbol
-    tempSymbol = alternateSymbol; //Save alternate colour
-    alternateSymbol = getSymbol(); //Save current colour into alt
-    setSymbol(tempSymbol); //Set as as colour
-
-    //Swap colours
-    tempInt = altColour; //Save alternate colour
-    altColour = getColour(); //Save current colour into alt
-    setColour(tempInt); //Set as as colour
-
-    //Toggle bool
-    powered = !powered;
-
-    //If next object exists, set it to powered
+    //If next objects exists, set it to powered
     if(ptr_next != nullptr)
     {
-        (*ptr_next).togglePower();
+        (*ptr_next).togglePower(true);
     }
-
+    if(ptr_secondElectronic != nullptr)
+    {
+        (*ptr_secondElectronic).togglePower(true);
+    }
     return;
 }

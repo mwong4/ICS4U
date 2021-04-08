@@ -6,8 +6,8 @@ Purpose: Final project for ICS4U
 Type: Main
 
 TODO
--Multi Maps
 -Portal
+
 -Second Map
 -Link up
 -Menu/looping game
@@ -31,6 +31,7 @@ Sources
 #include "Wire.h" //include wire class
 #include "Gate.h" //include gate class
 #include "Toggle.h" //include toggle class
+#include "Portal.h" //include portal class
 
 using namespace std;
 
@@ -49,7 +50,7 @@ int main()
     //Electronics
     Interactable *gat1 = new Gate(177, 15, false, 6, 0);
     Interactable *wir1 = new Wire(35, 15, false, gat1, 6);
-    Interactable *tog1 = new Toggle(91, 15, false, wir1, 6, 93);
+    Interactable *tog1 = new Toggle(91, 15, false, wir1, nullptr, 6, 93);
 
     Interactable* mapOne[121] = //initialize array of interactables for map
     {
@@ -73,6 +74,10 @@ int main()
     Interactable *ext2 = new Exit(69, 15, false, 2, 2); //Initilaize exit
     Interactable *ply2 = new Player(129, 15, 2, 11, false, nullptr, &crumbObj); //Initialize Player
     //Electronics
+    Interactable *ptl1 = new Portal(64, 15, false, nullptr, 6, 4, 10); //initialize portals
+    Interactable *ptl2 = new Portal(64, 15, true, ptl1, 6, 10, 10);
+    (*ptl1).setNext(ptl2); //Set next for portal 1
+
 
     Interactable* mapTwo[144] = //initialize array of interactables for map
     {
@@ -85,7 +90,7 @@ int main()
         wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
         wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
         wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
-        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, ptl1, emty, emty, wall, emty, emty, ptl2, emty, wall,
         wall, ply2, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
         wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall
     };
@@ -105,9 +110,10 @@ int main()
         (*ply2).toggleAutoSolver();
     }
 
+    play(&myMapTwo, ply2, input); //Call function to play map 2
     play(&myMapOne, ply1, input); //Call function to play map 1
 
-    play(&myMapTwo, ply2, input); //Call function to play map 2
+
 
     cout << "You Win!" << endl;
     cout << endl << "End Program" << endl;
@@ -117,6 +123,7 @@ int main()
 //Used to play game, contains game loop
 void play(Map* _map, Interactable* _player, string _controls)
 {
+
     //Gameloop for level 1, keep running until player reaches exit
     while(!(*_map).checkWin())
     {

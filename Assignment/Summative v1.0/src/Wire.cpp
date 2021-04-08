@@ -31,22 +31,15 @@ bool Wire::checkSolid()
 }
 
 //Toggles power and other stuff
-void Wire::togglePower()
+void Wire::togglePower(bool _portal)
 {
-    int tempInt; //Used for swapping colours
-
-    //Swap colours
-    tempInt = altColour; //Save alternate colour
-    altColour = getColour(); //Save current colour into alt
-    setColour(tempInt); //Set as as colour
-
-    //Toggle bool
-    powered = !powered;
+    altColour = swapColour(altColour);//Swap colours
+    Electronic::togglePower(true); //Toggle bool
 
     //If next object exists, set it to powered
     if(ptr_next != nullptr)
     {
-        (*ptr_next).togglePower();
+        (*ptr_next).togglePower(true);
     }
     return;
 }

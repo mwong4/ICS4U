@@ -32,17 +32,10 @@ bool Gate::checkSolid()
 }
 
 //Toggles power and other stuff
-void Gate::togglePower()
+void Gate::togglePower(bool _portal)
 {
-    char tempSymbol; //Used for swapping symbols
-
-    //Swap symbol
-    tempSymbol = alternateSymbol; //Save alternate colour
-    alternateSymbol = getSymbol(); //Save current colour into alt
-    setSymbol(tempSymbol); //Set as as colour
-
-    //Toggle bool
-    powered = !powered;
+    alternateSymbol = swapSymbol(alternateSymbol); //Swap symbol
+    Electronic::togglePower(true); //Toggle bool
 
     return;
 }

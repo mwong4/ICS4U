@@ -42,6 +42,7 @@
 		<Unit filename="include/Map.h" />
 		<Unit filename="include/Node.h" />
 		<Unit filename="include/Player.h" />
+		<Unit filename="include/Portal.h" />
 		<Unit filename="include/Space.h" />
 		<Unit filename="include/Stack.h" />
 		<Unit filename="include/Toggle.h" />
@@ -56,6 +57,7 @@
 		<Unit filename="src/Map.cpp" />
 		<Unit filename="src/Node.cpp" />
 		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Portal.cpp" />
 		<Unit filename="src/Space.cpp" />
 		<Unit filename="src/Stack.cpp" />
 		<Unit filename="src/Toggle.cpp" />
