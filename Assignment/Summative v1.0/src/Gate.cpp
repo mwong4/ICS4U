@@ -7,6 +7,7 @@ Type: Source
 */
 
 #include "Gate.h"
+#include <iostream>
 
 Gate::Gate() : Electronic()
 {
@@ -18,6 +19,12 @@ Gate::Gate() : Electronic()
 Gate::Gate(int _symbol, int _colour, bool _powered, int _altColour, int _altSymbol) : Electronic(_symbol, _colour, _powered, nullptr, _altColour)
 {
     alternateSymbol = _altSymbol;
+
+    if(_powered) //if door starts powered, auto toggle
+    {
+        togglePower(true);
+        powered = true;
+    }
 }
 
 Gate::~Gate()
