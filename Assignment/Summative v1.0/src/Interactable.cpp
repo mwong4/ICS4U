@@ -83,7 +83,7 @@ void Interactable::setMap(Map *_map)
     return;
 }
 
-void Interactable::toggleAutoSolver()
+void Interactable::toggleAutoSolver() //For player, auto solver
 {
     return;
 }
@@ -93,22 +93,22 @@ void Interactable::nextTurn()
     return;
 }
 
-void Interactable::togglePower(bool _portal)
+void Interactable::togglePower(bool _portal) //Used on all electronics to toggle power and extra stuff
 {
     return;
 }
 
-void Interactable::setNext(Interactable* _next)
+void Interactable::setNext(Interactable* _next) //set next for portal
 {
     return;
 }
 
-string Interactable::getType()
+string Interactable::getType() //returns if space or gate
 {
     return " ";
 }
 
-void Interactable::setAltSym(char)
+void Interactable::setAltSym(char) //set's alt symbol
 {
     return;
 }

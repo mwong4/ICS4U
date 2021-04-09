@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 28, 2021
-Date Updated: Apr 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Source file for Player class
 Type: Source
 */
@@ -129,7 +129,6 @@ bool Player::updatePosition(int _direction, bool _backTracking)
             if((*(*ptr_map).getContainer()).getType() == "Gate") //If that blak symbol is a "space"
             {
                 (*(*ptr_map).getContainer()).setSymbol('*'); //Set container symbol as crumb
-
             }
             else //otherwise, it is a gate, replace gate blank symbol * symbol
             {
@@ -246,14 +245,15 @@ void Player::nextTurn()
     //If player is on the switch or portal
     if(containerChar == '[' || containerChar == ']' || containerChar == '@')
     {
-        if(containerChar != '@') //If specifically on portal, teleport
-        {
-            (*(*ptr_map).getContainer()).togglePower(true); //use switch
-        }
-        else
+        if(containerChar == '@') //If specifically on portal, teleport
         {
             teleport();
         }
+        else
+        {
+            (*(*ptr_map).getContainer()).togglePower(true); //use switch
+        }
+
         (*ptr_map).clearCrumbs(); //Clear crumbs
         (*directions).clear(); //Clear stack
         loadStack(' '); //Reload stack

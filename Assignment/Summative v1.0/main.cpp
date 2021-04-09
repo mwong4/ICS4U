@@ -5,14 +5,12 @@ Date Updated: Apr 9, 2021
 Purpose: Final project for ICS4U
 Type: Main
 
-TODO
--Second Map
--Playtesting
-
 Sources
 -"https://theasciicode.com.ar/" for ASCII character chart
 -"https://stackoverflow.com/questions/4053837/colorizing-text-in-the-console-with-c" for color
 -"http://www.cplusplus.com/forum/beginner/9503/" For WASD input system
+
+Credit to Mr. Maloley for teaching CS
 */
 
 //Included libraries
@@ -72,31 +70,32 @@ int main()
     Interactable *ply2 = new Player(129, 15, 2, 11, false, nullptr, &crumbObj); //Initialize Player
     //Electronics
     Interactable *gat2 = new Gate(177, 6, true, 15, 0); //Initilaize doors
-    Interactable *gat3 = new Gate(177, 15, false, 6, 0);
-    Interactable *gat4 = new Gate(177, 15, false, 6, 0);
+    Interactable *gat3 = new Gate(177, 15, false, 2, 0);
+    Interactable *gat4 = new Gate(177, 15, false, 1, 0);
+    Interactable *gat5 = new Gate(177, 15, false, 1, 0);
 
-    Interactable *ptl1 = new Portal(64, 15, false, nullptr, 6, 6, 8, 11, 3); //initialize portals
-    Interactable *ptl2 = new Portal(64, 15, false, ptl1, 6, 11, 3, 6, 8);
+    Interactable *ptl1 = new Portal(64, 15, false, nullptr, 6, 6, 9, 11, 4); //initialize portals
+    Interactable *ptl2 = new Portal(64, 15, false, ptl1, 6, 11, 4, 6, 9);
 
-    Interactable *wir3 = new Wire(35, 15, false, gat3, 6); //initialize wire
-    Interactable *wir4 = new Wire(35, 15, false, gat4, 6); //initialize wire
+    Interactable *wir3 = new Wire(35, 15, false, gat3, 2); //initialize wire
+    Interactable *wir4 = new Wire(35, 15, false, gat4, 1); //initialize wire
 
     Interactable *tog2 = new Toggle(91, 15, false, gat2, ptl1, 6, 93); //initialize toggles
-    Interactable *tog3 = new Toggle(91, 15, false, wir3, nullptr, 6, 93);
-    Interactable *tog4 = new Toggle(91, 15, false, wir4, nullptr, 6, 93);
+    Interactable *tog3 = new Toggle(91, 15, false, wir3, nullptr, 2, 93);
+    Interactable *tog4 = new Toggle(91, 15, false, wir4, gat5, 1, 93);
     (*ptl1).setNext(ptl2); //Set next for portal 1
 
     Interactable* mapTwo[144] = //initialize array of interactables for map
     {
-        wall, wall, wall, wall, wir4, wir4, wir4, wir4, wall, wall, wall, wall,
-        wall, ext2, emty, emty, gat4, emty, wall, tog4, emty, emty, emty, wall,
-        wall, emty, emty, emty, wall, emty, wall, emty, emty, emty, ptl2, wall,
+        wall, wall, wall, wall, wir4, wir4, wir4, wir4, wir4, wir4, wir4, wall,
+        wall, ext2, emty, emty, gat4, emty, wall, emty, emty, emty, tog4, wall,
         wall, emty, emty, emty, wall, emty, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, wall, emty, wall, emty, emty, emty, ptl2, wall,
         wall, wall, wall, wall, wall, gat3, wir3, wir3, wir3, wall, wall, wall,
         wall, emty, emty, emty, emty, emty, wall, wall, tog3, wall, wall, wall,
-        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
-        wall, emty, emty, emty, emty, ptl1, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, gat5, wall, emty, emty, emty, emty, wall,
         wall, emty, emty, emty, emty, tog2, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, ptl1, wall, emty, emty, emty, emty, wall,
         wall, emty, emty, emty, emty, emty, gat2, emty, emty, emty, emty, wall,
         wall, ply2, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
         wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall
@@ -113,15 +112,16 @@ int main()
     cin >> input;
     if(input == "1") //Get user choice on auto vs manual
     {
-        (*ply1).toggleAutoSolver();
+        (*ply1).toggleAutoSolver(); //toggle auto solvers
         (*ply2).toggleAutoSolver();
     }
 
-    play(&myMapTwo, ply2, input); //Call function to play map 2
     play(&myMapOne, ply1, input); //Call function to play map 1
+    play(&myMapTwo, ply2, input); //Call function to play map 2
 
     cout << "You Win!" << endl;
     cout << endl << "End Program" << endl;
+    system("PAUSE");
     return 0;
 }
 

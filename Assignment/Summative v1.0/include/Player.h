@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 28, 2021
-Date Updated: Apr 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Header file for Player class
 Type: Header
 */

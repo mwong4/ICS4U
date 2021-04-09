@@ -83,12 +83,12 @@ int Electronic::getY() const
     return 111;
 }
 
-string Electronic::getType()
+string Electronic::getType() //returns if space or gate
 {
     return " ";
 }
 
-void Electronic::setAltSym(char)
+void Electronic::setAltSym(char) //set's alt symbol
 {
     return;
 }
