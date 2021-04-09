@@ -8,6 +8,8 @@ Type: Header
 
 #ifndef PLAYER_H
 #define PLAYER_H
+#include <iostream>
+
 #include "Stack.h" //Include stack class
 #include "Interactable.h" //include interactable class
 #include "Map.h" //Include map class

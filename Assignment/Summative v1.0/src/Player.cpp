@@ -126,7 +126,15 @@ bool Player::updatePosition(int _direction, bool _backTracking)
     {
         if((*(*ptr_map).getContainer()).getSymbol() == emptySymbol) //If container value was "space"
         {
-            (*ptr_map).setContainer(ptr_crumb); //Set container as a crumb
+            if((*(*ptr_map).getContainer()).getType() == "Gate") //If that blak symbol is a "space"
+            {
+                (*(*ptr_map).getContainer()).setSymbol('*'); //Set container symbol as crumb
+
+            }
+            else //otherwise, it is a gate, replace gate blank symbol * symbol
+            {
+                (*ptr_map).setContainer(ptr_crumb); //Set container as a crumb
+            }
         }
 
         (*ptr_map).swapInteractable((*ptr_map).getContainerP(), (*ptr_map).getInteractableP(xCoord, yCoord)); //swap container and player

@@ -1,13 +1,14 @@
 /*
 Author: Max Wong
 Date Created: Apr 5, 2021
-Date Updated: Apr 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Header file for Electronic class
 Type: Header
 */
 
 #ifndef ELECTRONIC_H
 #define ELECTRONIC_H
+#include <iostream>
 
 #include "Interactable.h" //Include interactable class
 
@@ -30,6 +31,8 @@ class Electronic : public Interactable
         void setNext(Interactable*);
         virtual int getX() const;
         virtual int getY() const;
+        virtual string getType(); //returns if space or gate
+        virtual void setAltSym(char); //set's alt symbol
 
     protected:
         bool powered; //Store if component is powered

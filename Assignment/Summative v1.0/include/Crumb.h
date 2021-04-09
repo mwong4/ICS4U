@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Apr 4, 2021
-Date Updated: Apr 4, 2021
+Date Updated: Apr 9, 2021
 Purpose: Header file for Crumb class
 Type: Header
 */
@@ -21,6 +21,7 @@ class Crumb : public Interactable
         virtual ~Crumb();
 
         bool checkSolid(); //Returns if solid or not
+        string getType(); //returns if space or gate
 
     protected:
 

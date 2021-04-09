@@ -121,11 +121,25 @@ bool Map::checkWin() const
 //Iterator for clearing all crumbs
 void Map::clearCrumbs()
 {
+    char emptySymbol = 0;
+
     for(int i = 0; i < width*height; i++) //Go through whole map
     {
-        if((*mapArray[i]).getSymbol() == '*') //If crumb is found
+        if((*mapArray[i]).getType() == "Space") //If "space" is found
         {
             setSpot(ptr_empty, i); //call setter to set spot to empty
+        }
+
+        if((*mapArray[i]).getType() == "Gate") //If gate is found
+        {
+            if((*mapArray[i]).getSymbol() == '*' || (*mapArray[i]).getSymbol() == emptySymbol) //if current symbol is *
+            {
+                (*mapArray[i]).setSymbol(emptySymbol); //repace current symbol with empty
+            }
+            else //otherwise, this means alt symbol is *
+            {
+                (*mapArray[i]).setAltSym(emptySymbol); //Replace at symbol
+            }
         }
     }
     return;

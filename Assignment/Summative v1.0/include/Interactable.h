@@ -1,13 +1,14 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2021
-Date Updated: Apr 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Header file for Interactable class
 Type: Header
 */
 
 #ifndef INTERACTABLE_H
 #define INTERACTABLE_H
+#include <iostream>
 
 class Map;
 
@@ -39,6 +40,8 @@ class Interactable
         virtual void nextTurn();
         virtual void togglePower(bool); //Used on all electronics to toggle power and extra stuff
         virtual void setNext(Interactable*); //set next for portal
+        virtual string getType(); //returns if space or gate
+        virtual void setAltSym(char); //set's alt symbol
 
     protected:
 

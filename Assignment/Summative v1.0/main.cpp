@@ -1,15 +1,12 @@
 /*
 Author: Max Wong
 Date Created: Mar 23, 2021
-Date Updated: Apr 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Final project for ICS4U
 Type: Main
 
 TODO
 -Second Map
-
--Link up
--Menu/looping game
 -Playtesting
 
 Sources
@@ -99,8 +96,8 @@ int main()
         wall, emty, emty, emty, emty, emty, wall, wall, tog3, wall, wall, wall,
         wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
         wall, emty, emty, emty, emty, ptl1, wall, emty, emty, emty, emty, wall,
-        wall, emty, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
-        wall, emty, emty, emty, emty, tog2, gat2, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, tog2, wall, emty, emty, emty, emty, wall,
+        wall, emty, emty, emty, emty, emty, gat2, emty, emty, emty, emty, wall,
         wall, ply2, emty, emty, emty, emty, wall, emty, emty, emty, emty, wall,
         wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall, wall
     };

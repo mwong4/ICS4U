@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Mar 26, 2021
-Date Updated: Par 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Source file for Interactable class
 Type: Source
 */
@@ -99,6 +99,16 @@ void Interactable::togglePower(bool _portal)
 }
 
 void Interactable::setNext(Interactable* _next)
+{
+    return;
+}
+
+string Interactable::getType()
+{
+    return " ";
+}
+
+void Interactable::setAltSym(char)
 {
     return;
 }

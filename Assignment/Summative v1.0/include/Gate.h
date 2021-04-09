@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Apr 5, 2021
-Date Updated: Apr 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Header file for gate class
 Type: Header
 */
@@ -22,6 +22,8 @@ class Gate : public Electronic
 
         bool checkSolid(); //Returns solidity status
         void togglePower(bool); //Toggles power and other stuff
+        string getType(); //returns if space or gate
+        void setAltSym(char); //set's alt symbol
 
     protected:
 

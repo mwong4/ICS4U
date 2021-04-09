@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Apr 5, 2021
-Date Updated: Apr 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Source file for gate class
 Type: Source
 */
@@ -42,7 +42,19 @@ bool Gate::checkSolid()
 void Gate::togglePower(bool _portal)
 {
     alternateSymbol = swapSymbol(alternateSymbol); //Swap symbol
+
     Electronic::togglePower(true); //Toggle bool
 
+    return;
+}
+
+string Gate::getType()
+{
+    return "Gate";
+}
+
+void Gate::setAltSym(char _input)
+{
+    alternateSymbol = _input; //set input to alt char
     return;
 }

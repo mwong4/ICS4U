@@ -1,7 +1,7 @@
 /*
 Author: Max Wong
 Date Created: Apr 5, 2021
-Date Updated: Apr 7, 2021
+Date Updated: Apr 9, 2021
 Purpose: Source file for Electronic class
 Type: Source
 */
@@ -81,4 +81,14 @@ int Electronic::getX() const
 int Electronic::getY() const
 {
     return 111;
+}
+
+string Electronic::getType()
+{
+    return " ";
+}
+
+void Electronic::setAltSym(char)
+{
+    return;
 }
