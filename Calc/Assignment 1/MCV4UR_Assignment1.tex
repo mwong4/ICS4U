@@ -235,16 +235,17 @@ definition of the derivative.
 \addtolength{\jot}{1em}
 \begin{align*}
     f'(x) &= \lim_{h \to 0} \dfrac{f(x+h)-f(x)}{h} && \text{First Principle Definition} \\
-    f'(x) &= \lim_{h \to 0} \dfrac{(3(x+h)^2 - 2(x+h) + 1) - (3x^2-2x+1)}{h} && \text{Implement f(x) with x+h and x} \\
-    f'(x) &= \lim_{h \to 0} \dfrac{3(x^2+2hx+h^2) - (2x+2h) + 1 - 3x^2+2x-1}{h} && \text{Expand and Simplify} \\
-    f'(x) &= \lim_{h \to 0} \dfrac{3x^2+6hx+3h^2 - 2x-2h + 1 - 3x^2+2x-1}{h} \\
-    f'(x) &= \lim_{h \to 0} \dfrac{6hx+3h^2-2h}{h} \\
-    f'(x) &= \lim_{h \to 0} \dfrac{h(6x+3h-2)}{h} && \text{Factor h} \\
-    f'(x) &= \lim_{h \to 0} 6x+3h-2 && \text{Simplify, Cross out h} \\
-    f'(x) &= 6x-2 && \text{Apply Limit} \\
+    f'(x) &= \lim_{h \to 0} \dfrac{(3(x+h)^3 - 2(x+h) + 1) - (3x^3-2x+1)}{h} && \text{Implement f(x) with x+h and x} \\
+    f'(x) &= \lim_{h \to 0} \dfrac{3(x^3+3x^2h+3xh^2+h^3) - (2x+2h) + 1 - 3x^3+2x-1}{h} && \text{Expand and Simplify} \\
+    f'(x) &= \lim_{h \to 0} \dfrac{3x^3+9x^2h+9xh^2+3h^3 - 2x-2h + 1 - 3x^3+2x-1}{h} \\
+    f'(x) &= \lim_{h \to 0} \dfrac{9x^2h+9xh^2+3h^3 -2h}{h} \\
+    f'(x) &= \lim_{h \to 0} \dfrac{h(9x^2+9xh+3h^2 -2)}{h} && \text{Factor h} \\
+    f'(x) &= \lim_{h \to 0} 9x^2+9xh+3h^2 -2 && \text{Simplify, Cross out h} \\
+    f'(x) &= 9x^2+9x(0)+3(0)^2 -2 && \text{Apply Limit} \\
+    f'(x) &= 9x^2 - 2 \\
 \end{align*}
 
-$$\boxed{\text{Therefore, using the first principles we find that the derivative of f(x) is 6x-2.}}$$
+$$\boxed{\text{Therefore, using the first principles we find that the derivative of f(x) is } 9x^2 - 2 \text{.}}$$
 
 \vspace{0.3cm}
 
@@ -257,8 +258,26 @@ $$\boxed{\text{Therefore, using the first principles we find that the derivative
 
 \vspace{0.3cm} 
 \textbf{Solution To Question 12:}\\
- Your solution starts here.
-\vspace{0.3cm}
+  When you look at the function within the limit, the first thing that might come to mind 
+  is the square root being subtracted to something. If we used 1 rule in order to rationalize, 
+  we can elimite the square root and unlock the possibility for futher simplification.
+\vspace{0.1cm}
+
+\addtolength{\jot}{0.5em}
+\begin{align*}
+    & \lim_{t \to 0} \left( \dfrac{1}{t \sqrt{1+t}} - \dfrac{1}{t} \right) && \\
+    =& \lim_{t \to 0} \left( \dfrac{1}{t \sqrt{1+t}} - \dfrac{\sqrt{1+t}}{t \sqrt{1+t}} \right) && \text{Crossmultiply, Get Same Denominators} \\
+    =& \lim_{t \to 0} \left( \dfrac{1-\sqrt{1+t}}{t \sqrt{1+t}} \right) && \text{Simplify, Add Fractions Together} \\
+    =& \lim_{t \to 0} \left( \dfrac{1-\sqrt{1+t}}{t \sqrt{1+t}} \cdot \dfrac{1+\sqrt{1+t}}{1+\sqrt{1+t}} \right) && \text{Use 1 Rule, Rationalize} \\
+    =& \lim_{t \to 0} \left( \dfrac{1-(1+t)}{(t \sqrt{1+t})(1+\sqrt{1+t})} \right) && \text{Simplify, } (a+b)(a-b) = a^2-b^2 \\
+    =& \lim_{t \to 0} \left( \dfrac{-t}{(t \sqrt{1+t})(1+\sqrt{1+t})} \right) && \text{Simplify} \\
+    =& \lim_{t \to 0} \left( \dfrac{-1}{(\sqrt{1+t})(1+\sqrt{1+t})} \right) && \text{Factor t out} \\
+    =& \dfrac{-1}{(\sqrt{1+0})(1+\sqrt{1+0})} && \text{Apply Limit} \\
+    =& \dfrac{-1}{(1)(2)} && \text{Simplify} \\
+    =& -\dfrac{1}{2}
+\end{align*}
+
+$$\boxed{\text{Therefore, the limit, when evaluated, is } -\dfrac{1}{2}}$$
 
 \newpage
 
