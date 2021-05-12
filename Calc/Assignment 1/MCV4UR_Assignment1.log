@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  11 MAY 2021 08:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  12 MAY 2021 12:13
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 1/MCV4UR_Assignment1.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 1/MCV4UR_Assignment1.tex"
@@ -342,56 +342,65 @@ LaTeX Info: Redefining \nameref on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--58
+
+ []
+
 [1{C:/Users/Max pc/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
  ("C:\Users\Max pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \vbox (badness 2735) has occurred while \output is active []
 
  [2] [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 230--234
+Underfull \hbox (badness 10000) in paragraph at lines 232--236
 
  []
 
 
-Overfull \hbox (24.16563pt too wide) detected at line 246
+Overfull \hbox (24.16563pt too wide) detected at line 248
 []
  []
 
 [6] [7]
-Overfull \hbox (15.05478pt too wide) detected at line 306
+Overfull \hbox (15.05478pt too wide) detected at line 308
 []
  []
 
-[8] [9]
-<parabola.png, id=81, 285.31593pt x 201.00093pt>
-File: parabola.png Graphic file (type png)
-<use parabola.png>
-Package pdftex.def Info: parabola.png  used on input line 325.
-(pdftex.def)             Requested size: 505.42285pt x 356.06604pt.
- [10 <c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 1/parabola.png>] ("c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 1\MCV4UR_Assignment1.aux")
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+
+ []
+
+[9]
+Overfull \hbox (0.21512pt too wide) detected at line 370
+[]
+ []
+
+[10] ("c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 1\MCV4UR_Assignment1.aux")
 Package rerunfilecheck Info: File `MCV4UR_Assignment1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 7196 strings out of 479799
- 109603 string characters out of 2869209
+ 7189 strings out of 479799
+ 109508 string characters out of 2869209
  423262 words of memory out of 3000000
- 24023 multiletter control sequences out of 15000+200000
+ 24018 multiletter control sequences out of 15000+200000
  541682 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,14n,72p,564b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Max pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 1\MCV4UR_Assignment1.pdf" (10 pages, 165742 bytes).
+ 66i,14n,72p,564b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Max pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 1\MCV4UR_Assignment1.pdf" (10 pages, 165844 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

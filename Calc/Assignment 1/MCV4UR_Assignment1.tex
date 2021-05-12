@@ -50,7 +50,9 @@ Family Name: Wong\\%Family Name Here
 First Name: Max %First Name Here
 
 Declared References: 
-
+\\
+\\
+- Used Desmos to visualize y-intercept equation in Q14.
 % Type your references here.
 % You can use as many lines as required.
 
@@ -212,7 +214,7 @@ Declared References:
 \item D
 \item D
 \item C
-\item C
+\item D
 \item B
 \item B
 \end{enumerate}
@@ -316,19 +318,56 @@ $$\boxed{\text{Therefore, when evaluated the value of the limit is } \dfrac{c}{3
 
 \vspace{0.3cm} 
 \textbf{Solution To Question 14:}\\
- Your solution starts here.
+
+Let's first look at the three important points that tell us information 
+about Q: O, P and the midpoint. O is at (0, 0). Considering the 
+function $f(x) = x^2$, we can say that if P is some point of the porabola, 
+P is $(x, f(x)) = (x, x^2)$. The midpoint (M) is halfway between O and P or: 
+$( x / 2, x^2 / 2 )$. First, start by getting the slope of line OP.
+
+\addtolength{\jot}{-0.2em}
+\begin{align*}
+   slope &= \dfrac{\Delta y}{\Delta x} && \text{Standard slope formula} \\
+   &= \dfrac{x^2-0}{x-0} && \text{Substitute points in} \\
+   &= x
+\end{align*}
+
+Since we know the slope of the perpundicular line is the negative reciprocal 
+of the slope of the original line, if the slope of the original is x, the 
+slope of the reciprocal is $-1/x$. Just to make sure not to confuse variables 
+later on, let h = x. The perpundicular line slope is $-1/h$. From this we can 
+form a rough linear equation and then substitute the midpoint, which is the only 
+known point on the perpindicular line, to find the y-intercept:
+
+\addtolength{\jot}{-0.2em}
+\begin{align*}
+   y &= mx+b && \text{Where m is slope, b is y-int} \\
+   y &= - \dfrac{1}{h} x + b && \text{Sub slope in} \\
+   \dfrac{h^2}{2} &= - \dfrac{1}{h} \cdot \dfrac{h}{2} + b && \text{Sub in midpoint: } \left( \dfrac{h}{2}, \dfrac{h^2}{2} \right) \text{\space Note: h=x} \\
+   \dfrac{h^2}{2} &= - \dfrac{1}{2} + b && \text{Simplify} \\
+   \dfrac{h^2}{2} + \dfrac{1}{2} &= b && \text{Add } \dfrac{1}{2} \text{ to both sides} \\
+   \dfrac{h^2 + 1}{2} &= b && \text{Simplify} \\
+   \dfrac{x^2 + 1}{2} &= b && \text{Note: x=h} \\
+\end{align*}
+
+\newpage
+
 \vspace{0.3cm}
+Now we have the y-intercept or b. The b value, since it is defined by x, Can 
+represent the specific point the that the line intercepts the y-axis at a specific x. 
+In essence, it represents the y-component of Q (since the x-component of Q is always 0). 
+Notice how b is quadratic-like. This shows that as point P approaches O, the value 
+Q gets smaller and smaller until reaching a limiting position. If we take the limit 
+of x approaching 0 for b, we can find this limiting value.
 
+\addtolength{\jot}{-0.2em}
+\begin{align*}
+    Q_{\text{y at x=0}} &= \lim_{x \to 0} \dfrac{x^2 + 1}{2} && Q_y = b = \dfrac{x^2 + 1}{2}\\
+    &= \dfrac{0^2 + 1}{2} && \text{Apply limit} \\
+    &= \dfrac{1}{2}
+\end{align*}
 
-\newpage
-\vspace{4cm}
-\includegraphics[width=\linewidth]{parabola.png}
-%% WHEN YOU HAND IN YOUR WORK YOU CAN REMOVE THE IMAGE BY DELETING THE ABOVE TWO LINES
-
-
-\newpage
-
-
+$$\boxed{\therefore \text{ as the point P approaches point O, the point Q decreases until reaching a limiting value of \space} \dfrac{1}{2}}$$
 
 \end{enumerate}
 \end{document} 
