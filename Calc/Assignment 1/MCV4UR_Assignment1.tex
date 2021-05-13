@@ -212,7 +212,7 @@ Declared References:
 \item D
 \item B
 \item D
-\item D
+\item B
 \item C
 \item D
 \item B
@@ -242,7 +242,7 @@ definition of the derivative.
     f'(x) &= \lim_{h \to 0} \dfrac{3x^3+9x^2h+9xh^2+3h^3 - 2x-2h + 1 - 3x^3+2x-1}{h} \\
     f'(x) &= \lim_{h \to 0} \dfrac{9x^2h+9xh^2+3h^3 -2h}{h} \\
     f'(x) &= \lim_{h \to 0} \dfrac{h(9x^2+9xh+3h^2 -2)}{h} && \text{Factor h} \\
-    f'(x) &= \lim_{h \to 0} 9x^2+9xh+3h^2 -2 && \text{Simplify, Cross out h} \\
+    f'(x) &= \lim_{h \to 0} 9x^2+9xh+3h^2 -2 && \text{Simplify, Cancel out h} \\
     f'(x) &= 9x^2+9x(0)+3(0)^2 -2 && \text{Apply Limit} \\
     f'(x) &= 9x^2 - 2 \\
 \end{align*}
@@ -273,7 +273,7 @@ $$\boxed{\text{Therefore, using the first principles we find that the derivative
     =& \lim_{t \to 0} \left( \dfrac{1-\sqrt{1+t}}{t \sqrt{1+t}} \cdot \dfrac{1+\sqrt{1+t}}{1+\sqrt{1+t}} \right) && \text{Use 1 Rule, Rationalize} \\
     =& \lim_{t \to 0} \left( \dfrac{1-(1+t)}{(t \sqrt{1+t})(1+\sqrt{1+t})} \right) && \text{Simplify, } (a+b)(a-b) = a^2-b^2 \\
     =& \lim_{t \to 0} \left( \dfrac{-t}{(t \sqrt{1+t})(1+\sqrt{1+t})} \right) && \text{Simplify} \\
-    =& \lim_{t \to 0} \left( \dfrac{-1}{(\sqrt{1+t})(1+\sqrt{1+t})} \right) && \text{Factor t out} \\
+    =& \lim_{t \to 0} \left( \dfrac{-1}{(\sqrt{1+t})(1+\sqrt{1+t})} \right) && \text{Cancel t out} \\
     =& \dfrac{-1}{(\sqrt{1+0})(1+\sqrt{1+0})} && \text{Apply Limit} \\
     =& \dfrac{-1}{(1)(2)} && \text{Simplify} \\
     =& -\dfrac{1}{2}
@@ -317,7 +317,7 @@ $$\boxed{\text{Therefore, when evaluated the value of the limit is } \dfrac{c}{3
 \item The figure shows a point $P$ on the parabola $y=x^2$ and the point $Q$ where the perpendicular bisector of $OP$ intersects the y-axis. As $P$ approaches the origin along the parabola, what happens to $Q$? Does it have a limiting position? If so, \textbf{determine} the limiting position of $Q$. 
 
 \vspace{0.3cm} 
-\textbf{Solution To Question 14:}\\
+\textbf{Solution To Question 14:}
 
 Let's first look at the three important points that tell us information 
 about Q: O, P and the midpoint. O is at (0, 0). Considering the 
@@ -325,25 +325,30 @@ function $f(x) = x^2$, we can say that if P is some point of the porabola,
 P is $(x, f(x)) = (x, x^2)$. The midpoint (M) is halfway between O and P or: 
 $( x / 2, x^2 / 2 )$. First, start by getting the slope of line OP.
 
-\addtolength{\jot}{-0.2em}
+\addtolength{\jot}{-0.3em}
 \begin{align*}
    slope &= \dfrac{\Delta y}{\Delta x} && \text{Standard slope formula} \\
    &= \dfrac{x^2-0}{x-0} && \text{Substitute points in} \\
    &= x
 \end{align*}
 
+\vspace{-0.3cm}
+
 Since we know the slope of the perpundicular line is the negative reciprocal 
 of the slope of the original line, if the slope of the original is x, the 
-slope of the reciprocal is $-1/x$. Just to make sure not to confuse variables 
-later on, let h = x. The perpundicular line slope is $-1/h$. From this we can 
+the negative reciprocal is $-1/x$. Just to make sure not to confuse variables 
+later on (confusing x from the slope and x from the linear equation), let $h = x$. 
+The perpundicular line's slope is $-1/h$. From this we can 
 form a rough linear equation and then substitute the midpoint, which is the only 
-known point on the perpindicular line, to find the y-intercept:
+known point on the perpindicular line to find the y-intercept. We know that a linear 
+function is formed from $y=mx+b$ where Where m is slope, b is y-intercept. Since $h = x$
+we can also define the midpoint in terms of h: $( x / 2, x^2 / 2 ) = ( h / 2, h^2 / 2 )$
 
 \addtolength{\jot}{-0.2em}
 \begin{align*}
    y &= mx+b && \text{Where m is slope, b is y-int} \\
    y &= - \dfrac{1}{h} x + b && \text{Sub slope in} \\
-   \dfrac{h^2}{2} &= - \dfrac{1}{h} \cdot \dfrac{h}{2} + b && \text{Sub in midpoint: } \left( \dfrac{h}{2}, \dfrac{h^2}{2} \right) \text{\space Note: h=x} \\
+   \dfrac{h^2}{2} &= - \dfrac{1}{h} \cdot \dfrac{h}{2} + b && \text{Sub in midpoint: } \left( \dfrac{h}{2}, \dfrac{h^2}{2} \right) \text{\space as (x,y)} \\
    \dfrac{h^2}{2} &= - \dfrac{1}{2} + b && \text{Simplify} \\
    \dfrac{h^2}{2} + \dfrac{1}{2} &= b && \text{Add } \dfrac{1}{2} \text{ to both sides} \\
    \dfrac{h^2 + 1}{2} &= b && \text{Simplify} \\
@@ -353,7 +358,7 @@ known point on the perpindicular line, to find the y-intercept:
 \newpage
 
 \vspace{0.3cm}
-Now we have the y-intercept or b. The b value, since it is defined by x, Can 
+Now we have the y-intercept or b. The b value, since it is defined by x, can 
 represent the specific point the that the line intercepts the y-axis at a specific x. 
 In essence, it represents the y-component of Q (since the x-component of Q is always 0). 
 Notice how b is quadratic-like. This shows that as point P approaches O, the value 

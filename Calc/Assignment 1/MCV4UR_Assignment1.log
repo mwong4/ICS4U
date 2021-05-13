@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  12 MAY 2021 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  13 MAY 2021 08:38
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 1/MCV4UR_Assignment1.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 1/MCV4UR_Assignment1.tex"
@@ -375,13 +375,8 @@ Overfull \hbox (15.05478pt too wide) detected at line 308
 []
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
-
- []
-
-[9]
-Overfull \hbox (0.21512pt too wide) detected at line 370
+[8] [9]
+Overfull \hbox (0.21512pt too wide) detected at line 375
 []
  []
 
@@ -398,7 +393,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  66i,14n,72p,564b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Max pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 1\MCV4UR_Assignment1.pdf" (10 pages, 165844 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 1\MCV4UR_Assignment1.pdf" (10 pages, 166122 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)
