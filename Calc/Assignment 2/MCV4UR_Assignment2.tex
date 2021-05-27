@@ -1,0 +1,203 @@
+%%
+%%
+\documentclass[12pt]{book}
+\usepackage{amsfonts,amssymb,amsmath,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{boxedminipage}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{enumitem}
+
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\setlength{\textheight}{10in}
+\setlength{\textwidth}{7.4in}
+\setlength{\topmargin}{-0.75in}
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\evensidemargin}{-0.5in}
+\setlength{\parskip}{0.15in}
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+
+\vspace{-1.0in}\begin{center}
+\Large{MCV4U : Calculus and Vectors}\\
+\Large{MCV4UR : Advanced Placement Calculus and Vectors }
+
+\Large{Assignment \#2}
+
+
+\end{center}
+
+%\medskip
+
+\vspace{0.015in}\hrulefill\ 
+
+\textbf{Reference Declaration} %  Fill in your Reference Declarations in this section before your submit your assignment.
+
+Complete the Reference Declaration section below in order for your assigment to be graded.
+
+If you used any references beyond the course text and lectures (such as other texts, discussions with colleagues or online resources), indicate this information in the space below.  If you did not use any aids, state this in the space provided. 
+
+Be sure to cite appropriate theorems throughout your work. You may use shorthand for well-known theorems like the FT, RRT, MVT, IVT, etc. 
+
+Note: Your submitted work must be \textbf{your original work}. 
+
+Family Name: \\%Family Name Here
+First Name: %First Name Here
+
+Declared References: 
+
+% Type your references here.
+% You can use as many lines as required.
+
+\vspace{0.015in}\hrulefill\ 
+
+\newpage
+
+% INSTRUCTIONS SECTION
+\section*{Instructions}
+
+\begin{center}
+\setlength{\fboxrule}{2pt}
+\begin{boxedminipage}{6.5in}
+1.	Organize and express complete, effective and concise responses to each problem.\\
+2.	Use appropriate mathematical conventions and notation wherever possible.\\
+3.	Provide logical reasoning for your arguments and cite any relevant theorems. \\
+4.  The quality of your communication will be heavily weighted.
+\end{boxedminipage}
+\end{center} 
+
+% EVALUATION SECTION
+\section*{Evaluation}
+
+% LEARNING EXPECTATION(S)
+\begin{itemize}
+\item Students will demonstrate an understanding of derivative rules and use them to solve problems.
+\end{itemize}
+
+% RUBRIC
+\begin{tabular}{| C{2in} | C{1in} | C{1in} | C{1in} | C{1in} |}
+\hline
+\textbf{Criteria} & \textbf{Level 1} & \textbf{Level 2} & \textbf{Level 3} & \textbf{Level 4} \\
+\hline
+\emph{Understanding of Mathematical Concepts} & Demonstrates limited understanding & Demonstrates some understanding & Demonstrates considerable understanding & Demonstrates thorough understanding of concepts \\
+\hline
+\emph{Selecting Tools and Strategies} & Selects and applies appropriate tools and strategies, with major errors, omissions, or mis-sequencing & Selects and applies appropriate tools and strategies, with minor errors, omissions, or mis-sequencing & Selects and applies appropriate tools and strategies accurately, and in a logical sequence & Selects and applies appropriate and efficient tools and strategies accurately to create mathematically elegant solutions \\
+\hline
+\emph{Reasoning and Proving} & Inconsistently or erroneously employs logic to develop and defend statements & Statements are developed and defended with some omissions or leaps in logic & Frequently develops and defends statements with reasonable logical justification & Consistently develops and defends statements with sophisticated and/or complete logical justification \\
+\hline
+\emph{Communicating} & Expresses and organizes mathematical thinking with limited effectiveness & Expresses and organizes mathematical thinking with some effectiveness & Expresses and organizes mathematical thinking with considerable effectiveness & Expresses and organizes mathematical thinking with a high degree of effectiveness \\
+\hline
+\end{tabular}
+
+\pagebreak
+
+
+
+%%%%%%%%%%%% PROBLEMS START HERE
+
+\textbf{Instructions:} Answer True or False to the following statements.
+
+\begin{enumerate}
+\item  If $f$ and $g$ are differentiable then $\frac{d}{dx} (f+g) = f' + g'$.
+\item If $f$ and $g$ are differentiable then $\frac{d}{dx} (fg) = f'g+2f'g'+fg'$.
+\item If $f$ and $g$ are differentiable then $\frac{d}{dx} (f(g(x)) = f'(g(x)) \cdot g'(x)$.
+\item If $f$ is differentiable then $\frac{d}{dx} (\sqrt{f(x)}) = \frac{f'(x)}{2\sqrt{x}}$.
+\item The derivative of a polynomial function is a polynomial function.
+\item The derivative of a rational function is a rational function.
+\item The derivative of an exponential function is an exponential function.
+\item The derivative of a sinusoidal function is a sinusoidal function.
+\item The derivative of a logarithmic function is a logarithmic function.
+\item If $f(x) = (x^p - 1)^q$ where $p,q \in \mathbb{Z^+}$ then $-1 \le f^{(pq+1)}(x) \le +1$.
+\item If $f'(c)=0$, then $f$ has a local maximum or minimum at $x=c$.
+\item If $f$ has an absolute minimum at $x=c$ then $f'(c) = 0$. 
+\item If $f$ and $g$ are increasing on an interval $I$ then $f+g$ is also increasing on $I$.
+\item If $f$ and $g$ are increasing on an interval $I$ then $fg$ is also increasing on $I$.
+\item If $f$ is periodic then $f'$ is periodic.
+\item If $f$ is even then $f'$ is odd.
+\item There exists a function $g$ such that $g(x)>0$, $g'(x)<0$, and $g''(x)>0$ for all $x \in \mathbb{R}$.
+\item There exists a function $h$ such that $h(x)<0$, $h'(x)<0$, and $h''(x)>0$ for all $x \in \mathbb{R}$.
+\item If $f(x)=\sin(x)$ then the least value of $n \in \mathbb{Z^+}$ such that $f^{(n)}(x) = f(x)$ is $n=4$.
+\item If $f'(x) = g'(x) $ for $0 < x < 1$ then $f(x) = g(x)$ for $0 < x < 1$.
+\newpage
+
+\section*{True-False Answers}
+
+\begin{enumerate}[label={\arabic*.}]
+\item true
+\item false
+\item true
+\item false
+\item true
+\item true
+\item false
+\item false
+\item false
+\item true
+\item false
+\item false
+\item true
+\item true
+\item true
+\item true
+\item false
+\item true
+\item true
+\item false
+\end{enumerate}
+
+Fill in your responses to the True-False questions above. Be sure to use only capital T or F.
+
+\newpage
+
+%% PROBLEM 21
+\item \textbf{Prove} that the tangent lines to the graph of the function $y=ax^2+bx+c$, where $a,b,c \in \mathbb{R}, a\neq 0$, at any two points with x-coordinates $p$ and $q$, where $p,q \in \mathbb{R}$, must intersect at a point whose x-coordinate is $\dfrac{p+q}{2}$.
+
+
+%% I would recommend sandwiching your solution to every problem between the kind of structure I have provided below re: initial \vspace, the Solution: heading and the ending \vspace.
+%\vspace{0.3cm} 
+%\textbf{Solution:}\\
+% Your solution starts here.
+%\vspace{0.3cm}
+
+
+\newpage
+
+
+%% PROBLEM 22
+\item \textbf{Determine} the derivative of the function $f(x) = \ln\left( \dfrac{xe^{-x} + \sin(4x)}{1 + 6\sqrt{2x}} \right)$. Go one step at a time and justify each step. Do \emph{not} simplify your answer.
+
+
+%% Consider using an align* environment like this that will let you organize your work.
+
+\begin{align*}
+LHS &= RHS && \text{Justification of Line 1}\\
+LHS + 1 &= RHS + 1 && \text{Justificaiton of Line 2}\\
+\end{align*}
+Consider using an align* environment like this one above that will let you organize your work.
+
+\newpage
+
+%% PROBLEM 23
+\item \textbf{Prove} that if $f(x)$ is a cubic polynomial function with zeros $a,b,c$ then the x-coordinate of the inflection point of $f(x)$ is $\dfrac{a+b+c}{3}$.
+
+\newpage
+
+
+%% PROBLEM 24
+\item Determine the maximum area of a rectangle inscribed within an equilateral triangle that has a side length of $a$ where $a \in \mathbb{R^+}$. 
+
+\vspace{1cm}
+
+
+
+\newpage
+
+
+
+\end{enumerate}
+\end{document} 
