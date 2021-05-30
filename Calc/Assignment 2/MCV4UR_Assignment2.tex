@@ -144,8 +144,8 @@ Declared References:
 \item true
 \item true
 \item true
-\item false
 \item true
+\item false
 \item true
 \item false
 \end{enumerate}
@@ -157,12 +157,88 @@ Fill in your responses to the True-False questions above. Be sure to use only ca
 %% PROBLEM 21
 \item \textbf{Prove} that the tangent lines to the graph of the function $y=ax^2+bx+c$, where $a,b,c \in \mathbb{R}, a\neq 0$, at any two points with x-coordinates $p$ and $q$, where $p,q \in \mathbb{R}$, must intersect at a point whose x-coordinate is $\dfrac{p+q}{2}$.
 
+\vspace{0.3cm} 
+\textbf{Solution to Question 21:}\\
+ What we need to do is solve for the equations of the 2 tangent lines 
+ (linear equations), then solve their intercept. Consider the constant 
+ k. This is a stand-in for p or q. Pretty much $k \in \mathbb{R}$. Let's 
+ try and solve for the slope first. We know that the slope comes from the 
+ derivative evaluated at a certain point, like k.
 
-%% I would recommend sandwiching your solution to every problem between the kind of structure I have provided below re: initial \vspace, the Solution: heading and the ending \vspace.
-%\vspace{0.3cm} 
-%\textbf{Solution:}\\
-% Your solution starts here.
-%\vspace{0.3cm}
+ \addtolength{\jot}{1em}
+\begin{align*}
+    y &= ax^2+bx+c && \text{base quadratic function} \\
+    y' &= 2ax+b && \text{Get derivative} \\
+    y' &= 2ak+b && \text{Evaluate at x=k} \\
+\end{align*}
+
+\vspace{-1cm}
+Now that we have our slope, we can substitute the slope into the standard 
+linear equation $y=mx+i$. where m represents the slope and i (because b is 
+already used) represents the y-intercept. Next, we need to determine the 
+y-intercept. We can find i by evaluating the linear equation at a point (x,y) 
+and isolate for i. First, we need to find a point. Given the $x=k$, we can say the following:
+
+\vspace{-0.3cm}
+\addtolength{\jot}{0.4em}
+\begin{align*}
+    y &= ax^2+bx+c && \text{base quadratic function} \\
+    y &= ak^2+bk+c && \text{Evaluate at x=k} \\
+\end{align*}
+
+\vspace{-1cm}
+With the coordinate $(k,ak^2+bk+c)$, which is where the tangent line 
+meets the quadratic equation, we can now solve for i:
+
+\vspace{-0.3cm}
+\addtolength{\jot}{0.3em}
+\begin{align*}
+    y &= mx + i && \text{standard linear equation formula} \\
+    y &= (2ak+b)x + i && \text{Substitute slope in } m = 2ak+b \\
+    ak^2+bk+c &= (2ak+b)k + i && \text{Substitute coordinate in } (x,y) = (k,ak^2+bk+c) \\
+    ak^2+bk+c &= 2ak^2+bk + i && \text{Expand} \\
+    ak^2+bk+c - 2ak^2 - bk &= i && \text{Simplify} \\
+    -ak^2+c &= i && \text{Simplify} \\
+\end{align*}
+
+\newpage
+
+Therefore, now that we have the y-intercept, we can substitute 
+this back into the linear equation. We now have $y = (2ak+b)x - ak^2+c$. 
+Since k was a fill in for p and q, why dont we re-evaluate the linear equation 
+found using p and q. 
+
+\[ \begin{cases} 
+    y = (2aq+b)x - aq^2+c & \textbf{(1)} \text{\space \space \space} k=p \\
+    y = (2aq+b)x - aq^2+c & \textbf{(2)} \text{\space \space \space} k=q
+ \end{cases}
+\]
+
+Now solve by substituting one into the other using y. Isolating 
+for x will result in the x-coordinate of the intercept.
+
+\vspace{-0.3cm}
+\addtolength{\jot}{0.3em}
+\begin{align*}
+    (2ap+b)x - ap^2+c &= (2aq+b)x - aq^2+c && \text{Sub (1) into (2) as y} \\
+    2apx+bx - ap^2+c &= 2aqx+bx - aq^2+c && \text{Expand} \\
+    2apx - ap^2 &= 2aqx - aq^2 && \text{Simplify} \\
+    2px - p^2 &= 2qx - q^2 && \text{Divide all by a} \\
+    2px - 2qx &=  - q^2 + p^2 && \text{Subtract } 2qx \text{ and } p^2 \text{ from both sides} \\
+    2x(p-q) &=  - q^2 + p^2 && \text{factor 2x} \\
+    x &=  \dfrac{- q^2 + p^2}{2(p-q)} && \text{Divide all by 2(p-q)} \\
+    x &=  \dfrac{p^2 - q^2}{2(p-q)} && \text{Rearrange numerator} \\
+    x &=  \dfrac{(p+q)(p-q)}{2(p-q)} &&  \text{Quadtratic identity} p^2 - q^2 = (p+q)(p-q)\\
+    x &=  \dfrac{p+q}{2} &&  \text{Simplify} \qed\\
+\end{align*}
+
+\vspace{-1cm}
+
+$\boxed{\text{Therefore the original statement from the question is correct.}}$
+If 2 tangent lines are taken from $y=ax^2+bx+c$ at x = q and p, 
+the tangents will intersect at x =  p+q/2.
+ 
+\vspace{0.3cm}
 
 
 \newpage
