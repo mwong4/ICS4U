@@ -261,14 +261,105 @@ Consider using an align* environment like this one above that will let you organ
 %% PROBLEM 23
 \item \textbf{Prove} that if $f(x)$ is a cubic polynomial function with zeros $a,b,c$ then the x-coordinate of the inflection point of $f(x)$ is $\dfrac{a+b+c}{3}$.
 
+\vspace{0.3cm} 
+\textbf{Solution to Question 23:}\\
+First off, we can find the inflection points when 
+the second derivative has a zero. We can start by determining f(x) 
+before finding the second derivative. Since we know the cubic function has 
+zeroes at a, b, c, the function must be $f(x) = (x-a)(x-b)(x-c)$. Now we can 
+expand, simplify and then solve for the first and second derivative. 
+
+\addtolength{\jot}{0.3em}
+\begin{align*}
+    f(x) &= (x-a)(x-b)(x-c) && \text{Base Cubic Function} \\
+    f(x) &= (x^2-ax-bx+ab)(x-c) && \text{Expand, multiply brackets} \\
+    f(x) &= x^3-ax^2-bx^2+abx-cx^2 +acx+bcx-abc \\
+    f(x) &= x^3 - x^2(a+b+c) + x(ab+bc+ac)-abc && \text{Factor } -x^2 \text{ and } x \\
+    f'(x) &= 3x^2 -2x(a+b+c) + ab+bc+ac - 0 && \text{Apply Power Rule, get 1st derivative} \\
+    f''(x) &= 6x -2(a+b+c) + 0 && \text{Apply Power Rule again, get 2nd derivative} \\
+    0 &= 6x -2(a+b+c) && \text{Solve for x with f''(x) = 0 to find inflection} \\
+    2(a+b+c) &= 6x  && \text{Add 2(a+b+c) to both sides} \\
+    \dfrac{2(a+b+c)}{6} &= x  && \text{Divide al by 6} \\
+    \dfrac{a+b+c}{3} &= x  && \text{Simplify} \\
+\end{align*}
+
+\vspace{-0.5cm}
+$$\boxed{\therefore \text{, the x-coord for the inflection is (a+b+c)/3}}$$
+
 \newpage
 
 
 %% PROBLEM 24
 \item Determine the maximum area of a rectangle inscribed within an equilateral triangle that has a side length of $a$ where $a \in \mathbb{R^+}$. 
 
-\vspace{1cm}
+\vspace{0.3cm} 
+\textbf{Solution to Question 24:}\\
+First off, let's draw a diagram from the information we know. Since the 
+triangle is equilateral, all sides of the triangle are of the length a and 
+every internal angle is pi/3 radians (60 degrees).  
 
+%%Diagram here
+\begin{center}
+    \includegraphics[scale = 0.32]{Q24 Diagram.png}
+\end{center}
+
+Now if we form an equation that represents the area of the rectangle 
+before taking the derivative of this equation, we can find a global 
+maximum. Let x be the distance between the leftmost corner of the diagram and the 
+leftmost side of the rectangle. Since the triangle is equilateral, 
+on the rightmost side there is another x. If we take the total base 
+of the triangle, a, and subtract 2x out, we get the base of the rectangle.
+
+$$base = a - 2x \text{\space \space \textbf{(1)}}$$
+
+For the height of the rectangle, first consider the 30-60-90 triangle 
+where the 60 degrees is labeled in the diagram. Since we know the angle 
+and the base of the triangle is x, we can use tan(x) to find the height.
+
+\addtolength{\jot}{-0.6em}
+\begin{align*}
+    tan(\theta) &= \dfrac{opp}{adj} \\
+    tan \left( \dfrac{\pi}{3} \right) &= \dfrac{height}{x} && \theta = \dfrac{\pi}{3}, adj = x, opp=height \\
+    x \times tan \left( \dfrac{\pi}{3} \right) &= height && \text{multiply x on both sides} \\
+    \sqrt3 x&= height && \textbf{(2)} \text{\space \space By special triangle, } tan \left( \dfrac{\pi}{3} \right) = \sqrt3 \\
+\end{align*}
+
+\newpage
+
+Now that we know the base and height of the rectangle, we can calculate 
+create an equation to express the area before finding the derivative and 
+the global maximum. Let A be area.
+
+\addtolength{\jot}{-0.6em}
+\begin{align*}
+    A &= base \times height && \text{Area of a rectangle}\\
+    A &= (a - 2x)(\sqrt3x) && \text{Sub (1) and (2) in as base and height} \\
+    A &= \sqrt3ax-2\sqrt3x^2 && \text{Expand} \\
+    A' &=  \sqrt3a-4\sqrt3x && \textbf{(3)} \text{\space \space Use Power Rule, get derivative} \\
+    0 &=  \sqrt3a-4\sqrt3x && \text{Solve for A' = 0 for critical points}\\
+    4\sqrt3x &=  \sqrt3a && \text{Add } 4\sqrt3x \text{ to both sides} \\
+    4x &=  a && \text{Divide } \sqrt3 \text{ from both sides} \\
+    x &= \dfrac{a}{4} && \text{Divide } 4 \text{ from both sides} \\  
+\end{align*}
+
+Now that we have a critial number, we need to test to see 
+if it the value really is the absolute maximum. Apply product rule 
+to (3) again to get the second derivative for a second derivative test.
+
+\addtolength{\jot}{-0.6em}
+\begin{align*}
+    A' &=  \sqrt3a-4\sqrt3x && \textbf{(3)} \\
+    A'' &=  -4\sqrt3 && \text{Apply product rule}\\
+\end{align*}
+
+The second derivative is always negative. This means at x = a/4, 
+according to the second derivative test, the point will be the 
+relative maximum. Also thinking logically for a moment, the area 
+equation is a negative quadtratic meaning the vertex (which we 
+found) will be the highest point.
+
+\vspace{0.5cm}
+$$\boxed{\therefore, \text{The maximum area is achieved at x = a/4}}$$
 
 
 \newpage
