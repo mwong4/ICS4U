@@ -14,8 +14,8 @@
 \setlength{\textheight}{10in}
 \setlength{\textwidth}{7.4in}
 \setlength{\topmargin}{-0.75in}
-\setlength{\oddsidemargin}{-0.5in}
-\setlength{\evensidemargin}{-0.5in}
+\setlength{\oddsidemargin}{-0.7in}
+\setlength{\evensidemargin}{-0.7in}
 \setlength{\parskip}{0.15in}
 \setlength{\parindent}{0in}
 
@@ -247,14 +247,43 @@ the tangents will intersect at x =  p+q/2.
 %% PROBLEM 22
 \item \textbf{Determine} the derivative of the function $f(x) = \ln\left( \dfrac{xe^{-x} + \sin(4x)}{1 + 6\sqrt{2x}} \right)$. Go one step at a time and justify each step. Do \emph{not} simplify your answer.
 
+\textbf{Solution to Question 22:}\\
+\vspace{-0.5cm} 
 
-%% Consider using an align* environment like this that will let you organize your work.
+\begin{footnotesize}
+
+%\addtolength{\jot}{1em}
+\begin{align*}
+    f(x) &= \ln\left( \dfrac{xe^{-x} + \sin(4x)}{1 + 6\sqrt{2x}} \right) \\
+    f'(x) &= \dfrac{1}{\dfrac{xe^{-x} + \sin(4x)}{1 + 6\sqrt{2x}}} \times \dfrac{d}{dx}\left( \dfrac{xe^{-x} + \sin(4x)}{1 + 6\sqrt{2x}} \right) && \text{Chain Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{d}{dx}\left( \dfrac{xe^{-x} + \sin(4x)}{1 + 6\sqrt{2x}} \right) && \text{Simplify}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\dfrac{d}{dx}(xe^{-x} + \sin(4x))(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))\dfrac{d}{dx}(1 + 6\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Quotient Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + \dfrac{d}{dx}\sin(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(\dfrac{d}{dx}1 + \dfrac{d}{dx}6\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Distrubute derivative}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + \dfrac{d}{dx}\sin(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(\dfrac{d}{dx}6\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Apply derivative to 1}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + \dfrac{d}{dx}4x \times \cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(\dfrac{d}{dx}6\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule to sin(4x)}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(\dfrac{d}{dx}6\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Power Rule, Simplify}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(6\dfrac{d}{dx}\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Constant Multiple Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(6\dfrac{d}{dx}2x\times-\dfrac{1}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule}\\
+\end{align*}
+
+\newpage
 
 \begin{align*}
-LHS &= RHS && \text{Justification of Line 1}\\
-LHS + 1 &= RHS + 1 && \text{Justificaiton of Line 2}\\
+    f'(x) &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(6 \times 2 \times -\dfrac{1}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(\dfrac{d}{dx}x \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Product Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx} -x \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times -1 \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
+     &= \dfrac{1}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})}\\
+    f'(x) &= \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}\\
 \end{align*}
-Consider using an align* environment like this one above that will let you organize your work.
+
+\vspace{-0.3cm}
+$$\boxed{\therefore f'(x) = \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}}$$
+
+\end{footnotesize}
 
 \newpage
 
