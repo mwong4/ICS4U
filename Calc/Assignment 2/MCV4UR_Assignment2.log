@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  1 JUN 2021 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  1 JUN 2021 15:59
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 2/MCV4UR_Assignment2.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 2/MCV4UR_Assignment2.tex"
@@ -356,12 +356,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Underfull \vbox (badness 2735) has occurred while \output is active []
 
  [2] [3] [4] [5] [6]
-Overfull \hbox (48.08754pt too wide) detected at line 267
+Overfull \hbox (48.6431pt too wide) detected at line 267
 []
  []
 
 [7]
-Overfull \hbox (56.93025pt too wide) detected at line 281
+Overfull \hbox (51.93024pt too wide) detected at line 281
 []
  []
 
@@ -376,22 +376,22 @@ File: Q24 Diagram.png Graphic file (type png)
 <use Q24 Diagram.png>
 Package pdftex.def Info: Q24 Diagram.png  used on input line 332.
 (pdftex.def)             Requested size: 212.31752pt x 194.65117pt.
- [10 <c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 2/Q24 Diagram.png>] [11] ("c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 2\MCV4UR_Assignment2.aux")
+ [10 <c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 2/Q24 Diagram.png>] [11] [12] ("c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 2\MCV4UR_Assignment2.aux")
 Package rerunfilecheck Info: File `MCV4UR_Assignment2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 7232 strings out of 479799
- 109929 string characters out of 2869209
+ 7233 strings out of 479799
+ 109936 string characters out of 2869209
  427266 words of memory out of 3000000
  24034 multiletter control sequences out of 15000+200000
  544002 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,13n,72p,564b,500s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Max pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 2\MCV4UR_Assignment2.pdf" (11 pages, 234302 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 2\MCV4UR_Assignment2.pdf" (12 pages, 236960 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
+ 196 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

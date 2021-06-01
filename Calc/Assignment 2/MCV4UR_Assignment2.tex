@@ -134,12 +134,12 @@ Declared References:
 \item false
 \item true
 \item true
-\item false
-\item false
+\item true
+\item true %sinosoidal are periodic, no disconc.
 \item false
 \item true
 \item false
-\item false
+\item false %
 \item true
 \item true
 \item true
@@ -262,26 +262,26 @@ the tangents will intersect at x =  p+q/2.
      &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + \dfrac{d}{dx}\sin(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(\dfrac{d}{dx}6\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Apply derivative to 1}\\
      &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + \dfrac{d}{dx}4x \times \cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(\dfrac{d}{dx}6\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule to sin(4x)}\\
      &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(\dfrac{d}{dx}6\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Power Rule, Simplify}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(6\dfrac{d}{dx}\sqrt{2x})}{(1 + 6\sqrt{2x})^2} && \text{Constant Multiple Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(6\dfrac{d}{dx}2x\times-\dfrac{1}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x))(6\sqrt2\dfrac{d}{dx}\sqrt{x})}{(1 + 6\sqrt{2x})^2} && \text{Constant Multiple Rule}\\   %%Mistake here
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(6\sqrt2\dfrac{d}{dx}x\times\dfrac{1}{2\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule}\\
 \end{align*}
 
 \newpage
 
 \begin{align*}
-    f'(x) &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(6 \times 2 \times -\dfrac{1}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(\dfrac{d}{dx}x \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Product Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx} -x \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times -1 \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
-     &= \dfrac{1}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})}\\
-    f'(x) &= \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}\\
+    f'(x) &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(6\sqrt2 \times 1 \times \dfrac{1}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(\dfrac{d}{dx}x \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Product Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx} -x \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times -1 \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
+     &= \dfrac{1}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})}\\
+    f'(x) &= \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}\\
 \end{align*}
 
 \vspace{-0.3cm}
-$$\boxed{\therefore f'(x) = \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) + (xe^{-x} + \sin(4x)) \left(\dfrac{12}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}}$$
+$$\boxed{\therefore f'(x) = \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}}$$
 
 \end{footnotesize}
 
@@ -362,9 +362,9 @@ the global maximum. Let A be area.
 \addtolength{\jot}{-0.6em}
 \begin{align*}
     A &= base \times height && \text{Area of a rectangle}\\
-    A &= (a - 2x)(\sqrt3x) && \text{Sub (1) and (2) in as base and height} \\
+    A &= (a - 2x)(\sqrt3x) && \textbf{(3)} \text{\space \space Sub (1) and (2) in as base and height} \\
     A &= \sqrt3ax-2\sqrt3x^2 && \text{Expand} \\
-    A' &=  \sqrt3a-4\sqrt3x && \textbf{(3)} \text{\space \space Use Power Rule, get derivative} \\
+    A' &=  \sqrt3a-4\sqrt3x && \textbf{(4)} \text{\space \space Use Power Rule, get derivative} \\
     0 &=  \sqrt3a-4\sqrt3x && \text{Solve for A' = 0 for critical points}\\
     4\sqrt3x &=  \sqrt3a && \text{Add } 4\sqrt3x \text{ to both sides} \\
     4x &=  a && \text{Divide } \sqrt3 \text{ from both sides} \\
@@ -373,11 +373,11 @@ the global maximum. Let A be area.
 
 Now that we have a critial number, we need to test to see 
 if it the value really is the absolute maximum. Apply product rule 
-to (3) again to get the second derivative for a second derivative test.
+to (4) again to get the second derivative for a second derivative test.
 
 \addtolength{\jot}{-0.6em}
 \begin{align*}
-    A' &=  \sqrt3a-4\sqrt3x && \textbf{(3)} \\
+    A' &=  \sqrt3a-4\sqrt3x && \textbf{(4)} \\
     A'' &=  -4\sqrt3 && \text{Apply product rule}\\
 \end{align*}
 
@@ -388,8 +388,25 @@ equation is a negative quadtratic meaning the vertex (which we
 found) will be the highest point.
 
 \vspace{0.5cm}
-$$\boxed{\therefore, \text{The maximum area is achieved at x = a/4}}$$
+\textbf{Solution continues on next page}
 
+\newpage
+
+\vspace{0.5cm}
+Now we know that the maximum area is achieved at x = a/4. Now we 
+can plug this back into the area equation to get the maximum area. Use (3).
+
+\addtolength{\jot}{0.5em}
+\begin{align*}
+    A &= (a - 2x)(\sqrt3x) && \textbf{(3)} \\
+    A &= \left(a - 2\times\dfrac{a}{4}\right)\left(\sqrt3\times\dfrac{a}{4}\right) && x=\dfrac{a}{4} \\
+    A &= \left(a - \dfrac{a}{2}\right)\left(\dfrac{\sqrt3a}{4}\right) && \text{Simplify} \\
+    A &= \left(\dfrac{2a}{2} - \dfrac{a}{2}\right)\left(\dfrac{\sqrt3a}{4}\right) && \text{get Same Denominator} \\
+    A &= \left(\dfrac{a}{2}\right)\left(\dfrac{\sqrt3a}{4}\right) && \text{Simplify} \\
+    A &= \dfrac{\sqrt3a^2}{8} \\
+\end{align*}
+
+$$\boxed{\therefore \text{\space the maximum area is } \dfrac{\sqrt3a^2}{8} }$$
 
 \newpage
 
