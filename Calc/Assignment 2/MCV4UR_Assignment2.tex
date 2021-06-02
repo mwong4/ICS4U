@@ -46,10 +46,12 @@ Be sure to cite appropriate theorems throughout your work. You may use shorthand
 
 Note: Your submitted work must be \textbf{your original work}. 
 
-Family Name: \\%Family Name Here
-First Name: %First Name Here
+Family Name: Wong\\%Family Name Here
+First Name: Max%First Name Here
 
 Declared References: 
+
+Used WolframAlpha to confirm some calculations \textbf{ as a check }.
 
 % Type your references here.
 % You can use as many lines as required.
@@ -132,7 +134,7 @@ Declared References:
 \item false
 \item true
 \item false
-\item true
+\item true %Is linear or constant a polynomial?
 \item true
 \item true
 \item true %sinosoidal are periodic, no disconc.
@@ -145,7 +147,7 @@ Declared References:
 \item true
 \item true
 \item true
-\item false
+\item false %
 \item true
 \item false
 \end{enumerate}
@@ -250,7 +252,7 @@ the tangents will intersect at x =  p+q/2.
 \textbf{Solution to Question 22:}\\
 \vspace{-0.5cm} 
 
-\begin{footnotesize}
+\begin{scriptsize}
 
 %\addtolength{\jot}{1em}
 \begin{align*}
@@ -268,22 +270,23 @@ the tangents will intersect at x =  p+q/2.
 
 \newpage
 
+\vspace{-4cm}
 \begin{align*}
-    f'(x) &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(6\sqrt2 \times 1 \times \dfrac{1}{\sqrt{2x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(\dfrac{d}{dx}x \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Product Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx} -x \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times -1 \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
-     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
-     &= \dfrac{1}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})}\\
-    f'(x) &= \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}\\
+    f'(x) &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(6\sqrt2 \times 1 \times \dfrac{1}{2\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \dfrac{d}{dx}xe^{-x} + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(\dfrac{d}{dx}x \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Product Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx}e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times \dfrac{d}{dx} -x \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Chain Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(1 \times e^{-x} + x \times -1 \times e^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Power Rule}\\
+     &= \dfrac{1 + 6\sqrt{2x}}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})^2} && \text{Simplify}\\
+     &= \dfrac{1}{xe^{-x} + \sin(4x)} \times \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})}\\
+    f'(x) &= \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}\\
 \end{align*}
 
 \vspace{-0.3cm}
-$$\boxed{\therefore f'(x) = \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{6}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}}$$
+$$\boxed{\therefore f'(x) = \dfrac{\left( \left(e^{-x} -xe^{-x} \right) + 4\cos(4x) \right)(1 + 6\sqrt{2x}) - (xe^{-x} + \sin(4x)) \left(\dfrac{3\sqrt2}{\sqrt{x}} \right)}{(1 + 6\sqrt{2x})(xe^{-x} + \sin(4x))}}$$
 
-\end{footnotesize}
+\end{scriptsize}
 
 \newpage
 
@@ -409,8 +412,6 @@ can plug this back into the area equation to get the maximum area. Use (3).
 $$\boxed{\therefore \text{\space the maximum area is } \dfrac{\sqrt3a^2}{8} }$$
 
 \newpage
-
-
 
 \end{enumerate}
 \end{document} 
