@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  18 JUN 2021 09:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.16)  18 JUN 2021 14:26
 entering extended mode
 **"c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 3/MCV4UR_Assignment3.tex"
 ("c:/Users/Max pc/Documents/GitHub/ICS4U/Calc/Assignment 3/MCV4UR_Assignment3.tex"
@@ -409,32 +409,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \vbox (badness 2735) has occurred while \output is active []
 
- [2] [3] [4] [5]
-Overfull \hbox (7.17847pt too wide) detected at line 222
+ [2] [3] [4] [5] [6] [7]
+Overfull \hbox (7.17847pt too wide) detected at line 377
 []
  []
 
-[6] [7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
-
- []
-
-[10] ("c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 3\MCV4UR_Assignment3.aux")
+[8] [9] [10] [11] [12] ("c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 3\MCV4UR_Assignment3.aux")
 Package rerunfilecheck Info: File `MCV4UR_Assignment3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 7844 strings out of 479799
- 120807 string characters out of 2869209
+ 7846 strings out of 479799
+ 120821 string characters out of 2869209
  437403 words of memory out of 3000000
  24633 multiletter control sequences out of 15000+200000
  543004 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,13n,72p,668b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Max pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Max pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 3\MCV4UR_Assignment3.pdf" (10 pages, 171399 bytes).
+Output written on "c:/Users\Max pc\Documents\GitHub\ICS4U\Calc\Assignment 3\MCV4UR_Assignment3.pdf" (12 pages, 180062 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

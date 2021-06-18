@@ -147,8 +147,18 @@ This formum page for projection: https://tex.stackexchange.com/questions/239047/
 \section*{True-False Answers}
 
 \begin{enumerate}
+\item F 
+\item T
 \item F
-\item
+\item T
+\item F
+\item T
+\item F
+\item F
+\item F
+\item T
+\item F
+\item F
 \item F
 \item T
 \item F
@@ -157,16 +167,6 @@ This formum page for projection: https://tex.stackexchange.com/questions/239047/
 \item F
 \item F
 \item T
-\item F
-\item F
-\item F
-\item T
-\item F
-\item T
-\item
-\item F
-\item F
-\item F
 \end{enumerate}
 
 %% I would recommend sandwiching your solution to every problem between the kind of structure I have provided below re: initial \vspace, the Solution: heading and the ending \vspace.
@@ -182,8 +182,163 @@ This formum page for projection: https://tex.stackexchange.com/questions/239047/
 
 \vspace{0.3cm} 
 \textbf{Solution to question 2:}\\
- Your solution starts here.
-\vspace{0.3cm}
+ Since we are looking for a specific solution, we need to get a vector
+ in a form where we can pick 2 arbitrary values and find the third value. Then we 
+ can use the 2 known vectors to get the values of the third. 
+ Let $b = (b_1, b_2, b_3)$ and $c = (c_1, c_2, c_3)$.
+
+ Since $\vec{a} and \vec{b}$ are orthogonal, their dot product must be equal to zero:
+ \vspace{-0.5cm}
+
+ \addtolength{\jot}{0.3em}
+ \begin{align*}
+  0 &= \vec{a} \cdot \vec{b} \\
+  0 &= (1)(b_1) + (-1)(b_2) + 2(b_3) && \text{Find Dot Product} \\
+  0 &= b_1 - b_2 + 2b_3 && \text{Simplify} \\
+ \end{align*}
+
+ \vspace{-1cm}
+ Now choose 2 arbitrary values. I like ``42" so let $b_1 = 4$ and let $b_2 = 2$. 
+
+ \addtolength{\jot}{0.3em}
+ \begin{align*}
+  0 &= b_1 - b_2 + 2b_3 \\
+  0 &= 4 - 2 + 2b_3 && \text{Sub in } b_1 \text{ and } b_2\\
+  -1 &= b_3 && \text{Simplify} \\
+ \end{align*}
+
+ Now that we have $\vec{a}$ and $\vec{b}$, we can find the cross product which, 
+ since $\vec{a}$ and $\vec{b}$ are orthogonal, will be $\vec{c}$ which is also orthogonal 
+ to $\vec{a}$ and $\vec{b}$:
+
+\vspace{0.5cm}
+
+ $
+ \begin{bmatrix}
+  i & j & k \\  1 & -1 & 2 \\ 4 & 2 & -1
+\end{bmatrix}
+= \vec{i}
+\begin{bmatrix}
+  -1 & 2 \\ 2 & -1
+\end{bmatrix}
+ - \vec{j}
+ \begin{bmatrix}
+  1 & 2 \\ 4 & -1
+\end{bmatrix}
+ + \vec{k}
+ \begin{bmatrix}
+  1 & -1 \\ 4 & 2
+\end{bmatrix}
+= \vec{i}(1-4) - \vec{j}(-1-8) + \vec{k}(2+4)
+= -3\vec{i} + 9\vec{j} + 6\vec{k}
+$
+
+\vspace{0.5cm}
+
+\begin{center}
+  $\boxed{\therefore \text{The 3 vectors are orthogonal on } R^3: \vec{a} = (1, -1, 2), \vec{b} = (4, 2, -1), \vec{c} = (-3, 9, 6)}$
+  \vspace{1cm}
+
+  \textbf{Solution continues on next page}
+
+\end{center}
+
+\newpage
+
+We know that a linear combination of $\vec{a}, \vec{b}, \vec{c}$ to make $\vec{u}$ would 
+look something like this, where $p, q, r \in \mathbb{R}$ are constants:
+
+\begin{align*}
+ p\vec{a} + q\vec{b} + r\vec{c} &= \vec{u} \\
+ p(1, -1, 2) + q(4, 2, -1) + r(-3, 9, 6) &= (1, 0, 1) \\text{Substitute in a, b, c, u}\\
+\end{align*}
+
+We can now form 3 equations using the components. Getting these equations into 
+a matrix and rearranging into REF form will help us solve for p, q, r:
+
+\[ \begin{cases} 
+  p + 4q - 3r & = 1\\
+  -p + 2q + 9r & = 0\\
+  2p + -1q + 6r & = 1\\
+\end{cases}
+\]
+
+\vspace{0.4cm}
+Form into a matrix:
+\vspace{0.4cm}
+
+$
+\begin{amatrix}{3}
+   1 & 4 & -3 & 1\\  -1 & 2 & 9 & 0\\ 2 & -1 & 6  & 1
+ \end{amatrix}
+$
+
+\vspace{0.4cm}
+Get bottom 2 elements in column 1 to be zero using replacement operation
+\vspace{0.4cm}
+
+$
+\equiv
+\begin{amatrix}{3}
+   1 & 4 & -3 & 1\\  0 & 6 & 6 & 1\\ 0 & 9 & -12  & 1
+ \end{amatrix}
+ \text{\space \space } R'_2 = R_1 + R_2, R'_3 = 2R_1 - R_3
+$
+
+\vspace{0.4cm}
+Get Row 3 Column 2 element to become zero by using replacement operation:
+\vspace{0.4cm}
+
+$
+\equiv
+\begin{amatrix}{3}
+   1 & 4 & -3 & 1\\  0 & 6 & 6 & 1\\ 0 & 0 & 42  & 1
+ \end{amatrix}
+ \text{\space \space } R'_3 = 3R_2 - 2R_3
+$
+
+From this we get the three following equations. From this, we can solve the 3 variable algebra question:
+
+\[ \begin{cases} 
+  p + 4q - 3r & = 1\\
+  0p + 6q + 6r & = 1\\
+  0p + 0q + 42r & = 1\\
+\end{cases}
+\]
+
+\begin{center}
+  \textbf{Solution continues on next page}
+\end{center}
+
+\newpage
+
+We can see immedietly that $r = \dfrac{1}{42}$. Now we can solve for q.
+
+\begin{align*}
+  6q + 6r &= 1 \\
+  6q + (6)\dfrac{1}{42} &= 1 && \text{Sub in } r = \dfrac{1}{42}  \\
+  6q + \dfrac{6}{42} &= 1 && \text{Simplify} \\
+  6q + \dfrac{1}{7} &= 1 \\
+  6q &= \dfrac{6}{7} && \text{Subtract 1/7 from both sides}\\
+  q &= \dfrac{1}{7} && \text{Divide 6 from both sides}\\
+ \end{align*}
+
+ Next, with r and q, solve for p.
+
+ \begin{align*}
+  p + 4q - 3r &= 1 \\
+  p + (4)\dfrac{1}{7} - (3)\dfrac{1}{42} &= 1 && \text{Sub in r and q} \\
+  p + \dfrac{4}{7} - \dfrac{3}{42} &= 1 && \text{Simplify} \\
+  p + \dfrac{4}{7} - \dfrac{1}{14} &= 1 \\
+  p + \dfrac{8}{14} - \dfrac{1}{14} &= 1 && \text{Get same denominator}\\
+  p + \dfrac{7}{14} &= 1 && \text{Simplify} \\
+  p + \dfrac{1}{2} &= 1 \\
+  p &= \dfrac{1}{2} && \text{Subtract 1/2 from both sides} \\
+ \end{align*}
+
+ \begin{center}
+  $\boxed{\therefore \text{The linear combination expressed as u is: } \vec{u} = \dfrac{1}{2}\vec{a} + \dfrac{1}{7}\vec{b} + \dfrac{1}{42}\vec{c}}$
+ \end{center}
 
 \newpage
 
@@ -248,8 +403,6 @@ Now use the following formula derived from the projection formula: $\theta = \ar
  First let's take the LHS, expand it out and see what we get.
 \vspace{0.3cm}
 
-\begin{proof}
-
 \addtolength{\jot}{1em}
 \begin{align*}
   LHS &= \vectorproj[a]{b} \cdot \vectorproj[b]{a} \\
@@ -267,10 +420,10 @@ We know that $\cos \theta = \dfrac{\vec{a} \cdot \vec{b}}{|\vec{a}||\vec{b}|}$. 
   LHS &= \cos^2 \theta(\vec{a} \cdot \vec{b}) = RHS && \text{Substitute identity in}\\
 \end{align*}
   
+\vspace{-2cm}
 \begin{center}
   $\boxed{ \text{ Therefore the statement } proj_{\vec{a}}\vec{b} \cdot proj_{\vec{b}}\vec{a} = (\vec{a} \cdot \vec{b}) \cos^2(\theta) \text{ is true. }}$
 \end{center}
-\end{proof}
 
 \newpage
 
@@ -290,7 +443,7 @@ Now, we simply need a second point on the plane to find the line (since we
 are looking for a singular example). Let x and y be 2 arbitrary values: 4 
 and 2 respectively. We can use substitution to find z using the plane equation.
 
-\addtolength{\jot}{0.1em}
+\addtolength{\jot}{-2em}
 \begin{align*}
   x-2y+2z+9 &= 0 && \text{Plane equation}\\
   4 - 2(2) + 2z + 9 &= 0 && text{Sub in x=4, y=2}\\
@@ -322,8 +475,12 @@ $$\Pi_1: x-5y+2z=10 $$
 $$\Pi_2: x+7y-2z+6=0 $$
 $$\Pi_3: 8x+5y+z=20 $$
 
-
-\LaTeX{} note: You may find the \emph{amatrix} custom environment included in the code useful for creating the augmented matrix below.\\
+\vspace{0.3cm} 
+\textbf{Solution to question 8:}\\
+ We need to get the equations into a REF form. 
+ Evaluating in this way may give us clues. First rewrite the equations 
+ as a matrix.
+\vspace{0.4cm}
 
 $
 \begin{amatrix}{3}
@@ -331,12 +488,61 @@ $
  \end{amatrix}
 $
 
-\vspace{0.3cm} 
-\textbf{Solution to question 8:}\\
- Your solution starts here.
-\vspace{0.3cm}
+\vspace{0.4cm}
+Next, use interchange to swap the second tha third rows:
+\vspace{0.4cm}
 
-%% $\equiv$ gives the "triple equal sign" equivalence relation if you want to use that for row equivalent matrices 
+$
+\equiv
+\begin{amatrix}{3}
+   1 & -5 & 2 & 10\\  8 & 5 & 1 & 20\\ 1 & 7 & -2  & -6
+ \end{amatrix}
+ \text{\space \space } R'_2 = R_3, R'_3 = R_2
+$
+
+\vspace{0.4cm}
+Next, use replacement operation to get the bottom half of column 1 as zeroes:
+\vspace{0.4cm}
+
+$
+\equiv
+\begin{amatrix}{3}
+   1 & -5 & 2 & 10\\  0 & -45 & 15 & 60\\ 0 & -12 & 4  & 16
+ \end{amatrix}
+ \text{\space \space } R'_2 = 84_1-R_2, R'_3=R_1-R_3
+$
+
+\vspace{0.4cm}
+Now get the element in column 2, row 3 as a zero using the replacement operation:
+\vspace{0.4cm}
+
+$
+\equiv
+\begin{amatrix}{3}
+   1 & -5 & 2 & 10\\  0 & -45 & 15 & 60\\ 0 & 0 & 0 & 0
+ \end{amatrix}
+ \text{\space \space } R'_3 = 4R_2 - 15R_3
+$
+
+\vspace{0.4cm}
+This results in 2 linear equations:
+
+\[ \begin{cases} 
+  & x-5y+2Z=10 \\
+  & 0X-45Y+15Z=60 \\
+\end{cases}
+\]
+
+\vspace{0.3cm}
+We can observe that these equations are linear (since no exponents) 
+and also there does not seem to be any contradiction. Also, none of the 
+equations seems \textbf{not} be collinear. Since a single point cannot be 
+found from the equations above:
+
+\vspace{0.3cm}
+\begin{center}
+  $\boxed{\therefore \text{ I think the equations converge infinitely along a line (consistent)}}$
+\end{center}
 
 \newpage
 
