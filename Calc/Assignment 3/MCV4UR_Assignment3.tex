@@ -250,7 +250,7 @@ look something like this, where $p, q, r \in \mathbb{R}$ are constants:
 
 \begin{align*}
  p\vec{a} + q\vec{b} + r\vec{c} &= \vec{u} \\
- p(1, -1, 2) + q(4, 2, -1) + r(-3, 9, 6) &= (1, 0, 1) \\text{Substitute in a, b, c, u}\\
+ p(1, -1, 2) + q(4, 2, -1) + r(-3, 9, 6) &= (1, 0, 1) \\ \text{Substitute in a, b, c, u}\\
 \end{align*}
 
 We can now form 3 equations using the components. Getting these equations into 
@@ -462,7 +462,7 @@ r = (point on plane) + t(direction vector) where $t \in \mathbb{R}$  and r is th
 
 \vspace{0.5cm}
 \begin{center}
-  $\boxed{\therefore r = (1, 2, -3) + t(3, 0, -\dfrac{3}{2}) \text{ is a line on the plane } x-2y+2z+9=0 \text{ which intersects A}}$
+  $\boxed{\therefore r = (1, 2, -3) + t\left(3, 0, -\dfrac{3}{2} \right) \text{ is a line on the plane } x-2y+2z+9=0 \text{ which intersects A}}$
 \end{center}
 
 \vspace{0.3cm}
@@ -533,15 +533,59 @@ This results in 2 linear equations:
 \end{cases}
 \]
 
+Taking the two equations, we can simplify by dividing the second by 15:
+
+\[ \begin{cases} 
+  & x-5y+2Z=10 \\
+  & -3Y+Z=4 \\
+\end{cases}
+\]
+
+\begin{center}
+  \vspace{0.5cm}
+  \textbf{Solution continues on the next page}
+\end{center}
+
+\newpage
+
+Now, let z be t. Now we can rewrite the second equation from the top.
+
+\addtolength{\jot}{-0.2em}
+\begin{align*}
+  -3Y+t &=4 \\
+  -3Y &= 4-t \text{ Subtract t from both sides} \\
+  Y &= -\dfrac{4-t}{3} \text{ Divide 3 from both sides}
+\end{align*}
+
+Now that we know y, and z, we can solve the third equation. 
+
+\addtolength{\jot}{-0.2em}
+\begin{align*}
+  x-5y+2Z &=10 \\
+  x+5 \left( \dfrac{4-t}{3} \right)+2t &=10 && \text{Sub y and z in} \\
+  x+\left( \dfrac{20-5t}{3} \right)+2t &=10 && \text{Simplify} \\
+  3x+20-5t+6t &=30 && \text{Multiply all by 3} \\
+  3x &=30-20+5t-6t && \text{Subtract 20-5t+6t from both sides} \\
+  3x &=10-t && \text{Simplify} \\
+  x &= \dfrac{10-t}{3} && \text{Divide all by 3} \\
+\end{align*}
+
+Therefore, we know that $(x, y, z) = \left(\dfrac{10-t}{3}, -\dfrac{4-t}{3}, t \right)$. Since t is z which is zero:
+$(x, y, z) = \left(\dfrac{10}{3}, -\dfrac{4}{3}, 0 \right)$. Since we also know, from the original equation, another point: (1, -5, 2):
+
+$$\vec{r} = t(1, -5, 2) + \left(\dfrac{10}{3}, -\dfrac{4}{3}, 0 \right)$$
+
+\newpage
+
 \vspace{0.3cm}
-We can observe that these equations are linear (since no exponents) 
-and also there does not seem to be any contradiction. Also, none of the 
-equations seems \textbf{not} be collinear. Since a single point cannot be 
-found from the equations above:
+We can observe that the equation above is a line. The original equations also 
+seem to be linear (since no exponents above 1) 
+and also there does not seem to be any contradictions when evaluating. Also, none of the 
+equations seems to be collinear (No multiples of each other). Since a line was found:
 
 \vspace{0.3cm}
 \begin{center}
-  $\boxed{\therefore \text{ I think the equations converge infinitely along a line (consistent)}}$
+  $\boxed{\therefore \text{ I think the equations intersect infinitely along a line (consistent)}}$
 \end{center}
 
 \newpage
